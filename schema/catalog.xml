@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" id="theddita13">
+
+  <group xml:base="learningAssessment/">
+    <system systemId="learningAssessment.xsd" uri="learningAssessment.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:learningAssessment.xsd" uri="learningAssessment.xsd" />
+    
+    <uri name="learningAssessment.xsd" uri="learningAssessment.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:learningAssessment.xsd" uri="learningAssessment.xsd" />
+  </group>
+  
+  <group xml:base="gGM/">
+    <system systemId="gGMDomainMod.xsd" uri="gGMDomainMod.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:gGMDomainMod.xsd" uri="gGMDomainMod.xsd" />
+    
+    <uri name="gGMDomainMod.xsd" uri="gGMDomainMod.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:gGMDomainMod.xsd" uri="gGMDomainMod.xsd" />
+  </group>
+  
+  
+</catalog>
