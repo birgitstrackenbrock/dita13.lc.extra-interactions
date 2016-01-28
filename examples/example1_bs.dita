@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:theddita13:names:dita:xsd:learningAssessment.xsd" id="xx">
+    <title>Inline interactions</title>
+    <learningAssessmentbody>
+       <lcIntro>This learning assessment contains different kinds of inline interactions.
+         <ul>
+            <li>txtEntry</li>
+            <li>inlineChoice</li>
+            <li>gapMatch</li>
+            <li>hottext</li>
+         </ul>
+       </lcIntro>
+       <lcInteraction>
+         <lcTextEntry>
+          <lcQuestion2>Fill in the missing word in this famous quote from Shakespeare's Richard III.</lcQuestion2>
+          <lcInlineInteractionText>
+             <lq>
+                <p>Now is the winter of our discontent</p>
+                <p>Made glorious summer by this sun of <lcTextEntryOptions>
+                   <lcAnswerOptionInline>
+                      <lcAnswerContentInline>York</lcAnswerContentInline>
+                      <lcCorrectResponse2></lcCorrectResponse2>
+                   </lcAnswerOptionInline>
+                   <lcAnswerOptionInline>
+                      <lcAnswerContentInline>york</lcAnswerContentInline>
+                   </lcAnswerOptionInline>
+                </lcTextEntryOptions>;</p>
+                <p>And all the clouds that lour'd upon our house</p>
+                <p>In the deep bosom of the ocean buried.</p>
+             </lq>
+          </lcInlineInteractionText>
+         </lcTextEntry>
+       </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>
