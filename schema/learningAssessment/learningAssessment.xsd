@@ -55,6 +55,7 @@
    <!-- ======= Specialization modules ======= -->
    <xs:include schemaLocation="urn:theddita13:names:dita:xsd:gGMDomain.xsd"/>
    <xs:include schemaLocation="urn:theddita13:names:dita:xsd:inlineInteractionDomain.xsd"/>
+   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:inlineInteraction2Domain.xsd"/>
    <xs:include schemaLocation="urn:theddita13:names:dita:xsd:textEntryDomain.xsd"/>
    <xs:include schemaLocation="urn:theddita13:names:dita:xsd:gapMatchDomain.xsd"/>
    
@@ -88,6 +89,7 @@
             <xs:group ref="div"/>
             <xs:group ref="learning2-d-div"/>
             <xs:group ref="thedlearning-d-div"/>
+            <xs:group ref="inlineInteraction-d-div"/>
          </xs:choice>
       </xs:group>
       <xs:group name="ph">
@@ -95,6 +97,7 @@
             <xs:group ref="ph"/>
             <xs:group ref="hi-d-ph"/>
             <xs:group ref="thedinlineInteraction-d-ph"/>
+            <xs:group ref="inlineInteraction-d-ph"/>
          </xs:choice>
       </xs:group>
       <xs:group name="index-base">
@@ -135,6 +138,7 @@
             <xs:group ref="lcInteractionBase2"/>
             <xs:group ref="learning2-d-lcInteractionBase2"/>
             <xs:group ref="thedlearning-d-lcInteractionBase2"/>
+            <xs:group ref="inlineInteraction-d-lcInteractionBase2"/>
          </xs:choice>
       </xs:group>
    </xs:redefine>

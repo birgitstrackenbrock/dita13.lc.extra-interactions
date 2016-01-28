@@ -43,6 +43,12 @@
     
     <uri name="inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
     <uri name="urn:theddita13:names:dita:xsd:inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
+    
+    <system systemId="inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
+    
+    <uri name="inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
   </group>
   
   
