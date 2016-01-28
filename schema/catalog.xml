@@ -38,6 +38,12 @@
     <uri name="gapMatchDomain.xsd" uri="gapMatchDomain.xsd" />
     <uri name="urn:theddita13:names:dita:xsd:gapMatchDomain.xsd" uri="gapMatchDomain.xsd" />
     
+    <system systemId="inlineChoiceDomain.xsd" uri="inlineChoiceDomain.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:inlineChoiceDomain.xsd" uri="inlineChoiceDomain.xsd" />
+    
+    <uri name="inlineChoiceDomain.xsd" uri="inlineChoiceDomain.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:inlineChoiceDomain.xsd" uri="inlineChoiceDomain.xsd" />
+    
     <system systemId="inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
     <system systemId="urn:theddita13:names:dita:xsd:inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
     

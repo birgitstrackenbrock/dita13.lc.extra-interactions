@@ -9,6 +9,7 @@
             <xs:element ref="lcGraphicGapMatch"/>
             <xs:element ref="lcTextEntry"/>
             <xs:element ref="lcGapMatch"/>
+            <xs:element ref="lcInlineChoice"/>
          </xs:choice>
       </xs:sequence>
    </xs:group>
@@ -19,6 +20,7 @@
             <xs:element ref="lcGraphicGapMatch"/>
             <xs:element ref="lcTextEntry"/>
             <xs:element ref="lcGapMatch"/>
+            <xs:element ref="lcInlineChoice"/>
          </xs:choice>
       </xs:sequence>
    </xs:group>
