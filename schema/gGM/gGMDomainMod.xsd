@@ -76,9 +76,10 @@
     </xs:complexType>
     <xs:group name="lcAreaContent.content">
         <xs:sequence>
-            <xs:group ref="ph.cnt" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="ph.cnt"/>
         </xs:sequence>
     </xs:group>
+       
     <xs:attributeGroup name="lcAreaContent.attributes">
         <xs:attribute name="keyref" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts-translate-no"/>
@@ -94,7 +95,7 @@
             <xs:complexContent>
                 <xs:extension base="lcGGMMap.class">
                     <xs:attribute ref="class"
-                        default="+ topic/fig learningInteractionBase2-d/figgroup thedlearning-d/lcGGMMap "/>
+                        default="+ topic/fig learningInteractionBase2-d/fig thedlearning-d/lcGGMMap "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -139,10 +140,12 @@
     <xs:group name="lcAreaGGM.content">
         <xs:sequence>
             <xs:group ref="lcAreaContent"/>
-            <xs:group ref="lcAreaShape2"/>
-            <xs:group ref="lcAreaCoords2"/>
+            <xs:sequence minOccurs="0" maxOccurs="1">
+                <xs:group ref="lcAreaShape2"/>
+                <xs:group ref="lcAreaCoords2"/>
+                <xs:group ref="lcCorrectResponse2"/>
+            </xs:sequence>
             <xs:group ref="xref" minOccurs="0"/>
-            <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
             <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
