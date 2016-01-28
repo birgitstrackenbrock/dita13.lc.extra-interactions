@@ -2,5 +2,8 @@
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="urn:theddita13:names:dita:xsd:learningAssessment.xsd" id="xx">
     <title></title>
-    <learningAssessmentbody></learningAssessmentbody>
+    <learningAssessmentbody>
+        <section>
+        </section>
+    </learningAssessmentbody>
 </learningAssessment>
