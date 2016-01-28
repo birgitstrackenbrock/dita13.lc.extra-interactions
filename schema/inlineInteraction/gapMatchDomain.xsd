@@ -14,10 +14,18 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcExtraAnswerOptions">
+    <xs:group name="lcExtraGapOptions">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcExtraAnswerOptions"/>
+                <xs:element ref="lcExtraGapOptions"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcGapOption">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcGapOption"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -48,7 +56,7 @@
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lcInlineInteractionText"/>
-            <xs:group ref="lcExtraAnswerOptions" minOccurs="0"/>
+            <xs:group ref="lcExtraGapOptions" minOccurs="0"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
@@ -63,34 +71,67 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcExtraAnswerOptions">
+    <xs:element name="lcExtraGapOptions">
         <xs:annotation>
             <xs:documentation/>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcExtraAnswerOptions.class">
+                <xs:extension base="lcExtraGapOptions.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 thedgapmatch-d/lcExtraAnswerOptions "/>
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 thedgapmatch-d/lcExtraGapOptions "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcExtraAnswerOptions.class">
+    <xs:complexType name="lcExtraGapOptions.class">
         <xs:sequence>
-            <xs:group ref="lcExtraAnswerOptions.content"/>
+            <xs:group ref="lcExtraGapOptions.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcExtraAnswerOptions.attributes"/>
+        <xs:attributeGroup ref="lcExtraGapOptions.attributes"/>
     </xs:complexType>
-    <xs:group name="lcExtraAnswerOptions.content">
+    <xs:group name="lcExtraGapOptions.content">
         <xs:sequence>          
-                <xs:group ref="lcAnswerOptionGroupInline"/>          
+                <xs:group ref="lcGapOption" minOccurs="0" maxOccurs="unbounded"/>          
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcExtraAnswerOptions.attributes">
+    <xs:attributeGroup name="lcExtraGapOptions.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
+    <xs:element name="lcGapOption">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcGapOption.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/ph learningInteractionBase2-d/ph thedgapmatch-d/lcGapOption "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcGapOption.class">
+        <xs:sequence>
+            <xs:group ref="lcGapOption.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcGapOption.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcGapOption.content">
+        <xs:sequence>
+            <xs:group ref="lcAnswerContentInline"/>
+            <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
+            <xs:group ref="lcFeedback2" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcGapOption.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+       
 </xs:schema>

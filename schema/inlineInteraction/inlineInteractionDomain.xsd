@@ -10,7 +10,8 @@
     <xs:group name="thedinlineInteraction-d-ph">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcAnswerOptionGroupInline"/>
+                <xs:element ref="lcTextEntryOptions"/>
+                <xs:element ref="lcInlineChoiceOptions"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -19,14 +20,6 @@
         <xs:sequence>
             <xs:choice>
                 <xs:element ref="lcInlineInteractionText"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
-    
-    <xs:group name="lcAnswerOptionGroupInline">
-        <xs:sequence>
-            <xs:choice>
-                <xs:element ref="lcAnswerOptionGroupInline"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -80,40 +73,6 @@
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lcInlineInteractionText.attributes">
-        <xs:attributeGroup ref="univ-atts"/>
-        <xs:attribute name="outputclass" type="xs:string"/>
-        <xs:attributeGroup ref="global-atts"/>
-    </xs:attributeGroup>
-    
-    <xs:element name="lcAnswerOptionGroupInline">
-        <xs:annotation>
-            <xs:documentation/>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base="lcAnswerOptionGroupInline.class">
-                    <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph thedinlineInteraction-d/lcAnswerOptionGroupInline "/>
-                </xs:extension>
-            </xs:complexContent>
-        </xs:complexType>
-    </xs:element>
-    <xs:complexType name="lcAnswerOptionGroupInline.class">
-        <xs:sequence>
-            <xs:group ref="lcAnswerOptionGroupInline.content"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="lcAnswerOptionGroupInline.attributes"/>
-    </xs:complexType>
-    <xs:group name="lcAnswerOptionGroupInline.content">
-        <xs:sequence>
-            <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:group ref="data"/>
-                <xs:group ref="data-about"/>
-            </xs:choice>
-            <xs:group ref="lcAnswerOptionInline" minOccurs="1" maxOccurs="unbounded"/>
-        </xs:sequence>
-    </xs:group>
-    <xs:attributeGroup name="lcAnswerOptionGroupInline.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>

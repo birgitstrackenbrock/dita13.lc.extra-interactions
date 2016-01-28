@@ -14,6 +14,13 @@
         </xs:sequence>
     </xs:group>
     
+    <xs:group name="lcTextEntryOptions">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcTextEntryOptions"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
     
 <!-- ============================================================= -->
     
@@ -51,6 +58,37 @@
         <xs:attributeGroup ref="conref-atts"/>
         <xs:attributeGroup ref="select-atts"/>
         <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lcTextEntryOptions">
+        <xs:annotation>
+            <xs:documentation/>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcTextEntryOptions.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/ph learningInteractionBase2-d/ph thedtextentry-d/lcTextEntryOptions "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcTextEntryOptions.class">
+        <xs:sequence>
+            <xs:group ref="lcTextEntryOptions.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcTextEntryOptions.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcTextEntryOptions.content">
+        <xs:sequence>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lcAnswerOptionInline" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcTextEntryOptions.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
