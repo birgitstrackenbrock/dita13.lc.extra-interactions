@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   
+   <xs:group name="thedlearning-d-div">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="lcGraphicGapMatch"/>
+            <xs:element ref="lcTextEntry"/>
+            <xs:element ref="lcGapMatch"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   
+   <xs:group name="thedlearning-d-lcInteractionBase2">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="lcGraphicGapMatch"/>
+            <xs:element ref="lcTextEntry"/>
+            <xs:element ref="lcGapMatch"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   
+</xs:schema>

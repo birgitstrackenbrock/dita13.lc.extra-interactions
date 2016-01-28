@@ -10,11 +10,39 @@
   </group>
   
   <group xml:base="gGM/">
-    <system systemId="gGMDomainMod.xsd" uri="gGMDomainMod.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:gGMDomainMod.xsd" uri="gGMDomainMod.xsd" />
+    <system systemId="gGMDomain.xsd" uri="gGMDomain.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:gGMDomain.xsd" uri="gGMDomain.xsd" />
     
-    <uri name="gGMDomainMod.xsd" uri="gGMDomainMod.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:gGMDomainMod.xsd" uri="gGMDomainMod.xsd" />
+    <uri name="gGMDomain.xsd" uri="gGMDomain.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:gGMDomain.xsd" uri="gGMDomain.xsd" />
+  </group>
+  
+  <group xml:base="general/">
+    <system systemId="thedlearningGrp.xsd" uri="thedlearningGrp.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:thedlearningGrp.xsd" uri="thedlearningGrp.xsd" />
+    
+    <uri name="thedlearningGrp.xsd" uri="thedlearningGrp.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:thedlearningGrp.xsd" uri="thedlearningGrp.xsd" />
+  </group>
+  
+  <group xml:base="inlineInteraction/">
+    <system systemId="textEntryDomain.xsd" uri="textEntryDomain.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:textEntryDomain.xsd" uri="textEntryDomain.xsd" />
+    
+    <uri name="textEntryDomain.xsd" uri="textEntryDomain.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:textEntryDomain.xsd" uri="textEntryDomain.xsd" />
+    
+    <system systemId="gapMatchDomain.xsd" uri="gapMatchDomain.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:gapMatchDomain.xsd" uri="gapMatchDomain.xsd" />
+    
+    <uri name="gapMatchDomain.xsd" uri="gapMatchDomain.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:gapMatchDomain.xsd" uri="gapMatchDomain.xsd" />
+    
+    <system systemId="inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
+    
+    <uri name="inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
   </group>
   
   

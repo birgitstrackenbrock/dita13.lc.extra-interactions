@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d thedgapmatch-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lcGapMatch">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcGapMatch"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcExtraAnswerOptions">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcExtraAnswerOptions"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+
+<!-- ============================================================= -->
+    
+    <xs:element name="lcGapMatch">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcGapMatch.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 thedgapmatch-d/lcGapMatch "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcGapMatch.class">
+        <xs:sequence>
+            <xs:group ref="lcGapMatch.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcGapMatch.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcGapMatch.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lcInlineInteractionText"/>
+            <xs:group ref="lcExtraAnswerOptions" minOccurs="0"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcGapMatch.attributes">
+        <xs:attribute name="id" type="xs:NMTOKEN"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lcExtraAnswerOptions">
+        <xs:annotation>
+            <xs:documentation/>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcExtraAnswerOptions.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 thedgapmatch-d/lcExtraAnswerOptions "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcExtraAnswerOptions.class">
+        <xs:sequence>
+            <xs:group ref="lcExtraAnswerOptions.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcExtraAnswerOptions.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcExtraAnswerOptions.content">
+        <xs:sequence>          
+                <xs:group ref="lcAnswerOptionGroupInline"/>          
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcExtraAnswerOptions.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+</xs:schema>

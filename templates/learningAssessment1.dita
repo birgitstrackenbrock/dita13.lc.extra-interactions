@@ -3,7 +3,6 @@
     xsi:noNamespaceSchemaLocation="urn:theddita13:names:dita:xsd:learningAssessment.xsd" id="xx">
     <title></title>
     <learningAssessmentbody>
-        <section>
-        </section>
+       <lcInteraction></lcInteraction>
     </learningAssessmentbody>
 </learningAssessment>
