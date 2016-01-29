@@ -10,6 +10,7 @@
             <xs:element ref="lcTextEntry"/>
             <xs:element ref="lcGapMatch"/>
             <xs:element ref="lcInlineChoice"/>
+            <xs:element ref="lcHottext"/>
          </xs:choice>
       </xs:sequence>
    </xs:group>
@@ -21,6 +22,7 @@
             <xs:element ref="lcTextEntry"/>
             <xs:element ref="lcGapMatch"/>
             <xs:element ref="lcInlineChoice"/>
+            <xs:element ref="lcHottext"/>
          </xs:choice>
       </xs:sequence>
    </xs:group>

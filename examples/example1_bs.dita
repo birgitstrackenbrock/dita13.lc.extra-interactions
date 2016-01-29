@@ -31,6 +31,58 @@
              </lq>
           </lcInlineInteractionText>
          </lcTextEntry>
+          <lcInlineChoice>
+             <lcQuestion2>Identify the missing word in this famous quote from Shakespeare's Richard III.</lcQuestion2>
+             <lcInlineInteractionText>
+                <lq>
+                   <p>Now is the winter of our discontent</p>
+                   <p>Made glorious summer by this sun of <lcTextEntryOptions>
+                      <lcAnswerOptionInline>
+                         <lcAnswerContentInline>York</lcAnswerContentInline>
+                         <lcCorrectResponse2></lcCorrectResponse2>
+                      </lcAnswerOptionInline>
+                      <lcAnswerOptionInline>
+                         <lcAnswerContentInline>Gloucester</lcAnswerContentInline>
+                      </lcAnswerOptionInline>
+                      <lcAnswerOptionInline>
+                         <lcAnswerContentInline>Lancester</lcAnswerContentInline>
+                      </lcAnswerOptionInline>
+                   </lcTextEntryOptions>;</p>
+                   <p>And all the clouds that lour'd upon our house</p>
+                   <p>In the deep bosom of the ocean buried.</p>
+                </lq>
+             </lcInlineInteractionText>
+          </lcInlineChoice>
+          <lcGapMatch>
+             <lcQuestion2>Identify the missing words in this famous quote from Shakespeare's Richard III.</lcQuestion2>
+             <lcInlineInteractionText>
+                <lq>
+                   <p>Now is the <lcGapOption><lcAnswerContentInline>winter</lcAnswerContentInline><lcCorrectResponse2></lcCorrectResponse2></lcGapOption> of our discontent</p>
+                   <p>Made glorious <lcGapOption><lcAnswerContentInline>summer</lcAnswerContentInline><lcCorrectResponse2></lcCorrectResponse2></lcGapOption> by this sun of York;</p>
+                   <p>And all the clouds that lour'd upon our house</p>
+                   <p>In the deep bosom of the ocean buried.</p>
+                </lq>
+             </lcInlineInteractionText>
+             <lcExtraGapOptions>
+                <lcGapOption><lcAnswerContentInline>spring</lcAnswerContentInline></lcGapOption>
+                <lcGapOption><lcAnswerContentInline>autumn</lcAnswerContentInline></lcGapOption>
+             </lcExtraGapOptions>
+          </lcGapMatch>
+          <lcHottext>
+             <lcQuestion2>Select the error in the following passage of text (or <i>No Error</i> if there is none).</lcQuestion2>
+             <lcInlineInteractionText>
+                <p>Sponsors of the Olympic Games <lcHottextOption>
+                   <lcAnswerContentInline>who bought</lcAnswerContentInline>
+                </lcHottextOption> advertising time on United States television <lcHottextOption>
+                   <lcAnswerContentInline>includes</lcAnswerContentInline><lcCorrectResponse2></lcCorrectResponse2></lcHottextOption><lcHottextOption>
+                   <lcAnswerContentInline>at least</lcAnswerContentInline>
+                </lcHottextOption> a dozen international firms <lcHottextOption>
+                   <lcAnswerContentInline>whose</lcAnswerContentInline>
+                </lcHottextOption> names are familiar to American consumers. <lcHottextOption>
+                   <lcAnswerContentInline>No error.</lcAnswerContentInline>
+                </lcHottextOption></p>
+             </lcInlineInteractionText>
+          </lcHottext>
        </lcInteraction>
     </learningAssessmentbody>
 </learningAssessment>
