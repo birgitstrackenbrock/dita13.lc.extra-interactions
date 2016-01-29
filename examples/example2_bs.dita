@@ -21,11 +21,9 @@
                   </lcMatrixEntry>
                    <lcMatrixEntry>
                       <lcCorrectMatch itemid="D" matchitemid="M"/>
-                     <lcCorrectResponse2/>
                   </lcMatrixEntry>
                    <lcMatrixEntry>
                       <lcCorrectMatch itemid="L" matchitemid="M"/>
-                     <lcCorrectResponse2></lcCorrectResponse2>
                   </lcMatrixEntry>
                    <lcMatrixEntry></lcMatrixEntry>
                 </lcMatrixMatchRow>
@@ -33,7 +31,6 @@
                    <lcMatchingItem2 id="R">Romeo and Juliet</lcMatchingItem2>
                    <lcMatrixEntry>
                       <lcCorrectMatch itemid="C" matchitemid="R"/>
-                     <lcCorrectResponse2/>
                       <lcFeedback2>Goed</lcFeedback2>
                   </lcMatrixEntry>
                    <lcMatrixEntry></lcMatrixEntry>
@@ -47,7 +44,6 @@
                    <lcMatrixEntry></lcMatrixEntry>
                    <lcMatrixEntry>
                       <lcCorrectMatch itemid="P" matchitemid="T"/>
-                     <lcCorrectResponse2/>
                   </lcMatrixEntry>
                 </lcMatrixMatchRow>
              </lcMatrixTable>
