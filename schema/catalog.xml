@@ -63,5 +63,12 @@
     <uri name="urn:theddita13:names:dita:xsd:inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
   </group>
   
+  <group xml:base="match/">
+    <system systemId="matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
+    
+    <uri name="matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
+  </group>
   
 </catalog>

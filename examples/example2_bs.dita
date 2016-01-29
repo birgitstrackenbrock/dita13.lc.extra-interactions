@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:theddita13:names:dita:xsd:learningAssessment.xsd" id="xx">
+    <title>Match matrix</title>
+    <learningAssessmentbody>
+       <lcInteraction>
+          <lcMatchMatrix>
+             <lcQuestion2>Match the following characters to the Shakespeare play they appeared in:</lcQuestion2>
+             <lcMatrixTable>
+                <lcMatrixItemRow>
+                   <lcItemEmpty></lcItemEmpty>
+                   <lcItem2 id="C">Capulet</lcItem2>
+                   <lcItem2 id="D">Demetrius</lcItem2>
+                   <lcItem2 id="L">Lysander</lcItem2>
+                   <lcItem2 id="P">Prospero</lcItem2>
+                </lcMatrixItemRow>
+                <lcMatrixMatchRow>
+                   <lcMatchingItem2 id="M">A Midsummer-Night's Dream</lcMatchingItem2>
+                   <lcMatrixEntry>
+                     <lcFeedback2>nee, fout</lcFeedback2>
+                  </lcMatrixEntry>
+                   <lcMatrixEntry>
+                      <lcCorrectMatch itemid="D" matchitemid="M"/>
+                     <lcCorrectResponse2/>
+                  </lcMatrixEntry>
+                   <lcMatrixEntry>
+                      <lcCorrectMatch itemid="L" matchitemid="M"/>
+                     <lcCorrectResponse2></lcCorrectResponse2>
+                  </lcMatrixEntry>
+                   <lcMatrixEntry></lcMatrixEntry>
+                </lcMatrixMatchRow>
+                <lcMatrixMatchRow>
+                   <lcMatchingItem2 id="R">Romeo and Juliet</lcMatchingItem2>
+                   <lcMatrixEntry>
+                      <lcCorrectMatch itemid="C" matchitemid="R"/>
+                     <lcCorrectResponse2/>
+                      <lcFeedback2>Goed</lcFeedback2>
+                  </lcMatrixEntry>
+                   <lcMatrixEntry></lcMatrixEntry>
+                   <lcMatrixEntry></lcMatrixEntry>
+                   <lcMatrixEntry></lcMatrixEntry>
+                </lcMatrixMatchRow>
+                <lcMatrixMatchRow>
+                   <lcMatchingItem2 id="T">The Tempest</lcMatchingItem2>
+                   <lcMatrixEntry></lcMatrixEntry>
+                   <lcMatrixEntry></lcMatrixEntry>
+                   <lcMatrixEntry></lcMatrixEntry>
+                   <lcMatrixEntry>
+                      <lcCorrectMatch itemid="P" matchitemid="T"/>
+                     <lcCorrectResponse2/>
+                  </lcMatrixEntry>
+                </lcMatrixMatchRow>
+             </lcMatrixTable>
+          </lcMatchMatrix>
+       </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>
