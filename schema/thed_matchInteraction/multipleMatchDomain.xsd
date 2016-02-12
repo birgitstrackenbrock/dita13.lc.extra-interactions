@@ -70,10 +70,10 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcAssociableMatchIdentifier">
+    <xs:group name="lcAssociableIMatchIdentifier">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcAssociableMatchIdentifier"/>
+                <xs:element ref="lcAssociableIMatchIdentifier"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -103,8 +103,8 @@
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:group ref="lcMatchSet11" minOccurs="1" maxOccurs="1"/>
-            <xs:group ref="lcMatchSet12" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lcMatchSet1" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lcMatchSet2" minOccurs="1" maxOccurs="1"/>
             <xs:group ref="lcMatchMapping" minOccurs="1" maxOccurs="1"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
@@ -317,7 +317,7 @@
     <xs:complexType name="lcMatchValue.class">
         <xs:sequence>
             <xs:group ref="lcAssociableItemIdentifier"/>
-            <xs:group ref="lcAssociableMatchIdentifier"/>
+            <xs:group ref="lcAssociableIMatchIdentifier"/>
             <xs:group ref="lcCorrectResponse" minOccurs="1" maxOccurs="1"/>
         </xs:sequence>
         <xs:attributeGroup ref="lcMatchValue.attributes"/>
