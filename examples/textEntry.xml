@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:theddita13:names:dita:xsd:learningAssessment.xsd" id="q1">
+    <title>Question 1: text entry</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lcTextEntry>
+                <lcQuestion2>Fill in the correct words in the sentences.</lcQuestion2>
+                <lcInlineInteractionText>
+                    <note type="note">There are two extra words.</note>
+                    <p>collect – confident – different – excellent – important – join – upstairs – view </p>
+                    <ol>
+                        <li>Well done! You did an <lcTextEntryOptions>
+                            <lcAnswerOptionInline>
+                                <lcAnswerContentInline>excellent</lcAnswerContentInline>
+                            </lcAnswerOptionInline>
+                        </lcTextEntryOptions> job.</li>
+                        <li>We had to go to four <lcTextEntryOptions>
+                            <lcAnswerOptionInline>
+                                <lcAnswerContentInline>different</lcAnswerContentInline>
+                            </lcAnswerOptionInline>
+                        </lcTextEntryOptions> shops before we found what we wanted.</li>
+                        <li>Where’s the bathroom? – It’s <lcTextEntryOptions>
+                            <lcAnswerOptionInline>
+                                <lcAnswerContentInline>upstairs</lcAnswerContentInline>
+                            </lcAnswerOptionInline>
+                        </lcTextEntryOptions>.</li>
+                        <li>She is <lcTextEntryOptions>
+                            <lcAnswerOptionInline>
+                                <lcAnswerContentInline>confident </lcAnswerContentInline>
+                            </lcAnswerOptionInline>
+                        </lcTextEntryOptions> that she will pass the test.</li>
+                        <li>English is one of the most <lcTextEntryOptions>
+                            <lcAnswerOptionInline>
+                                <lcAnswerContentInline>important</lcAnswerContentInline>
+                            </lcAnswerOptionInline>
+                        </lcTextEntryOptions> world languages.</li>
+                        <li>Do you want to <lcTextEntryOptions>
+                            <lcAnswerOptionInline>
+                                <lcAnswerContentInline>join</lcAnswerContentInline>
+                            </lcAnswerOptionInline>
+                        </lcTextEntryOptions> our reading club?</li>
+                    </ol>
+                </lcInlineInteractionText>
+            </lcTextEntry>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>
