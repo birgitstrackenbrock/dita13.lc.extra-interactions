@@ -9,20 +9,20 @@
     <uri name="urn:theddita13:names:dita:xsd:learningAssessment.xsd" uri="learningAssessment.xsd" />
   </group>
   
-  <group xml:base="thed_graphicInteraction/">
-    <system systemId="gGMDomain.xsd" uri="gGMDomain.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:gGMDomain.xsd" uri="gGMDomain.xsd" />
-    
-    <uri name="gGMDomain.xsd" uri="gGMDomain.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:gGMDomain.xsd" uri="gGMDomain.xsd" />
-  </group>
-  
   <group xml:base="thed_general/">
     <system systemId="thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
     <system systemId="urn:theddita13:names:dita:xsd:thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
     
     <uri name="thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
     <uri name="urn:theddita13:names:dita:xsd:thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
+  </group>
+  
+  <group xml:base="thed_graphicInteraction/">
+    <system systemId="gGMDomain.xsd" uri="gGMDomain.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:gGMDomain.xsd" uri="gGMDomain.xsd" />
+    
+    <uri name="gGMDomain.xsd" uri="gGMDomain.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:gGMDomain.xsd" uri="gGMDomain.xsd" />
   </group>
   
   <group xml:base="thed_inlineInteraction/">
