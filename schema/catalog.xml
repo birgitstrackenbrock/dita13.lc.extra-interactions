@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" id="theddita13">
 
-  <group xml:base="learningAssessment/">
+  <group xml:base="thed_learningAssessment/">
     <system systemId="learningAssessment.xsd" uri="learningAssessment.xsd" />
     <system systemId="urn:theddita13:names:dita:xsd:learningAssessment.xsd" uri="learningAssessment.xsd" />
     
@@ -9,7 +9,7 @@
     <uri name="urn:theddita13:names:dita:xsd:learningAssessment.xsd" uri="learningAssessment.xsd" />
   </group>
   
-  <group xml:base="gGM/">
+  <group xml:base="thed_graphicInteraction/">
     <system systemId="gGMDomain.xsd" uri="gGMDomain.xsd" />
     <system systemId="urn:theddita13:names:dita:xsd:gGMDomain.xsd" uri="gGMDomain.xsd" />
     
@@ -17,15 +17,15 @@
     <uri name="urn:theddita13:names:dita:xsd:gGMDomain.xsd" uri="gGMDomain.xsd" />
   </group>
   
-  <group xml:base="general/">
-    <system systemId="thedlearningGrp.xsd" uri="thedlearningGrp.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:thedlearningGrp.xsd" uri="thedlearningGrp.xsd" />
+  <group xml:base="thed_general/">
+    <system systemId="thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
     
-    <uri name="thedlearningGrp.xsd" uri="thedlearningGrp.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:thedlearningGrp.xsd" uri="thedlearningGrp.xsd" />
+    <uri name="thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
   </group>
   
-  <group xml:base="inlineInteraction/">
+  <group xml:base="thed_inlineInteraction/">
     <system systemId="textEntryDomain.xsd" uri="textEntryDomain.xsd" />
     <system systemId="urn:theddita13:names:dita:xsd:textEntryDomain.xsd" uri="textEntryDomain.xsd" />
     
@@ -55,20 +55,30 @@
     
     <uri name="inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
     <uri name="urn:theddita13:names:dita:xsd:inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
+  </group>
+  
+  <group xml:base="thed_matchInteraction/">
+    <system systemId="multipleMatchDomain.xsd" uri="multipleMatchDomain.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:multipleMatchDomain.xsd" uri="multipleMatchDomain.xsd" />
+    
+    <uri name="multipleMatchDomain.xsd" uri="multipleMatchDomain.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:multipleMatchDomain.xsd" uri="multipleMatchDomain.xsd" />
+  </group>
+  
+  
+  <!-- ======================= schemas which define the thed interactions somehow different ================= -->
+  <group xml:base="alt_interaction_schemas/">
+    <system systemId="matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
+    
+    <uri name="matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
     
     <system systemId="inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
     <system systemId="urn:theddita13:names:dita:xsd:inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
     
     <uri name="inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
     <uri name="urn:theddita13:names:dita:xsd:inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
-  </group>
-  
-  <group xml:base="match/">
-    <system systemId="matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
-    
-    <uri name="matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
   </group>
   
 </catalog>

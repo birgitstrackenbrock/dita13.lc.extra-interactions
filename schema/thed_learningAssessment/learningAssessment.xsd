@@ -55,15 +55,13 @@
    <!-- ======= Specialization modules ======= -->
    <xs:include schemaLocation="urn:theddita13:names:dita:xsd:gGMDomain.xsd"/>
    <xs:include schemaLocation="urn:theddita13:names:dita:xsd:inlineInteractionDomain.xsd"/>
-   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:inlineInteraction2Domain.xsd"/>
    <xs:include schemaLocation="urn:theddita13:names:dita:xsd:textEntryDomain.xsd"/>
    <xs:include schemaLocation="urn:theddita13:names:dita:xsd:gapMatchDomain.xsd"/>
    <xs:include schemaLocation="urn:theddita13:names:dita:xsd:inlineChoiceDomain.xsd"/>
    <xs:include schemaLocation="urn:theddita13:names:dita:xsd:hottextDomain.xsd"/>
-   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:matchMatrixDomain.xsd"/>
    
    <!-- ======= Specialization groups ======= -->
-   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:thedlearningGrp.xsd"/>
+   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:thedInteractionGrp.xsd"/>
    
 
    <xs:redefine schemaLocation="urn:oasis:names:tc:dita:xsd:commonElementGrp.xsd:1.3">
@@ -91,18 +89,14 @@
          <xs:choice>
             <xs:group ref="div"/>
             <xs:group ref="learning2-d-div"/>
-            <xs:group ref="thedlearning-d-div"/>
-            <xs:group ref="inlineInteraction-d-div"/>
+            <xs:group ref="thedinteraction-d-div"/>
          </xs:choice>
       </xs:group>
       <xs:group name="ph">
          <xs:choice>
             <xs:group ref="ph"/>
             <xs:group ref="hi-d-ph"/>
-            <xs:group ref="thedinlineInteraction-d-ph"/>
-            <xs:group ref="inlineInteraction-d-ph"/>
-            <xs:group ref="thedgapmatch-d-ph"/>
-            <xs:group ref="thedhottext-d-ph"/>
+            <xs:group ref="thedinlineinteraction-d-ph"/>
          </xs:choice>
       </xs:group>
       <xs:group name="index-base">
@@ -142,8 +136,7 @@
          <xs:choice>
             <xs:group ref="lcInteractionBase2"/>
             <xs:group ref="learning2-d-lcInteractionBase2"/>
-            <xs:group ref="thedlearning-d-lcInteractionBase2"/>
-            <xs:group ref="inlineInteraction-d-lcInteractionBase2"/>
+            <xs:group ref="thedinteraction-d-lcInteractionBase2"/>
          </xs:choice>
       </xs:group>
    </xs:redefine>

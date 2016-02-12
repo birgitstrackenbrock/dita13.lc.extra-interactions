@@ -7,11 +7,13 @@
     </xs:annotation>
     
     
-    <xs:group name="thedinlineInteraction-d-ph">
+    <xs:group name="thedinlineinteraction-d-ph">
         <xs:sequence>
             <xs:choice>
                 <xs:element ref="lcTextEntryOptions"/>
                 <xs:element ref="lcInlineChoiceOptions"/>
+                <xs:element ref="lcGapOption"/>
+                <xs:element ref="lcHottextOption"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>

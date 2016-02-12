@@ -6,13 +6,6 @@
         </xs:appinfo>
     </xs:annotation>
     
-    <xs:group name="thedgapmatch-d-ph">
-        <xs:sequence>
-            <xs:choice>
-                <xs:element ref="lcGapOption"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
     
     <xs:group name="lcGapMatch">
         <xs:sequence>

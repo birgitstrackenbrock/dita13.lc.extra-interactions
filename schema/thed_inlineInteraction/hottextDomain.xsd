@@ -5,15 +5,7 @@
             <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d thedhottext-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
-    
-    <xs:group name="thedhottext-d-ph">
-        <xs:sequence>
-            <xs:choice>
-                <xs:element ref="lcHottextOption"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
-    
+   
     <xs:group name="lcHottext">
         <xs:sequence>
             <xs:choice>
