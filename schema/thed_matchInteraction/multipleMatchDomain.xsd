@@ -2,98 +2,116 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d thedmatchmatrix2-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d thedmultiplematch-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
     
-    <xs:group name="lcMatchMatrix2">
+    <xs:group name="lcMultipleMatch">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcMatchMatrix2"/>
+                <xs:element ref="lcMultipleMatch"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcMatrixTable">
+    <xs:group name="lcMatchSet1">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcMatrixTable"/>
+                <xs:element ref="lcMatchSet1"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcMatrixItemRow">
+    <xs:group name="lcAssociableItem">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcMatrixItemRow"/>
+                <xs:element ref="lcAssociableItem"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcMatrixMatchRow">
+    <xs:group name="lcMatchSet2">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcMatrixMatchRow"/>
+                <xs:element ref="lcMatchSet2"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcMatrixEntry">
+    <xs:group name="lcAssociableMatch">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcMatrixEntry"/>
+                <xs:element ref="lcAssociableMatch"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcItemEmpty">
+    <xs:group name="lcMatchMapping">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcItemEmpty"/>
+                <xs:element ref="lcMatchMapping"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcCorrectMatch">
+    <xs:group name="lcMatchValue">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcCorrectMatch"/>
+                <xs:element ref="lcMatchValue"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcAssociableItemIdentifier">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcAssociableItemIdentifier"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcAssociableMatchIdentifier">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcAssociableMatchIdentifier"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
 <!-- ================================================================= -->
-    <xs:element name="lcMatchMatrix2">
+    <xs:element name="lcMultipleMatch">
         <xs:annotation>
             <xs:documentation></xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcMatchMatrix2.class">
+                <xs:extension base="lcMultipleMatch.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 thedmatchmatrix2-d/lcMatchMatrix2 "/>
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 thedmultiplematch-d/lcMultipleMatch "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcMatchMatrix2.class">
+    <xs:complexType name="lcMultipleMatch.class">
         <xs:sequence>
-            <xs:group ref="lcMatchMatrix2.content"/>
+            <xs:group ref="lcMultipleMatch.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcMatchMatrix2.attributes"/>
+        <xs:attributeGroup ref="lcMultipleMatch.attributes"/>
     </xs:complexType>
-    <xs:group name="lcMatchMatrix2.content">
+    <xs:group name="lcMultipleMatch.content">
         <xs:sequence>
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:group ref="lcMatrixTable"/>
+            <xs:group ref="lcMatchSet11" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lcMatchSet12" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lcMatchMapping" minOccurs="1" maxOccurs="1"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcMatchMatrix2.attributes">
+    <xs:attributeGroup name="lcMultipleMatch.attributes">
         <xs:attribute name="id" type="xs:NMTOKEN"/>
         <xs:attributeGroup ref="conref-atts"/>
         <xs:attributeGroup ref="select-atts"/>
@@ -102,190 +120,256 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcMatrixTable">
+    <xs:element name="lcMatchSet1">
         <xs:annotation>
             <xs:documentation></xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcMatrixTable.class">
-                    <xs:attribute ref="class"
-                        default="+ topic/simpletable learningInteractionBase2-d/simpletable thedmatchmatrix2-d/lcMatrixTable "/>
+                <xs:extension base="lcMatchSet1.class">
+                    <xs:attribute ref="class" default="- topic/ul thedmultiplematch-d/lcMatchSet1 "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcMatrixTable.class">
+    <xs:complexType name="lcMatchSet1.class">
         <xs:sequence>
-            <xs:group ref="lcMatrixTable.content"/>
+            <xs:group ref="lcMatchSet1.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcMatrixTable.attributes"/>
+        <xs:attributeGroup ref="lcMatchSet1.attributes"/>
     </xs:complexType>
-    <xs:group name="lcMatrixTable.content">
+    <xs:group name="lcMatchSet1.content">
         <xs:sequence>
-            <xs:group ref="lcMatrixItemRow" minOccurs="1"/>
-            <xs:group ref="lcMatrixMatchRow" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="data"/>
+                <xs:group ref="data-about"/>
+            </xs:choice>
+            <xs:group ref="lcAssociableItem" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcMatrixTable.attributes">
+    <xs:attributeGroup name="lcMatchSet1.attributes">
+        <xs:attribute name="compact">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="no"/>
+                    <xs:enumeration value="yes"/>
+                    <xs:enumeration value="-dita-use-conref-target"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="spectitle" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcMatrixItemRow">
+    <xs:element name="lcAssociableItem">
         <xs:annotation>
             <xs:documentation></xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcMatrixItemRow.class">
-                    <xs:attribute ref="class"
-                        default="+ topic/strow learningInteractionBase2-d/strow thedmatchmatrix2-d/lcMatrixItemRow "/>
+                <xs:extension base="lcAssociableItem.class">
+                    <xs:attribute ref="class" default="- topic/li thedmultiplematch-d/lcAssociableItem "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcMatrixItemRow.class">
+    <xs:complexType name="lcAssociableItem.class">
         <xs:sequence>
-            <xs:group ref="lcMatrixItemRow.content"/>
+            <xs:group ref="lcAssociableItem.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcMatrixItemRow.attributes"/>
+        <xs:attributeGroup ref="lcAssociableItem.attributes"/>
     </xs:complexType>
-    <xs:group name="lcMatrixItemRow.content">
+    <xs:group name="lcAssociableItem.content">
         <xs:sequence>
-            <xs:group ref="lcItemEmpty" minOccurs="1"/>
-            <xs:group ref="lcItem2" minOccurs="1" maxOccurs="unbounded"/>        
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="basic.block"/>
+                <xs:group ref="data.elements.incl"/>
+                <xs:group ref="foreign.unknown.incl"/>
+            </xs:choice>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcMatrixItemRow.attributes">
+    <xs:attributeGroup name="lcAssociableItem.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcMatrixMatchRow">
+    <xs:element name="lcMatchSet2">
         <xs:annotation>
             <xs:documentation></xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcMatrixMatchRow.class">
-                    <xs:attribute ref="class"
-                        default="+ topic/strow learningInteractionBase2-d/strow thedmatchmatrix2-d/lcMatrixMatchRow "/>
+                <xs:extension base="lcMatchSet2.class">
+                    <xs:attribute ref="class" default="- topic/ul thedmultiplematch-d/lcMatchSet2 "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcMatrixMatchRow.class">
+    <xs:complexType name="lcMatchSet2.class">
         <xs:sequence>
-            <xs:group ref="lcMatrixMatchRow.content"/>
+            <xs:group ref="lcMatchSet2.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcMatrixMatchRow.attributes"/>
+        <xs:attributeGroup ref="lcMatchSet2.attributes"/>
     </xs:complexType>
-    <xs:group name="lcMatrixMatchRow.content">
+    <xs:group name="lcMatchSet2.content">
         <xs:sequence>
-            <xs:group ref="lcMatchingItem2" minOccurs="1"></xs:group>
-            <xs:group ref="lcMatrixEntry" minOccurs="0" maxOccurs="unbounded"/>        
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="data"/>
+                <xs:group ref="data-about"/>
+            </xs:choice>
+            <xs:group ref="lcAssociableMatch" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcMatrixMatchRow.attributes">
+    <xs:attributeGroup name="lcMatchSet2.attributes">
+        <xs:attribute name="compact">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="no"/>
+                    <xs:enumeration value="yes"/>
+                    <xs:enumeration value="-dita-use-conref-target"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="spectitle" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcMatrixEntry">
+    <xs:element name="lcAssociableMatch">
         <xs:annotation>
             <xs:documentation></xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcMatrixEntry.class">
-                    <xs:attribute ref="class"
-                        default="+ topic/stentry learningInteractionBase2-d/stentry thedmatchmatrix2-d/lcMatrixEntry "/>
+                <xs:extension base="lcAssociableMatch.class">
+                    <xs:attribute ref="class" default="- topic/li thedmultiplematch-d/lcAssociableMatch "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcMatrixEntry.class">
+    <xs:complexType name="lcAssociableMatch.class">
         <xs:sequence>
-            <xs:group ref="lcMatrixEntry.content"/>
+            <xs:group ref="lcAssociableMatch.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcMatrixEntry.attributes"/>
+        <xs:attributeGroup ref="lcAssociableMatch.attributes"/>
     </xs:complexType>
-    <xs:group name="lcMatrixEntry.content">
+    <xs:group name="lcAssociableMatch.content">
         <xs:sequence>
-            <xs:group ref="lcCorrectMatch" minOccurs="0" maxOccurs="1"/>
-            <xs:group ref="lcCorrectResponse2" minOccurs="0" maxOccurs="1"/>
-            <xs:group ref="lcFeedback2" minOccurs="0" maxOccurs="1"/>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="basic.block"/>
+                <xs:group ref="data.elements.incl"/>
+                <xs:group ref="foreign.unknown.incl"/>
+            </xs:choice>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcMatrixEntry.attributes">
+    <xs:attributeGroup name="lcAssociableMatch.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcItemEmpty">
+    <xs:element name="lcMatchMapping">
         <xs:annotation>
             <xs:documentation></xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcItemEmpty.class">
+                <xs:extension base="lcMatchMapping.class">
                     <xs:attribute ref="class"
-                        default="+ topic/stentry learningInteractionBase2-d/stentry thedmatchmatrix2-d/lcItemEmpty "/>
+                        default="+ topic/div learningInteractionBase2-d/lcQuestionBase2 thedmultiplematch-d/lcMatchMapping "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcItemEmpty.class" mixed="true">
+    <xs:complexType name="lcMatchMapping.class">
         <xs:sequence>
-            <xs:group ref="lcItemEmpty.content"/>
+            <xs:group ref="lcMatchMapping.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcItemEmpty.attributes"/>
+        <xs:attributeGroup ref="lcMatchMapping.attributes"/>
     </xs:complexType>
-    <xs:group name="lcItemEmpty.content">
-        <xs:sequence/>
+    <xs:group name="lcMatchMapping.content">
+        <xs:sequence>
+            <xs:group ref="lcMatchValue" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcItemEmpty.attributes">
+    <xs:attributeGroup name="lcMatchMapping.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcCorrectMatch">
+    <xs:element name="lcMatchValue">
         <xs:annotation>
             <xs:documentation></xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcCorrectMatch.class">
-                    <xs:attribute ref="class"
-                        default="+ topic/data learningInteractionBase2-d/data thedmatchmatrix2-d/lcCorrectMatch "/>
+                <xs:extension base="lcMatchValue.class">
+                    <xs:attribute ref="class" default="- topic/p thedmultiplematch-d/lcMatchValue "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcCorrectMatch.class">
+    <xs:complexType name="lcMatchValue.class">
         <xs:sequence>
-            <xs:group ref="lcCorrectMatch.content"/>
+            <xs:group ref="lcAssociableItemIdentifier"/>
+            <xs:group ref="lcAssociableMatchIdentifier"/>
+            <xs:group ref="lcCorrectResponse" minOccurs="1" maxOccurs="1"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcCorrectMatch.attributes"/>
+        <xs:attributeGroup ref="lcMatchValue.attributes"/>
     </xs:complexType>
-    <xs:group name="lcCorrectMatch.content">
-        <xs:sequence/>
-    </xs:group>
-    <xs:attributeGroup name="lcCorrectMatch.attributes">
-        <xs:attribute name="name" type="xs:string"/>
-        <xs:attribute name="value" type="xs:string"/>
+    <xs:attributeGroup name="lcMatchValue.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
-        <xs:attribute name="itemid" type="xs:string"/>
-        <xs:attribute name="matchitemid" type="xs:string"/>
     </xs:attributeGroup>
     
+    <xs:element name="lcAssociableItemIdentifier">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcAssociableItemIdentifier.class">
+                    <xs:attribute ref="class" default="- topic/ph thedmultiplematch-d/lcAssociableItemIdentifier "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcAssociableItemIdentifier.class" mixed="true">
+        <xs:attributeGroup ref="lcAssociableItemIdentifier.attributes"/>
+    </xs:complexType>
+    <xs:attributeGroup name="lcAssociableItemIdentifier.attributes">
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
     
+    <xs:element name="lcAssociableIMatchIdentifier">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcAssociableIMatchIdentifier.class">
+                    <xs:attribute ref="class" default="- topic/ph thedmultiplematch-d/lcAssociableIMatchIdentifier "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcAssociableIMatchIdentifier.class" mixed="true">
+        <xs:attributeGroup ref="lcAssociableIMatchIdentifier.attributes"/>
+    </xs:complexType>
+    <xs:attributeGroup name="lcAssociableIMatchIdentifier.attributes">
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+       
 </xs:schema>
