@@ -41,10 +41,12 @@
    <xs:include schemaLocation="urn:theddita13:names:dita:xsd:gapMatchDomain.xsd"/>
    <xs:include schemaLocation="urn:theddita13:names:dita:xsd:inlineChoiceDomain.xsd"/>
    <xs:include schemaLocation="urn:theddita13:names:dita:xsd:hottextDomain.xsd"/>
-   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:multipleMatchDomain.xsd"/>
    
    <!-- ======= Specialization groups ======= -->
    <xs:include schemaLocation="urn:theddita13:names:dita:xsd:thedInteractionGrp.xsd"/>
+   
+   <!-- ======= Specialization constraint ======= -->
+   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:multipleMatchDomainConstraint.xsd"/>
    
 
    <xs:redefine schemaLocation="urn:oasis:names:tc:dita:xsd:commonElementGrp.xsd:1.3">

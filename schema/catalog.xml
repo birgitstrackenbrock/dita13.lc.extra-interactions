@@ -63,6 +63,12 @@
     
     <uri name="multipleMatchDomain.xsd" uri="multipleMatchDomain.xsd" />
     <uri name="urn:theddita13:names:dita:xsd:multipleMatchDomain.xsd" uri="multipleMatchDomain.xsd" />
+    
+    <system systemId="multipleMatchDomainConstraint.xsd" uri="multipleMatchDomainConstraint.xsd" />
+    <system systemId="urn:theddita13:names:dita:xsd:multipleMatchDomainConstraint.xsd" uri="multipleMatchDomainConstraint.xsd" />
+    
+    <uri name="multipleMatchDomainConstraint.xsd" uri="multipleMatchDomainConstraint.xsd" />
+    <uri name="urn:theddita13:names:dita:xsd:multipleMatchDomainConstraint.xsd" uri="multipleMatchDomainConstraint.xsd" />
   </group>
   
   

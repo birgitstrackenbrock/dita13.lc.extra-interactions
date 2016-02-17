@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- Specialization for TM -->
+<!-- Common redefines -->
+<!-- ============================================================= -->
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified"
+    >
+
+
+    
+    <xs:redefine schemaLocation="urn:thed:names:dita:xsd:multipleMatchDomain.xsd">
+        
+        <xs:attributeGroup name="lcAssociableItem.attributes">
+            <xs:attributeGroup ref="lcAssociableItem.attributes"/>
+            <xs:attributeGroup ref="lcAssociableItem-atts"/>
+        </xs:attributeGroup>
+        
+        <xs:attributeGroup name="lcAssociableMatch.attributes">
+            <xs:attributeGroup ref="lcAssociableMatch.attributes"/>
+            <xs:attributeGroup ref="lcAssociableMatch-atts"/>
+        </xs:attributeGroup>
+        
+        
+        
+    </xs:redefine>
+    
+</xs:schema>

@@ -293,7 +293,7 @@
     </xs:complexType>
     <xs:group name="lcMatchMapping.content">
         <xs:sequence>
-            <xs:group ref="lcMatchValue" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lcMatchPair" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lcMatchMapping.attributes">
@@ -302,74 +302,93 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcMatchValue">
+    <xs:element name="lcMatchPair">
         <xs:annotation>
             <xs:documentation></xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcMatchValue.class">
+                <xs:extension base="lcMatchPair.class">
                     <xs:attribute ref="class" default="- topic/p thedmultiplematch-d/lcMatchValue "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcMatchValue.class">
+    <xs:complexType name="lcMatchPair.class">
         <xs:sequence>
-            <xs:group ref="lcAssociableItemIdentifier"/>
-            <xs:group ref="lcAssociableIMatchIdentifier"/>
+            <xs:group ref="lcAssociableItemNr"/>
+            <xs:group ref="lcAssociableIMatchNr"/>
             <xs:group ref="lcCorrectResponse" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcMatchValue.attributes"/>
+        <xs:attributeGroup ref="lcMatchPair.attributes"/>
     </xs:complexType>
-    <xs:attributeGroup name="lcMatchValue.attributes">
+    <xs:attributeGroup name="lcMatchPair.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcAssociableItemIdentifier">
+    <xs:element name="lcAssociableItemNr">
         <xs:annotation>
             <xs:documentation></xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcAssociableItemIdentifier.class">
-                    <xs:attribute ref="class" default="- topic/ph thedmultiplematch-d/lcAssociableItemIdentifier "/>
+                <xs:extension base="lcAssociableItemNr.class">
+                    <xs:attribute ref="class" default="- topic/ph thedmultiplematch-d/lcAssociableItemNr "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcAssociableItemIdentifier.class" mixed="true">
-        <xs:attributeGroup ref="lcAssociableItemIdentifier.attributes"/>
+    <xs:complexType name="lcAssociableItemNr.class" mixed="true">
+        <xs:attributeGroup ref="lcAssociableItemNr.attributes"/>
     </xs:complexType>
-    <xs:attributeGroup name="lcAssociableItemIdentifier.attributes">
+    <xs:attributeGroup name="lcAssociableItemNr.attributes">
         <xs:attribute name="keyref" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcAssociableIMatchIdentifier">
+    <xs:element name="lcAssociableIMatchNr">
         <xs:annotation>
             <xs:documentation></xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcAssociableIMatchIdentifier.class">
-                    <xs:attribute ref="class" default="- topic/ph thedmultiplematch-d/lcAssociableIMatchIdentifier "/>
+                <xs:extension base="lcAssociableIMatchNr.class">
+                    <xs:attribute ref="class" default="- topic/ph thedmultiplematch-d/lcAssociableIMatchNr "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcAssociableIMatchIdentifier.class" mixed="true">
-        <xs:attributeGroup ref="lcAssociableIMatchIdentifier.attributes"/>
+    <xs:complexType name="lcAssociableIMatchNr.class" mixed="true">
+        <xs:attributeGroup ref="lcAssociableIMatchNr.attributes"/>
     </xs:complexType>
-    <xs:attributeGroup name="lcAssociableIMatchIdentifier.attributes">
+    <xs:attributeGroup name="lcAssociableIMatchNr.attributes">
         <xs:attribute name="keyref" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:attributeGroup name="lcAssociableItem-atts">
+        <xs:attribute name="number" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    
+    <xs:attributeGroup name="lcAssociableMatch-atts">
+        <xs:attribute name="number" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
     </xs:attributeGroup>
        
 </xs:schema>
