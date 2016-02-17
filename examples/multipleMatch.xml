@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:theddita13:names:dita:xsd:learningAssessment.xsd" id="a12">
+    <title>Multiple Match</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

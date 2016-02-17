@@ -13,8 +13,14 @@
                         <li>Well done! You did an <lcTextEntryOptions>
                             <lcAnswerOptionInline>
                                 <lcAnswerContentInline>excellent</lcAnswerContentInline>
+                                <lcCorrectResponse2></lcCorrectResponse2>
+                                <lcFeedback2>well done</lcFeedback2>
                             </lcAnswerOptionInline>
-                        </lcTextEntryOptions> job.</li>
+                            <lcAnswerOptionInline>
+                                <lcAnswerContentInline>good</lcAnswerContentInline>
+                                <lcFeedback2>somehow right</lcFeedback2>
+                            </lcAnswerOptionInline>
+                        </lcTextEntryOptions> job.<draft-comment author="Birgit">correct answer and alternative answer; alternative answer has no lcCorrectResponse2 element</draft-comment></li>
                         <li>We had to go to four <lcTextEntryOptions>
                             <lcAnswerOptionInline>
                                 <lcAnswerContentInline>different</lcAnswerContentInline>

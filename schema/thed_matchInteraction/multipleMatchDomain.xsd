@@ -54,26 +54,26 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcMatchValue">
+    <xs:group name="lcMatchPair">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcMatchValue"/>
+                <xs:element ref="lcMatchPair"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcAssociableItemIdentifier">
+    <xs:group name="lcAssociableItemNr">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcAssociableItemIdentifier"/>
+                <xs:element ref="lcAssociableItemNr"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcAssociableIMatchIdentifier">
+    <xs:group name="lcAssociableIMatchNr">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcAssociableIMatchIdentifier"/>
+                <xs:element ref="lcAssociableIMatchNr"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>

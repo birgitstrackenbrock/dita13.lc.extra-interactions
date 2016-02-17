@@ -12,7 +12,7 @@
 
 
     
-    <xs:redefine schemaLocation="urn:thed:names:dita:xsd:multipleMatchDomain.xsd">
+    <xs:redefine schemaLocation="urn:theddita13:names:dita:xsd:multipleMatchDomain.xsd">
         
         <xs:attributeGroup name="lcAssociableItem.attributes">
             <xs:attributeGroup ref="lcAssociableItem.attributes"/>
