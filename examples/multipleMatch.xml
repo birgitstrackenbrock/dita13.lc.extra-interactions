@@ -1,10 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:theddita13:names:dita:xsd:learningAssessment.xsd" id="a12">
-    <title>Multiple Match</title>
+    xsi:noNamespaceSchemaLocation="urn:theddita13:names:dita:xsd:learningAssessment.xsd" id="mm1">
+    <title></title>
     <learningAssessmentbody>
         <lcInteraction>
-            
+            <lcMultipleMatch>
+                <lcQuestion2>Match the following characters to the Shakespeare play they appeared in.</lcQuestion2>
+                <lcMatchSet1>
+                    <lcAssociableItem number="1"><p>Capulet</p></lcAssociableItem>
+                    <lcAssociableItem number="2"><p>Demetrius</p></lcAssociableItem>
+                    <lcAssociableItem number="3"><p>Lysander</p></lcAssociableItem>
+                    <lcAssociableItem number="4"><p>Prospero</p></lcAssociableItem>
+                </lcMatchSet1>
+                <lcMatchSet2>
+                    <lcAssociableMatch number="1"><p>A Midsummer-Night's Dream</p></lcAssociableMatch>
+                    <lcAssociableMatch number="2"><p>Romeo and Juliet</p></lcAssociableMatch>
+                    <lcAssociableMatch number="3"><p>The Tempest</p></lcAssociableMatch>
+                </lcMatchSet2>
+                <lcMatchMapping>
+                    <lcMatchPair>
+                        <lcAssociableItemNr>1</lcAssociableItemNr>
+                        <lcAssociableIMatchNr>2</lcAssociableIMatchNr>
+                        <lcCorrectResponse></lcCorrectResponse>
+                    </lcMatchPair>
+                    <lcMatchPair>
+                        <lcAssociableItemNr>2</lcAssociableItemNr>
+                        <lcAssociableIMatchNr>1</lcAssociableIMatchNr>
+                        <lcCorrectResponse></lcCorrectResponse>
+                    </lcMatchPair>
+                    <lcMatchPair>
+                        <lcAssociableItemNr>3</lcAssociableItemNr>
+                        <lcAssociableIMatchNr>2</lcAssociableIMatchNr>
+                        <lcCorrectResponse></lcCorrectResponse>
+                    </lcMatchPair>
+                    <lcMatchPair>
+                        <lcAssociableItemNr>4</lcAssociableItemNr>
+                        <lcAssociableIMatchNr>3</lcAssociableIMatchNr>
+                        <lcCorrectResponse></lcCorrectResponse>
+                    </lcMatchPair>
+                </lcMatchMapping>
+            </lcMultipleMatch>
         </lcInteraction>
     </learningAssessmentbody>
 </learningAssessment>

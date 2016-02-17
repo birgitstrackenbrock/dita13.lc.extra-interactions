@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:theddita13:names:dita:xsd:learningAssessment.xsd" id="ht1">
+    <title>Hottext</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lcHottext>
+                <lcQuestion2>Select the error in the following passage of text (or <i>No Error</i> if there is none).</lcQuestion2>
+                <lcInlineInteractionText>
+                    <p>Sponsors of the Olympic Games <lcHottextOption>
+                        <lcAnswerContentInline>who bought</lcAnswerContentInline>
+                    </lcHottextOption> advertising time on United States television <lcHottextOption>
+                        <lcAnswerContentInline>includes</lcAnswerContentInline><lcCorrectResponse2></lcCorrectResponse2>
+                    </lcHottextOption> <lcHottextOption>
+                        <lcAnswerContentInline>at least</lcAnswerContentInline>
+                    </lcHottextOption> a dozen international firms <lcHottextOption>
+                        <lcAnswerContentInline>whose</lcAnswerContentInline>
+                    </lcHottextOption> names are familiar to American consumers. <lcHottextOption>
+                        <lcAnswerContentInline>No error.</lcAnswerContentInline>
+                    </lcHottextOption></p>
+                </lcInlineInteractionText>
+            </lcHottext>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

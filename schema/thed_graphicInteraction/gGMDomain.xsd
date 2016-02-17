@@ -60,7 +60,9 @@
     </xs:complexType>
     <xs:group name="lcAreaContent.content">
         <xs:sequence>
-            <xs:group ref="ph.cnt"/>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="ph.cnt"/>
+            </xs:choice>
         </xs:sequence>
     </xs:group>
        
@@ -124,12 +126,9 @@
     <xs:group name="lcAreaGGM.content">
         <xs:sequence>
             <xs:group ref="lcAreaContent"/>
-            <xs:sequence minOccurs="0" maxOccurs="1">
-                <xs:group ref="lcAreaShape2"/>
-                <xs:group ref="lcAreaCoords2"/>
-                <xs:group ref="lcCorrectResponse2"/>
-            </xs:sequence>
-            <xs:group ref="xref" minOccurs="0"/>
+            <xs:group ref="lcAreaShape2" minOccurs="0"/>
+            <xs:group ref="lcAreaCoords2" minOccurs="0"/>
+            <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
             <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
