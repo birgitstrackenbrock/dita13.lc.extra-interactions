@@ -1,90 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" id="theddita13">
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" id="dita13:lc:extra">
 
-  <group xml:base="thed_learningAssessment/">
+  <group xml:base="learningAssessment/">
     <system systemId="learningAssessment.xsd" uri="learningAssessment.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:learningAssessment.xsd" uri="learningAssessment.xsd" />
+    <system systemId="urn:dita13:lc:extra:names:dita:xsd:learningAssessment.xsd" uri="learningAssessment.xsd" />
     
     <uri name="learningAssessment.xsd" uri="learningAssessment.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:learningAssessment.xsd" uri="learningAssessment.xsd" />
+    <uri name="urn:dita13:lc:extra:names:dita:xsd:learningAssessment.xsd" uri="learningAssessment.xsd" />
   </group>
   
-  <group xml:base="thed_general/">
+  <group xml:base="general/">
     <system systemId="thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
+    <system systemId="urn:dita13:lc:extra:names:dita:xsd:thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
     
     <uri name="thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
+    <uri name="urn:dita13:lc:extra:names:dita:xsd:thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
   </group>
   
-  <group xml:base="thed_graphicInteraction/">
+  <group xml:base="graphicInteraction/">
     <system systemId="gGMDomain.xsd" uri="gGMDomain.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:gGMDomain.xsd" uri="gGMDomain.xsd" />
+    <system systemId="urn:dita13:lc:extra:names:dita:xsd:gGMDomain.xsd" uri="gGMDomain.xsd" />
     
     <uri name="gGMDomain.xsd" uri="gGMDomain.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:gGMDomain.xsd" uri="gGMDomain.xsd" />
+    <uri name="urn:dita13:lc:extra:names:dita:xsd:gGMDomain.xsd" uri="gGMDomain.xsd" />
   </group>
   
-  <group xml:base="thed_inlineInteraction/">
+  <group xml:base="inlineInteraction/">
     <system systemId="textEntryDomain.xsd" uri="textEntryDomain.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:textEntryDomain.xsd" uri="textEntryDomain.xsd" />
+    <system systemId="urn:dita13:lc:extra:names:dita:xsd:textEntryDomain.xsd" uri="textEntryDomain.xsd" />
     
     <uri name="textEntryDomain.xsd" uri="textEntryDomain.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:textEntryDomain.xsd" uri="textEntryDomain.xsd" />
+    <uri name="urn:dita13:lc:extra:names:dita:xsd:textEntryDomain.xsd" uri="textEntryDomain.xsd" />
     
     <system systemId="gapMatchDomain.xsd" uri="gapMatchDomain.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:gapMatchDomain.xsd" uri="gapMatchDomain.xsd" />
+    <system systemId="urn:dita13:lc:extra:names:dita:xsd:gapMatchDomain.xsd" uri="gapMatchDomain.xsd" />
     
     <uri name="gapMatchDomain.xsd" uri="gapMatchDomain.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:gapMatchDomain.xsd" uri="gapMatchDomain.xsd" />
+    <uri name="urn:dita13:lc:extra:names:dita:xsd:gapMatchDomain.xsd" uri="gapMatchDomain.xsd" />
     
     <system systemId="hottextDomain.xsd" uri="hottextDomain.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:hottextDomain.xsd" uri="hottextDomain.xsd" />
+    <system systemId="urn:dita13:lc:extra:names:dita:xsd:hottextDomain.xsd" uri="hottextDomain.xsd" />
     
     <uri name="hottextDomain.xsd" uri="hottextDomain.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:hottextDomain.xsd" uri="hottextDomain.xsd" />
+    <uri name="urn:dita13:lc:extra:names:dita:xsd:hottextDomain.xsd" uri="hottextDomain.xsd" />
     
     <system systemId="inlineChoiceDomain.xsd" uri="inlineChoiceDomain.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:inlineChoiceDomain.xsd" uri="inlineChoiceDomain.xsd" />
+    <system systemId="urn:dita13:lc:extra:names:dita:xsd:inlineChoiceDomain.xsd" uri="inlineChoiceDomain.xsd" />
     
     <uri name="inlineChoiceDomain.xsd" uri="inlineChoiceDomain.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:inlineChoiceDomain.xsd" uri="inlineChoiceDomain.xsd" />
+    <uri name="urn:dita13:lc:extra:names:dita:xsd:inlineChoiceDomain.xsd" uri="inlineChoiceDomain.xsd" />
     
     <system systemId="inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
+    <system systemId="urn:dita13:lc:extra:names:dita:xsd:inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
     
     <uri name="inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
+    <uri name="urn:dita13:lc:extra:names:dita:xsd:inlineInteractionDomain.xsd" uri="inlineInteractionDomain.xsd" />
   </group>
   
-  <group xml:base="thed_matchInteraction/">
+  <group xml:base="matchInteraction/">
     <system systemId="multipleMatchDomain.xsd" uri="multipleMatchDomain.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:multipleMatchDomain.xsd" uri="multipleMatchDomain.xsd" />
+    <system systemId="urn:dita13:lc:extra:names:dita:xsd:multipleMatchDomain.xsd" uri="multipleMatchDomain.xsd" />
     
     <uri name="multipleMatchDomain.xsd" uri="multipleMatchDomain.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:multipleMatchDomain.xsd" uri="multipleMatchDomain.xsd" />
+    <uri name="urn:dita13:lc:extra:names:dita:xsd:multipleMatchDomain.xsd" uri="multipleMatchDomain.xsd" />
     
     <system systemId="multipleMatchDomainConstraint.xsd" uri="multipleMatchDomainConstraint.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:multipleMatchDomainConstraint.xsd" uri="multipleMatchDomainConstraint.xsd" />
+    <system systemId="urn:dita13:lc:extra:names:dita:xsd:multipleMatchDomainConstraint.xsd" uri="multipleMatchDomainConstraint.xsd" />
     
     <uri name="multipleMatchDomainConstraint.xsd" uri="multipleMatchDomainConstraint.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:multipleMatchDomainConstraint.xsd" uri="multipleMatchDomainConstraint.xsd" />
+    <uri name="urn:dita13:lc:extra:names:dita:xsd:multipleMatchDomainConstraint.xsd" uri="multipleMatchDomainConstraint.xsd" />
   </group>
   
   
   <!-- ======================= schemas which define the thed interactions somehow different ================= -->
-  <group xml:base="alt_interaction_schemas/">
+  <group xml:base="interaction_schemas/">
     <system systemId="matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
+    <system systemId="urn:dita13:lc:extra:names:dita:xsd:matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
     
     <uri name="matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
+    <uri name="urn:dita13:lc:extra:names:dita:xsd:matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
     
     <system systemId="inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
-    <system systemId="urn:theddita13:names:dita:xsd:inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
+    <system systemId="urn:dita13:lc:extra:names:dita:xsd:inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
     
     <uri name="inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
-    <uri name="urn:theddita13:names:dita:xsd:inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
+    <uri name="urn:dita13:lc:extra:names:dita:xsd:inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
   </group>
   
 </catalog>

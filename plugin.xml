@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="nu.thed.dita13-interactions">
+<plugin id="dita13-lc-extra-interactions">
 	<feature extension="dita.specialization.catalog.relative" file="catalog.xml"/>
 	<require plugin="org.oasis-open.dita.dita13.doctypes" />
 </plugin>

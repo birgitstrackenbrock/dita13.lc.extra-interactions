@@ -35,18 +35,18 @@
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:metaDeclMod.xsd:1.3"/>
    
    <!-- ======= Specialization modules ======= -->
-   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:gGMDomain.xsd"/>
-   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:inlineInteractionDomain.xsd"/>
-   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:textEntryDomain.xsd"/>
-   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:gapMatchDomain.xsd"/>
-   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:inlineChoiceDomain.xsd"/>
-   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:hottextDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:gGMDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:inlineInteractionDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:textEntryDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:gapMatchDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:inlineChoiceDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:hottextDomain.xsd"/>
    
    <!-- ======= Specialization groups ======= -->
-   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:thedInteractionGrp.xsd"/>
+   <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:thedInteractionGrp.xsd"/>
    
    <!-- ======= Specialization constraint ======= -->
-   <xs:include schemaLocation="urn:theddita13:names:dita:xsd:multipleMatchDomainConstraint.xsd"/>
+   <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:multipleMatchDomainConstraint.xsd"/>
    
 
    <xs:redefine schemaLocation="urn:oasis:names:tc:dita:xsd:commonElementGrp.xsd:1.3">
