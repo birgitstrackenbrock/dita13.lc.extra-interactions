@@ -58,7 +58,10 @@
     
     <xs:element name="lcGapMatch">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>
+                A lcGapMatch is an textual interaction where the sudent has to drag and drop a word (or phrase) to a gap in a text. 
+                To make it more difficult more drop text can be given than gaps appear in the text.
+            </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -97,7 +100,7 @@
     
     <xs:element name="lcGapMap">
         <xs:annotation>
-            <xs:documentation>A lcGapMap contains the response options</xs:documentation>
+            <xs:documentation>A lcGapMap contains the response options for the gaps</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -127,7 +130,7 @@
     
     <xs:element name="lcGapAnswer">
         <xs:annotation>
-            <xs:documentation>A lcGapAnswer defines an answer, which can be linked to a placeholder </xs:documentation>
+            <xs:documentation>A lcGapAnswer defines an answer, which can be linked to a gap. </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -160,7 +163,7 @@
     
     <xs:element name="lcGapContent">
         <xs:annotation>
-            <xs:documentation>A lcGapContent defines the content of the answer option </xs:documentation>
+            <xs:documentation>A lcGapContent defines the content of the gap </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -192,7 +195,7 @@
     
     <xs:element name="lcGap">
         <xs:annotation>
-            <xs:documentation>A placeholder which can be linked by an inline question</xs:documentation>
+            <xs:documentation>A gap is a placeholder which must be linked by an gap answer</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>

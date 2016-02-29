@@ -26,7 +26,10 @@
     
     <xs:element name="lcTextEntry">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>
+                The lcTextEntry is a textual interaction in which a student has to fill in a gap.
+                Beside the correct answer alternative answers can be defined which are still soort of correct but less scoring.
+            </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -64,7 +67,9 @@
     
     <xs:element name="lcTextEntryOptions">
         <xs:annotation>
-            <xs:documentation/>
+            <xs:documentation>
+                In the lcTextEntryOptions the correct and alternatives answers are defined.
+            </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>

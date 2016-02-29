@@ -27,7 +27,9 @@
     
     <xs:element name="lcInlineChoice">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>
+                The lcInlineChoice is an textual interaction. In the text gaps are standing and the student can choose an answer usually from a drop down menu offert in the gap.
+            </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -65,7 +67,9 @@
     
     <xs:element name="lcInlineChoiceOptions">
         <xs:annotation>
-            <xs:documentation/>
+            <xs:documentation>
+                In the lcInlineOptions the correct and incorrect answers for a gap are given.
+            </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>

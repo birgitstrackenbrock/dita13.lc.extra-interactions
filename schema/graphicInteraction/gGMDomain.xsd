@@ -41,7 +41,9 @@
 <!-- ================================================================= -->
     <xs:element name="lcAreaContent">
         <xs:annotation>
-            <xs:documentation/>
+            <xs:documentation>
+                In the lcAreaContent stands some text and/or an image which has to be dragged and dropped
+            </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>

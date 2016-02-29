@@ -26,7 +26,9 @@
     
     <xs:element name="lcHottext">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>
+                A lcHottext is an textual interaction in which the student can click on special words which will be highlighted. 
+            </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -64,7 +66,9 @@
        
     <xs:element name="lcHottextOption">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>
+                The lcHottextOption defines a word on which the student can click. It does not have to be the correct answer.
+            </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
