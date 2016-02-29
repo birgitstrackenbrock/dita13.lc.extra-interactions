@@ -72,19 +72,4 @@
   </group>
   
   
-  <!-- ======================= schemas which define the thed interactions somehow different ================= -->
-  <group xml:base="interaction_schemas/">
-    <system systemId="matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
-    <system systemId="urn:dita13:lc:extra:names:dita:xsd:matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
-    
-    <uri name="matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
-    <uri name="urn:dita13:lc:extra:names:dita:xsd:matchMatrixDomain.xsd" uri="matchMatrixDomain.xsd" />
-    
-    <system systemId="inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
-    <system systemId="urn:dita13:lc:extra:names:dita:xsd:inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
-    
-    <uri name="inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
-    <uri name="urn:dita13:lc:extra:names:dita:xsd:inlineInteraction2Domain.xsd" uri="inlineInteraction2Domain.xsd" />
-  </group>
-  
 </catalog>

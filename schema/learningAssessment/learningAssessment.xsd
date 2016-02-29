@@ -82,6 +82,7 @@
             <xs:group ref="ph"/>
             <xs:group ref="hi-d-ph"/>
             <xs:group ref="thedinlineinteraction-d-ph"/>
+            <xs:group ref="gapmatch-d-ph"/>
          </xs:choice>
       </xs:group>
       <xs:group name="index-base">

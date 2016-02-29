@@ -6,6 +6,13 @@
         </xs:appinfo>
     </xs:annotation>
     
+    <xs:group name="gapmatch-d-ph">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcGap"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
     
     <xs:group name="lcGapMatch">
         <xs:sequence>
@@ -15,18 +22,34 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcExtraGapOptions">
+    <xs:group name="lcGapMap">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcExtraGapOptions"/>
+                <xs:element ref="lcGapMap"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcGapOption">
+    <xs:group name="lcGap">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcGapOption"/>
+                <xs:element ref="lcGap"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcGapAnswer">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcGapAnswer"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcGapContent">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcGapContent"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -57,7 +80,7 @@
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lcInlineInteractionText"/>
-            <xs:group ref="lcExtraGapOptions" minOccurs="0"/>
+            <xs:group ref="lcGapMap"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
@@ -72,67 +95,130 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcExtraGapOptions">
+    <xs:element name="lcGapMap">
         <xs:annotation>
-            <xs:documentation/>
+            <xs:documentation>A lcGapMap contains the response options</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcExtraGapOptions.class">
+                <xs:extension base="lcGapMap.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 thedgapmatch-d/lcExtraGapOptions "/>
+                        default="+ topic/div learningInteractionBase2-d/div gapmatch-d/lcGapMap "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcExtraGapOptions.class">
+    <xs:complexType name="lcGapMap.class">
         <xs:sequence>
-            <xs:group ref="lcExtraGapOptions.content"/>
+            <xs:group ref="lcGapMap.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcExtraGapOptions.attributes"/>
+        <xs:attributeGroup ref="lcGapMap.attributes"/>
     </xs:complexType>
-    <xs:group name="lcExtraGapOptions.content">
-        <xs:sequence>          
-                <xs:group ref="lcGapOption" minOccurs="0" maxOccurs="unbounded"/>          
+    <xs:group name="lcGapMap.content">
+        <xs:sequence>
+            <xs:group ref="lcGapAnswer" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcExtraGapOptions.attributes">
+    <xs:attributeGroup name="lcGapMap.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcGapOption">
+    <xs:element name="lcGapAnswer">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>A lcGapAnswer defines an answer, which can be linked to a placeholder </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcGapOption.class">
+                <xs:extension base="lcGapAnswer.class">
                     <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph thedgapmatch-d/lcGapOption "/>
+                        default="+ topic/div learningInteractionBase2-d/div gapmatch-d/lcGapAnswer "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcGapOption.class">
+    <xs:complexType name="lcGapAnswer.class">
         <xs:sequence>
-            <xs:group ref="lcGapOption.content"/>
+            <xs:group ref="lcGapAnswer.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcGapOption.attributes"/>
+        <xs:attributeGroup ref="lcGapAnswer.attributes"/>
     </xs:complexType>
-    <xs:group name="lcGapOption.content">
+    <xs:group name="lcGapAnswer.content">
         <xs:sequence>
-            <xs:group ref="lcAnswerContentInline"/>
+            <xs:group ref="lcGapContent"/>
             <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
             <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcGapOption.attributes">
+    <xs:attributeGroup name="lcGapAnswer.attributes">
+        <xs:attribute name="href" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-       
+    <xs:element name="lcGapContent">
+        <xs:annotation>
+            <xs:documentation>A lcGapContent defines the content of the answer option </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcGapContent.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/p learningInteractionBase2-d/p gapmatch-d/lcGapContent "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcGapContent.class" mixed="true">
+        <xs:sequence>
+            <xs:group ref="lcGapContent.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcGapContent.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcGapContent.content">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="basic.ph" minOccurs="0"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcGapContent.attributes">
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lcGap">
+        <xs:annotation>
+            <xs:documentation>A placeholder which can be linked by an inline question</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcGap.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/ph learningInteractionBase2-d/ph gapmatch-d/lcGap "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcGap.class">
+        <xs:sequence>
+            <xs:group ref="lcGap.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcGap.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcGap.content">
+        <xs:sequence/>
+    </xs:group>
+    <xs:attributeGroup name="lcGap.attributes">
+        <xs:attribute name="id" type="xs:NMTOKEN" use="required"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
 </xs:schema>

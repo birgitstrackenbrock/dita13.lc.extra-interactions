@@ -12,7 +12,6 @@
             <xs:choice>
                 <xs:element ref="lcTextEntryOptions"/>
                 <xs:element ref="lcInlineChoiceOptions"/>
-                <xs:element ref="lcGapOption"/>
                 <xs:element ref="lcHottextOption"/>
             </xs:choice>
         </xs:sequence>
