@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d thedgapmatch-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d gapmatch-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
     
@@ -64,7 +64,7 @@
             <xs:complexContent>
                 <xs:extension base="lcGapMatch.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 thedgapmatch-d/lcGapMatch "/>
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 gapmatch-d/lcGapMatch "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>

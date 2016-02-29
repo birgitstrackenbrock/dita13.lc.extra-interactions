@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d thedtextentry-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d textentry-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
     
@@ -32,7 +32,7 @@
             <xs:complexContent>
                 <xs:extension base="lcTextEntry.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 thedtextentry-d/lcTextEntry "/>
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 textentry-d/lcTextEntry "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -70,7 +70,7 @@
             <xs:complexContent>
                 <xs:extension base="lcTextEntryOptions.class">
                     <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph thedtextentry-d/lcTextEntryOptions "/>
+                        default="+ topic/ph learningInteractionBase2-d/ph textentry-d/lcTextEntryOptions "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>

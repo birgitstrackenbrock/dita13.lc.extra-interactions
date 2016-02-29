@@ -10,11 +10,11 @@
   </group>
   
   <group xml:base="general/">
-    <system systemId="thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
-    <system systemId="urn:dita13:lc:extra:names:dita:xsd:thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
+    <system systemId="interactionGrp.xsd" uri="interactionGrp.xsd" />
+    <system systemId="urn:dita13:lc:extra:names:dita:xsd:interactionGrp.xsd" uri="interactionGrp.xsd" />
     
-    <uri name="thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
-    <uri name="urn:dita13:lc:extra:names:dita:xsd:thedInteractionGrp.xsd" uri="thedInteractionGrp.xsd" />
+    <uri name="interactionGrp.xsd" uri="interactionGrp.xsd" />
+    <uri name="urn:dita13:lc:extra:names:dita:xsd:interactionGrp.xsd" uri="interactionGrp.xsd" />
   </group>
   
   <group xml:base="graphicInteraction/">

@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d thedlearning-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d ggm-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
     
@@ -47,7 +47,7 @@
             <xs:complexContent>
                 <xs:extension base="lcAreaContent.class">
                     <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph thedlearning-d/lcAreaContent "/>
+                        default="+ topic/ph learningInteractionBase2-d/ph ggm-d/lcAreaContent "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -81,7 +81,7 @@
             <xs:complexContent>
                 <xs:extension base="lcGGMMap.class">
                     <xs:attribute ref="class"
-                        default="+ topic/fig learningInteractionBase2-d/fig thedlearning-d/lcGGMMap "/>
+                        default="+ topic/fig learningInteractionBase2-d/fig ggm-d/lcGGMMap "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -112,7 +112,7 @@
             <xs:complexContent>
                 <xs:extension base="lcAreaGGM.class">
                     <xs:attribute ref="class"
-                        default="+ topic/figgroup learningInteractionBase2-d/figgroup thedlearning-d/lcAreaGGM "/>
+                        default="+ topic/figgroup learningInteractionBase2-d/figgroup ggm-d/lcAreaGGM "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -146,7 +146,7 @@
             <xs:complexContent>
                 <xs:extension base="lcGraphicGapMatch.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 thedlearning-d/lcGraphicGapMatch "/>
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 ggm-d/lcGraphicGapMatch "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>

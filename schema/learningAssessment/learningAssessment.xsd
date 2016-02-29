@@ -43,7 +43,7 @@
    <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:hottextDomain.xsd"/>
    
    <!-- ======= Specialization groups ======= -->
-   <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:thedInteractionGrp.xsd"/>
+   <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:interactionGrp.xsd"/>
    
    <!-- ======= Specialization constraint ======= -->
    <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:multipleMatchDomainConstraint.xsd"/>
@@ -74,14 +74,14 @@
          <xs:choice>
             <xs:group ref="div"/>
             <xs:group ref="learning2-d-div"/>
-            <xs:group ref="thedinteraction-d-div"/>
+            <xs:group ref="interaction-d-div"/>
          </xs:choice>
       </xs:group>
       <xs:group name="ph">
          <xs:choice>
             <xs:group ref="ph"/>
             <xs:group ref="hi-d-ph"/>
-            <xs:group ref="thedinlineinteraction-d-ph"/>
+            <xs:group ref="inlineinteraction-d-ph"/>
             <xs:group ref="gapmatch-d-ph"/>
          </xs:choice>
       </xs:group>
@@ -122,7 +122,7 @@
          <xs:choice>
             <xs:group ref="lcInteractionBase2"/>
             <xs:group ref="learning2-d-lcInteractionBase2"/>
-            <xs:group ref="thedinteraction-d-lcInteractionBase2"/>
+            <xs:group ref="interaction-d-lcInteractionBase2"/>
          </xs:choice>
       </xs:group>
    </xs:redefine>
@@ -147,6 +147,7 @@ It must be declared in topic-type shells.
    <xs:attributeGroup name="domains-att">
       <xs:attribute name="domains"
                     type="xs:string"
-                    default="(topic hi-d) (topic indexing-d) (topic learningBase+learningInteractionBase-d) (topic learningBase+learningInteractionBase-d learningAssessment) (topic learningBase+learningInteractionBase-d+learningInteractionBase2) (topic learningInteractionBase-d learning-d) (topic learningInteractionBase-d) (topic learningInteractionBase2-d learning2-d) (topic learningInteractionBase2-d) (topic learningmeta-d) (topic relmgmt-d) (topic ut-d) a(props deliveryTarget)"/>
+                    default="(topic hi-d) (topic indexing-d) (topic learningBase+learningInteractionBase-d) (topic learningBase+learningInteractionBase-d learningAssessment) (topic learningBase+learningInteractionBase-d+learningInteractionBase2) (topic learningInteractionBase-d learning-d) (topic learningInteractionBase-d) (topic learningInteractionBase2-d learning2-d) (topic learningInteractionBase2-d) (topic learningmeta-d) (topic relmgmt-d) (topic ut-d) a(props deliveryTarget)
+                    (topic learningInteractionBase2-d ggm-d) (topic learningInteractionBase2-d inlinechoice-d) (topic learningInteractionBase2-d inlineinteraction-d) (topic learningInteractionBase2-d textentry-d) (topic learningInteractionBase2-d gapmatch-d) (topic learningInteractionBase2-d hottext-d) (topic learningInteractionBase2-d multiplematch-d)"/>
    </xs:attributeGroup>
 </xs:schema>

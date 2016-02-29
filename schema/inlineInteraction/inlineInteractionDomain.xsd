@@ -2,12 +2,12 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d thedinlineInteraction-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d inlineinteraction-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
     
     
-    <xs:group name="thedinlineinteraction-d-ph">
+    <xs:group name="inlineinteraction-d-ph">
         <xs:sequence>
             <xs:choice>
                 <xs:element ref="lcTextEntryOptions"/>
@@ -51,7 +51,7 @@
             <xs:complexContent>
                 <xs:extension base="lcInlineInteractionText.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 thedinlineInteraction-d/lcInlineInteractionText "/>
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 inlineinteraction-d/lcInlineInteractionText "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -87,7 +87,7 @@
             <xs:complexContent>
                 <xs:extension base="lcAnswerOptionInline.class">
                     <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph thedinlineInteraction-d/lcAnswerOptionInline "/>
+                        default="+ topic/ph learningInteractionBase2-d/ph inlineinteraction-d/lcAnswerOptionInline "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -118,7 +118,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lcAnswerContentInline.class">
-                    <xs:attribute ref="class" default="+ topic/ph learningInteractionBase2-d/ph thedinlineInteraction-d/lcAnswerContentInline  "/>
+                    <xs:attribute ref="class" default="+ topic/ph learningInteractionBase2-d/ph inlineinteraction-d/lcAnswerContentInline  "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>

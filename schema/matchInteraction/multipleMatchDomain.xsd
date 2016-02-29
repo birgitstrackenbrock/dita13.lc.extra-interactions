@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d thedmultiplematch-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d multiplematch-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
     
@@ -87,7 +87,7 @@
             <xs:complexContent>
                 <xs:extension base="lcMultipleMatch.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 thedmultiplematch-d/lcMultipleMatch "/>
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 multiplematch-d/lcMultipleMatch "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -127,7 +127,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lcMatchSet1.class">
-                    <xs:attribute ref="class" default="- topic/ul thedmultiplematch-d/lcMatchSet1 "/>
+                    <xs:attribute ref="class" default="- topic/ul multiplematch-d/lcMatchSet1 "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -170,7 +170,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lcAssociableItem.class">
-                    <xs:attribute ref="class" default="- topic/li thedmultiplematch-d/lcAssociableItem "/>
+                    <xs:attribute ref="class" default="- topic/li multiplematch-d/lcAssociableItem "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -203,7 +203,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lcMatchSet2.class">
-                    <xs:attribute ref="class" default="- topic/ul thedmultiplematch-d/lcMatchSet2 "/>
+                    <xs:attribute ref="class" default="- topic/ul multiplematch-d/lcMatchSet2 "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -246,7 +246,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lcAssociableMatch.class">
-                    <xs:attribute ref="class" default="- topic/li thedmultiplematch-d/lcAssociableMatch "/>
+                    <xs:attribute ref="class" default="- topic/li multiplematch-d/lcAssociableMatch "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -280,7 +280,7 @@
             <xs:complexContent>
                 <xs:extension base="lcMatchMapping.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcQuestionBase2 thedmultiplematch-d/lcMatchMapping "/>
+                        default="+ topic/div learningInteractionBase2-d/lcQuestionBase2 multiplematch-d/lcMatchMapping "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -309,7 +309,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lcMatchPair.class">
-                    <xs:attribute ref="class" default="- topic/p thedmultiplematch-d/lcMatchValue "/>
+                    <xs:attribute ref="class" default="- topic/p multiplematch-d/lcMatchValue "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -336,7 +336,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lcAssociableItemNr.class">
-                    <xs:attribute ref="class" default="- topic/ph thedmultiplematch-d/lcAssociableItemNr "/>
+                    <xs:attribute ref="class" default="- topic/ph multiplematch-d/lcAssociableItemNr "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -358,7 +358,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lcAssociableIMatchNr.class">
-                    <xs:attribute ref="class" default="- topic/ph thedmultiplematch-d/lcAssociableIMatchNr "/>
+                    <xs:attribute ref="class" default="- topic/ph multiplematch-d/lcAssociableIMatchNr "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
