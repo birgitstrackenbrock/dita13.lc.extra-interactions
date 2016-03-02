@@ -45,7 +45,10 @@
     
     <xs:element name="lcInlineInteractionText">
         <xs:annotation>
-            <xs:documentation/>
+            <xs:documentation>
+                Special container within an inline interaction. 
+                The lcInlineInteractionText contains the block-elements like p in which the inline interaction takes place which means in which the gaps are standing.
+            </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -81,7 +84,7 @@
     
     <xs:element name="lcAnswerOptionInline">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>The lcAnswerOption contains the answer options for either an textEntry or inlineChoice interaction</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -113,7 +116,7 @@
     
     <xs:element name="lcAnswerContentInline">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>The word or phrase which must be filled in. The answer content for a gap in a textEntry or inlineChoice.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>

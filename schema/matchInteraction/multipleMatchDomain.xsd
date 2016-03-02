@@ -81,7 +81,10 @@
 <!-- ================================================================= -->
     <xs:element name="lcMultipleMatch">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>
+                The lcMultipleMatch is an interactions where items from one group must be combined with items from another group.
+                Each item can have multiple relations, thus n-to-n relationships.
+            </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -122,7 +125,9 @@
     
     <xs:element name="lcMatchSet1">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>
+                Set with items.
+            </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -165,7 +170,7 @@
     
     <xs:element name="lcAssociableItem">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>Item from set 1 which can be associated with items from set 2.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -198,7 +203,7 @@
     
     <xs:element name="lcMatchSet2">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>Second sets with items.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -241,7 +246,7 @@
     
     <xs:element name="lcAssociableMatch">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>Item from set 2 which match with items from set 1.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -274,7 +279,7 @@
     
     <xs:element name="lcMatchMapping">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>in the lcMatchMapping the relationships between the items from set 1 and set 2 are defined, thus which item belongs to which match-item.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -304,7 +309,7 @@
     
     <xs:element name="lcMatchPair">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>One couple, a couple is always one item from set 1 and one item from set 2.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -331,7 +336,7 @@
     
     <xs:element name="lcAssociableItemNr">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>The number of the item from set 1.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -353,7 +358,7 @@
     
     <xs:element name="lcAssociableIMatchNr">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>The number of the item from set 2.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
