@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:theddita13:names:dita:xsd:learningAssessment.xsd" id="lc1">
+  xsi:noNamespaceSchemaLocation="urn:dita13:lc:extra:names:dita:xsd:learningAssessment.xsd" id="lc1">
     <title>Inline Choice</title>
     <learningAssessmentbody>
         <lcInteraction>

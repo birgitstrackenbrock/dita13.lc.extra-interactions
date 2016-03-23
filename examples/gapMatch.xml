@@ -13,14 +13,14 @@
                     <p>In the deep bosom of the ocean buried.</p>
                 </lcInlineInteractionText>
                 <lcGapMap>
-                    <lcGapAnswer href="g1">
+                    <lcGapAnswer href="#./g1">
                         <lcGapContent>winter</lcGapContent>
                         <lcCorrectResponse2></lcCorrectResponse2>
                     </lcGapAnswer>
                     <lcGapAnswer>
                         <lcGapContent>spring</lcGapContent>
                     </lcGapAnswer>
-                    <lcGapAnswer href="g2">
+                  <lcGapAnswer href="#./g2">
                         <lcGapContent>summer</lcGapContent>
                         <lcCorrectResponse2></lcCorrectResponse2>
                     </lcGapAnswer>
