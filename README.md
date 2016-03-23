@@ -9,7 +9,7 @@ Defines a DITA-OT 2.x plugin containing the Thed DITA 1.3 specializations for ex
 
 ## Global information
 
-The dita13.lc.extra-interactions has been developped from XStructuring, Fonto XML and ThiemeMeulenhoff using their experience with and knowledge of educational content.
+The dita13.lc.extra-interactions has been developed from XStructuring, FontoXML and ThiemeMeulenhoff using their experience with and knowledge of educational content.
 
 ## Schema documentation
 
