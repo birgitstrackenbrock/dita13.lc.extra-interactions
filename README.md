@@ -19,7 +19,7 @@ In the dita13.lc.extra-interactions the following new interactions are defined:
 
 * lcGraphicGapMatch - interaction in which the student must drag and drop text or small images on a big image
 
-* lcMultipleMatch - interaction in which a student must compine two items from differents sets; each item have relations with one or more items from the other set
+* lcMultipleMatch - interaction in which a student must combine two items from different sets; each item have relations with one or more items from the other set
 
 * lcTextEntry - interaction in which the student must fill in a word in a gap
 
