@@ -126,7 +126,10 @@
     <xs:group name="lcAnswerOptionInline.content">
         <xs:sequence>
             <xs:group ref="lcAnswerContentInline"/>
-            <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
+            <xs:choice minOccurs="0">
+                <xs:group ref="lcCorrectResponse2"/>
+                <xs:group ref="lcAlternativeResponse"/>
+            </xs:choice>
             <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
@@ -167,5 +170,7 @@
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
+    
+    
         
 </xs:schema>

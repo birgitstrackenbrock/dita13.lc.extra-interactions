@@ -22,6 +22,14 @@
         </xs:sequence>
     </xs:group>
     
+    <xs:group name="lcAlternativeResponse">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcAlternativeResponse"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
 <!-- ============================================================= -->
     
     <xs:element name="lcTextEntry">
@@ -98,5 +106,34 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
+    <xs:element name="lcAlternativeResponse">
+        <xs:annotation>
+            <xs:documentation>The lcAlternativeResponse element indicates an alternative correct response within a textEntry, usually the alternative correct answer will score less. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcAlternativeResponse.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/data learningInteractionBase2-d/data textentry-d/lcAlternativeResponse "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcAlternativeResponse.class">
+        <xs:sequence>
+            <xs:group ref="lcAlternativeResponse.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcAlternativeResponse.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcAlternativeResponse.content">
+        <xs:sequence/>
+    </xs:group>
+    <xs:attributeGroup name="lcAlternativeResponse.attributes">
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="value" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
   
 </xs:schema>
