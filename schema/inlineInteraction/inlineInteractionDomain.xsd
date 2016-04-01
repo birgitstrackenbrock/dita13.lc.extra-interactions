@@ -6,6 +6,28 @@
         </xs:appinfo>
     </xs:annotation>
     
+    <xs:group name="inlineinteraction-d-div">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcTextEntry"/>
+                <xs:element ref="lcGapMatch"/>
+                <xs:element ref="lcInlineChoice"/>
+                <xs:element ref="lcHottext"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="inlineinteraction-d-lcInteractionBase2">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcTextEntry"/>
+                <xs:element ref="lcGapMatch"/>
+                <xs:element ref="lcInlineChoice"/>
+                <xs:element ref="lcHottext"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
     
     <xs:group name="inlineinteraction-d-ph">
         <xs:sequence>

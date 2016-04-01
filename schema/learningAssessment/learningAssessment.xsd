@@ -42,9 +42,6 @@
    <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:inlineChoiceDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:hottextDomain.xsd"/>
    
-   <!-- ======= Specialization groups ======= -->
-   <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:interactionGrp.xsd"/>
-   
    <!-- ======= Specialization constraint ======= -->
    <xs:include schemaLocation="urn:dita13:lc:extra:names:dita:xsd:multipleMatchDomainConstraint.xsd"/>
    
@@ -74,7 +71,9 @@
          <xs:choice>
             <xs:group ref="div"/>
             <xs:group ref="learning2-d-div"/>
-            <xs:group ref="interaction-d-div"/>
+            <xs:group ref="graphicinteraction-d-div"/>
+            <xs:group ref="inlineinteraction-d-div"/>
+            <xs:group ref="matchinteraction-d-div"/>
          </xs:choice>
       </xs:group>
       <xs:group name="ph">
@@ -122,7 +121,9 @@
          <xs:choice>
             <xs:group ref="lcInteractionBase2"/>
             <xs:group ref="learning2-d-lcInteractionBase2"/>
-            <xs:group ref="interaction-d-lcInteractionBase2"/>
+            <xs:group ref="graphicinteraction-d-lcInteractionBase2"/>
+            <xs:group ref="inlineinteraction-d-lcInteractionBase2"/>
+            <xs:group ref="matchinteraction-d-lcInteractionBase2"/>
          </xs:choice>
       </xs:group>
    </xs:redefine>

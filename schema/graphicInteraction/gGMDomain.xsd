@@ -6,6 +6,22 @@
         </xs:appinfo>
     </xs:annotation>
     
+    <xs:group name="graphicinteraction-d-div">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcGraphicGapMatch"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="graphicinteraction-d-lcInteractionBase2">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcGraphicGapMatch"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
     <xs:group name="lcGraphicGapMatch">
         <xs:sequence>
             <xs:choice>

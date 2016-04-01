@@ -6,6 +6,22 @@
         </xs:appinfo>
     </xs:annotation>
     
+    <xs:group name="matchinteraction-d-div">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcMultipleMatch"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="matchinteraction-d-lcInteractionBase2">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcMultipleMatch"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
     <xs:group name="lcMultipleMatch">
         <xs:sequence>
             <xs:choice>
