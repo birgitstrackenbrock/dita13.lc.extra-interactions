@@ -13,7 +13,7 @@
                             <lcAnswerContentInline>York</lcAnswerContentInline><lcCorrectResponse2></lcCorrectResponse2>
                         </lcAnswerOptionInline>
                         <lcAnswerOptionInline>
-                            <lcAnswerContentInline>york</lcAnswerContentInline>
+                            <lcAnswerContentInline>york</lcAnswerContentInline><lcAlternativeResponse></lcAlternativeResponse>
                         </lcAnswerOptionInline>
                     </lcTextEntryOptions>;</p>
                     <p>And all the clouds that lour'd upon our house</p>
