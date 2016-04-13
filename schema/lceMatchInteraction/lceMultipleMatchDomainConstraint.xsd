@@ -14,14 +14,14 @@
     
     <xs:redefine schemaLocation="urn:dita13lce:names:xsd:lceMultipleMatchDomain.xsd">
         
-        <xs:attributeGroup name="lcAssociableItem.attributes">
-            <xs:attributeGroup ref="lcAssociableItem.attributes"/>
-            <xs:attributeGroup ref="lcAssociableItem-atts"/>
+        <xs:attributeGroup name="lceAssociableItem.attributes">
+            <xs:attributeGroup ref="lceAssociableItem.attributes"/>
+            <xs:attributeGroup ref="lceAssociableItem-atts"/>
         </xs:attributeGroup>
         
-        <xs:attributeGroup name="lcAssociableMatch.attributes">
-            <xs:attributeGroup ref="lcAssociableMatch.attributes"/>
-            <xs:attributeGroup ref="lcAssociableMatch-atts"/>
+        <xs:attributeGroup name="lceAssociableMatch.attributes">
+            <xs:attributeGroup ref="lceAssociableMatch.attributes"/>
+            <xs:attributeGroup ref="lceAssociableMatch-atts"/>
         </xs:attributeGroup>
         
         

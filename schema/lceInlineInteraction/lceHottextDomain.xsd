@@ -2,60 +2,60 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d hottext-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d lcehottext-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
    
-    <xs:group name="lcHottext">
+    <xs:group name="lceHottext">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcHottext"/>
+                <xs:element ref="lceHottext"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcHottextOption">
+    <xs:group name="lceHottextOption">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcHottextOption"/>
+                <xs:element ref="lceHottextOption"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
 
 <!-- ============================================================= -->
     
-    <xs:element name="lcHottext">
+    <xs:element name="lceHottext">
         <xs:annotation>
             <xs:documentation>
-                A lcHottext is an textual interaction in which the student can click on special words which will be highlighted. 
+                A lceHottext is an textual interaction in which the student can click on special words which will be highlighted. 
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcHottext.class">
+                <xs:extension base="lceHottext.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 hottext-d/lcHottext "/>
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lcehottext-d/lceHottext "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcHottext.class">
+    <xs:complexType name="lceHottext.class">
         <xs:sequence>
-            <xs:group ref="lcHottext.content"/>
+            <xs:group ref="lceHottext.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcHottext.attributes"/>
+        <xs:attributeGroup ref="lceHottext.attributes"/>
     </xs:complexType>
-    <xs:group name="lcHottext.content">
+    <xs:group name="lceHottext.content">
         <xs:sequence>
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
-            <xs:group ref="lcInlineInteractionText"/>
+            <xs:group ref="lceInlineInteractionText"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcHottext.attributes">
+    <xs:attributeGroup name="lceHottext.attributes">
         <xs:attribute name="id" type="xs:NMTOKEN"/>
         <xs:attributeGroup ref="conref-atts"/>
         <xs:attributeGroup ref="select-atts"/>
@@ -64,35 +64,35 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
        
-    <xs:element name="lcHottextOption">
+    <xs:element name="lceHottextOption">
         <xs:annotation>
             <xs:documentation>
-                The lcHottextOption defines a word on which the student can click. It does not have to be the correct answer.
+                The lceHottextOption defines a word on which the student can click. It does not have to be the correct answer.
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcHottextOption.class">
+                <xs:extension base="lceHottextOption.class">
                     <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph hottext-d/lcHottextOption "/>
+                        default="+ topic/ph learningInteractionBase2-d/ph lcehottext-d/lceHottextOption "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcHottextOption.class">
+    <xs:complexType name="lceHottextOption.class">
         <xs:sequence>
-            <xs:group ref="lcHottextOption.content"/>
+            <xs:group ref="lceHottextOption.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcHottextOption.attributes"/>
+        <xs:attributeGroup ref="lceHottextOption.attributes"/>
     </xs:complexType>
-    <xs:group name="lcHottextOption.content">
+    <xs:group name="lceHottextOption.content">
         <xs:sequence>
-            <xs:group ref="lcAnswerContentInline"/>
+            <xs:group ref="lceAnswerContentInline"/>
             <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
             <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcHottextOption.attributes">
+    <xs:attributeGroup name="lceHottextOption.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>

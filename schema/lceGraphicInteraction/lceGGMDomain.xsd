@@ -2,81 +2,81 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d ggm-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d lcelceggm-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
     
-    <xs:group name="graphicinteraction-d-div">
+    <xs:group name="lcegraphicinteraction-d-div">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcGraphicGapMatch"/>
+                <xs:element ref="lceGraphicGapMatch"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="graphicinteraction-d-lcInteractionBase2">
+    <xs:group name="lcegraphicinteraction-d-lcInteractionBase2">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcGraphicGapMatch"/>
+                <xs:element ref="lceGraphicGapMatch"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcGraphicGapMatch">
+    <xs:group name="lceGraphicGapMatch">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcGraphicGapMatch"/>
+                <xs:element ref="lceGraphicGapMatch"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcAreaContent">
+    <xs:group name="lceAreaContent">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcAreaContent"/>
+                <xs:element ref="lceAreaContent"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcGGMMap">
+    <xs:group name="lceGGMMap">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcGGMMap"/>
+                <xs:element ref="lceGGMMap"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcAreaGGM">
+    <xs:group name="lceAreaGGM">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcAreaGGM"/>
+                <xs:element ref="lceAreaGGM"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
 <!-- ================================================================= -->
-    <xs:element name="lcAreaContent">
+    <xs:element name="lceAreaContent">
         <xs:annotation>
             <xs:documentation>
-                In the lcAreaContent stands some text and/or an image which has to be dragged and dropped
+                In the lceAreaContent stands some text and/or an image which has to be dragged and dropped
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcAreaContent.class">
+                <xs:extension base="lceAreaContent.class">
                     <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph ggm-d/lcAreaContent "/>
+                        default="+ topic/ph learningInteractionBase2-d/ph lceggm-d/lceAreaContent "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcAreaContent.class" mixed="true">
+    <xs:complexType name="lceAreaContent.class" mixed="true">
         <xs:sequence>
-            <xs:group ref="lcAreaContent.content"/>
+            <xs:group ref="lceAreaContent.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcAreaContent.attributes"/>
+        <xs:attributeGroup ref="lceAreaContent.attributes"/>
     </xs:complexType>
-    <xs:group name="lcAreaContent.content">
+    <xs:group name="lceAreaContent.content">
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
                 <xs:group ref="ph.cnt"/>
@@ -84,108 +84,108 @@
         </xs:sequence>
     </xs:group>
        
-    <xs:attributeGroup name="lcAreaContent.attributes">
+    <xs:attributeGroup name="lceAreaContent.attributes">
         <xs:attribute name="keyref" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts-translate-no"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcGGMMap">
+    <xs:element name="lceGGMMap">
         <xs:annotation>
-            <xs:documentation>A lcGGMMap interaction lets you designate an action area or region over an image, allowing to drag and drop in that region to get scored as correct or incorrect in response to an interaction question. </xs:documentation>
+            <xs:documentation>A lceGGMMap interaction lets you designate an action area or region over an image, allowing to drag and drop in that region to get scored as correct or incorrect in response to an interaction question. </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcGGMMap.class">
+                <xs:extension base="lceGGMMap.class">
                     <xs:attribute ref="class"
-                        default="+ topic/fig learningInteractionBase2-d/fig ggm-d/lcGGMMap "/>
+                        default="+ topic/fig learningInteractionBase2-d/fig lceggm-d/lceGGMMap "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcGGMMap.class">
+    <xs:complexType name="lceGGMMap.class">
         <xs:sequence>
-            <xs:group ref="lcGGMMap.content"/>
+            <xs:group ref="lceGGMMap.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcGGMMap.attributes"/>
+        <xs:attributeGroup ref="lceGGMMap.attributes"/>
     </xs:complexType>
-    <xs:group name="lcGGMMap.content">
+    <xs:group name="lceGGMMap.content">
         <xs:sequence>
             <xs:group ref="image"/>
-            <xs:group ref="lcAreaGGM" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="lceAreaGGM" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcGGMMap.attributes">
+    <xs:attributeGroup name="lceGGMMap.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcAreaGGM">
+    <xs:element name="lceAreaGGM">
         <xs:annotation>
-            <xs:documentation>A lcAreaGGM defines an area on the image where the answer must be dropped </xs:documentation>
+            <xs:documentation>A lceAreaGGM defines an area on the image where the answer must be dropped </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcAreaGGM.class">
+                <xs:extension base="lceAreaGGM.class">
                     <xs:attribute ref="class"
-                        default="+ topic/figgroup learningInteractionBase2-d/figgroup ggm-d/lcAreaGGM "/>
+                        default="+ topic/figgroup learningInteractionBase2-d/figgroup lceggm-d/lceAreaGGM "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcAreaGGM.class">
+    <xs:complexType name="lceAreaGGM.class">
         <xs:sequence>
-            <xs:group ref="lcAreaGGM.content"/>
+            <xs:group ref="lceAreaGGM.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcAreaGGM.attributes"/>
+        <xs:attributeGroup ref="lceAreaGGM.attributes"/>
     </xs:complexType>
-    <xs:group name="lcAreaGGM.content">
+    <xs:group name="lceAreaGGM.content">
         <xs:sequence>
-            <xs:group ref="lcAreaContent"/>
+            <xs:group ref="lceAreaContent"/>
             <xs:group ref="lcAreaShape2" minOccurs="0"/>
             <xs:group ref="lcAreaCoords2" minOccurs="0"/>
             <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
             <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcAreaGGM.attributes">
+    <xs:attributeGroup name="lceAreaGGM.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
      
-    <xs:element name="lcGraphicGapMatch">
+    <xs:element name="lceGraphicGapMatch">
         <xs:annotation>
-            <xs:documentation>In a lcGraphicGapMatch interaction, the learner drag en drop text and/or images to an image </xs:documentation>
+            <xs:documentation>In a lceGraphicGapMatch interaction, the learner drag en drop text and/or images to an image </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcGraphicGapMatch.class">
+                <xs:extension base="lceGraphicGapMatch.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 ggm-d/lcGraphicGapMatch "/>
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lceggm-d/lceGraphicGapMatch "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcGraphicGapMatch.class">
+    <xs:complexType name="lceGraphicGapMatch.class">
         <xs:sequence>
-            <xs:group ref="lcGraphicGapMatch.content"/>
+            <xs:group ref="lceGraphicGapMatch.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcGraphicGapMatch.attributes"/>
+        <xs:attributeGroup ref="lceGraphicGapMatch.attributes"/>
     </xs:complexType>
-    <xs:group name="lcGraphicGapMatch.content">
+    <xs:group name="lceGraphicGapMatch.content">
         <xs:sequence>
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
-            <xs:group ref="lcGGMMap"/>
+            <xs:group ref="lceGGMMap"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcGraphicGapMatch.attributes">
+    <xs:attributeGroup name="lceGraphicGapMatch.attributes">
         <xs:attribute name="id" type="xs:NMTOKEN"/>
         <xs:attributeGroup ref="conref-atts"/>
         <xs:attributeGroup ref="select-atts"/>

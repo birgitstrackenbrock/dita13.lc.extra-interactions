@@ -2,69 +2,69 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d textentry-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d lcetextentry-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
     
-    <xs:group name="lcTextEntry">
+    <xs:group name="lceTextEntry">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcTextEntry"/>
+                <xs:element ref="lceTextEntry"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcTextEntryOptions">
+    <xs:group name="lceTextEntryOptions">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcTextEntryOptions"/>
+                <xs:element ref="lceTextEntryOptions"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcAlternativeResponse">
+    <xs:group name="lceAlternativeResponse">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcAlternativeResponse"/>
+                <xs:element ref="lceAlternativeResponse"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
 <!-- ============================================================= -->
     
-    <xs:element name="lcTextEntry">
+    <xs:element name="lceTextEntry">
         <xs:annotation>
             <xs:documentation>
-                The lcTextEntry is a textual interaction in which a student has to fill in a gap.
+                The lceTextEntry is a textual interaction in which a student has to fill in a gap.
                 Beside the correct answer alternative answers can be defined which are still soort of correct but less scoring.
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcTextEntry.class">
+                <xs:extension base="lceTextEntry.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 textentry-d/lcTextEntry "/>
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lcetextentry-d/lceTextEntry "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcTextEntry.class">
+    <xs:complexType name="lceTextEntry.class">
         <xs:sequence>
-            <xs:group ref="lcTextEntry.content"/>
+            <xs:group ref="lceTextEntry.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcTextEntry.attributes"/>
+        <xs:attributeGroup ref="lceTextEntry.attributes"/>
     </xs:complexType>
-    <xs:group name="lcTextEntry.content">
+    <xs:group name="lceTextEntry.content">
         <xs:sequence>
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
-            <xs:group ref="lcInlineInteractionText"/>
+            <xs:group ref="lceInlineInteractionText"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcTextEntry.attributes">
+    <xs:attributeGroup name="lceTextEntry.attributes">
         <xs:attribute name="id" type="xs:NMTOKEN"/>
         <xs:attributeGroup ref="conref-atts"/>
         <xs:attributeGroup ref="select-atts"/>
@@ -73,62 +73,62 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcTextEntryOptions">
+    <xs:element name="lceTextEntryOptions">
         <xs:annotation>
             <xs:documentation>
-                In the lcTextEntryOptions the correct and alternatives answers are defined.
+                In the lceTextEntryOptions the correct and alternatives answers are defined.
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcTextEntryOptions.class">
+                <xs:extension base="lceTextEntryOptions.class">
                     <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph textentry-d/lcTextEntryOptions "/>
+                        default="+ topic/ph learningInteractionBase2-d/ph lcetextentry-d/lceTextEntryOptions "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcTextEntryOptions.class">
+    <xs:complexType name="lceTextEntryOptions.class">
         <xs:sequence>
-            <xs:group ref="lcTextEntryOptions.content"/>
+            <xs:group ref="lceTextEntryOptions.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcTextEntryOptions.attributes"/>
+        <xs:attributeGroup ref="lceTextEntryOptions.attributes"/>
     </xs:complexType>
-    <xs:group name="lcTextEntryOptions.content">
+    <xs:group name="lceTextEntryOptions.content">
         <xs:sequence>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:group ref="lcAnswerOptionInline" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="lceAnswerOptionInline" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcTextEntryOptions.attributes">
+    <xs:attributeGroup name="lceTextEntryOptions.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcAlternativeResponse">
+    <xs:element name="lceAlternativeResponse">
         <xs:annotation>
-            <xs:documentation>The lcAlternativeResponse element indicates an alternative correct response within a textEntry, usually the alternative correct answer will score less. </xs:documentation>
+            <xs:documentation>The lceAlternativeResponse element indicates an alternative correct response within a textEntry, usually the alternative correct answer will score less. </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcAlternativeResponse.class">
+                <xs:extension base="lceAlternativeResponse.class">
                     <xs:attribute ref="class"
-                        default="+ topic/data learningInteractionBase2-d/data textentry-d/lcAlternativeResponse "/>
+                        default="+ topic/data learningInteractionBase2-d/data lcetextentry-d/lceAlternativeResponse "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcAlternativeResponse.class">
+    <xs:complexType name="lceAlternativeResponse.class">
         <xs:sequence>
-            <xs:group ref="lcAlternativeResponse.content"/>
+            <xs:group ref="lceAlternativeResponse.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcAlternativeResponse.attributes"/>
+        <xs:attributeGroup ref="lceAlternativeResponse.attributes"/>
     </xs:complexType>
-    <xs:group name="lcAlternativeResponse.content">
+    <xs:group name="lceAlternativeResponse.content">
         <xs:sequence/>
     </xs:group>
-    <xs:attributeGroup name="lcAlternativeResponse.attributes">
+    <xs:attributeGroup name="lceAlternativeResponse.attributes">
         <xs:attribute name="name" type="xs:string"/>
         <xs:attribute name="value" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>

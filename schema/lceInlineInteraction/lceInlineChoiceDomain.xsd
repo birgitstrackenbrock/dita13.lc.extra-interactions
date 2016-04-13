@@ -2,22 +2,22 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d inlinechoice-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d lceinlinechoice-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
     
-    <xs:group name="lcInlineChoice">
+    <xs:group name="lceInlineChoice">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcInlineChoice"/>
+                <xs:element ref="lceInlineChoice"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcInlineChoiceOptions">
+    <xs:group name="lceInlineChoiceOptions">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcInlineChoiceOptions"/>
+                <xs:element ref="lceInlineChoiceOptions"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -25,38 +25,38 @@
     
 <!-- ============================================================= -->
     
-    <xs:element name="lcInlineChoice">
+    <xs:element name="lceInlineChoice">
         <xs:annotation>
             <xs:documentation>
-                The lcInlineChoice is an textual interaction. In the text gaps are standing and the student can choose an answer usually from a drop down menu offert in the gap.
+                The lceInlineChoice is an textual interaction. In the text gaps are standing and the student can choose an answer usually from a drop down menu offert in the gap.
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcInlineChoice.class">
+                <xs:extension base="lceInlineChoice.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 inlinechoice-d/lcInlineChoice "/>
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lceinlinechoice-d/lceInlineChoice "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcInlineChoice.class">
+    <xs:complexType name="lceInlineChoice.class">
         <xs:sequence>
-            <xs:group ref="lcInlineChoice.content"/>
+            <xs:group ref="lceInlineChoice.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcInlineChoice.attributes"/>
+        <xs:attributeGroup ref="lceInlineChoice.attributes"/>
     </xs:complexType>
-    <xs:group name="lcInlineChoice.content">
+    <xs:group name="lceInlineChoice.content">
         <xs:sequence>
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
-            <xs:group ref="lcInlineInteractionText"/>
+            <xs:group ref="lceInlineInteractionText"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcInlineChoice.attributes">
+    <xs:attributeGroup name="lceInlineChoice.attributes">
         <xs:attribute name="id" type="xs:NMTOKEN"/>
         <xs:attributeGroup ref="conref-atts"/>
         <xs:attributeGroup ref="select-atts"/>
@@ -65,34 +65,34 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcInlineChoiceOptions">
+    <xs:element name="lceInlineChoiceOptions">
         <xs:annotation>
             <xs:documentation>
-                In the lcInlineOptions the correct and incorrect answers for a gap are given.
+                In the lceInlineOptions the correct and incorrect answers for a gap are given.
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcInlineChoiceOptions.class">
+                <xs:extension base="lceInlineChoiceOptions.class">
                     <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph inlinechoice-d/lcInlineChoiceOptions "/>
+                        default="+ topic/ph learningInteractionBase2-d/ph lceinlinechoice-d/lceInlineChoiceOptions "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcInlineChoiceOptions.class">
+    <xs:complexType name="lceInlineChoiceOptions.class">
         <xs:sequence>
-            <xs:group ref="lcInlineChoiceOptions.content"/>
+            <xs:group ref="lceInlineChoiceOptions.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcInlineChoiceOptions.attributes"/>
+        <xs:attributeGroup ref="lceInlineChoiceOptions.attributes"/>
     </xs:complexType>
-    <xs:group name="lcInlineChoiceOptions.content">
+    <xs:group name="lceInlineChoiceOptions.content">
         <xs:sequence>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:group ref="lcAnswerOptionInline" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="lceAnswerOptionInline" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcInlineChoiceOptions.attributes">
+    <xs:attributeGroup name="lceInlineChoiceOptions.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>

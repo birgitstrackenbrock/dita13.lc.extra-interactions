@@ -2,135 +2,135 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d multiplematch-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d lcelcemultiplematch-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
     
-    <xs:group name="matchinteraction-d-div">
+    <xs:group name="lcematchinteraction-d-div">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcMultipleMatch"/>
+                <xs:element ref="lceMultipleMatch"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="matchinteraction-d-lcInteractionBase2">
+    <xs:group name="lcematchinteraction-d-lcInteractionBase2">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcMultipleMatch"/>
+                <xs:element ref="lceMultipleMatch"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcMultipleMatch">
+    <xs:group name="lceMultipleMatch">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcMultipleMatch"/>
+                <xs:element ref="lceMultipleMatch"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcMatchSet1">
+    <xs:group name="lceMatchSet1">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcMatchSet1"/>
+                <xs:element ref="lceMatchSet1"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcAssociableItem">
+    <xs:group name="lceAssociableItem">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcAssociableItem"/>
+                <xs:element ref="lceAssociableItem"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcMatchSet2">
+    <xs:group name="lceMatchSet2">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcMatchSet2"/>
+                <xs:element ref="lceMatchSet2"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcAssociableMatch">
+    <xs:group name="lceAssociableMatch">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcAssociableMatch"/>
+                <xs:element ref="lceAssociableMatch"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcMatchMapping">
+    <xs:group name="lceMatchMapping">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcMatchMapping"/>
+                <xs:element ref="lceMatchMapping"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcMatchPair">
+    <xs:group name="lceMatchPair">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcMatchPair"/>
+                <xs:element ref="lceMatchPair"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcAssociableItemNr">
+    <xs:group name="lceAssociableItemNr">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcAssociableItemNr"/>
+                <xs:element ref="lceAssociableItemNr"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lcAssociableIMatchNr">
+    <xs:group name="lceAssociableIMatchNr">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lcAssociableIMatchNr"/>
+                <xs:element ref="lceAssociableIMatchNr"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
 <!-- ================================================================= -->
-    <xs:element name="lcMultipleMatch">
+    <xs:element name="lceMultipleMatch">
         <xs:annotation>
             <xs:documentation>
-                The lcMultipleMatch is an interactions where items from one group must be combined with items from another group.
+                The lceMultipleMatch is an interactions where items from one group must be combined with items from another group.
                 Each item can have multiple relations, thus n-to-n relationships.
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcMultipleMatch.class">
+                <xs:extension base="lceMultipleMatch.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 multiplematch-d/lcMultipleMatch "/>
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lcemultiplematch-d/lceMultipleMatch "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcMultipleMatch.class">
+    <xs:complexType name="lceMultipleMatch.class">
         <xs:sequence>
-            <xs:group ref="lcMultipleMatch.content"/>
+            <xs:group ref="lceMultipleMatch.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcMultipleMatch.attributes"/>
+        <xs:attributeGroup ref="lceMultipleMatch.attributes"/>
     </xs:complexType>
-    <xs:group name="lcMultipleMatch.content">
+    <xs:group name="lceMultipleMatch.content">
         <xs:sequence>
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:group ref="lcMatchSet1" minOccurs="1" maxOccurs="1"/>
-            <xs:group ref="lcMatchSet2" minOccurs="1" maxOccurs="1"/>
-            <xs:group ref="lcMatchMapping" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lceMatchSet1" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lceMatchSet2" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lceMatchMapping" minOccurs="1" maxOccurs="1"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcMultipleMatch.attributes">
+    <xs:attributeGroup name="lceMultipleMatch.attributes">
         <xs:attribute name="id" type="xs:NMTOKEN"/>
         <xs:attributeGroup ref="conref-atts"/>
         <xs:attributeGroup ref="select-atts"/>
@@ -139,7 +139,7 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcMatchSet1">
+    <xs:element name="lceMatchSet1">
         <xs:annotation>
             <xs:documentation>
                 Set with items.
@@ -147,28 +147,28 @@
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcMatchSet1.class">
-                    <xs:attribute ref="class" default="- topic/ul multiplematch-d/lcMatchSet1 "/>
+                <xs:extension base="lceMatchSet1.class">
+                    <xs:attribute ref="class" default="- topic/ul lcemultiplematch-d/lceMatchSet1 "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcMatchSet1.class">
+    <xs:complexType name="lceMatchSet1.class">
         <xs:sequence>
-            <xs:group ref="lcMatchSet1.content"/>
+            <xs:group ref="lceMatchSet1.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcMatchSet1.attributes"/>
+        <xs:attributeGroup ref="lceMatchSet1.attributes"/>
     </xs:complexType>
-    <xs:group name="lcMatchSet1.content">
+    <xs:group name="lceMatchSet1.content">
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
                 <xs:group ref="data"/>
                 <xs:group ref="data-about"/>
             </xs:choice>
-            <xs:group ref="lcAssociableItem" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="lceAssociableItem" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcMatchSet1.attributes">
+    <xs:attributeGroup name="lceMatchSet1.attributes">
         <xs:attribute name="compact">
             <xs:simpleType>
                 <xs:restriction base="xs:string">
@@ -184,25 +184,25 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcAssociableItem">
+    <xs:element name="lceAssociableItem">
         <xs:annotation>
             <xs:documentation>Item from set 1 which can be associated with items from set 2.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcAssociableItem.class">
-                    <xs:attribute ref="class" default="- topic/li multiplematch-d/lcAssociableItem "/>
+                <xs:extension base="lceAssociableItem.class">
+                    <xs:attribute ref="class" default="- topic/li lcemultiplematch-d/lceAssociableItem "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcAssociableItem.class">
+    <xs:complexType name="lceAssociableItem.class">
         <xs:sequence>
-            <xs:group ref="lcAssociableItem.content"/>
+            <xs:group ref="lceAssociableItem.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcAssociableItem.attributes"/>
+        <xs:attributeGroup ref="lceAssociableItem.attributes"/>
     </xs:complexType>
-    <xs:group name="lcAssociableItem.content">
+    <xs:group name="lceAssociableItem.content">
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
                 <xs:group ref="basic.block"/>
@@ -211,40 +211,40 @@
             </xs:choice>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcAssociableItem.attributes">
+    <xs:attributeGroup name="lceAssociableItem.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcMatchSet2">
+    <xs:element name="lceMatchSet2">
         <xs:annotation>
             <xs:documentation>Second sets with items.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcMatchSet2.class">
-                    <xs:attribute ref="class" default="- topic/ul multiplematch-d/lcMatchSet2 "/>
+                <xs:extension base="lceMatchSet2.class">
+                    <xs:attribute ref="class" default="- topic/ul lcemultiplematch-d/lceMatchSet2 "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcMatchSet2.class">
+    <xs:complexType name="lceMatchSet2.class">
         <xs:sequence>
-            <xs:group ref="lcMatchSet2.content"/>
+            <xs:group ref="lceMatchSet2.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcMatchSet2.attributes"/>
+        <xs:attributeGroup ref="lceMatchSet2.attributes"/>
     </xs:complexType>
-    <xs:group name="lcMatchSet2.content">
+    <xs:group name="lceMatchSet2.content">
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
                 <xs:group ref="data"/>
                 <xs:group ref="data-about"/>
             </xs:choice>
-            <xs:group ref="lcAssociableMatch" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="lceAssociableMatch" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcMatchSet2.attributes">
+    <xs:attributeGroup name="lceMatchSet2.attributes">
         <xs:attribute name="compact">
             <xs:simpleType>
                 <xs:restriction base="xs:string">
@@ -260,25 +260,25 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcAssociableMatch">
+    <xs:element name="lceAssociableMatch">
         <xs:annotation>
             <xs:documentation>Item from set 2 which match with items from set 1.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcAssociableMatch.class">
-                    <xs:attribute ref="class" default="- topic/li multiplematch-d/lcAssociableMatch "/>
+                <xs:extension base="lceAssociableMatch.class">
+                    <xs:attribute ref="class" default="- topic/li lcemultiplematch-d/lceAssociableMatch "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcAssociableMatch.class">
+    <xs:complexType name="lceAssociableMatch.class">
         <xs:sequence>
-            <xs:group ref="lcAssociableMatch.content"/>
+            <xs:group ref="lceAssociableMatch.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcAssociableMatch.attributes"/>
+        <xs:attributeGroup ref="lceAssociableMatch.attributes"/>
     </xs:complexType>
-    <xs:group name="lcAssociableMatch.content">
+    <xs:group name="lceAssociableMatch.content">
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
                 <xs:group ref="basic.block"/>
@@ -287,114 +287,114 @@
             </xs:choice>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcAssociableMatch.attributes">
+    <xs:attributeGroup name="lceAssociableMatch.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcMatchMapping">
+    <xs:element name="lceMatchMapping">
         <xs:annotation>
-            <xs:documentation>in the lcMatchMapping the relationships between the items from set 1 and set 2 are defined, thus which item belongs to which match-item.</xs:documentation>
+            <xs:documentation>in the lceMatchMapping the relationships between the items from set 1 and set 2 are defined, thus which item belongs to which match-item.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcMatchMapping.class">
+                <xs:extension base="lceMatchMapping.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcQuestionBase2 multiplematch-d/lcMatchMapping "/>
+                        default="+ topic/div learningInteractionBase2-d/lcQuestionBase2 lcemultiplematch-d/lceMatchMapping "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcMatchMapping.class">
+    <xs:complexType name="lceMatchMapping.class">
         <xs:sequence>
-            <xs:group ref="lcMatchMapping.content"/>
+            <xs:group ref="lceMatchMapping.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcMatchMapping.attributes"/>
+        <xs:attributeGroup ref="lceMatchMapping.attributes"/>
     </xs:complexType>
-    <xs:group name="lcMatchMapping.content">
+    <xs:group name="lceMatchMapping.content">
         <xs:sequence>
-            <xs:group ref="lcMatchPair" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceMatchPair" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lcMatchMapping.attributes">
+    <xs:attributeGroup name="lceMatchMapping.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcMatchPair">
+    <xs:element name="lceMatchPair">
         <xs:annotation>
             <xs:documentation>One couple, a couple is always one item from set 1 and one item from set 2.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcMatchPair.class">
-                    <xs:attribute ref="class" default="- topic/p multiplematch-d/lcMatchValue "/>
+                <xs:extension base="lceMatchPair.class">
+                    <xs:attribute ref="class" default="- topic/p lcemultiplematch-d/lceMatchValue "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcMatchPair.class">
+    <xs:complexType name="lceMatchPair.class">
         <xs:sequence>
-            <xs:group ref="lcAssociableItemNr"/>
-            <xs:group ref="lcAssociableIMatchNr"/>
+            <xs:group ref="lceAssociableItemNr"/>
+            <xs:group ref="lceAssociableIMatchNr"/>
             <xs:group ref="lcCorrectResponse" minOccurs="1" maxOccurs="1"/>
             <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lcMatchPair.attributes"/>
+        <xs:attributeGroup ref="lceMatchPair.attributes"/>
     </xs:complexType>
-    <xs:attributeGroup name="lcMatchPair.attributes">
+    <xs:attributeGroup name="lceMatchPair.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcAssociableItemNr">
+    <xs:element name="lceAssociableItemNr">
         <xs:annotation>
             <xs:documentation>The number of the item from set 1.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcAssociableItemNr.class">
-                    <xs:attribute ref="class" default="- topic/ph multiplematch-d/lcAssociableItemNr "/>
+                <xs:extension base="lceAssociableItemNr.class">
+                    <xs:attribute ref="class" default="- topic/ph lcemultiplematch-d/lceAssociableItemNr "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcAssociableItemNr.class" mixed="true">
-        <xs:attributeGroup ref="lcAssociableItemNr.attributes"/>
+    <xs:complexType name="lceAssociableItemNr.class" mixed="true">
+        <xs:attributeGroup ref="lceAssociableItemNr.attributes"/>
     </xs:complexType>
-    <xs:attributeGroup name="lcAssociableItemNr.attributes">
+    <xs:attributeGroup name="lceAssociableItemNr.attributes">
         <xs:attribute name="keyref" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lcAssociableIMatchNr">
+    <xs:element name="lceAssociableIMatchNr">
         <xs:annotation>
             <xs:documentation>The number of the item from set 2.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lcAssociableIMatchNr.class">
-                    <xs:attribute ref="class" default="- topic/ph multiplematch-d/lcAssociableIMatchNr "/>
+                <xs:extension base="lceAssociableIMatchNr.class">
+                    <xs:attribute ref="class" default="- topic/ph lcemultiplematch-d/lceAssociableIMatchNr "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcAssociableIMatchNr.class" mixed="true">
-        <xs:attributeGroup ref="lcAssociableIMatchNr.attributes"/>
+    <xs:complexType name="lceAssociableIMatchNr.class" mixed="true">
+        <xs:attributeGroup ref="lceAssociableIMatchNr.attributes"/>
     </xs:complexType>
-    <xs:attributeGroup name="lcAssociableIMatchNr.attributes">
+    <xs:attributeGroup name="lceAssociableIMatchNr.attributes">
         <xs:attribute name="keyref" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:attributeGroup name="lcAssociableItem-atts">
+    <xs:attributeGroup name="lceAssociableItem-atts">
         <xs:attribute name="number" type="xs:string">
             <xs:annotation>
                 <xs:documentation>
@@ -403,7 +403,7 @@
         </xs:attribute>
     </xs:attributeGroup>
     
-    <xs:attributeGroup name="lcAssociableMatch-atts">
+    <xs:attributeGroup name="lceAssociableMatch-atts">
         <xs:attribute name="number" type="xs:string">
             <xs:annotation>
                 <xs:documentation>
