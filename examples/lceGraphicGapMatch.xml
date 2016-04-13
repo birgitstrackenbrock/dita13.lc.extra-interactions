@@ -4,37 +4,37 @@
     <title>Graphic Gap Match</title>
     <learningAssessmentbody>
         <lcInteraction>
-            <lcGraphicGapMatch>
+            <lceGraphicGapMatch>
                 <lcQuestion2>
                     <p>Do you know the following instrumnets?</p>
                     <p>Drag and drop the right names to the instruments.</p>
                 </lcQuestion2>
-                <lcGGMMap>
+                <lceGGMMap>
                     <image href="instrumenten.jpg" id="image_tzr_fwm_1v"/>
-                    <lcAreaGGM>
-                        <lcAreaContent>trumpet</lcAreaContent>
+                    <lceAreaGGM>
+                        <lceAreaContent>trumpet</lceAreaContent>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>59, 51, 80, 30</lcAreaCoords2>
                         <lcCorrectResponse2></lcCorrectResponse2>
-                    </lcAreaGGM>
-                    <lcAreaGGM>
-                        <lcAreaContent>xylophone</lcAreaContent>
+                    </lceAreaGGM>
+                    <lceAreaGGM>
+                        <lceAreaContent>xylophone</lceAreaContent>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>216, 224, 80, 30</lcAreaCoords2>
                         <lcCorrectResponse2></lcCorrectResponse2>
-                    </lcAreaGGM>
-                    <lcAreaGGM>
-                        <lcAreaContent>drum</lcAreaContent>
+                    </lceAreaGGM>
+                    <lceAreaGGM>
+                        <lceAreaContent>drum</lceAreaContent>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>430, 53, 80, 30</lcAreaCoords2>
                         <lcCorrectResponse2></lcCorrectResponse2>
-                    </lcAreaGGM>
-                    <lcAreaGGM>
-                        <lcAreaContent>German flute<draft-comment author="Birgit">This one is not shown on the image.</draft-comment></lcAreaContent>
-                    </lcAreaGGM>
-                </lcGGMMap>
+                    </lceAreaGGM>
+                    <lceAreaGGM>
+                        <lceAreaContent>German flute<draft-comment author="Birgit">This one is not shown on the image.</draft-comment></lceAreaContent>
+                    </lceAreaGGM>
+                </lceGGMMap>
                 
-            </lcGraphicGapMatch>
+            </lceGraphicGapMatch>
         </lcInteraction>
     </learningAssessmentbody>
 </learningAssessment>

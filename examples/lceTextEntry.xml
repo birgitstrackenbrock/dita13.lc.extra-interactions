@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd" id="te1">
+    <title>Text Entry</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lceTextEntry>
+                <lcQuestion2>Identify the missing word in this famous quote from Shakespeare's Richard III.</lcQuestion2>
+                <lceInlineInteractionText>
+                    <p>Now is the winter of our discontent</p>
+                    <p>Made glorious summer by this sun of <lceTextEntryOptions>
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>York</lceAnswerContentInline><lcCorrectResponse2></lcCorrectResponse2>
+                        </lceAnswerOptionInline>
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>york</lceAnswerContentInline><lceAlternativeResponse></lceAlternativeResponse>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions>;</p>
+                    <p>And all the clouds that lour'd upon our house</p>
+                    <p>In the deep bosom of the ocean buried.</p>
+                </lceInlineInteractionText>
+            </lceTextEntry>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>
