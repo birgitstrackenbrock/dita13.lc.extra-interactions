@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="urn:dita13:lc:extra:names:dita:xsd:learningAssessment.xsd" id="ht1">
+  xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd" id="ht1">
     <title>Hottext</title>
     <learningAssessmentbody>
         <lcInteraction>
