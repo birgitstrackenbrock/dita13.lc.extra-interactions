@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d textentry-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lcTextEntry">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcTextEntry"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcTextEntryOptions">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcTextEntryOptions"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcAlternativeResponse">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcAlternativeResponse"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+<!-- ============================================================= -->
+    
+    <xs:element name="lcTextEntry">
+        <xs:annotation>
+            <xs:documentation>
+                The lcTextEntry is a textual interaction in which a student has to fill in a gap.
+                Beside the correct answer alternative answers can be defined which are still soort of correct but less scoring.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcTextEntry.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 textentry-d/lcTextEntry "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcTextEntry.class">
+        <xs:sequence>
+            <xs:group ref="lcTextEntry.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcTextEntry.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcTextEntry.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lcInlineInteractionText"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcTextEntry.attributes">
+        <xs:attribute name="id" type="xs:NMTOKEN"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lcTextEntryOptions">
+        <xs:annotation>
+            <xs:documentation>
+                In the lcTextEntryOptions the correct and alternatives answers are defined.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcTextEntryOptions.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/ph learningInteractionBase2-d/ph textentry-d/lcTextEntryOptions "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcTextEntryOptions.class">
+        <xs:sequence>
+            <xs:group ref="lcTextEntryOptions.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcTextEntryOptions.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcTextEntryOptions.content">
+        <xs:sequence>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lcAnswerOptionInline" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcTextEntryOptions.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lcAlternativeResponse">
+        <xs:annotation>
+            <xs:documentation>The lcAlternativeResponse element indicates an alternative correct response within a textEntry, usually the alternative correct answer will score less. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcAlternativeResponse.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/data learningInteractionBase2-d/data textentry-d/lcAlternativeResponse "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcAlternativeResponse.class">
+        <xs:sequence>
+            <xs:group ref="lcAlternativeResponse.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcAlternativeResponse.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcAlternativeResponse.content">
+        <xs:sequence/>
+    </xs:group>
+    <xs:attributeGroup name="lcAlternativeResponse.attributes">
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="value" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+  
+</xs:schema>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d hottext-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+   
+    <xs:group name="lcHottext">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcHottext"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcHottextOption">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcHottextOption"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+
+<!-- ============================================================= -->
+    
+    <xs:element name="lcHottext">
+        <xs:annotation>
+            <xs:documentation>
+                A lcHottext is an textual interaction in which the student can click on special words which will be highlighted. 
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcHottext.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 hottext-d/lcHottext "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcHottext.class">
+        <xs:sequence>
+            <xs:group ref="lcHottext.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcHottext.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcHottext.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lcInlineInteractionText"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcHottext.attributes">
+        <xs:attribute name="id" type="xs:NMTOKEN"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+       
+    <xs:element name="lcHottextOption">
+        <xs:annotation>
+            <xs:documentation>
+                The lcHottextOption defines a word on which the student can click. It does not have to be the correct answer.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcHottextOption.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/ph learningInteractionBase2-d/ph hottext-d/lcHottextOption "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcHottextOption.class">
+        <xs:sequence>
+            <xs:group ref="lcHottextOption.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcHottextOption.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcHottextOption.content">
+        <xs:sequence>
+            <xs:group ref="lcAnswerContentInline"/>
+            <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
+            <xs:group ref="lcFeedback2" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcHottextOption.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+       
+</xs:schema>
