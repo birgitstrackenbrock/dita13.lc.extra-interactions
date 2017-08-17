@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d lcegraphic-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lcegraphicinteraction-d-div">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceGraphicGapMatch"/>
+                <xs:element ref="lceDrawing"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcegraphicinteraction-d-lcInteractionBase2">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceGraphicGapMatch"/>
+                <xs:element ref="lceDrawing"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+
+
+</xs:schema>

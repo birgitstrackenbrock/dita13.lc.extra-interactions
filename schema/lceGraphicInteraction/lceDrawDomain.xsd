@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d lcedraw-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lceDrawing">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceDrawing"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceDrawingImage">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceDrawingImage"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceDrawingAnswer">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceDrawingAnswer"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    
+<!-- ================================================================= -->
+    
+    <xs:element name="lceDrawingImage">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceDrawingImage.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/div learningInteractionBase2-d/div lcedraw-d/lceDrawingImage "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="lceDrawingImage.class">
+        <xs:sequence>
+            <xs:group ref="lceDrawingImage.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceDrawingImage.attributes"/>
+    </xs:complexType>
+    
+    <xs:group name="lceDrawingImage.content">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="imagemap"/>
+                <xs:group ref="image"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:attributeGroup name="lceDrawingImage.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceDrawingAnswer">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceDrawingAnswer.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/div learningInteractionBase2-d/div lcedraw-d/lceDrawingAnswer "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceDrawingAnswer.class" mixed="true">
+        <xs:sequence>
+            <xs:group ref="lceDrawingAnswer.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceDrawingAnswer.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceDrawingAnswer.content">
+        <xs:sequence>
+            <xs:group ref="div.cnt" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceDrawingAnswer.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+     
+ <!-- ================================================ -->    
+    <xs:element name="lceDrawing">
+        <xs:annotation>
+            <xs:documentation>In a lceDrawing interaction, the learner has to draw, sometime on a given graphic </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceDrawing.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lcedraw-d/lceDrawing "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceDrawing.class">
+        <xs:sequence>
+            <xs:group ref="lceDrawing.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceDrawing.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceDrawing.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lceDrawingImage" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceDrawingAnswer" minOccurs="0"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceDrawing.attributes">
+        <xs:attribute name="id" type="xs:NMTOKEN"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+
+
+
+</xs:schema>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" id="dita13:lc:extra">
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" id="dita13lcextra">
 
   <group xml:base="lceLearningAssessment/">
     <system systemId="lceLearningAssessment.xsd" uri="lceLearningAssessment.xsd" />
@@ -10,11 +10,23 @@
   </group>
   
   <group xml:base="lceGraphicInteraction/">
+    <system systemId="lceDrawDomain.xsd" uri="lceDrawDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceDrawDomain.xsd" uri="lceDrawDomain.xsd" />
+    
+    <uri name="lceDrawDomain.xsd" uri="lceDrawDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceDrawDomain.xsd" uri="lceDrawDomain.xsd" />
+    
     <system systemId="lceGGMDomain.xsd" uri="lceGGMDomain.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceGGMDomain.xsd" uri="lceGGMDomain.xsd" />
     
     <uri name="lceGGMDomain.xsd" uri="lceGGMDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceGGMDomain.xsd" uri="lceGGMDomain.xsd" />
+    
+    <system systemId="lceGraphicDomain.xsd" uri="lceGraphicDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceGraphicDomain.xsd" uri="lceGraphicDomain.xsd" />
+    
+    <uri name="lceGraphicDomain.xsd" uri="lceGraphicDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceGraphicDomain.xsd" uri="lceGraphicDomain.xsd" />
   </group>
   
   <group xml:base="lceInlineInteraction/">

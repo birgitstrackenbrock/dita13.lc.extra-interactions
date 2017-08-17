@@ -2,25 +2,9 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d lcelceggm-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase2-d lceggm-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
-    
-    <xs:group name="lcegraphicinteraction-d-div">
-        <xs:sequence>
-            <xs:choice>
-                <xs:element ref="lceGraphicGapMatch"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
-    
-    <xs:group name="lcegraphicinteraction-d-lcInteractionBase2">
-        <xs:sequence>
-            <xs:choice>
-                <xs:element ref="lceGraphicGapMatch"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
     
     <xs:group name="lceGraphicGapMatch">
         <xs:sequence>

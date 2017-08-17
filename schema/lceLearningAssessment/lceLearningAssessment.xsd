@@ -41,6 +41,8 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGapMatchDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceInlineChoiceDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceHottextDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceDrawDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGraphicDomain.xsd"/>
    
    <!-- ======= Specialization constraint ======= -->
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMultipleMatchDomainConstraint.xsd"/>
