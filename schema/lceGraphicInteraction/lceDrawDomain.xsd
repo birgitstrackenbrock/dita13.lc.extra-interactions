@@ -57,7 +57,6 @@
     <xs:group name="lceDrawingImage.content">
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:group ref="imagemap"/>
                 <xs:group ref="image"/>
             </xs:choice>
         </xs:sequence>
