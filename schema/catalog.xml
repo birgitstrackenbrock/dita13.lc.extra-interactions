@@ -9,14 +9,6 @@
     <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd" uri="lceLearningAssessment.xsd" />
   </group>
    
-  <group xml:base="lceGeneral/">
-    <system systemId="lceAssignmentDomain.xsd" uri="lceAssignmentDomain.xsd" />
-    <system systemId="urn:dita13lce:names:xsd:lceAssignmentDomain.xsd" uri="lceAssignmentDomain.xsd" />
-    
-    <uri name="lceAssignmentDomein.xsd" uri="lceAssignmentDomein.xsd" />
-    <uri name="urn:dita13lce:names:xsd:lceAssignmentDomain.xsd" uri="lceAssignmentDomain.xsd" />
-  </group>
-   
   <group xml:base="lceGraphicInteraction/">
     <system systemId="lceDrawDomain.xsd" uri="lceDrawDomain.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceDrawDomain.xsd" uri="lceDrawDomain.xsd" />
