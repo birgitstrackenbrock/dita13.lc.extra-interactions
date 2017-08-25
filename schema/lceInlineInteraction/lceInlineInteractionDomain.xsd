@@ -81,7 +81,7 @@
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lceInlineInteractionText.class">
+    <xs:complexType name="lceInlineInteractionText.class" mixed="true">
         <xs:sequence>
             <xs:group ref="lceInlineInteractionText.content"/>
         </xs:sequence>
