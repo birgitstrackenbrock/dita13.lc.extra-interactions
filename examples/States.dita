@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd" id="ggm0101">
+    <title></title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lceGraphicGapMatch>
+                <lcQuestion2><p>Dag and drop the names of the states to the appropriate places</p></lcQuestion2>
+                <lceGGMMap>
+                    <image href="kaart.jpg" id="image_px1_qck_gbb"/>
+                    <lceAreaGGM>
+                        <lceAreaContent>Soth Dakota</lceAreaContent>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>59, 51, 80, 30</lcAreaCoords2>
+                        <lcCorrectResponse2></lcCorrectResponse2>
+                    </lceAreaGGM>
+                    <lceAreaGGM>
+                        <lceAreaContent>Colorado</lceAreaContent>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>216, 224, 80, 30</lcAreaCoords2>
+                        <lcCorrectResponse2></lcCorrectResponse2>
+                    </lceAreaGGM>
+                    <lceAreaGGM>
+                        <lceAreaContent>Texas</lceAreaContent>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>430, 53, 80, 30</lcAreaCoords2>
+                        <lcCorrectResponse2></lcCorrectResponse2>
+                    </lceAreaGGM>
+                </lceGGMMap>
+            </lceGraphicGapMatch>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

@@ -18,6 +18,8 @@
    <xs:include schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learning2Domain.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningMetadataDomain.xsd:1.3"/>
+   <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:mathmlDomain.xsd:1.3"/>
+   <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:equationDomain.xsd:1.3"/>
 
    <!-- ================ GROUP DEFINITIONS ===================== -->
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:tblDeclGrp.xsd:1.3"/>
@@ -43,6 +45,8 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceHottextDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceDrawDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGraphicDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lcePuzzleGeneralDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAcrosticInteractionDomain.xsd"/>
    
    <!-- ======= Specialization constraint ======= -->
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMultipleMatchDomainConstraint.xsd"/>
@@ -67,6 +71,7 @@
             <xs:group ref="fig"/>
             <xs:group ref="ut-d-fig"/>
             <xs:group ref="learning-d-fig"/>
+            <xs:group ref="equation-d-fig"/>
          </xs:choice>
       </xs:group>
       <xs:group name="div">
@@ -76,6 +81,7 @@
             <xs:group ref="lcegraphicinteraction-d-div"/>
             <xs:group ref="lceinlineinteraction-d-div"/>
             <xs:group ref="lcematchinteraction-d-div"/>
+            <xs:group ref="lceacrosticinteraction-d-div"/>
          </xs:choice>
       </xs:group>
       <xs:group name="ph">
@@ -84,6 +90,13 @@
             <xs:group ref="hi-d-ph"/>
             <xs:group ref="lceinlineinteraction-d-ph"/>
             <xs:group ref="lcegapmatch-d-ph"/>
+            <xs:group ref="equation-d-ph"/>
+         </xs:choice>
+      </xs:group>
+      <xs:group name="foreign">
+         <xs:choice>
+            <xs:group ref="foreign"/>
+            <xs:group ref="mathml-d-foreign"/>
          </xs:choice>
       </xs:group>
       <xs:group name="index-base">
@@ -126,6 +139,7 @@
             <xs:group ref="lcegraphicinteraction-d-lcInteractionBase2"/>
             <xs:group ref="lceinlineinteraction-d-lcInteractionBase2"/>
             <xs:group ref="lcematchinteraction-d-lcInteractionBase2"/>
+            <xs:group ref="lceacrosticinteraction-d-lcInteractionBase2"/>
          </xs:choice>
       </xs:group>
    </xs:redefine>

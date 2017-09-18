@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase-d lcearosticinteraction-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    
+    
+    <!-- =============================================== -->
+    
+    <xs:group name="lceacrosticinteraction-d-div">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceAcrosticPuzzle"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceacrosticinteraction-d-lcInteractionBase2">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceAcrosticPuzzle"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+
+    
+    <xs:group name="lceAcrosticPuzzle">
+        <xs:sequence>
+            <xs:element ref="lceAcrosticPuzzle" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceArosticEntry">
+        <xs:sequence>
+            <xs:element ref="lceArosticEntry" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceArosticClue">
+        <xs:sequence>
+            <xs:element ref="lceArosticClue" />
+        </xs:sequence>
+    </xs:group>
+    
+
+    <xs:group name="lceArosticOption">
+        <xs:sequence>
+            <xs:element ref="lceArosticOption" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceArosticEntryContent">
+        <xs:sequence>
+            <xs:element ref="lceArosticEntryContent" />
+        </xs:sequence>
+    </xs:group>
+
+  <!-- ============================================= -->  
+    
+       
+    <xs:element name="lceArosticEntry">
+        <xs:annotation>
+            <xs:documentation>
+                The word which has to be filled in
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceArosticEntry.class">
+                    <xs:attribute ref="class" default="+ topic/ph lcearosticinteraction-d/lceArosticEntry "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <xs:complexType name="lceArosticEntry.class">
+        <xs:sequence>
+            <xs:group ref="lceArosticEntry.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceArosticEntry.attributes"/>
+    </xs:complexType>
+    
+    <xs:group name="lceArosticEntry.content">
+        <xs:sequence>
+            <xs:group ref="lceArosticEntryContent"/>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:attributeGroup name="lceArosticEntry.attributes">
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceArosticEntryContent">
+        <xs:annotation>
+            <xs:documentation>
+                The lceArosticEntryContent contains the word which has be be filled in.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceArosticEntryContent.class">
+                    <xs:attribute ref="class" default="+ topic/ph lcearosticinteraction-d/lceArosticEntryContent "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceArosticEntryContent.class">
+        <xs:sequence>
+            <xs:group ref="lceArosticEntryContent.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceArosticEntryContent.attributes"/>
+    </xs:complexType>
+    
+    <xs:group name="lceArosticEntryContent.content">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="puzzleLetter" />
+                <xs:group ref="predefinedLetter" />
+                <xs:group ref="lcCorrectResponse2"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:attributeGroup name="lceArosticEntryContent.attributes">
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceArosticClue">
+        <xs:annotation>
+            <xs:documentation>
+                Hint which word is looking for
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceArosticClue.class">
+                    <xs:attribute ref="class" default="+ topic/ph puzzleInteraction-d/lceArosticClue "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <xs:complexType name="lceArosticClue.class" mixed="true">
+        <xs:sequence>
+            <xs:group ref="lceArosticClue.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceArosticClue.attributes"/>
+    </xs:complexType>
+    
+    <xs:group name="lceArosticClue.content">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="ph.cnt" minOccurs="0"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:attributeGroup name="lceArosticClue.attributes">
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+
+    
+    
+  <!-- ========================================================== -->  
+ 
+    <xs:element name="lceArosticOption">
+        <xs:annotation>
+            <xs:documentation>the lceArostic option contains the clue ad the entry which will lead to the lceArostic
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceArosticOption.class">
+                    <xs:attribute ref="class" default="- topic/p puzzleInteraction-d/lceArosticOption  "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceArosticOption.class">
+        <xs:sequence>
+            <xs:group ref="lceArosticOption.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceArosticOption.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceArosticOption.content">
+        <xs:sequence>
+                <xs:group ref="lceArosticClue" minOccurs="1" maxOccurs="1"/>
+                <xs:group ref="lceArosticEntry" minOccurs="1" maxOccurs="1"/>
+            
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceArosticOption.attributes">
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+      
+    
+    <!-- lceArostic puzzle  -->
+    
+    <xs:element name="lceAcrosticPuzzle">
+        <xs:annotation>
+            <xs:documentation>
+                Interaction in which the student has to fill in a entries to get a lceArostic.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceAcrosticPuzzle.class">
+                    <xs:attribute ref="class" default="+ topic/fig learningInteractionBase-d/lcInteractionBase lcearosticinteraction-d/lceAcrosticPuzzle "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceAcrosticPuzzle.class">
+        <xs:sequence>
+            <xs:group ref="lceAcrosticPuzzle.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceAcrosticPuzzle.attributes"/>
+    </xs:complexType>
+    
+    <xs:group name="lceAcrosticPuzzle.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceArosticOption" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="p" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+     
+    <xs:attributeGroup name="lceAcrosticPuzzle.attributes">
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attribute name="id" type="xs:NMTOKEN" use="required"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    
+    
+</xs:schema>

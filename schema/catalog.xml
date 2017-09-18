@@ -75,5 +75,19 @@
     <uri name="urn:dita13lce:names:xsd:lceMultipleMatchDomainConstraint.xsd" uri="lceMultipleMatchDomainConstraint.xsd" />
   </group>
   
+  <group xml:base="lcePuzzleInteraction/">
+    <system systemId="lcePuzzleGeneralDomain.xsd" uri="lcePuzzleGeneralDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lcePuzzleGeneralDomain.xsd" uri="lcePuzzleGeneralDomain.xsd" />
+    
+    <uri name="lcePuzzleGeneralDomain.xsd" uri="lcePuzzleGeneralDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lcePuzzleGeneralDomain.xsd" uri="lcePuzzleGeneralDomain.xsd" />
+    
+    <system systemId="lceAcrosticInteractionDomain.xsd" uri="lceAcrosticInteractionDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceAcrosticInteractionDomain.xsd" uri="lceAcrosticInteractionDomain.xsd" />
+    
+    <uri name="lceAcrosticInteractionDomain.xsd" uri="lceAcrosticInteractionDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceAcrosticInteractionDomain.xsd" uri="lceAcrosticInteractionDomain.xsd" />
+  </group>
+  
   
 </catalog>

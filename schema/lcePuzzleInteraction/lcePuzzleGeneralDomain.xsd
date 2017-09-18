@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase-d lcepuzzle-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    
+    
+    <!-- =============================================== -->
+
+    <xs:group name="puzzleLetter">
+        <xs:sequence>
+            <xs:element ref="puzzleLetter" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="predefinedLetter">
+        <xs:sequence>
+            <xs:element ref="predefinedLetter" />
+        </xs:sequence>
+    </xs:group>
+    
+  
+  <!-- ============================================= -->  
+    
+    <xs:element name="puzzleLetter">
+        <xs:complexType mixed="true">
+            <xs:annotation>
+                <xs:documentation>
+                    Letter for the solution
+                </xs:documentation>
+            </xs:annotation>
+            <xs:complexContent>
+                <xs:extension base="puzzleLetter.class">
+                    <xs:attribute ref="class" default="+ topic/ph lcepuzzle-d/puzzleLetter "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="puzzleLetter.class" mixed="true">
+        <xs:attributeGroup ref="puzzleLetter.attributes"/>
+    </xs:complexType>
+    
+    <xs:attributeGroup name="puzzleLetter.attributes">
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="predefinedLetter">
+        <xs:complexType mixed="true">
+            <xs:annotation>
+                <xs:documentation>
+                    Letter already given
+                </xs:documentation>
+            </xs:annotation>
+            <xs:complexContent>
+                <xs:extension base="predefinedLetter.class">
+                    <xs:attribute ref="class" default="+ topic/ph lcepuzzle-d/predefinedLetter "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="predefinedLetter.class" mixed="true">
+        <xs:attributeGroup ref="predefinedLetter.attributes"/>
+    </xs:complexType>
+    
+    <xs:attributeGroup name="predefinedLetter.attributes">
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    
+    
+    
+</xs:schema>
