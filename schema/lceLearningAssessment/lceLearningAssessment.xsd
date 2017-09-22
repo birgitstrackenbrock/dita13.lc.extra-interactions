@@ -81,7 +81,7 @@
             <xs:group ref="lcegraphicinteraction-d-div"/>
             <xs:group ref="lceinlineinteraction-d-div"/>
             <xs:group ref="lcematchinteraction-d-div"/>
-            <xs:group ref="lceacrosticinteraction-d-div"/>
+            <xs:group ref="lcepuzzle-d-div"/>
          </xs:choice>
       </xs:group>
       <xs:group name="ph">
@@ -139,7 +139,7 @@
             <xs:group ref="lcegraphicinteraction-d-lcInteractionBase2"/>
             <xs:group ref="lceinlineinteraction-d-lcInteractionBase2"/>
             <xs:group ref="lcematchinteraction-d-lcInteractionBase2"/>
-            <xs:group ref="lceacrosticinteraction-d-lcInteractionBase2"/>
+            <xs:group ref="lcepuzzle-d-lcInteractionBase2"/>
          </xs:choice>
       </xs:group>
    </xs:redefine>

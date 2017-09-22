@@ -11,6 +11,23 @@
     
     
     <!-- =============================================== -->
+    
+    <xs:group name="lcepuzzle-d-div">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceAcrosticPuzzle"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcepuzzle-d-lcInteractionBase2">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceAcrosticPuzzle"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
 
     <xs:group name="puzzleLetter">
         <xs:sequence>
