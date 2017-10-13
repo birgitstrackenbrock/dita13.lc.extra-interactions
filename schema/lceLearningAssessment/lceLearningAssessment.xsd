@@ -3,7 +3,11 @@
 <!--                    HEADER                                     -->
 <!-- ============================================================= -->
 <!-- ============================================================= -->
-<!-- thed specialization for interactions                                               -->
+<!-- lce specialization for interactions                          -->
+
+<!-- version: 1.0.0  date:  author: Birgit -->
+<!-- base version -->
+
 <!-- ============================================================= -->
 <xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"

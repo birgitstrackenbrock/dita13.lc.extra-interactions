@@ -4,9 +4,11 @@
   <group xml:base="lceLearningAssessment/">
     <system systemId="lceLearningAssessment.xsd" uri="lceLearningAssessment.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd" uri="lceLearningAssessment.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.0.0" uri="lceLearningAssessment.xsd" />
     
     <uri name="lceLearningAssessment.xsd" uri="lceLearningAssessment.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd" uri="lceLearningAssessment.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.0.0" uri="lceLearningAssessment.xsd" />
   </group>
    
   <group xml:base="lceGraphicInteraction/">
