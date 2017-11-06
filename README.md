@@ -16,6 +16,10 @@ using their experience with and knowledge of educational content.
 
 See map "documentation"
 
+## Schema roadmap
+
+Some more interactions: upload, crossword, graphicGapTextEntry
+
 
 ## License
 
