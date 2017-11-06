@@ -4,7 +4,7 @@
     
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic learningInteractionBase-d lcepuzzle-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcepuzzle-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
     

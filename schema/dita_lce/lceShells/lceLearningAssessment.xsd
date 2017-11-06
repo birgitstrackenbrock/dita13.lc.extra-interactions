@@ -176,7 +176,8 @@ It must be declared in topic-type shells.
    <xs:attributeGroup name="domains-att">
       <xs:attribute name="domains"
                     type="xs:string"
-                    default="(topic hi-d) (topic indexing-d) (topic learningBase+learningInteractionBase-d) (topic learningBase+learningInteractionBase-d learningAssessment) (topic learningBase+learningInteractionBase-d+learningInteractionBase2) (topic learningInteractionBase-d learning-d) (topic learningInteractionBase-d) (topic learningInteractionBase2-d learning2-d) (topic learningInteractionBase2-d) (topic learningmeta-d) (topic relmgmt-d) (topic ut-d) a(props deliveryTarget)
-                    (topic learningInteractionBase2-d ggm-d) (topic learningInteractionBase2-d inlinechoice-d) (topic learningInteractionBase2-d inlineinteraction-d) (topic learningInteractionBase2-d textentry-d) (topic learningInteractionBase2-d gapmatch-d) (topic learningInteractionBase2-d hottext-d) (topic learningInteractionBase2-d multiplematch-d)"/>
+                    default="(topic hi-d) (topic indexing-d) (topic learningBase+learningInteractionBase-d) (topic learningBase+learningInteractionBase-d learningAssessment) (topic learningBase+learningInteractionBase-d+learningInteractionBase2) 
+                    (topic learningInteractionBase-d learning-d) (topic learningInteractionBase-d) (topic learningInteractionBase2-d learning2-d) (topic learningInteractionBase2-d) (topic learningmeta-d) (topic relmgmt-d) (topic ut-d) a(props deliveryTarget)
+                    "/>
    </xs:attributeGroup>
 </xs:schema>
