@@ -239,6 +239,8 @@ It must be declared in topic-type shells.
    <xs:attributeGroup name="domains-att">
       <xs:attribute name="domains"
                     type="xs:string"
-                    default="(topic concept) (topic hi-d) (topic indexing-d) (topic learningBase+learningInteractionBase-d) (topic learningBase+learningInteractionBase-d learningAssessment) (topic learningBase learningSummary) (topic learningBase+learningInteractionBase-d learningContent) (topic learningBase+learningInteractionBase-d+learningInteractionBase2) (topic learningInteractionBase-d learning-d) (topic learningInteractionBase-d) (topic learningInteractionBase2-d learning2-d) (topic learningInteractionBase2-d) (topic learningmeta-d) (topic reference) (topic relmgmt-d) (topic task) (topic ut-d) a(props deliveryTarget)"/>
+                    default="(topic concept) (topic hi-d) (topic indexing-d) (topic learningBase+learningInteractionBase-d) (topic learningBase+learningInteractionBase-d learningAssessment) (topic learningBase learningSummary) (topic learningBase+learningInteractionBase-d learningContent) (topic learningBase+learningInteractionBase-d+learningInteractionBase2) (topic learningInteractionBase-d learning-d) (topic learningInteractionBase-d) (topic learningInteractionBase2-d learning2-d) (topic learningInteractionBase2-d) (topic learningmeta-d) (topic reference) (topic relmgmt-d) (topic task) (topic ut-d) a(props deliveryTarget) 
+                    (lce lcegraphic-d) (lce lcedraw-d) (lce lceggm-d) (lce lceinlinechoice-d) (lce lceinlineinteraction-d) (lce lcetextentry-d) (lce lcelcegapmatch-d) 
+                    (lce lcehottext-d) (lce lcelcemultiplematch-c) (lce lcelcemultiplematch-d) (lce lcearosticinteraction-d) (lce lcepuzzle-d)"/>
    </xs:attributeGroup>
 </xs:schema>

@@ -10,7 +10,14 @@
     attributeFormDefault="unqualified"
     >
 
-
+    <xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:oasis:names:tc:dita:xsd:ditaarch.xsd:1.3"/>
+    
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcelcemultiplematch-c)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
     
     <xs:redefine schemaLocation="urn:dita13lce:names:xsd:lceMultipleMatchDomain.xsd">
         
