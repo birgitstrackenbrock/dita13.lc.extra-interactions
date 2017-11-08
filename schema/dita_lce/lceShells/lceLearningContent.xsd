@@ -83,6 +83,8 @@
             <xs:group ref="ut-d-fig"/>
             <xs:group ref="learningInteractionBase-d-fig"/>
             <xs:group ref="learning-d-fig"/>
+            <!-- add -->
+            <xs:group ref="equation-d-fig"/>
          </xs:choice>
       </xs:group>
       <xs:group name="div">
