@@ -76,7 +76,7 @@
             <xs:complexContent>
                 <xs:extension base="lceInlineInteractionText.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lceinlineinteraction-d/lceInlineInteractionText "/>
+                        default="+ topic/div lceinlineinteraction-d/lceInlineInteractionText "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>

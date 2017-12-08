@@ -137,7 +137,7 @@
             <xs:complexContent>
                 <xs:extension base="lceGapAnswer.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/div lcegapmatch-d/lceGapAnswer "/>
+                        default="+ topic/p learningInteractionBase2-d/p lcegapmatch-d/lceGapAnswer "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -152,11 +152,9 @@
         <xs:sequence>
             <xs:group ref="lceGapContent"/>
             <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
-            <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceGapAnswer.attributes">
-        <xs:attribute name="href" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
@@ -164,13 +162,13 @@
     
     <xs:element name="lceGapContent">
         <xs:annotation>
-            <xs:documentation>A lceGapContent defines the content of the gap </xs:documentation>
+            <xs:documentation>A lceGapContent defines the content of the gap</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceGapContent.class">
                     <xs:attribute ref="class"
-                        default="+ topic/p learningInteractionBase2-d/p lcegapmatch-d/lceGapContent "/>
+                        default="+ topic/ph learningInteractionBase2-d/ph lcegapmatch-d/lceGapContent "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -189,20 +187,21 @@
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceGapContent.attributes">
-        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attribute name="keyref" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
     <xs:element name="lceGap">
         <xs:annotation>
-            <xs:documentation>A gap is a placeholder which must be linked by an gap answer</xs:documentation>
+            <xs:documentation>A gap is a placeholder which links to the answer content</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceGap.class">
                     <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph lcegapmatch-d/lceGap "/>
+                        default="+ topic/xref lcegapmatch-d/lceGap "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -217,10 +216,21 @@
         <xs:sequence/>
     </xs:group>
     <xs:attributeGroup name="lceGap.attributes">
-        <xs:attribute name="id" type="xs:NMTOKEN" use="required"/>
-        <xs:attributeGroup ref="conref-atts"/>
-        <xs:attributeGroup ref="select-atts"/>
-        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="href" type="xs:string"/>
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attribute name="type" type="xs:string"/>
+        <xs:attribute name="format" type="xs:string"/>
+        <xs:attribute name="scope">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="external"/>
+                    <xs:enumeration value="local"/>
+                    <xs:enumeration value="peer"/>
+                    <xs:enumeration value="-dita-use-conref-target"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>

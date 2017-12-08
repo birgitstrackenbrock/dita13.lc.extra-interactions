@@ -41,7 +41,7 @@
             <xs:complexContent>
                 <xs:extension base="lceDrawingImage.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/div lcedraw-d/lceDrawingImage "/>
+                        default="+ topic/fig lcedraw-d/lceDrawingImage "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -49,18 +49,11 @@
     
     <xs:complexType name="lceDrawingImage.class">
         <xs:sequence>
-            <xs:group ref="lceDrawingImage.content"/>
+            <xs:group ref="fig.content"/>
         </xs:sequence>
         <xs:attributeGroup ref="lceDrawingImage.attributes"/>
     </xs:complexType>
     
-    <xs:group name="lceDrawingImage.content">
-        <xs:sequence>
-            <xs:choice minOccurs="1" maxOccurs="1">
-                <xs:group ref="image"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
     
     <xs:attributeGroup name="lceDrawingImage.attributes">
         <xs:attributeGroup ref="univ-atts"/>
