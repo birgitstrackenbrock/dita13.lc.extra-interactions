@@ -107,7 +107,7 @@
             <xs:complexContent>
                 <xs:extension base="lceGapMap.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/div lcegapmatch-d/lceGapMap "/>
+                        default="+ topic/p learningInteractionBase2-d/p lcegapmatch-d/lceGapMap "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -137,7 +137,7 @@
             <xs:complexContent>
                 <xs:extension base="lceGapAnswer.class">
                     <xs:attribute ref="class"
-                        default="+ topic/p learningInteractionBase2-d/p lcegapmatch-d/lceGapAnswer "/>
+                        default="+ topic/ph learningInteractionBase2-d/ph lcegapmatch-d/lceGapAnswer "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -201,7 +201,7 @@
             <xs:complexContent>
                 <xs:extension base="lceGap.class">
                     <xs:attribute ref="class"
-                        default="+ topic/xref lcegapmatch-d/lceGap "/>
+                        default="+ topic/xref learningInteractionBase2-d/xref  lcegapmatch-d/lceGap "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
