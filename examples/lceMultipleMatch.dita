@@ -17,28 +17,24 @@
                     <lceAssociableMatch id="m2"><p>Romeo and Juliet</p></lceAssociableMatch>
                     <lceAssociableMatch id="m3"><p>The Tempest</p></lceAssociableMatch>
                 </lceMatchSet2>
-                <lceMatchMapping>
-                    <lceMatchPair>
-                        <lceAssociableItemNr>1</lceAssociableItemNr>
-                        <lceAssociableIMatchNr>2</lceAssociableIMatchNr>
+                <lceMatchMap>
+                    <lceMatchAnswer>
+                        <lceAssociable href="#./i1"/>
+                        <lceAssociable href="#./m2"/>
                         <lcCorrectResponse></lcCorrectResponse>
-                    </lceMatchPair>
-                    <lceMatchPair>
-                        <lceAssociableItemNr>2</lceAssociableItemNr>
-                        <lceAssociableIMatchNr>1</lceAssociableIMatchNr>
+                    </lceMatchAnswer>
+                    <lceMatchAnswer>
+                        <lceAssociable href="#./i2"/>
+                        <lceAssociable href="#./i3"/>
+                        <lceAssociable href="#./m1"/>
                         <lcCorrectResponse></lcCorrectResponse>
-                    </lceMatchPair>
-                    <lceMatchPair>
-                        <lceAssociableItemNr>3</lceAssociableItemNr>
-                        <lceAssociableIMatchNr>2</lceAssociableIMatchNr>
+                    </lceMatchAnswer>
+                    <lceMatchAnswer>
+                        <lceAssociable href="#./i4"/>
+                        <lceAssociable href="#./m3"/>
                         <lcCorrectResponse></lcCorrectResponse>
-                    </lceMatchPair>
-                    <lceMatchPair>
-                        <lceAssociableItemNr>4</lceAssociableItemNr>
-                        <lceAssociableIMatchNr>3</lceAssociableIMatchNr>
-                        <lcCorrectResponse></lcCorrectResponse>
-                    </lceMatchPair>
-                </lceMatchMapping>
+                    </lceMatchAnswer>
+                </lceMatchMap>
             </lceMultipleMatch>
         </lcInteraction>
     </learningAssessmentbody>
