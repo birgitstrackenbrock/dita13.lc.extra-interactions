@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd" id="gm1">
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="gm1">
     <title>Gap match</title>
     <learningAssessmentbody>
         <lcInteraction>
             <lceGapMatch>
                 <lcQuestion2><p>Identify the missing words in this famous quote from Shakespeare's Richard III.</p></lcQuestion2>
                 <lceInlineInteractionText>
-                    <p>Now is the <lceGap id="g1"/> of our discontent</p>
-                    <p>Made glorious <lceGap id="g2"/> by this sun of York;</p>
+                    <p>Now is the <lceGap href="#./g1"/> of our discontent</p>
+                    <p>Made glorious <lceGap href="#./g2"/> by this sun of York;</p>
                     <p>And all the clouds that lour'd upon our house</p>
                     <p>In the deep bosom of the ocean buried.</p>
                 </lceInlineInteractionText>
                 <lceGapMap>
-                    <lceGapAnswer href="#./g1">
+                    <lceGapAnswer id="g1">
                         <lceGapContent>winter</lceGapContent>
                         <lcCorrectResponse2></lcCorrectResponse2>
                     </lceGapAnswer>
                     <lceGapAnswer>
                         <lceGapContent>spring</lceGapContent>
                     </lceGapAnswer>
-                  <lceGapAnswer href="#./g2">
+                  <lceGapAnswer id="g2">
                         <lceGapContent>summer</lceGapContent>
                         <lcCorrectResponse2></lcCorrectResponse2>
                     </lceGapAnswer>

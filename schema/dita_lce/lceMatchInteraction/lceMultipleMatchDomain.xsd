@@ -393,23 +393,5 @@
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
-    
-    <xs:attributeGroup name="lceAssociableItem-atts">
-        <xs:attribute name="number" type="xs:string">
-            <xs:annotation>
-                <xs:documentation>
-                </xs:documentation>
-            </xs:annotation>
-        </xs:attribute>
-    </xs:attributeGroup>
-    
-    <xs:attributeGroup name="lceAssociableMatch-atts">
-        <xs:attribute name="number" type="xs:string">
-            <xs:annotation>
-                <xs:documentation>
-                </xs:documentation>
-            </xs:annotation>
-        </xs:attribute>
-    </xs:attributeGroup>
        
 </xs:schema>

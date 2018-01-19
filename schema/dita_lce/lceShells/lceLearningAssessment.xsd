@@ -54,9 +54,8 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGraphicDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lcePuzzleGeneralDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAcrosticInteractionDomain.xsd"/>
-   
-   <!-- ======= lce pecialization constraint ======= -->
-   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMultipleMatchDomainConstraint.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMultipleMatchDomain.xsd"/>
+
    <!--  -->
 
    <xs:redefine schemaLocation="urn:oasis:names:tc:dita:xsd:commonElementGrp.xsd:1.3">
