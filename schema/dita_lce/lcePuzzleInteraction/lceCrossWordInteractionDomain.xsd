@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcecrossword-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+
+    
+    <!-- =============================================== -->
+
+    
+    <xs:group name="lceCrossWordPuzzle">
+        <xs:sequence>
+            <xs:element ref="lceCrossWordPuzzle" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceCrossWordGrid">
+        <xs:sequence>
+            <xs:element ref="lceCrossWordGrid" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceCrossRowGrid">
+        <xs:sequence>
+            <xs:element ref="lceCrossWordRow" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceCrossWordLetter">
+        <xs:sequence>
+            <xs:element ref="lceCrossWordLetter" />
+        </xs:sequence>
+    </xs:group>
+    
+    
+
+  <!-- ============================================= -->  
+    
+       
+    <xs:element name="lceCrossWordGrid">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceCrossWordGrid.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/simpletable learningInteractionBase2-d/simpletable lcecrossword-d/lceCrossWordGrid "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceCrossWordGrid.class">
+        <xs:sequence>
+            <xs:group ref="lceCrossWordGrid.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceCrossWordGrid.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceCrossWordGrid.content">
+        <xs:sequence>
+            <xs:group ref="lcMatchingPair2" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceCrossWordGrid.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup> 
+    
+    <xs:element name="lceCrossWordRow">
+        <xs:annotation>
+            <xs:documentation>The &lt;lcMatchingPair2&gt; element in an assessment interaction provides a table row with the pair of items that comprise a correct match in a matching interaction. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceCrossWordRow.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/strow learningInteractionBase2-d/strow lcecrossword-d/lceCrossWordRow "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceCrossWordRow.class">
+        <xs:sequence>
+            <xs:group ref="lceCrossWordRow.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceCrossWordRow.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceCrossWordRow.content">
+        <xs:sequence>
+            <xs:group ref="lceCrossWordLetter"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceCrossWordRow.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceCrossWordLetter">
+        <xs:annotation>
+            <xs:documentation> </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceCrossWordLetter.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/stentry learningInteractionBase2-d/stentry lcecrossword-d/lceCrossWordLetter "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceCrossWordLetter.class" mixed="true">
+        <xs:sequence>
+            <xs:group ref="lceCrossWordLetter.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceCrossWordLetter.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceCrossWordLetter.content">
+        <xs:sequence>
+            <xs:group ref="ph.cnt" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceCrossWordLetter.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceCrossWordPuzzle">
+        <xs:annotation>
+            <xs:documentation>
+                Interaction in which the student has to fill in a entries to get a lceArostic.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceCrossWordPuzzle.class">
+                    <xs:attribute ref="class" default="+ topic/fig learningInteractionBase-d/lcInteractionBase lcecrossword-d/lceCrossWordPuzzle "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceCrossWordPuzzle.class">
+        <xs:sequence>
+            <xs:group ref="lceCrossWordPuzzle.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceCrossWordPuzzle.attributes"/>
+    </xs:complexType>
+    
+    <xs:group name="lceCrossWordPuzzle.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceCrossWordGrid" minOccurs="0"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:attributeGroup name="lceCrossWordPuzzle.attributes">
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attribute name="id" type="xs:NMTOKEN" use="required"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    
+    
+</xs:schema>

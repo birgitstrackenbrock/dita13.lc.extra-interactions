@@ -105,6 +105,12 @@
     
     <uri name="lceAcrosticInteractionDomain.xsd" uri="lceAcrosticInteractionDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceAcrosticInteractionDomain.xsd" uri="lceAcrosticInteractionDomain.xsd" />
+    
+    <system systemId="lceCrossWordInteractionDomain.xsd" uri="lceCrossWordInteractionDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceCrossWordInteractionDomain.xsd" uri="lceCrossWordInteractionDomain.xsd" />
+    
+    <uri name="lceCrossWordInteractionDomain.xsd" uri="lceCrossWordInteractionDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceCrossWordInteractionDomain.xsd" uri="lceCrossWordInteractionDomain.xsd" />
   </group>
   
   
