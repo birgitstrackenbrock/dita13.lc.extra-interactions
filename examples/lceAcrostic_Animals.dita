@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd" id="ac001">
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="ac001">
     <title>Acrostic puzzle</title>
     <learningAssessmentbody>
         <lcInteraction>
@@ -10,13 +10,13 @@
                 <lceArosticOption>
                     <lceArosticClue>1</lceArosticClue>
                     <lceArosticEntry>
-                        <lceArosticEntryContent><puzzleLetter>K</puzzleLetter><lcCorrectResponse2></lcCorrectResponse2><puzzleLetter>i</puzzleLetter><puzzleLetter>t</puzzleLetter><puzzleLetter>t</puzzleLetter><puzzleLetter>e</puzzleLetter><puzzleLetter>n</puzzleLetter></lceArosticEntryContent>
+                        <lceArosticEntryContent><puzzleLetter answertype="part-of-solution">K</puzzleLetter><puzzleLetter>i</puzzleLetter><puzzleLetter>t</puzzleLetter><puzzleLetter>t</puzzleLetter><puzzleLetter>e</puzzleLetter><puzzleLetter>n</puzzleLetter></lceArosticEntryContent><lcCorrectResponse2/>
                     </lceArosticEntry>
                 </lceArosticOption>
                 <lceArosticOption>
                     <lceArosticClue>2</lceArosticClue>
                     <lceArosticEntry>
-                        <lceArosticEntryContent><puzzleLetter>T</puzzleLetter><puzzleLetter>e</puzzleLetter><lcCorrectResponse2></lcCorrectResponse2><puzzleLetter>e</puzzleLetter><puzzleLetter>t</puzzleLetter><puzzleLetter>h</puzzleLetter></lceArosticEntryContent>
+                        <lceArosticEntryContent><puzzleLetter>T</puzzleLetter><puzzleLetter answertype="part-of-solution">e</puzzleLetter><puzzleLetter>e</puzzleLetter><puzzleLetter>t</puzzleLetter><puzzleLetter>h</puzzleLetter></lceArosticEntryContent><lcCorrectResponse2/>
                     </lceArosticEntry>
                 </lceArosticOption>
             </lceAcrosticPuzzle>
