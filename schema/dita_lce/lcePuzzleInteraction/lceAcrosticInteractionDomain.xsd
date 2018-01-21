@@ -73,6 +73,7 @@
     <xs:group name="lceArosticEntry.content">
         <xs:sequence>
             <xs:group ref="lceArosticEntryContent"/>
+            <xs:group ref="lcCorrectResponse2"/>
             <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
@@ -109,8 +110,6 @@
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
                 <xs:group ref="puzzleLetter" />
-                <xs:group ref="predefinedLetter" />
-                <xs:group ref="lcCorrectResponse2"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
