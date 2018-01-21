@@ -25,6 +25,10 @@
                     </lceMatchAnswer>
                     <lceMatchAnswer>
                         <lceAssociable href="#./i2"/>
+                        <lceAssociable href="#./m1"/>
+                        <lcCorrectResponse></lcCorrectResponse>
+                    </lceMatchAnswer>
+                    <lceMatchAnswer>
                         <lceAssociable href="#./i3"/>
                         <lceAssociable href="#./m1"/>
                         <lcCorrectResponse></lcCorrectResponse>

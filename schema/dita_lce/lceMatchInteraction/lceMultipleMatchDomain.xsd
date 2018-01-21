@@ -330,7 +330,7 @@
     </xs:element>
     <xs:complexType name="lceMatchAnswer.class">
         <xs:sequence>
-            <xs:group ref="lceAssociable" maxOccurs="unbounded"/>
+            <xs:group ref="lceAssociable" maxOccurs="2"/>
             <xs:group ref="lcCorrectResponse" minOccurs="1" maxOccurs="1"/>
             <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>

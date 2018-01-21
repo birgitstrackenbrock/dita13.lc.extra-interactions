@@ -55,6 +55,8 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lcePuzzleGeneralDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAcrosticInteractionDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMultipleMatchDomain.xsd"/>
+   
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd"/>
 
    <!--  -->
 
@@ -120,6 +122,7 @@
       <xs:attributeGroup name="props-attribute-extensions">
          <xs:attributeGroup ref="props-attribute-extensions"/>
          <xs:attributeGroup ref="deliveryTargetAtt-d-attribute"/>
+         <xs:attributeGroup ref="lceAnswerTypeAtt-d-attribute"/>
       </xs:attributeGroup>
    </xs:redefine>
 

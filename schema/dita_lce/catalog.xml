@@ -18,6 +18,14 @@
     <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:1.0" uri="lceLearningContent.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:1.1" uri="lceLearningContent.xsd" />
   </group>
+  
+  <group xml:base="lceAtts/">
+    <system systemId="lceAnswerAttsDomain.xsd" uri="lceAnswerAttsDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd" uri="lceAnswerAttsDomain.xsd" />
+    
+    <uri name="lceAnswerAttsDomain.xsd" uri="lceAnswerAttsDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd" uri="lceAnswerAttsDomain.xsd" />
+  </group>
    
   <group xml:base="lceGraphicInteraction/">
     <system systemId="lceDrawDomain.xsd" uri="lceDrawDomain.xsd" />

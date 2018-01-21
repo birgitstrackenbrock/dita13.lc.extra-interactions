@@ -8,14 +8,14 @@
   
     <xs:annotation>
       <xs:appinfo>
-        <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(props associable)</dita:domainsModule>
+        <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(props answertype)</dita:domainsModule>
       </xs:appinfo>
       <xs:documentation/>
       
     </xs:annotation>
   
-  <xs:attributeGroup name="lceAssociable-atts">
-    <xs:attribute name="number" type="xs:string">
+  <xs:attributeGroup name="lceAnswerTypeAtt-d-attribute">
+    <xs:attribute name="answertype" type="answertype-atts.class" use="optional">
       <xs:annotation>
         <xs:documentation>
         </xs:documentation>
@@ -23,5 +23,10 @@
     </xs:attribute>
   </xs:attributeGroup>
   
-  
+  <xs:simpleType name="answertype-atts.class">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="predefined"/>
+      <xs:enumeration value="part-of-solution"/>
+    </xs:restriction>
+  </xs:simpleType>
 </xs:schema>
