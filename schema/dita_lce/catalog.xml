@@ -25,6 +25,12 @@
     
     <uri name="lceAnswerAttsDomain.xsd" uri="lceAnswerAttsDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd" uri="lceAnswerAttsDomain.xsd" />
+    
+    <system systemId="lceDirectionAttsDomain.xsd" uri="lceDirectionAttsDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceDirectionAttsDomain.xsd" uri="lceDirectionAttsDomain.xsd" />
+    
+    <uri name="lceDirectionAttsDomain.xsd" uri="lceDirectionAttsDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceDirectionAttsDomain.xsd" uri="lceDirectionAttsDomain.xsd" />
   </group>
    
   <group xml:base="lceGraphicInteraction/">

@@ -8,14 +8,14 @@
   
     <xs:annotation>
       <xs:appinfo>
-        <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(base answertype)</dita:domainsModule>
+        <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(base direction)</dita:domainsModule>
       </xs:appinfo>
       <xs:documentation/>
       
     </xs:annotation>
   
-  <xs:attributeGroup name="lceAnswerTypeAtt-d-attribute">
-    <xs:attribute name="answertype" type="answertype-atts.class" use="optional">
+  <xs:attributeGroup name="lceDirectionAtt-d-attribute">
+    <xs:attribute name="direction" type="direction-atts.class" use="optional">
       <xs:annotation>
         <xs:documentation>
         </xs:documentation>
@@ -23,11 +23,10 @@
     </xs:attribute>
   </xs:attributeGroup>
   
-  <xs:simpleType name="answertype-atts.class">
+  <xs:simpleType name="direction-atts.class">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="predefined"/>
-      <xs:enumeration value="part-of-solution"/>
-      <xs:enumeration value="pedefined-part-of-solution"/>
+      <xs:enumeration value="vertical"/>
+      <xs:enumeration value="horizontal"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>

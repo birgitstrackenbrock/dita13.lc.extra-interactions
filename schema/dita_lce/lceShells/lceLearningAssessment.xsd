@@ -10,10 +10,9 @@
 
 <!-- ============================================================= -->
 <xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           elementFormDefault="qualified"
-           attributeFormDefault="unqualified">
-<!-- ================ TOPIC DOMAINS ===================== -->
+   xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+   attributeFormDefault="unqualified">
+   <!-- ================ TOPIC DOMAINS ===================== -->
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:deliveryTargetAttDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:highlightDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:indexingDomain.xsd:1.3"/>
@@ -21,7 +20,8 @@
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:releaseManagementDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learning2Domain.xsd:1.3"/>
-   <xs:include schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningMetadataDomain.xsd:1.3"/>
+   <xs:include
+      schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningMetadataDomain.xsd:1.3"/>
    <!-- add to include MathML -->
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:mathmlDomain.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:equationDomain.xsd:1.3"/>
@@ -30,9 +30,10 @@
    <!-- ================ GROUP DEFINITIONS ===================== -->
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:tblDeclGrp.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningBaseGrp.xsd:1.3"/>
-   <xs:include schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningAssessmentGrp.xsd:1.3"/>
+   <xs:include
+      schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningAssessmentGrp.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:topicGrp.xsd:1.3"/>
-    
+
    <!-- =================  MODULE INCLUDE DEFINITION  ================== -->
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:commonElementMod.xsd:1.3"/>
 
@@ -41,7 +42,7 @@
 
    <!-- ======= MetaData elements, plus keyword and indexterm ======= -->
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:metaDeclMod.xsd:1.3"/>
-   
+
    <!-- Add -->
    <!-- ======= lce specialization modules ======= -->
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGGMDomain.xsd"/>
@@ -56,8 +57,9 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAcrosticInteractionDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMultipleMatchDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceCrossWordInteractionDomain.xsd"/>
-   
+
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceDirectionAttsDomain.xsd"/>
 
    <!--  -->
 
@@ -123,11 +125,16 @@
       <xs:attributeGroup name="props-attribute-extensions">
          <xs:attributeGroup ref="props-attribute-extensions"/>
          <xs:attributeGroup ref="deliveryTargetAtt-d-attribute"/>
-         <xs:attributeGroup ref="lceAnswerTypeAtt-d-attribute"/>
       </xs:attributeGroup>
    </xs:redefine>
-
    
+   <xs:attributeGroup name="base-attribute-extensions">
+      <xs:attributeGroup ref="base-attribute-extensions"/>
+      <xs:attributeGroup ref="lceAnswerTypeAtt-d-attribute"/>
+      <xs:attributeGroup ref="lceDirectionAtt-d-attribute"/>
+   </xs:attributeGroup>
+
+
    <xs:redefine schemaLocation="urn:oasis:names:tc:dita:xsd:metaDeclGrp.xsd:1.3">
       <xs:group name="metadata">
          <xs:choice>
@@ -137,8 +144,9 @@
          </xs:choice>
       </xs:group>
    </xs:redefine>
-   
-   <xs:redefine schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningInteractionBaseDomain.xsd:1.3">
+
+   <xs:redefine
+      schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningInteractionBaseDomain.xsd:1.3">
       <xs:group name="lcInteractionBase">
          <xs:choice>
             <xs:group ref="lcInteractionBase"/>
@@ -146,8 +154,9 @@
          </xs:choice>
       </xs:group>
    </xs:redefine>
-   
-   <xs:redefine schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningInteractionBase2Domain.xsd:1.3">
+
+   <xs:redefine
+      schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningInteractionBase2Domain.xsd:1.3">
       <xs:group name="lcInteractionBase2">
          <xs:choice>
             <xs:group ref="lcInteractionBase2"/>
@@ -163,15 +172,14 @@
 
 
    <xs:include schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningBaseMod.xsd:1.3"/>
-   <xs:include schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningAssessmentMod.xsd:1.3"/>
+   <xs:include
+      schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningAssessmentMod.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:topicMod.xsd:1.3"/>
    <!--  ================ INFO-TYPES DEFINITION =====================  -->
    <xs:group name="info-types">
       <xs:annotation>
-         <xs:documentation>
-This group is referenced in all topic modules but not defined there.
-It must be declared in topic-type shells.
-</xs:documentation>
+         <xs:documentation> This group is referenced in all topic modules but not defined there. It
+            must be declared in topic-type shells. </xs:documentation>
       </xs:annotation>
       <xs:choice>
          <xs:element ref="no-topic-nesting" maxOccurs="0" minOccurs="0"/>
@@ -179,11 +187,11 @@ It must be declared in topic-type shells.
    </xs:group>
 
    <xs:attributeGroup name="domains-att">
-      <xs:attribute name="domains"
-                    type="xs:string"
-                    default="(topic hi-d) (topic indexing-d) (topic learningBase+learningInteractionBase-d) (topic learningBase+learningInteractionBase-d learningAssessment) (topic learningBase+learningInteractionBase-d+learningInteractionBase2) 
+      <xs:attribute name="domains" type="xs:string"
+         default="(topic hi-d) (topic indexing-d) (topic learningBase+learningInteractionBase-d) (topic learningBase+learningInteractionBase-d learningAssessment) (topic learningBase+learningInteractionBase-d+learningInteractionBase2) 
                     (topic learningInteractionBase-d learning-d) (topic learningInteractionBase-d) (topic learningInteractionBase2-d learning2-d) (topic learningInteractionBase2-d) (topic learningmeta-d) (topic relmgmt-d) (topic ut-d) a(props deliveryTarget)
                     (lce lcegraphic-d) (lce lcedraw-d) (lce lceggm-d) (lce lceinlinechoice-d) (lce lceinlineinteraction-d) (lce lcetextentry-d) (lce lcelcegapmatch-d) 
-                    (lce lcehottext-d) (lce lcelcemultiplematch-c) (lce lcelcemultiplematch-d) (lce lcearosticinteraction-d) (lce lcepuzzle-d)"/>
+                    (lce lcehottext-d) (lce lcelcemultiplematch-c) (lce lcelcemultiplematch-d) (lce lcearosticinteraction-d) (lce lcepuzzle-d)"
+      />
    </xs:attributeGroup>
 </xs:schema>
