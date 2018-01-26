@@ -24,15 +24,15 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceCrossRowGrid">
+    <xs:group name="lceCrossWordRow">
         <xs:sequence>
             <xs:element ref="lceCrossWordRow" />
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceCrossWordLetter">
+    <xs:group name="lceCrossWordEntry">
         <xs:sequence>
-            <xs:element ref="lceCrossWordLetter" />
+            <xs:element ref="lceCrossWordEntry"/>
         </xs:sequence>
     </xs:group>
     
@@ -62,7 +62,7 @@
     </xs:complexType>
     <xs:group name="lceCrossWordGrid.content">
         <xs:sequence>
-            <xs:group ref="lcMatchingPair2" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="lceCrossWordRow" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceCrossWordGrid.attributes">
@@ -92,7 +92,7 @@
     </xs:complexType>
     <xs:group name="lceCrossWordRow.content">
         <xs:sequence>
-            <xs:group ref="lceCrossWordLetter"/>
+            <xs:group ref="lceCrossWordEntry" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceCrossWordRow.attributes">
@@ -101,31 +101,31 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lceCrossWordLetter">
+    <xs:element name="lceCrossWordEntry">
         <xs:annotation>
             <xs:documentation> </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lceCrossWordLetter.class">
+                <xs:extension base="lceCrossWordEntry.class">
                     <xs:attribute ref="class"
-                        default="+ topic/stentry learningInteractionBase2-d/stentry lcecrossword-d/lceCrossWordLetter "/>
+                        default="+ topic/stentry learningInteractionBase2-d/stentry lcecrossword-d/lceCrossWordEntry "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lceCrossWordLetter.class" mixed="true">
+    <xs:complexType name="lceCrossWordEntry.class" mixed="true">
         <xs:sequence>
-            <xs:group ref="lceCrossWordLetter.content"/>
+            <xs:group ref="lceCrossWordEntry.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lceCrossWordLetter.attributes"/>
+        <xs:attributeGroup ref="lceCrossWordEntry.attributes"/>
     </xs:complexType>
-    <xs:group name="lceCrossWordLetter.content">
+    <xs:group name="lceCrossWordEntry.content">
         <xs:sequence>
-            <xs:group ref="ph.cnt" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="puzzleLetter" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lceCrossWordLetter.attributes">
+    <xs:attributeGroup name="lceCrossWordEntry.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>

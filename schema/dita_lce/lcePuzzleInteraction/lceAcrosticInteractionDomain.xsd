@@ -56,7 +56,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceArosticEntry.class">
-                    <xs:attribute ref="class" default="+ topic/ph lcearosticinteraction-d/lceArosticEntry "/>
+                    <xs:attribute ref="class" default="+ topic/p lcearosticinteraction-d/lceArosticEntry "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -73,15 +73,13 @@
     <xs:group name="lceArosticEntry.content">
         <xs:sequence>
             <xs:group ref="lceArosticEntryContent"/>
-            <xs:group ref="lcCorrectResponse2"/>
             <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
     
     <xs:attributeGroup name="lceArosticEntry.attributes">
-        <xs:attribute name="keyref" type="xs:string"/>
-        <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
@@ -115,8 +113,9 @@
     </xs:group>
     
     <xs:attributeGroup name="lceArosticEntryContent.attributes">
-        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attribute name="keyref" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
@@ -129,7 +128,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceArosticClue.class">
-                    <xs:attribute ref="class" default="+ topic/ph puzzleInteraction-d/lceArosticClue "/>
+                    <xs:attribute ref="class" default="+ topic/p puzzleInteraction-d/lceArosticClue "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -146,15 +145,14 @@
     <xs:group name="lceArosticClue.content">
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:group ref="ph.cnt" minOccurs="0"/>
+                <xs:group ref="basic.ph" minOccurs="0"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
     <xs:attributeGroup name="lceArosticClue.attributes">
-        <xs:attribute name="keyref" type="xs:string"/>
-        <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
 
@@ -170,7 +168,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceArosticOption.class">
-                    <xs:attribute ref="class" default="- topic/p puzzleInteraction-d/lceArosticOption  "/>
+                    <xs:attribute ref="class" default="- topic/div puzzleInteraction-d/lceArosticOption  "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -206,7 +204,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceAcrosticPuzzle.class">
-                    <xs:attribute ref="class" default="+ topic/fig learningInteractionBase-d/lcInteractionBase lcearosticinteraction-d/lceAcrosticPuzzle "/>
+                    <xs:attribute ref="class" default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lcearosticinteraction-d/lceAcrosticPuzzle "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>

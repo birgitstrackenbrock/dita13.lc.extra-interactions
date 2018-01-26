@@ -25,6 +25,7 @@
         <xs:sequence>
             <xs:choice>
                 <xs:element ref="lceAcrosticPuzzle"/>
+                <xs:element ref="lceCrossWordPuzzle"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
