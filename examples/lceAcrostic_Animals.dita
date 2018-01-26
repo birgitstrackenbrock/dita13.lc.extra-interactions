@@ -8,16 +8,15 @@
                 <lcQuestion2><p>Follow the picutes clues, fill in the grid, and the arrowed column will reveal a key word related
                         to this scene.</p></lcQuestion2>
                 <lceArosticOption>
-                    <lceArosticClue>1</lceArosticClue>
-                    <lceArosticEntry>
-                        <lceArosticEntryContent><puzzleLetter answertype="part-of-solution">K</puzzleLetter><puzzleLetter>i</puzzleLetter><puzzleLetter>t</puzzleLetter><puzzleLetter>t</puzzleLetter><puzzleLetter>e</puzzleLetter><puzzleLetter>n</puzzleLetter></lceArosticEntryContent><lcCorrectResponse2/>
-                    </lceArosticEntry>
+                    <lcePuzzleClue>1</lcePuzzleClue>
+                    <lceArosticWord>
+                        <lceArosticWordContent><lcePuzzleLetter answertype="part-of-solution">K</lcePuzzleLetter><lcePuzzleLetter>i</lcePuzzleLetter><lcePuzzleLetter>t</lcePuzzleLetter><lcePuzzleLetter>t</lcePuzzleLetter><lcePuzzleLetter>e</lcePuzzleLetter><lcePuzzleLetter>n</lcePuzzleLetter></lceArosticWordContent>
+                    </lceArosticWord>
                 </lceArosticOption>
                 <lceArosticOption>
-                    <lceArosticClue>2</lceArosticClue>
-                    <lceArosticEntry>
-                        <lceArosticEntryContent><puzzleLetter>T</puzzleLetter><puzzleLetter answertype="part-of-solution">e</puzzleLetter><puzzleLetter>e</puzzleLetter><puzzleLetter>t</puzzleLetter><puzzleLetter>h</puzzleLetter></lceArosticEntryContent><lcCorrectResponse2/>
-                    </lceArosticEntry>
+                    <lcePuzzleClue>2</lcePuzzleClue>
+                    <lceArosticWord>
+                        <lceArosticWordContent><lcePuzzleLetter>T</lcePuzzleLetter><lcePuzzleLetter answertype="part-of-solution">e</lcePuzzleLetter><lcePuzzleLetter>e</lcePuzzleLetter><lcePuzzleLetter>t</lcePuzzleLetter><lcePuzzleLetter>h</lcePuzzleLetter></lceArosticWordContent></lceArosticWord>
                 </lceArosticOption>
             </lceAcrosticPuzzle>
         </lcInteraction>

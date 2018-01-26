@@ -282,7 +282,7 @@
     </xs:complexType>
     <xs:group name="lceCrossWordOptionGrp.content">
         <xs:sequence>
-            <xs:group ref="lceCrossWordOption" minOccurs="0" maxOccurs="1"/>    
+            <xs:group ref="lceCrossWordOption" minOccurs="0" maxOccurs="unbounded"/>    
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceCrossWordOptionGrp.attributes">
@@ -321,6 +321,7 @@
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lceCrossWordGrid" minOccurs="0"/>
+            <xs:group ref="lceCrossWordOptionGrp"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>

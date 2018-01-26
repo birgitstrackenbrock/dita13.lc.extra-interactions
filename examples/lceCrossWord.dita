@@ -10,21 +10,21 @@
                 </lcQuestion2>
                 <lceCrossWordGrid id="lceCrossWordGrid_xns_qb5_qcb">
                     <lceCrossWordRow>
-                        <lceCrossWordEntry><puzzleLetter>B</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry><puzzleLetter>R</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry><puzzleLetter>U</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry><puzzleLetter>S</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry><puzzleLetter>S</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry><puzzleLetter>E</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry><puzzleLetter>L</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry><puzzleLetter>S</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry><puzzleLetter>S</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry><puzzleLetter>P</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry><puzzleLetter>R</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry><puzzleLetter>O</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry><puzzleLetter>U</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry><puzzleLetter>T</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry><puzzleLetter>S</puzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry  id="h1"><lcePuzzleLetter>B</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>R</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>U</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>S</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>S</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>E</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>L</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>S</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>S</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>P</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry id="v1"><lcePuzzleLetter>R</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>O</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>U</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>T</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>S</lcePuzzleLetter></lceCrossWordEntry>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
@@ -43,31 +43,7 @@
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
-                        <lceCrossWordEntry><puzzleLetter>H</puzzleLetter></lceCrossWordEntry>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                    </lceCrossWordRow>
-                    <lceCrossWordRow>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry/>
-                        <lceCrossWordEntry><puzzleLetter>U</puzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>H</lcePuzzleLetter></lceCrossWordEntry>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
@@ -91,7 +67,7 @@
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
-                        <lceCrossWordEntry><puzzleLetter>B</puzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>U</lcePuzzleLetter></lceCrossWordEntry>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
@@ -115,7 +91,7 @@
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
-                        <lceCrossWordEntry><puzzleLetter>A</puzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>B</lcePuzzleLetter></lceCrossWordEntry>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
@@ -139,7 +115,7 @@
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
-                        <lceCrossWordEntry><puzzleLetter>R</puzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>A</lcePuzzleLetter></lceCrossWordEntry>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
@@ -163,7 +139,31 @@
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
-                        <lceCrossWordEntry><puzzleLetter>B</puzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry><lcePuzzleLetter>R</lcePuzzleLetter></lceCrossWordEntry>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                    </lceCrossWordRow>
+                    <lceCrossWordRow>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry/>
+                        <lceCrossWordEntry><lcePuzzleLetter>B</lcePuzzleLetter></lceCrossWordEntry>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
                         <lceCrossWordEntry/>
@@ -298,6 +298,16 @@
                         <lceCrossWordEntry/>
                     </lceCrossWordRow>
                 </lceCrossWordGrid>
+                <lceCrossWordOptionGrp>
+                    <lceCrossWordOption>
+                        <lcePuzzleClue>Small cabbage-like heads or buds growing along a stalk</lcePuzzleClue>
+                        <lceGridref href="#h1"><lceCrossWord direction="horizontal"/></lceGridref>
+                    </lceCrossWordOption>
+                    <lceCrossWordOption>
+                        <lcePuzzleClue>Long pinkish sour leafstalks usually eaten cooked and sweetened</lcePuzzleClue>
+                        <lceGridref href="#v1"><lceCrossWord direction="vertical"/></lceGridref>
+                    </lceCrossWordOption>
+                </lceCrossWordOptionGrp>
             </lceCrossWordPuzzle>
         </lcInteraction>
     </learningAssessmentbody>
