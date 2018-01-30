@@ -90,7 +90,7 @@
         <xs:sequence>
             <xs:group ref="lceAnswerContentInline"/>
             <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
-            <xs:group ref="lcFeedback2" minOccurs="0"/>
+            <xs:group ref="lceFeedbackInline" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceHottextOption.attributes">

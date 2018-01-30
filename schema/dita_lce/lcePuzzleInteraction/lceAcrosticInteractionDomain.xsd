@@ -73,7 +73,7 @@
     <xs:group name="lceArosticEntry.content">
         <xs:sequence>
             <xs:group ref="lceArosticEntryContent"/>
-            <xs:group ref="lcFeedback2" minOccurs="0"/>
+            <xs:group ref="lceFeedbackInline" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
     

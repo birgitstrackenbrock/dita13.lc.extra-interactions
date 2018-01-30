@@ -130,7 +130,7 @@
                 <xs:group ref="lcCorrectResponse2"/>
                 <xs:group ref="lceAlternativeResponse"/>
             </xs:choice>
-            <xs:group ref="lcFeedback2" minOccurs="0"/>
+            <xs:group ref="lceFeedbackInline" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceAnswerOptionInline.attributes">

@@ -32,6 +32,14 @@
     <uri name="lceDirectionAttsDomain.xsd" uri="lceDirectionAttsDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceDirectionAttsDomain.xsd" uri="lceDirectionAttsDomain.xsd" />
   </group>
+  
+  <group xml:base="lceFeedback/">
+    <system systemId="lceFeedbackDomain.xsd" uri="lceFeedbackDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceFeedbackDomain.xsd" uri="lceFeedbackDomain.xsd" />
+    
+    <uri name="lceFeedbackDomain.xsd" uri="lceFeedbackDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceFeedbackDomain.xsd" uri="lceFeedbackDomain.xsd" />
+  </group>
    
   <group xml:base="lceGraphicInteraction/">
     <system systemId="lceDrawDomain.xsd" uri="lceDrawDomain.xsd" />

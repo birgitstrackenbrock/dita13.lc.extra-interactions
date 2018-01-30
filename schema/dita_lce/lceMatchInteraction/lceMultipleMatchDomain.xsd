@@ -323,7 +323,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceMatchAnswer.class">
-                    <xs:attribute ref="class" default="+ topic/p learningInteractionBase2-d/p lcemultiplematch-d/lceMatchAnswer "/>
+                    <xs:attribute ref="class" default="+ topic/div lcemultiplematch-d/lceMatchAnswer "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
