@@ -58,9 +58,12 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMultipleMatchDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceCrossWordInteractionDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceFeedbackDomain.xsd"/>
-
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceDataDomain.xsd"/>
+   
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceDirectionAttsDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceShuffleAttsDomain.xsd"/>
+   
 
    <!--  -->
 
@@ -69,6 +72,7 @@
          <xs:choice>
             <xs:group ref="data"/>
             <xs:group ref="ut-d-data"/>
+            <xs:group ref="lcedata-d-data"/>
          </xs:choice>
       </xs:group>
       <xs:group name="note">
@@ -133,6 +137,7 @@
       <xs:attributeGroup ref="base-attribute-extensions"/>
       <xs:attributeGroup ref="lceAnswerTypeAtt-d-attribute"/>
       <xs:attributeGroup ref="lceDirectionAtt-d-attribute"/>
+      <xs:attributeGroup ref="lceShuffleAtt-d-attribute"/>
    </xs:attributeGroup>
       
    </xs:redefine>

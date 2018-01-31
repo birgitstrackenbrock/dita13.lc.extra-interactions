@@ -31,6 +31,20 @@
     
     <uri name="lceDirectionAttsDomain.xsd" uri="lceDirectionAttsDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceDirectionAttsDomain.xsd" uri="lceDirectionAttsDomain.xsd" />
+    
+    <system systemId="lceShuffleAttsDomain.xsd" uri="lceShuffleAttsDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceShuffleAttsDomain.xsd" uri="lceShuffleAttsDomain.xsd" />
+    
+    <uri name="lceShuffleAttsDomain.xsd" uri="lceShuffleAttsDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceShuffleAttsDomain.xsd" uri="lceShuffleAttsDomain.xsd" />
+  </group>
+  
+  <group xml:base="lceData/">
+    <system systemId="lceDataDomain.xsd" uri="lceDataDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceDataDomain.xsd" uri="lceDataDomain.xsd" />
+    
+    <uri name="lceDataDomain.xsd" uri="lceDataDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceDataDomain.xsd" uri="lceDataDomain.xsd" />
   </group>
   
   <group xml:base="lceFeedback/">

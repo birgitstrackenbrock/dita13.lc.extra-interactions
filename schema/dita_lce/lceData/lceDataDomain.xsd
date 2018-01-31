@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcedata-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    
+    <xs:group name="lcedata-d-data">
+        <xs:choice>
+            <xs:element ref="lceEduData"/>
+        </xs:choice>
+    </xs:group>
+    
+    <xs:group name="score">
+        <xs:sequence>
+            <xs:element ref="score" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceLomEdu">
+        <xs:sequence>
+            <xs:element ref="lceLomEdu" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceEduData">
+        <xs:sequence>
+            <xs:element ref="lceEduData" />
+        </xs:sequence>
+    </xs:group>
+  
+ 
+    <!-- ============================================== -->   
+    
+    <xs:element name="score">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="score.class">
+                    <xs:attribute ref="class" default="- topic/data lcedata-d/score "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="score.class" mixed="true">
+        <xs:sequence>
+            <xs:group ref="score.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="score.attributes"/>
+    </xs:complexType>
+    <xs:group name="score.content">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="basic.ph"/>
+                <xs:group ref="image"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="score.attributes">
+        <xs:attributeGroup ref="data-element-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceLomEdu">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceLomEdu.class">
+                    <xs:attribute ref="class" default="- topic/data lcedata-d/lceLomEdu "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceLomEdu.class">
+        <xs:sequence>
+            <xs:group ref="lceLomEdu.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceLomEdu.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceLomEdu.content">
+        <xs:sequence>
+            <xs:sequence>
+                <xs:group ref="lomInteractivityType" minOccurs="0"/>
+                <xs:group ref="lomLearningResourceType" minOccurs="0"/>
+                <xs:group ref="lomInteractivityLevel" minOccurs="0"/>
+                <xs:group ref="lomSemanticDensity" minOccurs="0"/>
+                <xs:group ref="lomIntendedUserRole" minOccurs="0"/>
+                <xs:group ref="lomContext" minOccurs="0"/>
+                <xs:group ref="lomTypicalAgeRange" minOccurs="0"/>
+                <xs:group ref="lomDifficulty" minOccurs="0"/>
+                <xs:group ref="lomTypicalLearningTime" minOccurs="0"/>
+            </xs:sequence>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceLomEdu.attributes">
+        <xs:attributeGroup ref="data-element-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceEduData">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceEduData.class">
+                    <xs:attribute ref="class" default="- topic/data lcedata-d/lceEduData "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceEduData.class">
+        <xs:sequence>
+            <xs:group ref="lceEduData.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceEduData.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceEduData.content">
+        <xs:sequence>
+            <xs:group ref="score" minOccurs="0" maxOccurs="1"/>
+            <xs:group ref="lceLomEdu" minOccurs="0" />
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceEduData.attributes">
+        <xs:attributeGroup ref="data-element-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+</xs:schema>

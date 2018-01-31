@@ -17,12 +17,15 @@
                         </lceAnswerOptionInline>
                         <lceAnswerOptionInline>
                             <lceAnswerContentInline>York</lceAnswerContentInline>
-                            <lcCorrectResponse2></lcCorrectResponse2>
+                            <lcCorrectResponse2></lcCorrectResponse2><lceFeedbackInline>Right</lceFeedbackInline>
                         </lceAnswerOptionInline>
                     </lceInlineChoiceOptions></p>
                     <p>And all the clouds that lour'd upon our house</p>
                     <p>In the deep bosom of the ocean buried.</p>
                 </lceInlineInteractionText>
+                <lcFeedbackIncorrect2><p>Wrong. You should read Richard III again.</p></lcFeedbackIncorrect2>
+                <lcFeedbackCorrect2><p>Good. You know Shakespeare very well.</p></lcFeedbackCorrect2>
+                
             </lceInlineChoice>
         </lcInteraction>
     </learningAssessmentbody>
