@@ -13,9 +13,9 @@
         </xs:choice>
     </xs:group>
     
-    <xs:group name="score">
+    <xs:group name="lceScore">
         <xs:sequence>
-            <xs:element ref="score" />
+            <xs:element ref="lceScore" />
         </xs:sequence>
     </xs:group>
     
@@ -30,29 +30,35 @@
             <xs:element ref="lceEduData" />
         </xs:sequence>
     </xs:group>
+    
+    <xs:group name="lceUploadObject">
+        <xs:sequence>
+            <xs:element ref="lceUploadObject" />
+        </xs:sequence>
+    </xs:group>
   
  
     <!-- ============================================== -->   
     
-    <xs:element name="score">
+    <xs:element name="lceScore">
         <xs:annotation>
             <xs:documentation></xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="score.class">
-                    <xs:attribute ref="class" default="- topic/data lcedata-d/score "/>
+                <xs:extension base="lceScore.class">
+                    <xs:attribute ref="class" default="- topic/data lcedata-d/lceScore "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="score.class" mixed="true">
+    <xs:complexType name="lceScore.class" mixed="true">
         <xs:sequence>
-            <xs:group ref="score.content"/>
+            <xs:group ref="lceScore.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="score.attributes"/>
+        <xs:attributeGroup ref="lceScore.attributes"/>
     </xs:complexType>
-    <xs:group name="score.content">
+    <xs:group name="lceScore.content">
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
                 <xs:group ref="basic.ph"/>
@@ -60,10 +66,73 @@
             </xs:choice>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="score.attributes">
+    <xs:attributeGroup name="lceScore.attributes">
         <xs:attributeGroup ref="data-element-atts"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
+    
+    <xs:element name="lceUploadObject">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceUploadObject.class">
+                    <xs:attribute ref="class" default="- topic/object lcedata-d/lceUploadObject "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceUploadObject.class">
+        <xs:sequence>
+            <xs:group ref="lceUploadObject.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceUploadObject.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceUploadObject.content">
+        <xs:sequence>
+            <xs:group ref="desc" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceUploadObject.attributes">
+        <xs:attribute name="declare">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="declare"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="classid" type="xs:string"/>
+        <xs:attribute name="classidkeyref" type="xs:string"/>
+        <xs:attribute name="codebase" type="xs:string"/>
+        <xs:attribute name="codebasekeyref" type="xs:string"/>
+        <xs:attribute name="data" type="xs:string"/>
+        <xs:attribute name="datakeyref" type="xs:string"/>
+        <xs:attribute name="type" type="uploadtype-atts.class" use="optional"/>
+        <xs:attribute name="codetype" type="xs:string"/>
+        <xs:attribute name="archive" type="xs:string"/>
+        <xs:attribute name="archivekeyrefs" type="xs:string"/>
+        <xs:attribute name="standby" type="xs:string"/>
+        <xs:attribute name="height" type="xs:NMTOKEN"/>
+        <xs:attribute name="width" type="xs:NMTOKEN"/>
+        <xs:attribute name="usemap" type="xs:string"/>
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="tabindex" type="xs:NMTOKEN"/>
+        <xs:attribute name="longdescref" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:simpleType name="uploadtype-atts.class">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="pdf"/>
+            <xs:enumeration value="doc"/>
+            <xs:enumeration value="ppt"/>
+            <xs:enumeration value="xls"/>
+            <xs:enumeration value="xml"/>
+        </xs:restriction>
+    </xs:simpleType>
     
     <xs:element name="lceLomEdu">
         <xs:annotation>
@@ -123,8 +192,9 @@
     </xs:complexType>
     <xs:group name="lceEduData.content">
         <xs:sequence>
-            <xs:group ref="score" minOccurs="0" maxOccurs="1"/>
+            <xs:group ref="lceScore" minOccurs="0" maxOccurs="1"/>
             <xs:group ref="lceLomEdu" minOccurs="0" />
+            <xs:group ref="lceUploadObject" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceEduData.attributes">
