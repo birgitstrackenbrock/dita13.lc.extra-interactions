@@ -113,12 +113,14 @@
     
     <uri name="lceMultipleMatchDomain.xsd" uri="lceMultipleMatchDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceMultipleMatchDomain.xsd" uri="lceMultipleMatchDomain.xsd" />
+  </group>
+  
+  <group xml:base="lcePerformInteraction/">
+    <system systemId="lcePerformDomain.xsd" uri="lcePerformDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lcePerformDomain.xsd" uri="lcePerformDomain.xsd" />
     
-    <system systemId="lceMultipleMatchDomainConstraint.xsd" uri="lceMultipleMatchDomainConstraint.xsd" />
-    <system systemId="urn:dita13lce:names:xsd:lceMultipleMatchDomainConstraint.xsd" uri="lceMultipleMatchDomainConstraint.xsd" />
-    
-    <uri name="lceMultipleMatchDomainConstraint.xsd" uri="lceMultipleMatchDomainConstraint.xsd" />
-    <uri name="urn:dita13lce:names:xsd:lceMultipleMatchDomainConstraint.xsd" uri="lceMultipleMatchDomainConstraint.xsd" />
+    <uri name="lcePerformDomain.xsd" uri="lcePerformDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lcePerformDomain.xsd" uri="lcePerformDomain.xsd" />
   </group>
   
   <group xml:base="lcePuzzleInteraction/">
