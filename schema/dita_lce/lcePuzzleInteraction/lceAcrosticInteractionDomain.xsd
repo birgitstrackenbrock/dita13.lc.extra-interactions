@@ -32,9 +32,9 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceArosticOptionGrp">
+    <xs:group name="lceArosticOptionGroup">
         <xs:sequence>
-            <xs:element ref="lceArosticOptionGrp" />
+            <xs:element ref="lceArosticOptionGroup" />
         </xs:sequence>
     </xs:group>
     
@@ -152,31 +152,31 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lceArosticOptionGrp">
+    <xs:element name="lceArosticOptionGroup">
         <xs:annotation>
             <xs:documentation>the lceArostic option group contains all acrostic options
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lceArosticOptionGrp.class">
-                    <xs:attribute ref="class" default="- topic/div lcearosticinteraction-d/lceArosticOptionGrp  "/>
+                <xs:extension base="lceArosticOptionGroup.class">
+                    <xs:attribute ref="class" default="- topic/div lcearosticinteraction-d/lceArosticOptionGroup  "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lceArosticOptionGrp.class">
+    <xs:complexType name="lceArosticOptionGroup.class">
         <xs:sequence>
-            <xs:group ref="lceArosticOptionGrp.content"/>
+            <xs:group ref="lceArosticOptionGroup.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lceArosticOptionGrp.attributes"/>
+        <xs:attributeGroup ref="lceArosticOptionGroup.attributes"/>
     </xs:complexType>
-    <xs:group name="lceArosticOptionGrp.content">
+    <xs:group name="lceArosticOptionGroup.content">
         <xs:sequence>
-            <xs:group ref="lceArosticOption" minOccurs="0" maxOccurs="1"/>    
+            <xs:group ref="lceArosticOption" minOccurs="0" maxOccurs="unbounded"/>    
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lceArosticOptionGrp.attributes">
+    <xs:attributeGroup name="lceArosticOptionGroup.attributes">
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attributeGroup ref="global-atts"/>
@@ -211,7 +211,7 @@
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:group ref="lceArosticOption" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="lceArosticOptionGroup" minOccurs="1"/>
             <xs:group ref="p" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>

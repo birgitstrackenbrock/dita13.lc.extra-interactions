@@ -70,10 +70,10 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceMatchAnswer">
+    <xs:group name="lceMatchPair">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lceMatchAnswer"/>
+                <xs:element ref="lceMatchPair"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -307,7 +307,7 @@
     </xs:complexType>
     <xs:group name="lceMatchMap.content">
         <xs:sequence>
-            <xs:group ref="lceMatchAnswer" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceMatchPair" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceMatchMap.attributes">
@@ -316,27 +316,27 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lceMatchAnswer">
+    <xs:element name="lceMatchPair">
         <xs:annotation>
             <xs:documentation></xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lceMatchAnswer.class">
-                    <xs:attribute ref="class" default="+ topic/div lcemultiplematch-d/lceMatchAnswer "/>
+                <xs:extension base="lceMatchPair.class">
+                    <xs:attribute ref="class" default="+ topic/div lcemultiplematch-d/lceMatchPair "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lceMatchAnswer.class">
+    <xs:complexType name="lceMatchPair.class">
         <xs:sequence>
             <xs:group ref="lceAssociable" maxOccurs="2"/>
             <xs:group ref="lcCorrectResponse" minOccurs="1" maxOccurs="1"/>
             <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lceMatchAnswer.attributes"/>
+        <xs:attributeGroup ref="lceMatchPair.attributes"/>
     </xs:complexType>
-    <xs:attributeGroup name="lceMatchAnswer.attributes">
+    <xs:attributeGroup name="lceMatchPair.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>

@@ -7,6 +7,7 @@
             <lceAcrosticPuzzle id="ai001">
                 <lcQuestion2><p>Follow the picutes clues, fill in the grid, and the arrowed column will reveal a key word related
                         to this scene.</p></lcQuestion2>
+                <lceArosticOptionGroup>
                 <lceArosticOption>
                     <lcePuzzleClue>1</lcePuzzleClue>
                     <lceArosticEntry>
@@ -18,6 +19,7 @@
                     <lceArosticEntry>
                         <lceArosticEntryContent><lcePuzzleLetter>T</lcePuzzleLetter><lcePuzzleLetter answertype="part-of-solution">e</lcePuzzleLetter><lcePuzzleLetter>e</lcePuzzleLetter><lcePuzzleLetter>t</lcePuzzleLetter><lcePuzzleLetter>h</lcePuzzleLetter></lceArosticEntryContent></lceArosticEntry>
                 </lceArosticOption>
+                </lceArosticOptionGroup>
             </lceAcrosticPuzzle>
         </lcInteraction>
         <section>

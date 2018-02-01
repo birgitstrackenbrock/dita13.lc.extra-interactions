@@ -42,9 +42,9 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceCrossWordOptionGrp">
+    <xs:group name="lceCrossWordOptionGroup">
         <xs:sequence>
-            <xs:element ref="lceCrossWordOptionGrp"/>
+            <xs:element ref="lceCrossWordOptionGroup"/>
         </xs:sequence>
     </xs:group>
     
@@ -176,7 +176,7 @@
     <xs:group name="lceCrossWordOption.content">
         <xs:sequence>
             <xs:group ref="lcePuzzleClue" minOccurs="1" maxOccurs="1"/>
-            <xs:group ref="lceGridref" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lceCrossWordEntry" minOccurs="1" maxOccurs="1"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceCrossWordOption.attributes">
@@ -204,11 +204,7 @@
         <xs:attributeGroup ref="lceGridref.attributes"/>
     </xs:complexType>
     <xs:group name="lceGridref.content">
-        <xs:sequence>
-            <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:group ref="lceCrossWordEntry" />
-            </xs:choice>
-        </xs:sequence>
+        <xs:sequence/>
     </xs:group>
     <xs:attributeGroup name="lceGridref.attributes">
         <xs:attribute name="href" type="xs:string"/>
@@ -237,7 +233,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceCrossWord.class">
-                    <xs:attribute ref="class" default="- topic/desc lcecrossword-d/lceCrossWord "/>
+                    <xs:attribute ref="class" default="- topic/p lcecrossword-d/lceCrossWord "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -250,6 +246,7 @@
     </xs:complexType>
     <xs:group name="lceCrossWord.content">
         <xs:sequence>
+            <xs:group ref="lceGridref" minOccurs="0" maxOccurs="1"/>
             <xs:group ref="lcePuzzleLetter" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
@@ -258,34 +255,32 @@
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
-    
-    
-    
-    <xs:element name="lceCrossWordOptionGrp">
+
+    <xs:element name="lceCrossWordOptionGroup">
         <xs:annotation>
-            <xs:documentation>the lceArostic option group contains all acrostic options
+            <xs:documentation>
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lceCrossWordOptionGrp.class">
-                    <xs:attribute ref="class" default="- topic/div lcecrossword-d/lceCrossWordOptionGrp  "/>
+                <xs:extension base="lceCrossWordOptionGroup.class">
+                    <xs:attribute ref="class" default="- topic/div lcecrossword-d/lceCrossWordOptionGroup  "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lceCrossWordOptionGrp.class">
+    <xs:complexType name="lceCrossWordOptionGroup.class">
         <xs:sequence>
-            <xs:group ref="lceCrossWordOptionGrp.content"/>
+            <xs:group ref="lceCrossWordOptionGroup.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lceCrossWordOptionGrp.attributes"/>
+        <xs:attributeGroup ref="lceCrossWordOptionGroup.attributes"/>
     </xs:complexType>
-    <xs:group name="lceCrossWordOptionGrp.content">
+    <xs:group name="lceCrossWordOptionGroup.content">
         <xs:sequence>
             <xs:group ref="lceCrossWordOption" minOccurs="0" maxOccurs="unbounded"/>    
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lceCrossWordOptionGrp.attributes">
+    <xs:attributeGroup name="lceCrossWordOptionGroup.attributes">
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attributeGroup ref="global-atts"/>
@@ -321,7 +316,7 @@
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lceCrossWordGrid" minOccurs="0"/>
-            <xs:group ref="lceCrossWordOptionGrp"/>
+            <xs:group ref="lceCrossWordOptionGroup"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
