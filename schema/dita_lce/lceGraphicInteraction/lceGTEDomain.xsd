@@ -55,7 +55,7 @@
     <xs:group name="lceGTEMap.content">
         <xs:sequence>
             <xs:group ref="image"/>
-            <xs:group ref="lceAreaGGM" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="lceAreaGTE" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceGTEMap.attributes">
@@ -85,10 +85,9 @@
     </xs:complexType>
     <xs:group name="lceAreaGTE.content">
         <xs:sequence>
-            <xs:group ref="lceAnswerOptionInline"/>
+            <xs:group ref="lceAnswerOptionInline" maxOccurs="unbounded"/>
             <xs:group ref="lcAreaShape2" minOccurs="0"/>
             <xs:group ref="lcAreaCoords2" minOccurs="0"/>
-            <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
             <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>
     </xs:group>

@@ -8,19 +8,15 @@
   
     <xs:annotation>
       <xs:appinfo>
-        <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(base shuffle)</dita:domainsModule>
+        <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(base eduatts)</dita:domainsModule>
       </xs:appinfo>
       <xs:documentation/>
       
     </xs:annotation>
   
-  <xs:attributeGroup name="lceShuffleAtt-d-attribute">
-    <xs:attribute name="shuffle" type="shuffle-atts.class" use="optional">
-      <xs:annotation>
-        <xs:documentation>
-        </xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
+  <xs:attributeGroup name="lceEduAtt-d-attribute">
+    <xs:attribute name="shuffle" type="shuffle-atts.class" use="optional"/>
+    <xs:attribute name="case-sensetive" type="casesensetive-atts.class" use="optional"/>
   </xs:attributeGroup>
   
   <xs:simpleType name="shuffle-atts.class">
@@ -29,4 +25,12 @@
       <xs:enumeration value="no"/>
     </xs:restriction>
   </xs:simpleType>
+
+<xs:simpleType name="casesensetive-atts.class">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="yes"/>
+    <xs:enumeration value="no"/>
+  </xs:restriction>
+</xs:simpleType>
+
 </xs:schema>
