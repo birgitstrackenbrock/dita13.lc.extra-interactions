@@ -19,4 +19,6 @@ Add new general elements
 
 Functional changes
 - lceGapMatch - now reference from the gap to the answer, thus one answer can be used in different gaps
-- lceMultipleMatch - an item-match-pair now is given bij two references to the right item resp. match  
+- lceMultipleMatch - an item-match-pair now is given bij two references to the right item resp. match 
+
+Include SVG 
