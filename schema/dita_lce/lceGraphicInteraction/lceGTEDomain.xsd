@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcegraphictextentry-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lceGraphicTextEntry">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceGraphicTextEntry"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceGTEMap">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceGTEMap"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceAreaGTE">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceAreaGTE"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+<!-- ================================================================= -->
+    
+    
+    <xs:element name="lceGTEMap">
+        <xs:annotation>
+            <xs:documentation>A lceGTEMap interaction gives you designate an action area or region over an image, allowing to enter a word</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceGTEMap.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/fig learningInteractionBase2-d/fig lcegraphictextentry-d/lceGTEMap "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceGTEMap.class">
+        <xs:sequence>
+            <xs:group ref="lceGTEMap.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceGTEMap.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceGTEMap.content">
+        <xs:sequence>
+            <xs:group ref="image"/>
+            <xs:group ref="lceAreaGGM" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceGTEMap.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceAreaGTE">
+        <xs:annotation>
+            <xs:documentation>A lceAreaGTE defines an area on the image where the answer must be entered </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceAreaGTE.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/figgroup learningInteractionBase2-d/figgroup lceggm-d/lceAreaGGM "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceAreaGTE.class">
+        <xs:sequence>
+            <xs:group ref="lceAreaGTE.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceAreaGTE.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceAreaGTE.content">
+        <xs:sequence>
+            <xs:group ref="lceAnswerOptionInline"/>
+            <xs:group ref="lcAreaShape2" minOccurs="0"/>
+            <xs:group ref="lcAreaCoords2" minOccurs="0"/>
+            <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
+            <xs:group ref="lcFeedback2" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceAreaGTE.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+     
+    <xs:element name="lceGraphicTextEntry">
+        <xs:annotation>
+            <xs:documentation>In a lceGraphicTextEntry interaction, the learner fills in a gap on an image </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceGraphicTextEntry.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lcegraphictextentry-d/lceGraphicTextEntry "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceGraphicTextEntry.class">
+        <xs:sequence>
+            <xs:group ref="lceGraphicTextEntry.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceGraphicTextEntry.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceGraphicTextEntry.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lceGTEMap"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceGraphicTextEntry.attributes">
+        <xs:attribute name="id" type="xs:NMTOKEN"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+
+
+
+</xs:schema>

@@ -11,6 +11,7 @@
             <xs:choice>
                 <xs:element ref="lceGraphicGapMatch"/>
                 <xs:element ref="lceDrawing"/>
+                <xs:element ref="lceGraphicTextEntry"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -20,6 +21,7 @@
             <xs:choice>
                 <xs:element ref="lceGraphicGapMatch"/>
                 <xs:element ref="lceDrawing"/>
+                <xs:element ref="lceGraphicTextEntry"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>

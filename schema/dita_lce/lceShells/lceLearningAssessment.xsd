@@ -60,6 +60,7 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceFeedbackDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceDataDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lcePerformDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGTEDomain.xsd"/>
    
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceDirectionAttsDomain.xsd"/>

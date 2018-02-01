@@ -73,6 +73,12 @@
     
     <uri name="lceGraphicDomain.xsd" uri="lceGraphicDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceGraphicDomain.xsd" uri="lceGraphicDomain.xsd" />
+    
+    <system systemId="lceGTEDomain.xsd" uri="lceGTEDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceGTEDomain.xsd" uri="lceGTEDomain.xsd" />
+    
+    <uri name="lceGTEDomain.xsd" uri="lceGTEDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceGTEDomain.xsd" uri="lceGTEDomain.xsd" />
   </group>
   
   <group xml:base="lceInlineInteraction/">
