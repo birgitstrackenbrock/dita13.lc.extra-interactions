@@ -32,11 +32,11 @@
     <uri name="lceDirectionAttsDomain.xsd" uri="lceDirectionAttsDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceDirectionAttsDomain.xsd" uri="lceDirectionAttsDomain.xsd" />
     
-    <system systemId="lceShuffleAttsDomain.xsd" uri="lceShuffleAttsDomain.xsd" />
-    <system systemId="urn:dita13lce:names:xsd:lceShuffleAttsDomain.xsd" uri="lceShuffleAttsDomain.xsd" />
+    <system systemId="lceEduAttsDomain.xsd" uri="lceEduAttsDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceEduAttsDomain.xsd" uri="lceEduAttsDomain.xsd" />
     
-    <uri name="lceShuffleAttsDomain.xsd" uri="lceShuffleAttsDomain.xsd" />
-    <uri name="urn:dita13lce:names:xsd:lceShuffleAttsDomain.xsd" uri="lceShuffleAttsDomain.xsd" />
+    <uri name="lceEduAttsDomain.xsd" uri="lceEduAttsDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceEduAttsDomain.xsd" uri="lceEduAttsDomain.xsd" />
   </group>
   
   <group xml:base="lceData/">

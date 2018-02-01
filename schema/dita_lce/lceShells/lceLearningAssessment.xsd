@@ -64,7 +64,7 @@
    
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceDirectionAttsDomain.xsd"/>
-   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceShuffleAttsDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceEduAttsDomain.xsd"/>
    
 
    <!--  -->
