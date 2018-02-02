@@ -66,7 +66,7 @@
        
     <xs:element name="lceCrossWordGrid">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>Grid in which the crossword can be build</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -96,7 +96,7 @@
     
     <xs:element name="lceCrossWordRow">
         <xs:annotation>
-            <xs:documentation>The &lt;lcMatchingPair2&gt; element in an assessment interaction provides a table row with the pair of items that comprise a correct match in a matching interaction. </xs:documentation>
+            <xs:documentation>Row in a crossword grid</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -126,7 +126,7 @@
     
     <xs:element name="lceCrossWordGridEntry">
         <xs:annotation>
-            <xs:documentation> </xs:documentation>
+            <xs:documentation>Cell in a crossword grid</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -156,7 +156,7 @@
     
     <xs:element name="lceCrossWordOption">
         <xs:annotation>
-            <xs:documentation>the lceArostic option contains the clue ad the entry which will lead to the lceArostic
+            <xs:documentation>Contains the clue for the word which must be entered. It also contains of the word itzelf or a link to the word in the grid.
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>
@@ -187,7 +187,7 @@
     
     <xs:element name="lceGridref">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>Reference to the entry in the grid where the first letter of the word is standing which belongs to the clue.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -228,7 +228,7 @@
     
     <xs:element name="lceCrossWordEntry">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>Container for the reference to the grid en the letters of the searched word. If referencing to the grid you do not ahve to fill in the word here.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -258,7 +258,7 @@
 
     <xs:element name="lceCrossWordOptionGroup">
         <xs:annotation>
-            <xs:documentation>
+            <xs:documentation>Container for all clues and crosswords.
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>
@@ -292,7 +292,7 @@
     <xs:element name="lceCrossWordPuzzle">
         <xs:annotation>
             <xs:documentation>
-                Interaction in which the student has to fill in a entries to get a lceArostic.
+                Interaction in which the student has to fill in a crossword
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>

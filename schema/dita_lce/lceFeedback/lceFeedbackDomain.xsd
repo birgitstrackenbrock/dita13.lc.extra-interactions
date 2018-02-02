@@ -21,7 +21,7 @@
     
     <xs:element name="lceFeedbackInline">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>Feedback element for single answers within inline interactions.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>

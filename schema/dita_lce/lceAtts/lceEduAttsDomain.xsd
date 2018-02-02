@@ -15,8 +15,18 @@
     </xs:annotation>
   
   <xs:attributeGroup name="lceEduAtt-d-attribute">
-    <xs:attribute name="shuffle" type="shuffle-atts.class" use="optional"/>
-    <xs:attribute name="case-sensetive" type="casesensetive-atts.class" use="optional"/>
+    <xs:attribute name="shuffle" type="shuffle-atts.class" use="optional">
+      <xs:annotation>
+        <xs:documentation>This attribute should only be used with interaction elements.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="case-sensetive" type="casesensetive-atts.class" use="optional">
+      <xs:annotation>
+        <xs:documentation>This attribute should be used with crossword, acrostic puzzle and text entry.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
   </xs:attributeGroup>
   
   <xs:simpleType name="shuffle-atts.class">

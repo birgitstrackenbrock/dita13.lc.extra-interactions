@@ -35,7 +35,7 @@
     
     <xs:element name="lceGTEMap">
         <xs:annotation>
-            <xs:documentation>A lceGTEMap interaction gives you designate an action area or region over an image, allowing to enter a word</xs:documentation>
+            <xs:documentation>A lceGTEMap is the container for the solution and the area on the image.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -99,7 +99,7 @@
      
     <xs:element name="lceGraphicTextEntry">
         <xs:annotation>
-            <xs:documentation>In a lceGraphicTextEntry interaction, the learner fills in a gap on an image </xs:documentation>
+            <xs:documentation>In a lceGraphicTextEntry interaction the learner fills in a gap on an image </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>

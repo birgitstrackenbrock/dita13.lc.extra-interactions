@@ -36,7 +36,7 @@
     
     <xs:element name="lceScore">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>Element in which the score of an interaction can be defined when you have an assessment with x interactions and each interaction has different scores.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -67,7 +67,7 @@
     
     <xs:element name="lceLomEdu">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>Container element special for all elements based on the LOM education set.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -105,7 +105,7 @@
     
     <xs:element name="lceEduData">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>Container element for special, additional educational information. This element can be used within interaction elements.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>

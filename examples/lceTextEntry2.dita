@@ -14,13 +14,13 @@
                             <lceAnswerOptionInline>
                                 <lceAnswerContentInline>excellent</lceAnswerContentInline>
                                 <lcCorrectResponse2></lcCorrectResponse2>
-                                <lcFeedback2>well done</lcFeedback2>
+                                <lceFeedbackInline>well done</lceFeedbackInline>
                             </lceAnswerOptionInline>
                             <lceAnswerOptionInline>
                                 <lceAnswerContentInline>good</lceAnswerContentInline>
-                                <lcFeedback2>somehow right</lcFeedback2>
+                                <lceFeedbackInline>somehow right</lceFeedbackInline>
                             </lceAnswerOptionInline>
-                        </lceTextEntryOptions> job.<draft-comment author="Birgit">correct answer and alternative answer; alternative answer has no lcCorrectResponse2 element</draft-comment></li>
+                        </lceTextEntryOptions> job.</li>
                         <li>We had to go to four <lceTextEntryOptions>
                             <lceAnswerOptionInline>
                                 <lceAnswerContentInline>different</lceAnswerContentInline>

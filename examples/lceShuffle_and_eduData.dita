@@ -27,7 +27,7 @@
                     </lcAnswerOption2>
                 </lcAnswerOptionGroup2>
                 <lceEduData>
-                    <score>10</score>
+                    <lceScore>10</lceScore>
                     <lceLomEdu>
                         <lomDifficulty value="easy"/>
                         <lomTypicalLearningTime>2</lomTypicalLearningTime>
