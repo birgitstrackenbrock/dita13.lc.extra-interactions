@@ -162,7 +162,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceCrossWordOption.class">
-                    <xs:attribute ref="class" default="- topic/div lcecrossword-d/lceCrossWordOption  "/>
+                    <xs:attribute ref="class" default="+ topic/div lcecrossword-d/lceCrossWordOption  "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -192,7 +192,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceGridref.class">
-                    <xs:attribute ref="class" default="- topic/xref lcecrossword-d/lceGridref "/>
+                    <xs:attribute ref="class" default="+ topic/xref lcecrossword-d/lceGridref "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -233,7 +233,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceCrossWord.class">
-                    <xs:attribute ref="class" default="- topic/p lcecrossword-d/lceCrossWord "/>
+                    <xs:attribute ref="class" default="+ topic/p lcecrossword-d/lceCrossWord "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -264,7 +264,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceCrossWordOptionGroup.class">
-                    <xs:attribute ref="class" default="- topic/div lcecrossword-d/lceCrossWordOptionGroup  "/>
+                    <xs:attribute ref="class" default="+ topic/div lcecrossword-d/lceCrossWordOptionGroup  "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>

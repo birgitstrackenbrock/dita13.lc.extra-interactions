@@ -41,7 +41,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceScore.class">
-                    <xs:attribute ref="class" default="- topic/data lcedata-d/lceScore "/>
+                    <xs:attribute ref="class" default="+ topic/data lcedata-d/lceScore "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -72,7 +72,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceLomEdu.class">
-                    <xs:attribute ref="class" default="- topic/data lcedata-d/lceLomEdu "/>
+                    <xs:attribute ref="class" default="+ topic/data lcedata-d/lceLomEdu "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -110,7 +110,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceEduData.class">
-                    <xs:attribute ref="class" default="- topic/data lcedata-d/lceEduData "/>
+                    <xs:attribute ref="class" default="+ topic/data lcedata-d/lceEduData "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>

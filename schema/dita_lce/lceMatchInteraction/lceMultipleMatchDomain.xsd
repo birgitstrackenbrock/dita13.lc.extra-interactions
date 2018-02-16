@@ -141,7 +141,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceMatchSet1.class">
-                    <xs:attribute ref="class" default="- topic/ul lcemultiplematch-d/lceMatchSet1 "/>
+                    <xs:attribute ref="class" default="+ topic/ul lcemultiplematch-d/lceMatchSet1 "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -184,7 +184,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceAssociableItem.class">
-                    <xs:attribute ref="class" default="- topic/li lcemultiplematch-d/lceAssociableItem "/>
+                    <xs:attribute ref="class" default="+ topic/li lcemultiplematch-d/lceAssociableItem "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -217,7 +217,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceMatchSet2.class">
-                    <xs:attribute ref="class" default="- topic/ul lcemultiplematch-d/lceMatchSet2 "/>
+                    <xs:attribute ref="class" default="+ topic/ul lcemultiplematch-d/lceMatchSet2 "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -260,7 +260,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceAssociableMatch.class">
-                    <xs:attribute ref="class" default="- topic/li lcemultiplematch-d/lceAssociableMatch "/>
+                    <xs:attribute ref="class" default="+ topic/li lcemultiplematch-d/lceAssociableMatch "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -288,7 +288,7 @@
     
     <xs:element name="lceMatchMap">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>Container for all pairs</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -318,7 +318,7 @@
     
     <xs:element name="lceMatchPair">
         <xs:annotation>
-            <xs:documentation></xs:documentation>
+            <xs:documentation>Container for two lceAssociable which build a pair</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
@@ -349,7 +349,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceAssociable.class">
-                    <xs:attribute ref="class" default="- topic/xref lcemultiplematch-d/lceAssociable "/>
+                    <xs:attribute ref="class" default="+ topic/xref lcemultiplematch-d/lceAssociable "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>

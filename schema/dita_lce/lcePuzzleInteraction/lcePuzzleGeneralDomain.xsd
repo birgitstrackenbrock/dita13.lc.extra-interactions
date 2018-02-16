@@ -47,7 +47,7 @@
   <!-- ============================================= -->  
     
     <xs:element name="lcePuzzleLetter">
-        <xs:complexType mixed="true">
+        <xs:complexType>
             <xs:annotation>
                 <xs:documentation>
                     Letter for the solution

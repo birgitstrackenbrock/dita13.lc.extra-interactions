@@ -21,7 +21,7 @@
         </xs:documentation>
       </xs:annotation>
     </xs:attribute>
-    <xs:attribute name="case-sensetive" type="casesensetive-atts.class" use="optional">
+    <xs:attribute name="case-sensitive" type="casesensitive-atts.class" use="optional">
       <xs:annotation>
         <xs:documentation>This attribute should be used with crossword, acrostic puzzle and text entry.
         </xs:documentation>
@@ -36,7 +36,7 @@
     </xs:restriction>
   </xs:simpleType>
 
-<xs:simpleType name="casesensetive-atts.class">
+<xs:simpleType name="casesensitive-atts.class">
   <xs:restriction base="xs:string">
     <xs:enumeration value="yes"/>
     <xs:enumeration value="no"/>

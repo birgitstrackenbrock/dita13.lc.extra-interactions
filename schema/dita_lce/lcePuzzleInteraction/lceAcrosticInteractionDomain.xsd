@@ -4,7 +4,7 @@
     
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcearosticinteraction-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lceacrosticinteraction-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
     
@@ -56,7 +56,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceArosticEntry.class">
-                    <xs:attribute ref="class" default="+ topic/p lcearosticinteraction-d/lceArosticEntry "/>
+                    <xs:attribute ref="class" default="+ topic/p lceacrosticinteraction-d/lceArosticEntry "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -92,7 +92,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceArosticEntryContent.class">
-                    <xs:attribute ref="class" default="+ topic/ph lcearosticinteraction-d/lceArosticEntryContent "/>
+                    <xs:attribute ref="class" default="+ topic/ph lceacrosticinteraction-d/lceArosticEntryContent "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -128,7 +128,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceArosticOption.class">
-                    <xs:attribute ref="class" default="- topic/div lcearosticinteraction-d/lceArosticOption  "/>
+                    <xs:attribute ref="class" default="+ topic/div lceacrosticinteraction-d/lceArosticOption  "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -160,7 +160,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceArosticOptionGroup.class">
-                    <xs:attribute ref="class" default="- topic/div lcearosticinteraction-d/lceArosticOptionGroup  "/>
+                    <xs:attribute ref="class" default="+ topic/div lceacrosticinteraction-d/lceArosticOptionGroup  "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -194,7 +194,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceAcrosticPuzzle.class">
-                    <xs:attribute ref="class" default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lcearosticinteraction-d/lceAcrosticPuzzle "/>
+                    <xs:attribute ref="class" default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lceacrosticinteraction-d/lceAcrosticPuzzle "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>

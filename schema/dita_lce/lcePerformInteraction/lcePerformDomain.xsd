@@ -45,7 +45,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceUploadObject.class">
-                    <xs:attribute ref="class" default="- topic/object lceperform-d/lceUploadObject "/>
+                    <xs:attribute ref="class" default="+ topic/object lceperform-d/lceUploadObject "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>

@@ -27,7 +27,7 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="predefined"/>
       <xs:enumeration value="part-of-solution"/>
-      <xs:enumeration value="pedefined-part-of-solution"/>
+      <xs:enumeration value="predefined-part-of-solution"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>
