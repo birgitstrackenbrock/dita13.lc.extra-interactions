@@ -19,9 +19,9 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceArosticEntry">
+    <xs:group name="lceAcrosticWord">
         <xs:sequence>
-            <xs:element ref="lceArosticEntry" />
+            <xs:element ref="lceAcrosticWord" />
         </xs:sequence>
     </xs:group>
     
@@ -38,16 +38,16 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceArosticEntryContent">
+    <xs:group name="lceAcrosticWordContent">
         <xs:sequence>
-            <xs:element ref="lceArosticEntryContent" />
+            <xs:element ref="lceAcrosticWordContent" />
         </xs:sequence>
     </xs:group>
 
   <!-- ============================================= -->  
     
        
-    <xs:element name="lceArosticEntry">
+    <xs:element name="lceAcrosticWord">
         <xs:annotation>
             <xs:documentation>
                 The word which has to be filled in
@@ -55,62 +55,62 @@
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lceArosticEntry.class">
-                    <xs:attribute ref="class" default="+ topic/p lceacrosticinteraction-d/lceArosticEntry "/>
+                <xs:extension base="lceAcrosticWord.class">
+                    <xs:attribute ref="class" default="+ topic/p lceacrosticinteraction-d/lceAcrosticWord "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
     
     
-    <xs:complexType name="lceArosticEntry.class">
+    <xs:complexType name="lceAcrosticWord.class">
         <xs:sequence>
-            <xs:group ref="lceArosticEntry.content"/>
+            <xs:group ref="lceAcrosticWord.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lceArosticEntry.attributes"/>
+        <xs:attributeGroup ref="lceAcrosticWord.attributes"/>
     </xs:complexType>
     
-    <xs:group name="lceArosticEntry.content">
+    <xs:group name="lceAcrosticWord.content">
         <xs:sequence>
-            <xs:group ref="lceArosticEntryContent"/>
+            <xs:group ref="lceAcrosticWordContent"/>
             <xs:group ref="lceFeedbackInline" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
     
-    <xs:attributeGroup name="lceArosticEntry.attributes">
+    <xs:attributeGroup name="lceAcrosticWord.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lceArosticEntryContent">
+    <xs:element name="lceAcrosticWordContent">
         <xs:annotation>
             <xs:documentation>
-                The lceArosticEntryContent contains the word which has be be filled in.
+                The lceAcrosticWordContent contains the word which has be be filled in.
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lceArosticEntryContent.class">
-                    <xs:attribute ref="class" default="+ topic/ph lceacrosticinteraction-d/lceArosticEntryContent "/>
+                <xs:extension base="lceAcrosticWordContent.class">
+                    <xs:attribute ref="class" default="+ topic/ph lceacrosticinteraction-d/lceAcrosticWordContent "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lceArosticEntryContent.class">
+    <xs:complexType name="lceAcrosticWordContent.class">
         <xs:sequence>
-            <xs:group ref="lceArosticEntryContent.content"/>
+            <xs:group ref="lceAcrosticWordContent.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lceArosticEntryContent.attributes"/>
+        <xs:attributeGroup ref="lceAcrosticWordContent.attributes"/>
     </xs:complexType>
-    <xs:group name="lceArosticEntryContent.content">
+    <xs:group name="lceAcrosticWordContent.content">
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
                 <xs:group ref="lcePuzzleLetter" />
             </xs:choice>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lceArosticEntryContent.attributes">
+    <xs:attributeGroup name="lceAcrosticWordContent.attributes">
         <xs:attribute name="keyref" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
@@ -142,7 +142,7 @@
     <xs:group name="lceArosticOption.content">
         <xs:sequence>
                 <xs:group ref="lcePuzzleClue" minOccurs="1" maxOccurs="1"/>
-                <xs:group ref="lceArosticEntry" minOccurs="1" maxOccurs="1"/>
+                <xs:group ref="lceAcrosticWord" minOccurs="1" maxOccurs="1"/>
             
         </xs:sequence>
     </xs:group>
