@@ -137,7 +137,7 @@
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lceCWGEntry.class" mixed="true">
+    <xs:complexType name="lceCWGEntry.class">
         <xs:sequence>
             <xs:group ref="lceCWGEntry.content"/>
         </xs:sequence>
@@ -248,8 +248,13 @@
     </xs:complexType>
     <xs:group name="lceCWWord.content">
         <xs:sequence>
-            <xs:group ref="lceGridref" minOccurs="0" maxOccurs="1"/>
-            <xs:group ref="lcePuzzleLetter" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:choice>
+                <xs:group ref="lceGridref"/>
+                <xs:sequence>
+                    <xs:group ref="lcePuzzleLetter" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:choice>
+            
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceCWWord.attributes">
