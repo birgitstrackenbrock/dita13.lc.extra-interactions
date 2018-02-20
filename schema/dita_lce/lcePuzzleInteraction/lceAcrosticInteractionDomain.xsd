@@ -73,7 +73,8 @@
     <xs:group name="lceAcrosticWord.content">
         <xs:sequence>
             <xs:group ref="lceAcrosticWordContent"/>
-            <xs:group ref="lceFeedbackInline" minOccurs="0"/>
+            <xs:group ref="lceFeedbackInlineCorrect" minOccurs="0"/>
+            <xs:group ref="lceFeedbackInlineIncorrect" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
     
