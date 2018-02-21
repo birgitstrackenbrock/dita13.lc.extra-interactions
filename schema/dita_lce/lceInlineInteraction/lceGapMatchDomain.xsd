@@ -6,7 +6,7 @@
         </xs:appinfo>
     </xs:annotation>
     
-    <xs:group name="lcegapmatch-d-ph">
+    <xs:group name="lcegapmatch-d-xref">
         <xs:sequence>
             <xs:choice>
                 <xs:element ref="lceGap"/>

@@ -113,7 +113,6 @@
             <!-- add -->
             <xs:group ref="equation-d-ph"/>
             <xs:group ref="lceinlineinteraction-d-ph"/>
-            <xs:group ref="lcegapmatch-d-ph"/>
          </xs:choice>
       </xs:group>
       <xs:group name="foreign">
@@ -130,6 +129,13 @@
             <xs:group ref="indexing-d-index-base"/>
          </xs:choice>
       </xs:group>
+      <xs:group name="xref">
+            <xs:choice>
+               <xs:group ref="xref"/>
+               <xs:group ref="lcegapmatch-d-xref"/>
+            </xs:choice>
+      </xs:group>
+      
       <xs:attributeGroup name="props-attribute-extensions">
          <xs:attributeGroup ref="props-attribute-extensions"/>
          <xs:attributeGroup ref="deliveryTargetAtt-d-attribute"/>

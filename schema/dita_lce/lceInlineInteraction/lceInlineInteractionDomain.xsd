@@ -47,14 +47,6 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceAnswerOptionInline">
-        <xs:sequence>
-            <xs:choice>
-                <xs:element ref="lceAnswerOptionInline"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
-    
     <xs:group name="lceAnswerContentInline">
         <xs:sequence>
             <xs:choice>
@@ -103,43 +95,7 @@
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
-    
-    <xs:element name="lceAnswerOptionInline">
-        <xs:annotation>
-            <xs:documentation>The lceAnswerOption contains the answer options for either an textEntry or inlineChoice interaction</xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base="lceAnswerOptionInline.class">
-                    <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph lceinlineinteraction-d/lceAnswerOptionInline "/>
-                </xs:extension>
-            </xs:complexContent>
-        </xs:complexType>
-    </xs:element>
-    <xs:complexType name="lceAnswerOptionInline.class">
-        <xs:sequence>
-            <xs:group ref="lceAnswerOptionInline.content"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="lceAnswerOptionInline.attributes"/>
-    </xs:complexType>
-    <xs:group name="lceAnswerOptionInline.content">
-        <xs:sequence>
-            <xs:group ref="lceAnswerContentInline"/>
-            <xs:choice minOccurs="0">
-                <xs:group ref="lcCorrectResponse2"/>
-                <xs:group ref="lceAlternativeResponse"/>
-            </xs:choice>
-            <xs:group ref="lceFeedbackInlineCorrect" minOccurs="0"/>
-            <xs:group ref="lceFeedbackInlineIncorrect" minOccurs="0"/>
-        </xs:sequence>
-    </xs:group>
-    <xs:attributeGroup name="lceAnswerOptionInline.attributes">
-        <xs:attributeGroup ref="univ-atts"/>
-        <xs:attribute name="outputclass" type="xs:string"/>
-        <xs:attributeGroup ref="global-atts"/>
-    </xs:attributeGroup>
-    
+
     <xs:element name="lceAnswerContentInline">
         <xs:annotation>
             <xs:documentation>The word or phrase which must be filled in. The answer content for a gap in a textEntry or inlineChoice.</xs:documentation>

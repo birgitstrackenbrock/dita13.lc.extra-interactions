@@ -14,11 +14,11 @@
                             <lceAnswerOptionInline>
                                 <lceAnswerContentInline>excellent</lceAnswerContentInline>
                                 <lcCorrectResponse2></lcCorrectResponse2>
-                                <lceFeedbackInline>well done</lceFeedbackInline>
+                                <lceFeedbackInlineCorrect>well done</lceFeedbackInlineCorrect>
                             </lceAnswerOptionInline>
                             <lceAnswerOptionInline>
                                 <lceAnswerContentInline>good</lceAnswerContentInline>
-                                <lceFeedbackInline>somehow right</lceFeedbackInline>
+                                <lceFeedbackInlineCorrect>somehow right</lceFeedbackInlineCorrect>
                             </lceAnswerOptionInline>
                         </lceTextEntryOptions> job.</li>
                         <li>We had to go to four <lceTextEntryOptions>
