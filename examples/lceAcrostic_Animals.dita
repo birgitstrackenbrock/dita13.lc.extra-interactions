@@ -5,20 +5,34 @@
     <learningAssessmentbody>
         <lcInteraction>
             <lceAcrosticPuzzle id="ai001">
-                <lcQuestion2><p>Follow the picutes clues, fill in the grid, and the arrowed column will reveal a key word related
-                        to this scene.</p></lcQuestion2>
+                <lcQuestion2><p>Follow the picutes clues, fill in the grid, and the arrowed column
+                        will reveal a key word related to this scene.</p></lcQuestion2>
                 <lceArosticOptionGroup>
-                <lceArosticOption>
-                    <lcePuzzleClue>1</lcePuzzleClue>
-                    <lceAcrosticWord>
-                        <lceAcrosticWordContent><lcePuzzleLetter answertype="part-of-solution">K</lcePuzzleLetter><lcePuzzleLetter>i</lcePuzzleLetter><lcePuzzleLetter>t</lcePuzzleLetter><lcePuzzleLetter>t</lcePuzzleLetter><lcePuzzleLetter>e</lcePuzzleLetter><lcePuzzleLetter>n</lcePuzzleLetter></lceAcrosticWordContent>
-                    </lceAcrosticWord>
-                </lceArosticOption>
-                <lceArosticOption>
-                    <lcePuzzleClue>2</lcePuzzleClue>
-                    <lceAcrosticWord>
-                        <lceAcrosticWordContent><lcePuzzleLetter>T</lcePuzzleLetter><lcePuzzleLetter answertype="part-of-solution">e</lcePuzzleLetter><lcePuzzleLetter>e</lcePuzzleLetter><lcePuzzleLetter>t</lcePuzzleLetter><lcePuzzleLetter>h</lcePuzzleLetter></lceAcrosticWordContent></lceAcrosticWord>
-                </lceArosticOption>
+                    <lceArosticOption>
+                        <lcePuzzleClue>1</lcePuzzleClue>
+                        <lceAcrosticWord>
+                            <lceAcrosticWordContent>
+                                <lcePuzzleLetter answertype="part-of-solution">K</lcePuzzleLetter>
+                                <lcePuzzleLetter>i</lcePuzzleLetter>
+                                <lcePuzzleLetter>t</lcePuzzleLetter>
+                                <lcePuzzleLetter>t</lcePuzzleLetter>
+                                <lcePuzzleLetter>e</lcePuzzleLetter>
+                                <lcePuzzleLetter>n</lcePuzzleLetter>
+                            </lceAcrosticWordContent>
+                        </lceAcrosticWord>
+                    </lceArosticOption>
+                    <lceArosticOption>
+                        <lcePuzzleClue>2</lcePuzzleClue>
+                        <lceAcrosticWord>
+                            <lceAcrosticWordContent>
+                                <lcePuzzleLetter>T</lcePuzzleLetter>
+                                <lcePuzzleLetter answertype="part-of-solution">e</lcePuzzleLetter>
+                                <lcePuzzleLetter>e</lcePuzzleLetter>
+                                <lcePuzzleLetter>t</lcePuzzleLetter>
+                                <lcePuzzleLetter>h</lcePuzzleLetter>
+                            </lceAcrosticWordContent>
+                        </lceAcrosticWord>
+                    </lceArosticOption>
                 </lceArosticOptionGroup>
             </lceAcrosticPuzzle>
         </lcInteraction>

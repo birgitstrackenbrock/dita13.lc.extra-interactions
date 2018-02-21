@@ -43,6 +43,12 @@
             <xs:element ref="lceAcrosticWordContent" />
         </xs:sequence>
     </xs:group>
+    
+    <xs:group name="lceAcrosticSolution">
+        <xs:sequence>
+            <xs:element ref="lceAcrosticSolution" />
+        </xs:sequence>
+    </xs:group>
 
   <!-- ============================================= -->  
     
@@ -182,6 +188,37 @@
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
+    
+    <xs:element name="lceAcrosticSolution">
+        <xs:annotation>
+            <xs:documentation>
+                The word which is the solution of the different letters
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceAcrosticWord.class">
+                    <xs:attribute ref="class" default="+ topic/p lceacrosticinteraction-d/lceAcrosticSolution "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceAcrosticSolution.class">
+        <xs:sequence>
+            <xs:group ref="lceAcrosticSolution.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceAcrosticSolution.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceAcrosticSolution.content">
+        <xs:sequence>
+            <xs:group ref="lcePuzzleLetter" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceAcrosticSolution.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
       
     
     <!-- lceArostic puzzle  -->
@@ -213,7 +250,10 @@
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lceArosticOptionGroup" minOccurs="1"/>
-            <xs:group ref="p" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="p" />
+                <xs:group ref="lceAcrosticSolution"/>
+            </xs:choice>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
