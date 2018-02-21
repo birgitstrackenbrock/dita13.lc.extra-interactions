@@ -99,7 +99,7 @@
     <xs:group name="lceInlineChoiceOptions.content">
         <xs:sequence>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:group ref="lceAnswerOptionInline" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="lceChoiceOptionInline" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceInlineChoiceOptions.attributes">

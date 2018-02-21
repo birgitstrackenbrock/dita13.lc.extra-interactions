@@ -13,7 +13,7 @@
                             <lceAnswerContentInline>York</lceAnswerContentInline><lcCorrectResponse2></lcCorrectResponse2>
                         </lceAnswerOptionInline>
                         <lceAnswerOptionInline>
-                            <lceAnswerContentInline>york</lceAnswerContentInline><lceAlternativeResponse></lceAlternativeResponse><lceFeedbackInline>Be aware, a city is written with a first capital letter</lceFeedbackInline>
+                            <lceAnswerContentInline>york</lceAnswerContentInline><lceAlternativeResponse></lceAlternativeResponse><lceFeedbackInlineCorrect>Be aware, a city is written with a first capital letter</lceFeedbackInlineCorrect>
                         </lceAnswerOptionInline>
                     </lceTextEntryOptions>;</p>
                     <p>And all the clouds that lour'd upon our house</p>

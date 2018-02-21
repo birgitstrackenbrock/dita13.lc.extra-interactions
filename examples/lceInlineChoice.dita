@@ -9,16 +9,16 @@
                 <lceInlineInteractionText>
                     <p>Now is the winter of our discontent</p>
                     <p>Made glorious summer by this sun of <lceInlineChoiceOptions>
-                        <lceAnswerOptionInline>
+                        <lceChoiceOptionInline>
                             <lceAnswerContentInline>Gloucester</lceAnswerContentInline>
-                        </lceAnswerOptionInline>
-                        <lceAnswerOptionInline>
+                        </lceChoiceOptionInline>
+                        <lceChoiceOptionInline>
                             <lceAnswerContentInline>Lancaster</lceAnswerContentInline>
-                        </lceAnswerOptionInline>
-                        <lceAnswerOptionInline>
+                        </lceChoiceOptionInline>
+                        <lceChoiceOptionInline>
                             <lceAnswerContentInline>York</lceAnswerContentInline>
-                            <lcCorrectResponse2></lcCorrectResponse2><lceFeedbackInline>Right</lceFeedbackInline>
-                        </lceAnswerOptionInline>
+                            <lcCorrectResponse2></lcCorrectResponse2><lceFeedbackInlineCorrect>Right</lceFeedbackInlineCorrect>
+                        </lceChoiceOptionInline>
                     </lceInlineChoiceOptions></p>
                     <p>And all the clouds that lour'd upon our house</p>
                     <p>In the deep bosom of the ocean buried.</p>
