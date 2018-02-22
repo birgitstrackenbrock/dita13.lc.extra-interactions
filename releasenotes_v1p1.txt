@@ -6,10 +6,11 @@ Add new interactions
 - lceGraphicTextEntry - image with gaps to be filled in
 
 Add new attributes
-- answertype value predefined/part-of-solution/pedefined-part-of-solution (part-of-solution should only be used in puzzle interactions when from letters from different entry's an over all solution is generate/asked)
+- answertype value predefined
+- solutionposition text field
 - direction value vertical/horizontal
 - shullfe value yes/no
-- case-sensetive value yes/no
+- case-sensitive value yes/no
 
 Add new general elements
 - score
