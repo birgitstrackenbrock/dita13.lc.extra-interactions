@@ -199,10 +199,8 @@
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lceGridref.class" mixed="true">
-        <xs:sequence>
-            <xs:group ref="lceGridref.content"/>
-        </xs:sequence>
+    <xs:complexType name="lceGridref.class">
+        <xs:sequence/>
         <xs:attributeGroup ref="lceGridref.attributes"/>
     </xs:complexType>
     <xs:group name="lceGridref.content">
