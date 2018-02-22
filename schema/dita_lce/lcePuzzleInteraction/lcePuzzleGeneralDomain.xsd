@@ -49,6 +49,18 @@
         </xs:sequence>
     </xs:group>
     
+    <xs:group name="lcePuzzleSolution">
+        <xs:sequence>
+            <xs:element ref="lcePuzzleSolution" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcePuzzleSolutionWord">
+        <xs:sequence>
+            <xs:element ref="lcePuzzleSolutionWord" />
+        </xs:sequence>
+    </xs:group>
+    
    
   <!-- ============================================= -->  
     
@@ -113,6 +125,73 @@
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
+    
+    <xs:element name="lcePuzzleSolution">
+        <xs:annotation>
+            <xs:documentation>
+                The solution of a puzzle, can contain text and the solution word
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcePuzzleSolution.class">
+                    <xs:attribute ref="class" default="+ topic/p lcepuzzle-d/lcePuzzleSolution "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcePuzzleSolution.class">
+        <xs:sequence>
+            <xs:group ref="lcePuzzleSolution.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcePuzzleSolution.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcePuzzleSolution.content">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="lcePuzzleSolutionWord" />
+                <xs:group ref="para.cnt"/>
+            </xs:choice> 
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcePuzzleSolution.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lcePuzzleSolutionWord">
+        <xs:annotation>
+            <xs:documentation>
+                The word which is the solution of the different letters with have the attribute @solutionposition
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcePuzzleSolutionWord.class">
+                    <xs:attribute ref="class" default="+ topic/ph lcepuzzle-d/lcePuzzleSolutionWord "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcePuzzleSolutionWord.class">
+        <xs:sequence>
+            <xs:group ref="lcePuzzleSolutionWord.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcePuzzleSolutionWord.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcePuzzleSolutionWord.content">
+        <xs:sequence>
+            <xs:group ref="lcePuzzleLetter" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcePuzzleSolutionWord.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    
  
     
 </xs:schema>

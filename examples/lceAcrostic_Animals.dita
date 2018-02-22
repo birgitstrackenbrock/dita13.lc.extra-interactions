@@ -12,7 +12,7 @@
                         <lcePuzzleClue>1</lcePuzzleClue>
                         <lceAcrosticWord>
                             <lceAcrosticWordContent>
-                                <lcePuzzleLetter answertype="part-of-solution">K</lcePuzzleLetter>
+                                <lcePuzzleLetter solutionposition="1">K</lcePuzzleLetter>
                                 <lcePuzzleLetter>i</lcePuzzleLetter>
                                 <lcePuzzleLetter>t</lcePuzzleLetter>
                                 <lcePuzzleLetter>t</lcePuzzleLetter>
@@ -26,7 +26,7 @@
                         <lceAcrosticWord>
                             <lceAcrosticWordContent>
                                 <lcePuzzleLetter>T</lcePuzzleLetter>
-                                <lcePuzzleLetter answertype="part-of-solution">e</lcePuzzleLetter>
+                                <lcePuzzleLetter solutionposition="2">e</lcePuzzleLetter>
                                 <lcePuzzleLetter>e</lcePuzzleLetter>
                                 <lcePuzzleLetter>t</lcePuzzleLetter>
                                 <lcePuzzleLetter>h</lcePuzzleLetter>

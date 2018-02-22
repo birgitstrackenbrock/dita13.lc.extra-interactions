@@ -324,6 +324,7 @@
             <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lceCrossWordGrid" minOccurs="0"/>
             <xs:group ref="lceCWOptionGroup"/>
+            <xs:group ref="lcePuzzleSolution" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
