@@ -146,7 +146,7 @@
       </xs:attributeGroup>
       <xs:attributeGroup name="base-attribute-extensions">
          <xs:attributeGroup ref="base-attribute-extensions"/>
-         <xs:attributeGroup ref="lceAnswerTypeAtt-d-attribute"/>
+         <xs:attributeGroup ref="lceAnswerAtt-d-attribute"/>
          <xs:attributeGroup ref="lceDirectionAtt-d-attribute"/>
          <xs:attributeGroup ref="lceEduAtt-d-attribute"/>
       </xs:attributeGroup>

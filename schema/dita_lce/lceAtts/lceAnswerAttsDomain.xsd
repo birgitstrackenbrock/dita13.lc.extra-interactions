@@ -14,10 +14,16 @@
       
     </xs:annotation>
   
-  <xs:attributeGroup name="lceAnswerTypeAtt-d-attribute">
+  <xs:attributeGroup name="lceAnswerAtt-d-attribute">
     <xs:attribute name="answertype" type="answertype-atts.class" use="optional">
       <xs:annotation>
         <xs:documentation>this attribute should only be uesd with answer elements.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="solutionposition" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>this attribute should only be uesd with solutionLetter.
         </xs:documentation>
       </xs:annotation>
     </xs:attribute>
@@ -26,8 +32,8 @@
   <xs:simpleType name="answertype-atts.class">
     <xs:restriction base="xs:string">
       <xs:enumeration value="predefined"/>
-      <xs:enumeration value="part-of-solution"/>
-      <xs:enumeration value="predefined-part-of-solution"/>
     </xs:restriction>
   </xs:simpleType>
+  
+
 </xs:schema>
