@@ -11,30 +11,32 @@
                     <lceArosticOption>
                         <lcePuzzleClue>1</lcePuzzleClue>
                         <lceAcrosticWord>
-                            <lceAcrosticWordContent>
+                            <lcePuzzleWordContent>
                                 <lcePuzzleLetter solutionposition="1">K</lcePuzzleLetter>
                                 <lcePuzzleLetter>i</lcePuzzleLetter>
                                 <lcePuzzleLetter>t</lcePuzzleLetter>
                                 <lcePuzzleLetter>t</lcePuzzleLetter>
                                 <lcePuzzleLetter>e</lcePuzzleLetter>
                                 <lcePuzzleLetter>n</lcePuzzleLetter>
-                            </lceAcrosticWordContent>
+                            </lcePuzzleWordContent>
                         </lceAcrosticWord>
                     </lceArosticOption>
                     <lceArosticOption>
                         <lcePuzzleClue>2</lcePuzzleClue>
                         <lceAcrosticWord>
-                            <lceAcrosticWordContent>
+                            <lcePuzzleWordContent>
                                 <lcePuzzleLetter>T</lcePuzzleLetter>
                                 <lcePuzzleLetter solutionposition="2">e</lcePuzzleLetter>
                                 <lcePuzzleLetter>e</lcePuzzleLetter>
                                 <lcePuzzleLetter>t</lcePuzzleLetter>
                                 <lcePuzzleLetter>h</lcePuzzleLetter>
-                            </lceAcrosticWordContent>
+                            </lcePuzzleWordContent>
                         </lceAcrosticWord>
                     </lceArosticOption>
                 </lceArosticOptionGroup>
-                <lcePuzzleSolution>The word is: <lcePuzzleSolutionWord><lcePuzzleLetter>K</lcePuzzleLetter><lcePuzzleLetter>e</lcePuzzleLetter></lcePuzzleSolutionWord></lcePuzzleSolution>
+                <lcePuzzleSolution>The word is: <lcePuzzleSolutionWord>
+                    <lcePuzzleWordContent><lcePuzzleLetter>K</lcePuzzleLetter><lcePuzzleLetter>e</lcePuzzleLetter></lcePuzzleWordContent>
+                </lcePuzzleSolutionWord></lcePuzzleSolution>
             </lceAcrosticPuzzle>
         </lcInteraction>
         <section>
