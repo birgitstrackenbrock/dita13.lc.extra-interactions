@@ -43,12 +43,12 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="letter">
+    <xs:group name="lcePuzzleWordContent">
         <xs:sequence>
-            <xs:element ref="lcePuzzleLetter" />
+            <xs:element ref="lcePuzzleWordContent" />
         </xs:sequence>
-    </xs:group>
-    
+    </xs:group> 
+ 
     <xs:group name="lcePuzzleSolution">
         <xs:sequence>
             <xs:element ref="lcePuzzleSolution" />
@@ -124,6 +124,48 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
+    <xs:group name="lcePuzzleWord.content">
+        <xs:sequence>
+            <xs:group ref="lcePuzzleWordContent"/>
+            <xs:group ref="lceFeedbackInlineCorrect" minOccurs="0"/>
+            <xs:group ref="lceFeedbackInlineIncorrect" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:element name="lcePuzzleWordContent">
+        <xs:annotation>
+            <xs:documentation>
+                The lcePuzzleWordContent contains the word which has be be filled in.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcePuzzleWordContent.class">
+                    <xs:attribute ref="class" default="+ topic/ph lcepuzzle-d/lcePuzzleWordContent "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcePuzzleWordContent.class">
+        <xs:sequence>
+            <xs:group ref="lcePuzzleWordContent.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcePuzzleWordContent.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcePuzzleWordContent.content">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="lcePuzzleLetter" />
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcePuzzleWordContent.attributes">
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+   
     <xs:element name="lcePuzzleSolution">
         <xs:annotation>
             <xs:documentation>
@@ -174,22 +216,15 @@
     </xs:element>
     <xs:complexType name="lcePuzzleSolutionWord.class">
         <xs:sequence>
-            <xs:group ref="lcePuzzleSolutionWord.content"/>
+            <xs:group ref="lcePuzzleWord.content"/>
         </xs:sequence>
         <xs:attributeGroup ref="lcePuzzleSolutionWord.attributes"/>
     </xs:complexType>
-    <xs:group name="lcePuzzleSolutionWord.content">
-        <xs:sequence>
-            <xs:group ref="lcePuzzleLetter" minOccurs="0" maxOccurs="unbounded"/>
-        </xs:sequence>
-    </xs:group>
+    
     <xs:attributeGroup name="lcePuzzleSolutionWord.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
-    
-    
- 
     
 </xs:schema>

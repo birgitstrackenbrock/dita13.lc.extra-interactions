@@ -100,6 +100,8 @@
         <xs:sequence>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lceChoiceOptionInline" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="lceFeedbackInlineCorrect" minOccurs="0"/>
+            <xs:group ref="lceFeedbackInlineIncorrect" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceInlineChoiceOptions.attributes">

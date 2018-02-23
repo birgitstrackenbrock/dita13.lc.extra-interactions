@@ -252,7 +252,8 @@
                     <xs:group ref="lcePuzzleLetter" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
             </xs:choice>
-            
+            <xs:group ref="lceFeedbackInlineCorrect" minOccurs="0"/>
+            <xs:group ref="lceFeedbackInlineIncorrect" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceCWWord.attributes">
@@ -322,7 +323,7 @@
             <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lceCrossWordGrid" minOccurs="0"/>
             <xs:group ref="lceCWOptionGroup"/>
-            <xs:group ref="lcePuzzleSolution" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lcePuzzleSolution" minOccurs="0" maxOccurs="1"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>

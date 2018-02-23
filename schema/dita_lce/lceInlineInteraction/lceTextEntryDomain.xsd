@@ -123,7 +123,7 @@
             <xs:complexContent>
                 <xs:extension base="lceAnswerOptionInline.class">
                     <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph lceinlineinteraction-d/lceAnswerOptionInline "/>
+                        default="+ topic/ph learningInteractionBase2-d/ph lcetextentry-d/lceAnswerOptionInline "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
