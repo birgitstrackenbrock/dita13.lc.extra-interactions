@@ -21,22 +21,18 @@
                     <lceMatchPair>
                         <lceAssociable href="#./i1"/>
                         <lceAssociable href="#./m2"/>
-                        <lcCorrectResponse/>
                     </lceMatchPair>
                     <lceMatchPair>
                         <lceAssociable href="#./i2"/>
                         <lceAssociable href="#./m1"/>
-                        <lcCorrectResponse/>
                     </lceMatchPair>
                     <lceMatchPair>
                         <lceAssociable href="#./i3"/>
                         <lceAssociable href="#./m1"/>
-                        <lcCorrectResponse/>
                     </lceMatchPair>
                     <lceMatchPair>
                         <lceAssociable href="#./i4"/>
                         <lceAssociable href="#./m3"/>
-                        <lcCorrectResponse/>
                     </lceMatchPair>
                 </lceMatchMap>
             </lceMultipleMatch>

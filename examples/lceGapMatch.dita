@@ -7,8 +7,8 @@
             <lceGapMatch>
                 <lcQuestion2><p>Identify the missing words in this famous quote from Shakespeare's Richard III.</p></lcQuestion2>
                 <lceInlineInteractionText>
-                    <p>Now is the <lceGap href="#./g1"><lcCorrectResponse2/></lceGap> of our discontent</p>
-                    <p>Made glorious <lceGap href="#./g2"><lcCorrectResponse2/></lceGap> by this sun of York;</p>
+                    <p>Now is the <lceGap href="#./g1"></lceGap> of our discontent</p>
+                    <p>Made glorious <lceGap href="#./g2"></lceGap> by this sun of York;</p>
                     <p>And all the clouds that lour'd upon our house</p>
                     <p>In the deep bosom of the ocean buried.</p>
                 </lceInlineInteractionText>

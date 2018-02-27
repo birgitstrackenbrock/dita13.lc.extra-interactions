@@ -214,7 +214,6 @@
     </xs:complexType>
     <xs:group name="lceGap.content">
         <xs:sequence>
-            <xs:group ref="lcCorrectResponse2" minOccurs="1"/>
             <xs:group ref="lceFeedbackInlineCorrect" minOccurs="0"/>
             <xs:group ref="lceFeedbackInlineIncorrect" minOccurs="0"/>
         </xs:sequence>

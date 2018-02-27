@@ -331,7 +331,6 @@
     <xs:complexType name="lceMatchPair.class">
         <xs:sequence>
             <xs:group ref="lceAssociable" minOccurs="2" maxOccurs="2"/>
-            <xs:group ref="lcCorrectResponse" minOccurs="1" maxOccurs="1"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
         </xs:sequence>
