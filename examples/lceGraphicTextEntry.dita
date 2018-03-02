@@ -20,6 +20,9 @@
                             <lceAnswerContentInline>GLA</lceAnswerContentInline>
                             <lcCorrectResponse2/>
                         </lceAnswerOptionInline>
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>gla</lceAnswerContentInline><lceAlternativeResponse/>
+                        </lceAnswerOptionInline>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>12,108,39,121</lcAreaCoords2>
                     </lceAreaGTE>
