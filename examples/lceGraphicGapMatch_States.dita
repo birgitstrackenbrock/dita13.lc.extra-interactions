@@ -9,24 +9,29 @@
                 <lceGGMMap>
                     <image href="kaart.jpg" id="image_px1_qck_gbb"/>
                     <lceAreaGGM>
-                        <lceAreaContent>Soth Dakota</lceAreaContent>
+                        <lceGap href="#./g1"/>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>59, 51, 80, 30</lcAreaCoords2>
                         <lcCorrectResponse2></lcCorrectResponse2>
                     </lceAreaGGM>
                     <lceAreaGGM>
-                        <lceAreaContent>Colorado</lceAreaContent>
+                        <lceGap href="#./g2"/>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>216, 224, 80, 30</lcAreaCoords2>
                         <lcCorrectResponse2></lcCorrectResponse2>
                     </lceAreaGGM>
                     <lceAreaGGM>
-                        <lceAreaContent>Texas</lceAreaContent>
+                        <lceGap href="#./g3"/>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>430, 53, 80, 30</lcAreaCoords2>
                         <lcCorrectResponse2></lcCorrectResponse2>
                     </lceAreaGGM>
                 </lceGGMMap>
+                <lceGapOptions>
+                    <lceGapOption id="g1"><lceGapContent>Soth Dakota</lceGapContent></lceGapOption>
+                    <lceGapOption id="g2"><lceGapContent>Colorado</lceGapContent></lceGapOption>
+                    <lceGapOption id="g3"><lceGapContent>Texas</lceGapContent></lceGapOption>
+                </lceGapOptions>
             </lceGraphicGapMatch>
         </lcInteraction>
     </learningAssessmentbody>

@@ -12,22 +12,20 @@
                     <p>And all the clouds that lour'd upon our house</p>
                     <p>In the deep bosom of the ocean buried.</p>
                 </lceInlineInteractionText>
-                <lceGapMap>
-                    <lceGapAnswer id="g1">
+                <lceGapOptions>
+                    <lceGapOption id="g1">
                         <lceGapContent>winter</lceGapContent>
-                        <lcCorrectResponse2></lcCorrectResponse2>
-                    </lceGapAnswer>
-                    <lceGapAnswer>
+                    </lceGapOption>
+                    <lceGapOption>
                         <lceGapContent>spring</lceGapContent>
-                    </lceGapAnswer>
-                  <lceGapAnswer id="g2">
+                    </lceGapOption>
+                  <lceGapOption id="g2">
                         <lceGapContent>summer</lceGapContent>
-                        <lcCorrectResponse2></lcCorrectResponse2>
-                    </lceGapAnswer>
-                    <lceGapAnswer>
+                    </lceGapOption>
+                    <lceGapOption>
                         <lceGapContent>autumn</lceGapContent>
-                    </lceGapAnswer>
-                </lceGapMap>
+                    </lceGapOption>
+                </lceGapOptions>
             </lceGapMatch>
         </lcInteraction>
     </learningAssessmentbody>

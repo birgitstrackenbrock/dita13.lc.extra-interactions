@@ -12,28 +12,38 @@
                 <lceGGMMap>
                     <image href="instrumenten.jpg" id="image_tzr_fwm_1v"/>
                     <lceAreaGGM>
-                        <lceAreaContent>trumpet</lceAreaContent>
+                        <lceGap href="#./g1"/>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>59, 51, 80, 30</lcAreaCoords2>
                         <lcCorrectResponse2></lcCorrectResponse2>
                     </lceAreaGGM>
                     <lceAreaGGM>
-                        <lceAreaContent>xylophone</lceAreaContent>
+                        <lceGap href="#./g2"/>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>216, 224, 80, 30</lcAreaCoords2>
                         <lcCorrectResponse2></lcCorrectResponse2>
                     </lceAreaGGM>
                     <lceAreaGGM>
-                        <lceAreaContent>drum</lceAreaContent>
+                        <lceGap href="#./g3"/>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>430, 53, 80, 30</lcAreaCoords2>
                         <lcCorrectResponse2></lcCorrectResponse2>
                     </lceAreaGGM>
-                    <lceAreaGGM>
-                        <lceAreaContent>German flute<draft-comment author="Birgit">This one is not shown on the image.</draft-comment></lceAreaContent>
-                    </lceAreaGGM>
                 </lceGGMMap>
-                
+                <lceGapOptions>
+                    <lceGapOption id="g1">
+                        <lceGapContent>trumpet</lceGapContent>
+                    </lceGapOption>
+                    <lceGapOption id="g2">
+                        <lceGapContent>xylophone</lceGapContent>
+                    </lceGapOption>
+                    <lceGapOption id="g3">
+                        <lceGapContent>drum</lceGapContent>
+                    </lceGapOption>
+                    <lceGapOption id="g4">
+                        <lceGapContent>viool</lceGapContent>
+                    </lceGapOption>
+                </lceGapOptions>
             </lceGraphicGapMatch>
         </lcInteraction>
     </learningAssessmentbody>

@@ -14,14 +14,6 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceAreaContent">
-        <xs:sequence>
-            <xs:choice>
-                <xs:element ref="lceAreaContent"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
-    
     <xs:group name="lceGGMMap">
         <xs:sequence>
             <xs:choice>
@@ -39,42 +31,7 @@
     </xs:group>
     
 <!-- ================================================================= -->
-    <xs:element name="lceAreaContent">
-        <xs:annotation>
-            <xs:documentation>
-                In the lceAreaContent stands some text and/or an image which has to be dragged and dropped
-            </xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base="lceAreaContent.class">
-                    <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph lceggm-d/lceAreaContent "/>
-                </xs:extension>
-            </xs:complexContent>
-        </xs:complexType>
-    </xs:element>
-    <xs:complexType name="lceAreaContent.class" mixed="true">
-        <xs:sequence>
-            <xs:group ref="lceAreaContent.content"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="lceAreaContent.attributes"/>
-    </xs:complexType>
-    <xs:group name="lceAreaContent.content">
-        <xs:sequence>
-            <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:group ref="ph.cnt"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
-       
-    <xs:attributeGroup name="lceAreaContent.attributes">
-        <xs:attribute name="keyref" type="xs:string"/>
-        <xs:attributeGroup ref="univ-atts-translate-no"/>
-        <xs:attribute name="outputclass" type="xs:string"/>
-        <xs:attributeGroup ref="global-atts"/>
-    </xs:attributeGroup>
-    
+      
     <xs:element name="lceGGMMap">
         <xs:annotation>
             <xs:documentation>A lceGGMMap interaction lets you designate an action area or region over an image, allowing to drag and drop in that region to get scored as correct or incorrect in response to an interaction question. </xs:documentation>
@@ -127,7 +84,7 @@
     </xs:complexType>
     <xs:group name="lceAreaGGM.content">
         <xs:sequence>
-            <xs:group ref="lceAreaContent"/>
+            <xs:group ref="lceGap"/>
             <xs:group ref="lcAreaShape2" minOccurs="0"/>
             <xs:group ref="lcAreaCoords2" minOccurs="0"/>
             <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
@@ -164,6 +121,7 @@
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lceGGMMap"/>
+            <xs:group ref="lceGapOptions"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>

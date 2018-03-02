@@ -10,7 +10,6 @@
         <xs:sequence>
             <xs:choice>
                 <xs:element ref="lceTextEntry"/>
-                <xs:element ref="lceGapMatch"/>
                 <xs:element ref="lceInlineChoice"/>
                 <xs:element ref="lceHottext"/>
             </xs:choice>
@@ -21,7 +20,6 @@
         <xs:sequence>
             <xs:choice>
                 <xs:element ref="lceTextEntry"/>
-                <xs:element ref="lceGapMatch"/>
                 <xs:element ref="lceInlineChoice"/>
                 <xs:element ref="lceHottext"/>
             </xs:choice>

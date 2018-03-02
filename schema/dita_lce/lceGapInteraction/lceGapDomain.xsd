@@ -2,11 +2,11 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcelcegapmatch-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcegapinteraction-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
     
-    <xs:group name="lcegapmatch-d-xref">
+    <xs:group name="lcegapinteraction-d-xref">
         <xs:sequence>
             <xs:choice>
                 <xs:element ref="lceGap"/>
@@ -14,18 +14,31 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceGapMatch">
+    <xs:group name="lcegapinteraction-d-div">
         <xs:sequence>
             <xs:choice>
+                <xs:element ref="lceGraphicGapMatch"/>
                 <xs:element ref="lceGapMatch"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceGapMap">
+    <xs:group name="lcegapinteraction-d-lcInteractionBase2">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lceGapMap"/>
+                <xs:element ref="lceGraphicGapMatch"/>
+                <xs:element ref="lceGapMatch"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    
+    
+    
+    <xs:group name="lceGapOptions">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceGapOptions"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -38,10 +51,10 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceGapAnswer">
+    <xs:group name="lceGapOption">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lceGapAnswer"/>
+                <xs:element ref="lceGapOption"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -56,105 +69,65 @@
 
 <!-- ============================================================= -->
     
-    <xs:element name="lceGapMatch">
+ 
+    <xs:element name="lceGapOptions">
         <xs:annotation>
-            <xs:documentation>
-                A lceGapMatch is an textual interaction where the sudent has to drag and drop a word (or phrase) to a gap in a text. 
-                To make it more difficult more drop text can be given than gaps appear in the text.
-            </xs:documentation>
+            <xs:documentation>A lceGapOptions contains the response options for the gaps</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lceGapMatch.class">
+                <xs:extension base="lceGapOptions.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lcegapmatch-d/lceGapMatch "/>
+                        default="+ topic/p learningInteractionBase2-d/p lcegapinteraction-d/lceGapOptions "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lceGapMatch.class">
+    <xs:complexType name="lceGapOptions.class">
         <xs:sequence>
-            <xs:group ref="lceGapMatch.content"/>
+            <xs:group ref="lceGapOptions.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lceGapMatch.attributes"/>
+        <xs:attributeGroup ref="lceGapOptions.attributes"/>
     </xs:complexType>
-    <xs:group name="lceGapMatch.content">
+    <xs:group name="lceGapOptions.content">
         <xs:sequence>
-            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
-            <xs:group ref="lcQuestion2"/>
-            <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:group ref="lceInlineInteractionText"/>
-            <xs:group ref="lceGapMap"/>
-            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
-            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
-            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceGapOption" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lceGapMatch.attributes">
-        <xs:attribute name="id" type="xs:NMTOKEN"/>
-        <xs:attributeGroup ref="conref-atts"/>
-        <xs:attributeGroup ref="select-atts"/>
-        <xs:attributeGroup ref="localization-atts"/>
-        <xs:attribute name="outputclass" type="xs:string"/>
-        <xs:attributeGroup ref="global-atts"/>
-    </xs:attributeGroup>
-    
-    <xs:element name="lceGapMap">
-        <xs:annotation>
-            <xs:documentation>A lceGapMap contains the response options for the gaps</xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base="lceGapMap.class">
-                    <xs:attribute ref="class"
-                        default="+ topic/p learningInteractionBase2-d/p lcegapmatch-d/lceGapMap "/>
-                </xs:extension>
-            </xs:complexContent>
-        </xs:complexType>
-    </xs:element>
-    <xs:complexType name="lceGapMap.class">
-        <xs:sequence>
-            <xs:group ref="lceGapMap.content"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="lceGapMap.attributes"/>
-    </xs:complexType>
-    <xs:group name="lceGapMap.content">
-        <xs:sequence>
-            <xs:group ref="lceGapAnswer" minOccurs="1" maxOccurs="unbounded"/>
-        </xs:sequence>
-    </xs:group>
-    <xs:attributeGroup name="lceGapMap.attributes">
+    <xs:attributeGroup name="lceGapOptions.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lceGapAnswer">
+    <xs:element name="lceGapOption">
         <xs:annotation>
-            <xs:documentation>A lceGapAnswer defines an answer, which can be linked to a gap. </xs:documentation>
+            <xs:documentation>A lceGapOption defines an answer, which can be linked to a gap. </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lceGapAnswer.class">
+                <xs:extension base="lceGapOption.class">
                     <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph lcegapmatch-d/lceGapAnswer "/>
+                        default="+ topic/ph learningInteractionBase2-d/ph lcegapinteraction-d/lceGapOption "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lceGapAnswer.class">
+    <xs:complexType name="lceGapOption.class">
         <xs:sequence>
-            <xs:group ref="lceGapAnswer.content"/>
+            <xs:group ref="lceGapOption.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lceGapAnswer.attributes"/>
+        <xs:attributeGroup ref="lceGapOption.attributes"/>
     </xs:complexType>
-    <xs:group name="lceGapAnswer.content">
+    <xs:group name="lceGapOption.content">
         <xs:sequence>
-            <xs:group ref="lceGapContent"/>
-            <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
+            <xs:choice>
+                <xs:group ref="lceGapContent"/>
+                <xs:group ref="image"/>
+            </xs:choice>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lceGapAnswer.attributes">
+    <xs:attributeGroup name="lceGapOption.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
@@ -168,7 +141,7 @@
             <xs:complexContent>
                 <xs:extension base="lceGapContent.class">
                     <xs:attribute ref="class"
-                        default="+ topic/ph learningInteractionBase2-d/ph lcegapmatch-d/lceGapContent "/>
+                        default="+ topic/ph learningInteractionBase2-d/ph lcegapinteraction-d/lceGapContent "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -182,7 +155,7 @@
     <xs:group name="lceGapContent.content">
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:group ref="basic.ph" minOccurs="0"/>
+                <xs:group ref="basic.ph"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -201,7 +174,7 @@
             <xs:complexContent>
                 <xs:extension base="lceGap.class">
                     <xs:attribute ref="class"
-                        default="+ topic/xref learningInteractionBase2-d/xref  lcegapmatch-d/lceGap "/>
+                        default="+ topic/xref learningInteractionBase2-d/xref  lcegapinteraction-d/lceGap "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
