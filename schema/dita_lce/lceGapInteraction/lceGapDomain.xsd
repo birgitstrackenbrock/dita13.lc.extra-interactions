@@ -35,10 +35,10 @@
     
     
     
-    <xs:group name="lceGapOptions">
+    <xs:group name="lceGapOptionGroup">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lceGapOptions"/>
+                <xs:element ref="lceGapOptionGroup"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -70,31 +70,31 @@
 <!-- ============================================================= -->
     
  
-    <xs:element name="lceGapOptions">
+    <xs:element name="lceGapOptionGroup">
         <xs:annotation>
-            <xs:documentation>A lceGapOptions contains the response options for the gaps</xs:documentation>
+            <xs:documentation>A lceGapOptionGroup contains the response options for the gaps</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lceGapOptions.class">
+                <xs:extension base="lceGapOptionGroup.class">
                     <xs:attribute ref="class"
-                        default="+ topic/p learningInteractionBase2-d/p lcegapinteraction-d/lceGapOptions "/>
+                        default="+ topic/p learningInteractionBase2-d/p lcegapinteraction-d/lceGapOptionGroup "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lceGapOptions.class">
+    <xs:complexType name="lceGapOptionGroup.class">
         <xs:sequence>
-            <xs:group ref="lceGapOptions.content"/>
+            <xs:group ref="lceGapOptionGroup.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lceGapOptions.attributes"/>
+        <xs:attributeGroup ref="lceGapOptionGroup.attributes"/>
     </xs:complexType>
-    <xs:group name="lceGapOptions.content">
+    <xs:group name="lceGapOptionGroup.content">
         <xs:sequence>
             <xs:group ref="lceGapOption" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lceGapOptions.attributes">
+    <xs:attributeGroup name="lceGapOptionGroup.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>

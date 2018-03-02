@@ -27,11 +27,11 @@
                         <lcCorrectResponse2></lcCorrectResponse2>
                     </lceAreaGGM>
                 </lceGGMMap>
-                <lceGapOptions>
+                <lceGapOptionGroup>
                     <lceGapOption id="g1"><lceGapContent>Soth Dakota</lceGapContent></lceGapOption>
                     <lceGapOption id="g2"><lceGapContent>Colorado</lceGapContent></lceGapOption>
                     <lceGapOption id="g3"><lceGapContent>Texas</lceGapContent></lceGapOption>
-                </lceGapOptions>
+                </lceGapOptionGroup>
             </lceGraphicGapMatch>
         </lcInteraction>
     </learningAssessmentbody>

@@ -35,28 +35,28 @@
             <xs:element ref="lceCWGEntry"/>
         </xs:sequence>
     </xs:group>
-    
-    <xs:group name="lceCWOption">
+  
+    <xs:group name="lceGridref">
         <xs:sequence>
-            <xs:element ref="lceCWOption"/>
+            <xs:element ref="lceGridref"/>
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceCWOptionGroup">
+    <xs:group name="lceCWTable">
         <xs:sequence>
-            <xs:element ref="lceCWOptionGroup"/>
+            <xs:element ref="lceCWTable" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceCWPair">
+        <xs:sequence>
+            <xs:element ref="lceCWPair" />
         </xs:sequence>
     </xs:group>
     
     <xs:group name="lceCWWord">
         <xs:sequence>
-            <xs:element ref="lceCWWord"/>
-        </xs:sequence>
-    </xs:group>
-    
-    <xs:group name="lceGridref">
-        <xs:sequence>
-            <xs:element ref="lceGridref"/>
+            <xs:element ref="lceCWWord" />
         </xs:sequence>
     </xs:group>
     
@@ -155,38 +155,7 @@
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
-    
-    <xs:element name="lceCWOption">
-        <xs:annotation>
-            <xs:documentation>Contains the clue for the word which must be entered. It also contains of the word itzelf or a link to the word in the grid.
-            </xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base="lceCWOption.class">
-                    <xs:attribute ref="class" default="+ topic/div lcecrossword-d/lceCWOption  "/>
-                </xs:extension>
-            </xs:complexContent>
-        </xs:complexType>
-    </xs:element>
-    <xs:complexType name="lceCWOption.class">
-        <xs:sequence>
-            <xs:group ref="lceCWOption.content"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="lceCWOption.attributes"/>
-    </xs:complexType>
-    <xs:group name="lceCWOption.content">
-        <xs:sequence>
-            <xs:group ref="lcePuzzleClue" minOccurs="1" maxOccurs="1"/>
-            <xs:group ref="lceCWWord" minOccurs="1" maxOccurs="1"/>
-        </xs:sequence>
-    </xs:group>
-    <xs:attributeGroup name="lceCWOption.attributes">
-        <xs:attribute name="outputclass" type="xs:string"/>
-        <xs:attributeGroup ref="univ-atts"/>
-        <xs:attributeGroup ref="global-atts"/>
-    </xs:attributeGroup>
-    
+
     <xs:element name="lceGridref">
         <xs:annotation>
             <xs:documentation>Reference to the entry in the grid where the first letter of the word is standing which belongs to the clue.</xs:documentation>
@@ -226,14 +195,76 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
+    <xs:element name="lceCWTable">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceCWTable.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/simpletable learningInteractionBase2-d/simpletable lceacrosticinteraction-d/lceCWTable "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceCWTable.class">
+        <xs:sequence>
+            <xs:group ref="lceCWTable.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceCWTable.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceCWTable.content">
+        <xs:sequence>
+            <xs:group ref="lceCWPair" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceCWTable.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceCWPair">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceCWPair.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/strow learningInteractionBase2-d/strow lceacrosticinteraction-d/lceCWPair "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceCWPair.class">
+        <xs:sequence>
+            <xs:group ref="lceCWPair.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceCWPair.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceCWPair.content">
+        <xs:sequence>
+            <xs:group ref="lcePuzzleClue"/>
+            <xs:group ref="lceCWWord"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceCWPair.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
     <xs:element name="lceCWWord">
         <xs:annotation>
-            <xs:documentation>Container for the reference to the grid en the letters of the searched word. If referencing to the grid you do not ahve to fill in the word here.</xs:documentation>
+            <xs:documentation></xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceCWWord.class">
-                    <xs:attribute ref="class" default="+ topic/p lcecrossword-d/lceCWWord "/>
+                    <xs:attribute ref="class"
+                        default="+ topic/stentry learningInteractionBase2-d/stentry lceacrosticinteraction-d/lceCWWord "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -247,48 +278,15 @@
     <xs:group name="lceCWWord.content">
         <xs:sequence>
             <xs:choice>
-                <xs:group ref="lceGridref"/>
-                <xs:sequence>
-                    <xs:group ref="lcePuzzleLetter" minOccurs="0" maxOccurs="unbounded"/>
-                </xs:sequence>
+                <xs:group ref="lceGridref" maxOccurs="1"/>
+                <xs:group ref="lcePuzzleLetter" minOccurs="0" maxOccurs="unbounded"/>
             </xs:choice>
-            <xs:group ref="lceFeedbackInlineCorrect" minOccurs="0"/>
-            <xs:group ref="lceFeedbackInlineIncorrect" minOccurs="0"/>
+            
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceCWWord.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
-        <xs:attributeGroup ref="global-atts"/>
-    </xs:attributeGroup>
-
-    <xs:element name="lceCWOptionGroup">
-        <xs:annotation>
-            <xs:documentation>Container for all clues and crosswords.
-            </xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base="lceCWOptionGroup.class">
-                    <xs:attribute ref="class" default="+ topic/div lcecrossword-d/lceCWOptionGroup  "/>
-                </xs:extension>
-            </xs:complexContent>
-        </xs:complexType>
-    </xs:element>
-    <xs:complexType name="lceCWOptionGroup.class">
-        <xs:sequence>
-            <xs:group ref="lceCWOptionGroup.content"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="lceCWOptionGroup.attributes"/>
-    </xs:complexType>
-    <xs:group name="lceCWOptionGroup.content">
-        <xs:sequence>
-            <xs:group ref="lceCWOption" minOccurs="0" maxOccurs="unbounded"/>    
-        </xs:sequence>
-    </xs:group>
-    <xs:attributeGroup name="lceCWOptionGroup.attributes">
-        <xs:attribute name="outputclass" type="xs:string"/>
-        <xs:attributeGroup ref="univ-atts"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
@@ -322,7 +320,7 @@
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lceCrossWordGrid" minOccurs="0"/>
-            <xs:group ref="lceCWOptionGroup"/>
+            <xs:group ref="lceCWTable" minOccurs="1" maxOccurs="2"/>
             <xs:group ref="lcePuzzleSolution" minOccurs="0" maxOccurs="1"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>

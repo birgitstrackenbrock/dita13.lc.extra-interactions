@@ -30,7 +30,7 @@
                         <lcCorrectResponse2></lcCorrectResponse2>
                     </lceAreaGGM>
                 </lceGGMMap>
-                <lceGapOptions>
+                <lceGapOptionGroup>
                     <lceGapOption id="g1">
                         <lceGapContent>trumpet</lceGapContent>
                     </lceGapOption>
@@ -43,7 +43,7 @@
                     <lceGapOption id="g4">
                         <lceGapContent>viool</lceGapContent>
                     </lceGapOption>
-                </lceGapOptions>
+                </lceGapOptionGroup>
             </lceGraphicGapMatch>
         </lcInteraction>
     </learningAssessmentbody>

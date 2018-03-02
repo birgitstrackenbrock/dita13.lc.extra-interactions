@@ -1,45 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="ac001">
-    <title>Acrostic puzzle</title>
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="x2">
+    <title></title>
     <learningAssessmentbody>
         <lcInteraction>
-            <lceAcrosticPuzzle id="ai001">
+            <lceAcrosticPuzzle id="nn">
                 <lcQuestion2><p>Follow the picutes clues, fill in the grid, and the arrowed column
-                        will reveal a key word related to this scene.</p></lcQuestion2>
-                <lceArosticOptionGroup>
-                    <lceArosticOption>
-                        <lcePuzzleClue>1</lcePuzzleClue>
+                    will reveal a key word related to this scene.</p></lcQuestion2>
+                <lcAsset2>
+                    <image href="acrostic.jpg" id="image_t1p_dzp_1db"/>
+                </lcAsset2>
+                <lceAcrosticTable>
+                    <lceAcrosticPair>
+                        <lcePuzzleClue><p>1</p></lcePuzzleClue>
                         <lceAcrosticWord>
-                            <lcePuzzleWordContent>
-                                <lcePuzzleLetter solutionposition="1">K</lcePuzzleLetter>
-                                <lcePuzzleLetter>i</lcePuzzleLetter>
-                                <lcePuzzleLetter>t</lcePuzzleLetter>
-                                <lcePuzzleLetter>t</lcePuzzleLetter>
-                                <lcePuzzleLetter>e</lcePuzzleLetter>
-                                <lcePuzzleLetter>n</lcePuzzleLetter>
-                            </lcePuzzleWordContent>
-                        </lceAcrosticWord>
-                    </lceArosticOption>
-                    <lceArosticOption>
-                        <lcePuzzleClue>2</lcePuzzleClue>
-                        <lceAcrosticWord>
-                            <lcePuzzleWordContent>
-                                <lcePuzzleLetter>T</lcePuzzleLetter>
-                                <lcePuzzleLetter solutionposition="2">e</lcePuzzleLetter>
-                                <lcePuzzleLetter>e</lcePuzzleLetter>
-                                <lcePuzzleLetter>t</lcePuzzleLetter>
-                                <lcePuzzleLetter>h</lcePuzzleLetter>
-                            </lcePuzzleWordContent>
-                        </lceAcrosticWord>
-                    </lceArosticOption>
-                </lceArosticOptionGroup>
-                <lcePuzzleSolution>The word is: <lcePuzzleSolutionWord>
-                    <lcePuzzleWordContent><lcePuzzleLetter>K</lcePuzzleLetter><lcePuzzleLetter>e</lcePuzzleLetter></lcePuzzleWordContent>
-                </lcePuzzleSolutionWord></lcePuzzleSolution>
+                            <lcePuzzleLetter id="s1">K</lcePuzzleLetter>
+                            <lcePuzzleLetter>i</lcePuzzleLetter>
+                            <lcePuzzleLetter>t</lcePuzzleLetter>
+                            <lcePuzzleLetter>t</lcePuzzleLetter>
+                            <lcePuzzleLetter>e</lcePuzzleLetter>
+                            <lcePuzzleLetter>n</lcePuzzleLetter></lceAcrosticWord>
+                    </lceAcrosticPair>
+                    <lceAcrosticPair>
+                        <lcePuzzleClue><p>2</p></lcePuzzleClue>
+                        <lceAcrosticWord><lcePuzzleLetter>T</lcePuzzleLetter>
+                            <lcePuzzleLetter id="s2">e</lcePuzzleLetter>
+                            <lcePuzzleLetter>e</lcePuzzleLetter>
+                            <lcePuzzleLetter>t</lcePuzzleLetter>
+                            <lcePuzzleLetter>h</lcePuzzleLetter></lceAcrosticWord>
+                    </lceAcrosticPair>
+                </lceAcrosticTable>
+                <lcePuzzleSolution>
+                    <p>The key word is:</p>
+                    <lcePuzzleSolutionWord><lceSolutionLetter href="#./s1"/><lceSolutionLetter href="#./s2"/></lcePuzzleSolutionWord>
+                </lcePuzzleSolution>
             </lceAcrosticPuzzle>
         </lcInteraction>
-        <section>
-            <image href="../examples/acrostic.jpg" id="image_h1c_khl_gbb"/></section>
     </learningAssessmentbody>
 </learningAssessment>

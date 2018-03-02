@@ -26,11 +26,11 @@
     <uri name="lceAnswerAttsDomain.xsd" uri="lceAnswerAttsDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd" uri="lceAnswerAttsDomain.xsd" />
     
-    <system systemId="lceDirectionAttsDomain.xsd" uri="lceDirectionAttsDomain.xsd" />
-    <system systemId="urn:dita13lce:names:xsd:lceDirectionAttsDomain.xsd" uri="lceDirectionAttsDomain.xsd" />
+    <system systemId="lceOrientationAttsDomain.xsd" uri="lceOrientationAttsDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceOrientationAttsDomain.xsd" uri="lceOrientationAttsDomain.xsd" />
     
-    <uri name="lceDirectionAttsDomain.xsd" uri="lceDirectionAttsDomain.xsd" />
-    <uri name="urn:dita13lce:names:xsd:lceDirectionAttsDomain.xsd" uri="lceDirectionAttsDomain.xsd" />
+    <uri name="lceOrientationAttsDomain.xsd" uri="lceOrientationAttsDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceOrientationAttsDomain.xsd" uri="lceOrientationAttsDomain.xsd" />
     
     <system systemId="lceEduAttsDomain.xsd" uri="lceEduAttsDomain.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceEduAttsDomain.xsd" uri="lceEduAttsDomain.xsd" />

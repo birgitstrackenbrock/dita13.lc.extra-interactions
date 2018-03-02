@@ -12,7 +12,7 @@
                     <p>And all the clouds that lour'd upon our house</p>
                     <p>In the deep bosom of the ocean buried.</p>
                 </lceInlineInteractionText>
-                <lceGapOptions>
+                <lceGapOptionGroup>
                     <lceGapOption id="g1">
                         <lceGapContent>winter</lceGapContent>
                     </lceGapOption>
@@ -25,7 +25,7 @@
                     <lceGapOption>
                         <lceGapContent>autumn</lceGapContent>
                     </lceGapOption>
-                </lceGapOptions>
+                </lceGapOptionGroup>
             </lceGapMatch>
         </lcInteraction>
     </learningAssessmentbody>

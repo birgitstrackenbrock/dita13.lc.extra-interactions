@@ -21,12 +21,6 @@
         </xs:documentation>
       </xs:annotation>
     </xs:attribute>
-    <xs:attribute name="solutionposition" type="xs:string" use="optional">
-      <xs:annotation>
-        <xs:documentation>this attribute should only be uesd with solutionLetter.
-        </xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
   </xs:attributeGroup>
   
   <xs:simpleType name="answertype-atts.class">
