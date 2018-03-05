@@ -15,19 +15,16 @@
                         <lceGap href="#./g1"/>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>59, 51, 80, 30</lcAreaCoords2>
-                        <lcCorrectResponse2></lcCorrectResponse2>
                     </lceAreaGGM>
                     <lceAreaGGM>
                         <lceGap href="#./g2"/>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>216, 224, 80, 30</lcAreaCoords2>
-                        <lcCorrectResponse2></lcCorrectResponse2>
                     </lceAreaGGM>
                     <lceAreaGGM>
                         <lceGap href="#./g3"/>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>430, 53, 80, 30</lcAreaCoords2>
-                        <lcCorrectResponse2></lcCorrectResponse2>
                     </lceAreaGGM>
                 </lceGGMMap>
                 <lceGapOptionGroup>
