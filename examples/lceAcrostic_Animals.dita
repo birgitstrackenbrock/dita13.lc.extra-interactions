@@ -10,9 +10,9 @@
                 <lcAsset2>
                     <image href="acrostic.jpg" id="image_t1p_dzp_1db"/>
                 </lcAsset2>
-                <lceAcrosticTable>
-                    <lceAcrosticPair>
-                        <lcePuzzleClue><p>1</p></lcePuzzleClue>
+                <lceAcrosticOptionGroup>
+                    <lceAcrosticOption>
+                        <lcePuzzleClue>1</lcePuzzleClue>
                         <lceAcrosticWord>
                             <lcePuzzleLetter id="s1">K</lcePuzzleLetter>
                             <lcePuzzleLetter>i</lcePuzzleLetter>
@@ -20,16 +20,16 @@
                             <lcePuzzleLetter>t</lcePuzzleLetter>
                             <lcePuzzleLetter>e</lcePuzzleLetter>
                             <lcePuzzleLetter>n</lcePuzzleLetter></lceAcrosticWord>
-                    </lceAcrosticPair>
-                    <lceAcrosticPair>
-                        <lcePuzzleClue><p>2</p></lcePuzzleClue>
+                    </lceAcrosticOption>
+                    <lceAcrosticOption>
+                        <lcePuzzleClue>2</lcePuzzleClue>
                         <lceAcrosticWord><lcePuzzleLetter>T</lcePuzzleLetter>
                             <lcePuzzleLetter id="s2">e</lcePuzzleLetter>
                             <lcePuzzleLetter>e</lcePuzzleLetter>
                             <lcePuzzleLetter>t</lcePuzzleLetter>
                             <lcePuzzleLetter>h</lcePuzzleLetter></lceAcrosticWord>
-                    </lceAcrosticPair>
-                </lceAcrosticTable>
+                    </lceAcrosticOption>
+                </lceAcrosticOptionGroup>
                 <lcePuzzleSolution>
                     <p>The key word is:</p>
                     <lcePuzzleSolutionWord><lceSolutionLetter href="#./s1"/><lceSolutionLetter href="#./s2"/></lcePuzzleSolutionWord>

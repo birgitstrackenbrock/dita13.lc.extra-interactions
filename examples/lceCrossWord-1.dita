@@ -298,16 +298,16 @@
                         <lceCWGEntry/>
                     </lceCWGRow>
                 </lceCrossWordGrid>
-                <lceCWTable>
-                    <lceCWPair>
+                <lceCWOptionGroup>
+                    <lceCWOption>
                         <lcePuzzleClue>Small cabbage-like heads or buds growing along a stalk</lcePuzzleClue>
                         <lceCWWord orientation="horizontal"><lceGridref href="#h1"/></lceCWWord>
-                    </lceCWPair>
-                    <lceCWPair>
+                    </lceCWOption>
+                    <lceCWOption>
                         <lcePuzzleClue>Long pinkish sour leafstalks usually eaten cooked and sweetened</lcePuzzleClue>
                         <lceCWWord orientation="vertical"><lceGridref href="#v1"/></lceCWWord>
-                    </lceCWPair>
-                </lceCWTable>
+                    </lceCWOption>
+                </lceCWOptionGroup>
             </lceCrossWordPuzzle>
         </lcInteraction>
     </learningAssessmentbody>

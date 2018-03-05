@@ -195,7 +195,7 @@
             <xs:complexContent>
                 <xs:extension base="lcePuzzleClue.class">
                     <xs:attribute ref="class"
-                        default="+ topic/stentry learningInteractionBase2-d/stentry lcepuzzle-d/lcePuzzleClue "/>
+                        default="+ topic/dt learningInteractionBase2-d/dt lcepuzzle-d/lcePuzzleClue "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -209,7 +209,8 @@
     <xs:group name="lcePuzzleClue.content">
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:group ref="basic.block"/>
+                <xs:group ref="basic.ph"/>
+                <xs:group ref="image"/>
                 <xs:group ref="data.elements.incl"/>
                 <xs:group ref="foreign.unknown.incl"/>
             </xs:choice>
