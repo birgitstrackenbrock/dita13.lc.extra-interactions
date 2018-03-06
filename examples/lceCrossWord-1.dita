@@ -10,21 +10,21 @@
                 </lcQuestion2>
                 <lceCrossWordGrid id="lceCrossWordGrid_xns_qb5_qcb">
                     <lceCWGRow>
-                        <lceCWGEntry  id="h1"><lcePuzzleLetter>B</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>R</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>U</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>S</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>S</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>E</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>L</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>S</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>S</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>P</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry id="v1"><lcePuzzleLetter>R</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>O</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>U</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>T</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>S</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry  id="h1"><lcePuzzleLetter id="w1">B</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w2">R</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w3">U</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w4">S</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w5">S</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w6">E</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w7">L</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w8">S</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w9">S</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w10">P</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry id="v1"><lcePuzzleLetter id="w11">R</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w12">O</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w13">U</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w14">T</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w15">S</lcePuzzleLetter></lceCWGEntry>
                         <lceCWGEntry/>
                         <lceCWGEntry/>
                         <lceCWGEntry/>
@@ -44,31 +44,7 @@
                         <lceCWGEntry/>
                         <lceCWGEntry/>
                         <lceCWGEntry></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>H</lcePuzzleLetter></lceCWGEntry>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                    </lceCWGRow>
-                    <lceCWGRow>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry/>
-                        <lceCWGEntry></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>U</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w16">H</lcePuzzleLetter></lceCWGEntry>
                         <lceCWGEntry/>
                         <lceCWGEntry/>
                         <lceCWGEntry/>
@@ -92,7 +68,7 @@
                         <lceCWGEntry/>
                         <lceCWGEntry/>
                         <lceCWGEntry></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>B</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w17">U</lcePuzzleLetter></lceCWGEntry>
                         <lceCWGEntry/>
                         <lceCWGEntry/>
                         <lceCWGEntry/>
@@ -116,7 +92,7 @@
                         <lceCWGEntry/>
                         <lceCWGEntry/>
                         <lceCWGEntry></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>A</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w18">B</lcePuzzleLetter></lceCWGEntry>
                         <lceCWGEntry/>
                         <lceCWGEntry/>
                         <lceCWGEntry/>
@@ -140,7 +116,7 @@
                         <lceCWGEntry/>
                         <lceCWGEntry/>
                         <lceCWGEntry></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>R</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w19">A</lcePuzzleLetter></lceCWGEntry>
                         <lceCWGEntry/>
                         <lceCWGEntry/>
                         <lceCWGEntry/>
@@ -164,7 +140,31 @@
                         <lceCWGEntry/>
                         <lceCWGEntry/>
                         <lceCWGEntry></lceCWGEntry>
-                        <lceCWGEntry><lcePuzzleLetter>B</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w20">R</lcePuzzleLetter></lceCWGEntry>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                    </lceCWGRow>
+                    <lceCWGRow>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry/>
+                        <lceCWGEntry></lceCWGEntry>
+                        <lceCWGEntry><lcePuzzleLetter id="w21">B</lcePuzzleLetter></lceCWGEntry>
                         <lceCWGEntry/>
                         <lceCWGEntry/>
                         <lceCWGEntry/>
@@ -308,6 +308,9 @@
                         <lceCWWord orientation="vertical"><lceGridref href="#v1"/></lceCWWord>
                     </lceCWOption>
                 </lceCWOptionGroup>
+                <lcePuzzleSolution>
+                    <lcePuzzleSolutionWord><lceSolutionLetter href="#./w11"/></lcePuzzleSolutionWord>
+                </lcePuzzleSolution>
             </lceCrossWordPuzzle>
         </lcInteraction>
     </learningAssessmentbody>

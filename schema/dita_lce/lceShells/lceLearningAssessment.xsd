@@ -54,9 +54,9 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceDrawDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGraphicDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lcePuzzleGeneralDomain.xsd"/>
-   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAcrosticInteractionDomain.xsd"/>
+   <!--<xs:include schemaLocation="urn:dita13lce:names:xsd:lceCrossWordInteractionDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAcrosticInteractionDomain.xsd"/>-->
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMultipleMatchDomain.xsd"/>
-   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceCrossWordInteractionDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceFeedbackDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceDataDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lcePerformDomain.xsd"/>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="x2">
+    <title></title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lcePuzzle id="nn">
+                <lcQuestion2><p>Follow the picutes clues, fill in the grid, and the arrowed column
+                    will reveal a key word related to this scene.</p></lcQuestion2>
+                <lcAsset2>
+                    <image href="acrostic.jpg" id="image_t1p_dzp_1db"/>
+                </lcAsset2>
+                <lcePuzzleGrid>
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry></lcePuzzleEntry>
+                        <lcePuzzleEntry id="r1"><lcePuzzleLetter id="s1">K</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter>i</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter>t</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter>t</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter>e</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter>n</lcePuzzleLetter></lcePuzzleEntry>
+                    </lcePuzzleRow>
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry id="r2"><lcePuzzleLetter>T</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="s2">e</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter>e</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter>t</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter>h</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry></lcePuzzleEntry>
+                        <lcePuzzleEntry></lcePuzzleEntry>
+                    </lcePuzzleRow>
+                </lcePuzzleGrid>
+                <lcePuzzleClueGroup>
+                    <lcePuzzleClue href="#./r1"><desc>Animal 1 is a ...</desc></lcePuzzleClue>
+                    <lcePuzzleClue href="#./r2"><desc>Animal 2 is a ...</desc></lcePuzzleClue>
+                </lcePuzzleClueGroup>
+                <lcePuzzleSolution>
+                    <p>The key word is:</p>
+                    <lcePuzzleSolutionWord><lceSolutionLetter href="#./s1"/><lceSolutionLetter href="#./s2"/></lcePuzzleSolutionWord>
+                </lcePuzzleSolution>
+            </lcePuzzle>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

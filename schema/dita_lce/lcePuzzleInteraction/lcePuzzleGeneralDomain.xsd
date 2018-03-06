@@ -15,8 +15,9 @@
     <xs:group name="lcepuzzle-d-div">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lceAcrosticPuzzle"/>
-                <xs:element ref="lceCrossWordPuzzle"/>
+                <!--<xs:element ref="lceAcrosticPuzzle"/>
+                <xs:element ref="lceCrossWordPuzzle"/>-->
+                <xs:element ref="lcePuzzle"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -24,12 +25,30 @@
     <xs:group name="lcepuzzle-d-lcInteractionBase2">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lceAcrosticPuzzle"/>
-                <xs:element ref="lceCrossWordPuzzle"/>
+                <!--<xs:element ref="lceAcrosticPuzzle"/>
+                <xs:element ref="lceCrossWordPuzzle"/>-->
+                <xs:element ref="lcePuzzle"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
+    <xs:group name="lcePuzzleGrid">
+        <xs:sequence>
+            <xs:element ref="lcePuzzleGrid" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcePuzzleRow">
+        <xs:sequence>
+            <xs:element ref="lcePuzzleRow" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcePuzzleEntry">
+        <xs:sequence>
+            <xs:element ref="lcePuzzleEntry" />
+        </xs:sequence>
+    </xs:group>
 
     <xs:group name="lcePuzzleLetter">
         <xs:sequence>
@@ -40,6 +59,12 @@
     <xs:group name="lcePuzzleClue">
         <xs:sequence>
             <xs:element ref="lcePuzzleClue" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcePuzzleClueGroup">
+        <xs:sequence>
+            <xs:element ref="lcePuzzleClueGroup" />
         </xs:sequence>
     </xs:group>
  
@@ -62,6 +87,97 @@
     </xs:group>
    
   <!-- ============================================= -->  
+    <xs:element name="lcePuzzleGrid">
+        <xs:annotation>
+            <xs:documentation>Grid in which the arostic or crossword must be build</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcePuzzleGrid.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/simpletable learningInteractionBase2-d/simpletable lcepuzzle-d/lcePuzzleGrid "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcePuzzleGrid.class">
+        <xs:sequence>
+            <xs:group ref="lcePuzzleGrid.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcePuzzleGrid.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcePuzzleGrid.content">
+        <xs:sequence>
+            <xs:group ref="lcePuzzleRow" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcePuzzleGrid.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup> 
+    
+    <xs:element name="lcePuzzleRow">
+        <xs:annotation>
+            <xs:documentation>Row in an acrostic or crossword grid</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcePuzzleRow.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/strow learningInteractionBase2-d/strow lcepuzzle-d/lcePuzzleRow "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcePuzzleRow.class">
+        <xs:sequence>
+            <xs:group ref="lcePuzzleRow.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcePuzzleRow.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcePuzzleRow.content">
+        <xs:sequence>
+            <xs:group ref="lcePuzzleEntry" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcePuzzleRow.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lcePuzzleEntry">
+        <xs:annotation>
+            <xs:documentation>Cell in an acrostic or crossword grid</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcePuzzleEntry.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/stentry learningInteractionBase2-d/stentry lcepuzzle-d/lcePuzzleEntry "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcePuzzleEntry.class">
+        <xs:sequence>
+            <xs:group ref="lcePuzzleEntry.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcePuzzleEntry.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcePuzzleEntry.content">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="1">
+                <xs:group ref="lcePuzzleLetter" />
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcePuzzleEntry.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
     
     <xs:element name="lcePuzzleLetter">
         <xs:complexType>
@@ -194,8 +310,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lcePuzzleClue.class">
-                    <xs:attribute ref="class"
-                        default="+ topic/dt learningInteractionBase2-d/dt lcepuzzle-d/lcePuzzleClue "/>
+                    <xs:attribute ref="class" default="+ topic/xref learningInteractionBase2-d/dxref lcepuzzle-d/lcePuzzleClue "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -209,16 +324,99 @@
     <xs:group name="lcePuzzleClue.content">
         <xs:sequence>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:group ref="basic.ph"/>
                 <xs:group ref="image"/>
-                <xs:group ref="data.elements.incl"/>
-                <xs:group ref="foreign.unknown.incl"/>
+                <xs:group ref="desc"/>
             </xs:choice>
+            <xs:group ref="lceFeedbackInlineCorrect" minOccurs="0" maxOccurs="1"/>
+            <xs:group ref="lceFeedbackInlineIncorrect" minOccurs="0" maxOccurs="1"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lcePuzzleClue.attributes">
+        <xs:attribute name="href" type="xs:string"/>
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attribute name="type" type="xs:string"/>
+        <xs:attribute name="format" type="xs:string"/>
+        <xs:attribute name="scope">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="external"/>
+                    <xs:enumeration value="local"/>
+                    <xs:enumeration value="peer"/>
+                    <xs:enumeration value="-dita-use-conref-target"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lcePuzzleClueGroup">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcePuzzleClueGroup.class">
+                    <xs:attribute ref="class" default="+ topic/p learningInteractionBase2-d/p lcepuzzle-d/lcePuzzleClueGroup  "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcePuzzleClueGroup.class">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:group ref="p" minOccurs="0"/>
+            <xs:group ref="lcePuzzleClue"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcePuzzleClueGroup.attributes"/>
+    </xs:complexType>
+    <xs:attributeGroup name="lcePuzzleClueGroup.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <!-- lcePuzzle  -->
+    
+    <xs:element name="lcePuzzle">
+        <xs:annotation>
+            <xs:documentation>
+                Interaction in which the student has to fill in words in a grid. It can be an acrostic or a crossword puzzle.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcePuzzle.class">
+                    <xs:attribute ref="class" default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lcepuzzle-d/lcePuzzle "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcePuzzle.class">
+        <xs:sequence>
+            <xs:group ref="lcePuzzle.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcePuzzle.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcePuzzle.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lcePuzzleGrid" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lcePuzzleClueGroup" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="lcePuzzleSolution" minOccurs="0" maxOccurs="1"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcePuzzle.attributes">
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attribute name="id" type="xs:NMTOKEN" use="required"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
   

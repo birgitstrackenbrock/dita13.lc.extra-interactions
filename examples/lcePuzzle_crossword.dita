@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="cw1">
+    <title>Vegetables crosswoord</title>
+    <learningAssessmentbody>
+        <lcInteraction id="lcInteraction_o3j_w15_qcb">
+            <lcePuzzle id="lceCrossWordPuzzle_lpd_fb5_qcb">
+                <lcQuestion2>
+                    <p>Fill in the crossword puzzle.</p>
+                </lcQuestion2>
+                <lcePuzzleGrid id="lceCrossWordGrid_xns_qb5_qcb">
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry  id="h1"><lcePuzzleLetter id="w1">B</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w2">R</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w3">U</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w4">S</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w5">S</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w6">E</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w7">L</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w8">S</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w9">S</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w10">P</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry id="v1"><lcePuzzleLetter id="w11">R</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w12">O</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w13">U</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w14">T</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w15">S</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                    </lcePuzzleRow>
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w16">H</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                    </lcePuzzleRow>
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w17">U</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                    </lcePuzzleRow>
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w18">B</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                    </lcePuzzleRow>
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w19">A</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                    </lcePuzzleRow>
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w20">R</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                    </lcePuzzleRow>
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry></lcePuzzleEntry>
+                        <lcePuzzleEntry><lcePuzzleLetter id="w21">B</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                    </lcePuzzleRow>
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                    </lcePuzzleRow>
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                    </lcePuzzleRow>
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                    </lcePuzzleRow>
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                    </lcePuzzleRow>
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                    </lcePuzzleRow>
+                </lcePuzzleGrid>
+                <lcePuzzleClueGroup>
+                    <p>Horizontal</p>
+                    <lcePuzzleClue href="#h1" orientation="horizontal"><desc>Small cabbage-like heads or buds growing along a stalk</desc></lcePuzzleClue>
+                </lcePuzzleClueGroup>
+                <lcePuzzleClueGroup>
+                    <p>Vertical</p>
+                    <lcePuzzleClue href="#v1" orientation="vertical"><desc>Long pinkish sour leafstalks usually eaten cooked and sweetened</desc></lcePuzzleClue>
+                </lcePuzzleClueGroup>
+                <lcePuzzleSolution>
+                    <lcePuzzleSolutionWord><lceSolutionLetter href="#./w11"/></lcePuzzleSolutionWord>
+                </lcePuzzleSolution>
+            </lcePuzzle>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>
