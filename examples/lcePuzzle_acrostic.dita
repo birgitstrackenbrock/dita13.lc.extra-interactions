@@ -12,31 +12,51 @@
                 </lcAsset2>
                 <lcePuzzleGrid>
                     <lcePuzzleRow>
-                        <lcePuzzleEntry></lcePuzzleEntry>
-                        <lcePuzzleEntry id="r1"><lcePuzzleLetter id="s1">K</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter>i</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter>t</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter>t</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter>e</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter>n</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry id="s0"></lcePuzzleEntry>
+                        <lcePuzzleEntry id="s1">K</lcePuzzleEntry>
+                        <lcePuzzleEntry id="s2">i</lcePuzzleEntry>
+                        <lcePuzzleEntry id="s3">t</lcePuzzleEntry>
+                        <lcePuzzleEntry id="s4">t</lcePuzzleEntry>
+                        <lcePuzzleEntry id="s5">e</lcePuzzleEntry>
+                        <lcePuzzleEntry id="s6">n</lcePuzzleEntry>
                     </lcePuzzleRow>
                     <lcePuzzleRow>
-                        <lcePuzzleEntry id="r2"><lcePuzzleLetter>T</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="s2">e</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter>e</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter>t</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter>h</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry></lcePuzzleEntry>
-                        <lcePuzzleEntry></lcePuzzleEntry>
+                        <lcePuzzleEntry id="s7">T</lcePuzzleEntry>
+                        <lcePuzzleEntry id="s8">e</lcePuzzleEntry>
+                        <lcePuzzleEntry id="s9">e</lcePuzzleEntry>
+                        <lcePuzzleEntry id="s10">t</lcePuzzleEntry>
+                        <lcePuzzleEntry id="s11">h</lcePuzzleEntry>
+                        <lcePuzzleEntry id="s12"></lcePuzzleEntry>
+                        <lcePuzzleEntry id="s13"></lcePuzzleEntry>
                     </lcePuzzleRow>
                 </lcePuzzleGrid>
-                <lcePuzzleClueGroup>
-                    <lcePuzzleClue href="#./r1"><desc>Animal 1 is a ...</desc></lcePuzzleClue>
-                    <lcePuzzleClue href="#./r2"><desc>Animal 2 is a ...</desc></lcePuzzleClue>
-                </lcePuzzleClueGroup>
+                <lcePuzzleOptionGroup>
+                    <lcePuzzleOption>
+                        <lcePuzzleClue>Animal 1 is a ...</lcePuzzleClue>
+                        <lcePuzzleClueAnswer>
+                            <lcePuzzleEntryRef href="#./s1"/>
+                            <lcePuzzleEntryRef href="#./s2"/>
+                            <lcePuzzleEntryRef href="#./s3"/>
+                            <lcePuzzleEntryRef href="#./s4"/>
+                            <lcePuzzleEntryRef href="#./s5"/>
+                            <lcePuzzleEntryRef href="#./s6"/>
+                        </lcePuzzleClueAnswer>
+                    </lcePuzzleOption>
+                    <lcePuzzleOption>
+                        <lcePuzzleClue>Animal 2 is a ...</lcePuzzleClue>
+                        <lcePuzzleClueAnswer>
+                            <lcePuzzleEntryRef href="#./s7"/>
+                            <lcePuzzleEntryRef href="#./s8"/>
+                            <lcePuzzleEntryRef href="#./s9"/>
+                            <lcePuzzleEntryRef href="#./s10"/>
+                            <lcePuzzleEntryRef href="#./s11"/>
+                        </lcePuzzleClueAnswer>
+                    </lcePuzzleOption>
+                </lcePuzzleOptionGroup>
+                
                 <lcePuzzleSolution>
                     <p>The key word is:</p>
-                    <lcePuzzleSolutionWord><lceSolutionLetter href="#./s1"/><lceSolutionLetter href="#./s2"/></lcePuzzleSolutionWord>
+                    <lcePuzzleSolutionWord><lcePuzzleEntryRef href="#./s1"/><lcePuzzleEntryRef href="#./s8"/></lcePuzzleSolutionWord>
                 </lcePuzzleSolution>
             </lcePuzzle>
         </lcInteraction>

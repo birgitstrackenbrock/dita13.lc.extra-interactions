@@ -10,21 +10,21 @@
                 </lcQuestion2>
                 <lcePuzzleGrid id="lceCrossWordGrid_xns_qb5_qcb">
                     <lcePuzzleRow>
-                        <lcePuzzleEntry  id="h1"><lcePuzzleLetter id="w1">B</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w2">R</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w3">U</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w4">S</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w5">S</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w6">E</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w7">L</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w8">S</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w9">S</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w10">P</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry id="v1"><lcePuzzleLetter id="w11">R</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w12">O</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w13">U</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w14">T</lcePuzzleLetter></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w15">S</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry id="w1">B</lcePuzzleEntry>
+                        <lcePuzzleEntry id="w2">R</lcePuzzleEntry>
+                        <lcePuzzleEntry id="w3">U</lcePuzzleEntry>
+                        <lcePuzzleEntry id="w4">S</lcePuzzleEntry>
+                        <lcePuzzleEntry id="w5">S</lcePuzzleEntry>
+                        <lcePuzzleEntry id="w6">E</lcePuzzleEntry>
+                        <lcePuzzleEntry id="w7">L</lcePuzzleEntry>
+                        <lcePuzzleEntry id="w8">S</lcePuzzleEntry>
+                        <lcePuzzleEntry id="w9">S</lcePuzzleEntry>
+                        <lcePuzzleEntry id="w10">P</lcePuzzleEntry>
+                        <lcePuzzleEntry id="w11">R</lcePuzzleEntry>
+                        <lcePuzzleEntry id="w12">O</lcePuzzleEntry>
+                        <lcePuzzleEntry id="w13">U</lcePuzzleEntry>
+                        <lcePuzzleEntry id="w14">T</lcePuzzleEntry>
+                        <lcePuzzleEntry id="w15">S</lcePuzzleEntry>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
@@ -43,32 +43,8 @@
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
-                        <lcePuzzleEntry></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w16">H</lcePuzzleLetter></lcePuzzleEntry>
                         <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                    </lcePuzzleRow>
-                    <lcePuzzleRow>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry/>
-                        <lcePuzzleEntry></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w17">U</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry id="w16">H</lcePuzzleEntry>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
@@ -91,8 +67,8 @@
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
-                        <lcePuzzleEntry></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w18">B</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry id="w17">U</lcePuzzleEntry>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
@@ -115,8 +91,8 @@
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
-                        <lcePuzzleEntry></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w19">A</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry id="w18">B</lcePuzzleEntry>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
@@ -139,8 +115,8 @@
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
-                        <lcePuzzleEntry></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w20">R</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry id="w19">A</lcePuzzleEntry>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
@@ -163,8 +139,32 @@
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
-                        <lcePuzzleEntry></lcePuzzleEntry>
-                        <lcePuzzleEntry><lcePuzzleLetter id="w21">B</lcePuzzleLetter></lcePuzzleEntry>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry id="w20">R</lcePuzzleEntry>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                    </lcePuzzleRow>
+                    <lcePuzzleRow>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry/>
+                        <lcePuzzleEntry id="w21">B</lcePuzzleEntry>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
                         <lcePuzzleEntry/>
@@ -298,16 +298,52 @@
                         <lcePuzzleEntry/>
                     </lcePuzzleRow>
                 </lcePuzzleGrid>
-                <lcePuzzleClueGroup>
+                <lcePuzzleOptionGroup>
                     <p>Horizontal</p>
-                    <lcePuzzleClue href="#h1" orientation="horizontal"><desc>Small cabbage-like heads or buds growing along a stalk</desc></lcePuzzleClue>
-                </lcePuzzleClueGroup>
-                <lcePuzzleClueGroup>
+                    <lcePuzzleOption>
+                        <lcePuzzleClue>Small cabbage-like heads or buds growing along a
+                            stalk</lcePuzzleClue>
+                        <lcePuzzleClueAnswer>
+                            <lcePuzzleEntryRef href="#w1"/>
+                            <lcePuzzleEntryRef href="#w2"/>
+                            <lcePuzzleEntryRef href="#w3"/>
+                            <lcePuzzleEntryRef href="#w4"/>
+                            <lcePuzzleEntryRef href="#w5"/>
+                            <lcePuzzleEntryRef href="#w6"/>
+                            <lcePuzzleEntryRef href="#w7"/>
+                            <lcePuzzleEntryRef href="#w8"/>
+                            <lcePuzzleEntryRef href="#w9"/>
+                            <lcePuzzleEntryRef href="#w10"/>
+                            <lcePuzzleEntryRef href="#w11"/>
+                            <lcePuzzleEntryRef href="#w12"/>
+                            <lcePuzzleEntryRef href="#w13"/>
+                            <lcePuzzleEntryRef href="#w14"/>
+                            <lcePuzzleEntryRef href="#w11"/>
+                        </lcePuzzleClueAnswer>
+                    </lcePuzzleOption>
+                </lcePuzzleOptionGroup>
+                <lcePuzzleOptionGroup>
                     <p>Vertical</p>
-                    <lcePuzzleClue href="#v1" orientation="vertical"><desc>Long pinkish sour leafstalks usually eaten cooked and sweetened</desc></lcePuzzleClue>
-                </lcePuzzleClueGroup>
+                    <lcePuzzleOption>
+                        <lcePuzzleClue>Long pinkish sour
+                            leafstalks usually eaten cooked and sweetened</lcePuzzleClue>
+                        <lcePuzzleClueAnswer>
+                            <lcePuzzleEntryRef href="#w11"/>
+                            <lcePuzzleEntryRef href="#w16"/>
+                            <lcePuzzleEntryRef href="#w17"/>
+                            <lcePuzzleEntryRef href="#w18"/>
+                            <lcePuzzleEntryRef href="#w19"/>
+                            <lcePuzzleEntryRef href="#w20"/>
+                            <lcePuzzleEntryRef href="#w21"/>
+                            <lcePuzzleEntryRef href="#w22"/>
+                        </lcePuzzleClueAnswer>
+                    </lcePuzzleOption>
+                    
+                </lcePuzzleOptionGroup>
                 <lcePuzzleSolution>
-                    <lcePuzzleSolutionWord><lceSolutionLetter href="#./w11"/></lcePuzzleSolutionWord>
+                    <lcePuzzleSolutionWord>
+                        <lcePuzzleEntryRef href="#./w11"/>
+                    </lcePuzzleSolutionWord>
                 </lcePuzzleSolution>
             </lcePuzzle>
         </lcInteraction>
