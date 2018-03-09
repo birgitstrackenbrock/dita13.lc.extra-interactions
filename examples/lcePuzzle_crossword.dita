@@ -300,7 +300,7 @@
                 </lcePuzzleGrid>
                 <lcePuzzleOptionGroup>
                     <p>Horizontal</p>
-                    <lcePuzzleOption>
+                    <lcePuzzleOption orientation="horizontal">
                         <lcePuzzleClue>Small cabbage-like heads or buds growing along a
                             stalk</lcePuzzleClue>
                         <lcePuzzleClueAnswer>
@@ -324,7 +324,7 @@
                 </lcePuzzleOptionGroup>
                 <lcePuzzleOptionGroup>
                     <p>Vertical</p>
-                    <lcePuzzleOption>
+                    <lcePuzzleOption orientation="vertical">
                         <lcePuzzleClue>Long pinkish sour
                             leafstalks usually eaten cooked and sweetened</lcePuzzleClue>
                         <lcePuzzleClueAnswer>
