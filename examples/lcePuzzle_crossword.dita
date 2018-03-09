@@ -335,12 +335,11 @@
                             <lcePuzzleEntryRef href="#w19"/>
                             <lcePuzzleEntryRef href="#w20"/>
                             <lcePuzzleEntryRef href="#w21"/>
-                            <lcePuzzleEntryRef href="#w22"/>
                         </lcePuzzleClueAnswer>
                     </lcePuzzleOption>
                     
                 </lcePuzzleOptionGroup>
-                <lcePuzzleSolution>
+                <lcePuzzleSolution><p>The word looking for is:</p>
                     <lcePuzzleSolutionWord>
                         <lcePuzzleEntryRef href="#./w11"/>
                     </lcePuzzleSolutionWord>
