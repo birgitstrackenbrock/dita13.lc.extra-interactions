@@ -23,7 +23,13 @@
     </xs:attribute>
     <xs:attribute name="case-sensitive" type="casesensitive-atts.class" use="optional">
       <xs:annotation>
-        <xs:documentation>This attribute should be used with crossword, acrostic puzzle and text entry.
+        <xs:documentation>This attribute cn be used with crossword, acrostic puzzle and text entry.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="score" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>This attribute can be used to define for a whole interacttion or seperate answers the score when correct.
         </xs:documentation>
       </xs:annotation>
     </xs:attribute>

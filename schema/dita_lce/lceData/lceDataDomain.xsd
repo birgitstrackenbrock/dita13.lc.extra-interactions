@@ -13,12 +13,6 @@
         </xs:choice>
     </xs:group>
     
-    <xs:group name="lceScore">
-        <xs:sequence>
-            <xs:element ref="lceScore" />
-        </xs:sequence>
-    </xs:group>
-    
     <xs:group name="lceLomEdu">
         <xs:sequence>
             <xs:element ref="lceLomEdu" />
@@ -34,36 +28,6 @@
     
     <!-- ============================================== -->   
     
-    <xs:element name="lceScore">
-        <xs:annotation>
-            <xs:documentation>Element in which the score of an interaction can be defined when you have an assessment with x interactions and each interaction has different scores.</xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base="lceScore.class">
-                    <xs:attribute ref="class" default="+ topic/data lcedata-d/lceScore "/>
-                </xs:extension>
-            </xs:complexContent>
-        </xs:complexType>
-    </xs:element>
-    <xs:complexType name="lceScore.class" mixed="true">
-        <xs:sequence>
-            <xs:group ref="lceScore.content"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="lceScore.attributes"/>
-    </xs:complexType>
-    <xs:group name="lceScore.content">
-        <xs:sequence>
-            <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:group ref="basic.ph"/>
-                <xs:group ref="image"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
-    <xs:attributeGroup name="lceScore.attributes">
-        <xs:attributeGroup ref="data-element-atts"/>
-        <xs:attributeGroup ref="global-atts"/>
-    </xs:attributeGroup>
     
     <xs:element name="lceLomEdu">
         <xs:annotation>
