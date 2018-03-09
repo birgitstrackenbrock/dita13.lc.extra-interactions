@@ -19,125 +19,12 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceAcrosticWord">
-        <xs:sequence>
-            <xs:element ref="lceAcrosticWord" />
-        </xs:sequence>
-    </xs:group>
-    
-    
-    <xs:group name="lceAcrosticOptionGroup">
-        <xs:sequence>
-            <xs:element ref="lceAcrosticOptionGroup" />
-        </xs:sequence>
-    </xs:group>
-    
-    <xs:group name="lceAcrosticOption">
-        <xs:sequence>
-            <xs:element ref="lceAcrosticOption" />
-        </xs:sequence>
-    </xs:group>
-    
   <!-- ============================================= -->  
  
-    <xs:element name="lceAcrosticOptionGroup">
-        <xs:annotation>
-            <xs:documentation></xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base="lceAcrosticOptionGroup.class">
-                    <xs:attribute ref="class"
-                        default="+ topic/dl learningInteractionBase2-d/dl lceacrosticinteraction-d/lceAcrosticOptionGroup "/>
-                </xs:extension>
-            </xs:complexContent>
-        </xs:complexType>
-    </xs:element>
-    <xs:complexType name="lceAcrosticOptionGroup.class">
-        <xs:sequence>
-            <xs:group ref="lceAcrosticOptionGroup.content"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="lceAcrosticOptionGroup.attributes"/>
-    </xs:complexType>
-    <xs:group name="lceAcrosticOptionGroup.content">
-        <xs:sequence>
-            <xs:group ref="lceAcrosticOption" minOccurs="1" maxOccurs="unbounded"/>
-        </xs:sequence>
-    </xs:group>
-    <xs:attributeGroup name="lceAcrosticOptionGroup.attributes">
-        <xs:attributeGroup ref="univ-atts"/>
-        <xs:attribute name="outputclass" type="xs:string"/>
-        <xs:attributeGroup ref="global-atts"/>
-    </xs:attributeGroup>
-    
-    <xs:element name="lceAcrosticOption">
-        <xs:annotation>
-            <xs:documentation></xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base="lceAcrosticOption.class">
-                    <xs:attribute ref="class"
-                        default="+ topic/dlentry learningInteractionBase2-d/dlentry lceacrosticinteraction-d/lceAcrosticOption "/>
-                </xs:extension>
-            </xs:complexContent>
-        </xs:complexType>
-    </xs:element>
-    <xs:complexType name="lceAcrosticOption.class">
-        <xs:sequence>
-            <xs:group ref="lceAcrosticOption.content"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="lceAcrosticOption.attributes"/>
-    </xs:complexType>
-    <xs:group name="lceAcrosticOption.content">
-        <xs:sequence>
-            <xs:group ref="lcePuzzleClue"/>
-            <xs:group ref="lceAcrosticWord"/>
-        </xs:sequence>
-    </xs:group>
-    <xs:attributeGroup name="lceAcrosticOption.attributes">
-        <xs:attributeGroup ref="univ-atts"/>
-        <xs:attribute name="outputclass" type="xs:string"/>
-        <xs:attributeGroup ref="global-atts"/>
-    </xs:attributeGroup>
-    
-    <xs:element name="lceAcrosticWord">
-        <xs:annotation>
-            <xs:documentation></xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base="lceAcrosticWord.class">
-                    <xs:attribute ref="class"
-                        default="+ topic/dd learningInteractionBase2-d/dd lceacrosticinteraction-d/lceAcrosticWord "/>
-                </xs:extension>
-            </xs:complexContent>
-        </xs:complexType>
-    </xs:element>
-    <xs:complexType name="lceAcrosticWord.class">
-        <xs:sequence>
-            <xs:group ref="lceAcrosticWord.content"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="lceAcrosticWord.attributes"/>
-    </xs:complexType>
-    <xs:group name="lceAcrosticWord.content">
-        <xs:sequence>
-            <xs:group ref="lcePuzzleLetter" minOccurs="0" maxOccurs="unbounded"/>
-        </xs:sequence>
-    </xs:group>
-    <xs:attributeGroup name="lceAcrosticWord.attributes">
-        <xs:attributeGroup ref="univ-atts"/>
-        <xs:attribute name="outputclass" type="xs:string"/>
-        <xs:attributeGroup ref="global-atts"/>
-    </xs:attributeGroup>
-    
-        
-    <!-- lceArostic puzzle  -->
-    
     <xs:element name="lceAcrosticPuzzle">
         <xs:annotation>
             <xs:documentation>
-                Interaction in which the student has to fill in a entries to get a lceArostic.
+                Interaction in which the student has to fill in words in a grid. All words are outlined horizontal.
             </xs:documentation>
         </xs:annotation>
         <xs:complexType>
@@ -154,20 +41,19 @@
         </xs:sequence>
         <xs:attributeGroup ref="lceAcrosticPuzzle.attributes"/>
     </xs:complexType>
-    
     <xs:group name="lceAcrosticPuzzle.content">
         <xs:sequence>
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:group ref="lceAcrosticOptionGroup" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lcePuzzleGrid" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lcePuzzleOptionGroup" minOccurs="1" maxOccurs="1"/>
             <xs:group ref="lcePuzzleSolution" minOccurs="0" maxOccurs="1"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-     
     <xs:attributeGroup name="lceAcrosticPuzzle.attributes">
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attribute name="id" type="xs:NMTOKEN" use="required"/>
@@ -176,7 +62,4 @@
         <xs:attributeGroup ref="localization-atts"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
-    
-    
-    
 </xs:schema>

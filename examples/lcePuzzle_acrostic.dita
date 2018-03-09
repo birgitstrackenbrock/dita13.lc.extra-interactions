@@ -4,7 +4,7 @@
     <title></title>
     <learningAssessmentbody>
         <lcInteraction>
-            <lcePuzzle id="nn">
+            <lceAcrosticPuzzle id="nn">
                 <lcQuestion2><p>Follow the picutes clues, fill in the grid, and the arrowed column
                     will reveal a key word related to this scene.</p></lcQuestion2>
                 <lcAsset2>
@@ -58,7 +58,7 @@
                     <p>The key word is:</p>
                     <lcePuzzleSolutionWord><lcePuzzleEntryRef href="#./s1"/><lcePuzzleEntryRef href="#./s8"/></lcePuzzleSolutionWord>
                 </lcePuzzleSolution>
-            </lcePuzzle>
+            </lceAcrosticPuzzle>
         </lcInteraction>
     </learningAssessmentbody>
 </learningAssessment>

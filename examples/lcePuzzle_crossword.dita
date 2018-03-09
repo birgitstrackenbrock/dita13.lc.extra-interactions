@@ -4,7 +4,7 @@
     <title>Vegetables crosswoord</title>
     <learningAssessmentbody>
         <lcInteraction id="lcInteraction_o3j_w15_qcb">
-            <lcePuzzle id="lceCrossWordPuzzle_lpd_fb5_qcb">
+            <lceCrossWordPuzzle id="lceCrossWordPuzzle_lpd_fb5_qcb">
                 <lcQuestion2>
                     <p>Fill in the crossword puzzle.</p>
                 </lcQuestion2>
@@ -345,7 +345,7 @@
                         <lcePuzzleEntryRef href="#./w11"/>
                     </lcePuzzleSolutionWord>
                 </lcePuzzleSolution>
-            </lcePuzzle>
+            </lceCrossWordPuzzle>
         </lcInteraction>
     </learningAssessmentbody>
 </learningAssessment>

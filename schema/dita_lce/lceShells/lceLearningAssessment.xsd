@@ -54,8 +54,8 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceDrawDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGraphicDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lcePuzzleGeneralDomain.xsd"/>
-   <!--<xs:include schemaLocation="urn:dita13lce:names:xsd:lceCrossWordInteractionDomain.xsd"/>
-   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAcrosticInteractionDomain.xsd"/>-->
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceCrossWordInteractionDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAcrosticInteractionDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMultipleMatchDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceFeedbackDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceDataDomain.xsd"/>
@@ -211,7 +211,7 @@
                     (topic learningInteractionBase-d learning-d) (topic learningInteractionBase-d) (topic learningInteractionBase2-d learning2-d) (topic learningInteractionBase2-d) (topic learningmeta-d) (topic relmgmt-d) (topic ut-d) a(props deliveryTarget)
                     (lce lcegraphic-d) (lce lcedraw-d) (lce lceggm-d) (lce lceinlinechoice-d) (lce lceinlineinteraction-d) (lce lcetextentry-d) (lce lcelcegapmatch-d) 
                     (lce lcehottext-d) (lce lcelcemultiplematch-c) (lce lcelcemultiplematch-d) (lce lcearosticinteraction-d) (lce lcepuzzle-d) (lce lcedata-d) (lce lcefeedback-d)
-                    (lce lcegraphictextentry-d) (lce lcecrossword-d)"
+                    (lce lcegraphictextentry-d) (lce lcecrosswordinteraction-d)"
       />
    </xs:attributeGroup>
 </xs:schema>
