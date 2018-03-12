@@ -4,7 +4,7 @@
     <title>Composition of Water"</title>
     <learningAssessmentbody>
         <lcInteraction>
-            <lcMultipleSelect2 shuffle="yes">
+            <lcMultipleSelect2 shuffle="yes" score="10">
                 <lcQuestion2><p>Which of the following elements are used to form water?</p></lcQuestion2>
                 <lcAnswerOptionGroup2>
                     <lcAnswerOption2>
@@ -27,11 +27,8 @@
                     </lcAnswerOption2>
                 </lcAnswerOptionGroup2>
                 <lceEduData>
-                    <lceScore>10</lceScore>
-                    <lceLomEdu>
                         <lomDifficulty value="easy"/>
                         <lomTypicalLearningTime>2</lomTypicalLearningTime>
-                    </lceLomEdu>
                 </lceEduData>
             </lcMultipleSelect2>
         </lcInteraction>
