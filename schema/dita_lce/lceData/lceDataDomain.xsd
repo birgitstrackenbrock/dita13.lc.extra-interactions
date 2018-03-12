@@ -13,12 +13,6 @@
         </xs:choice>
     </xs:group>
     
-    <xs:group name="lceLomEdu">
-        <xs:sequence>
-            <xs:element ref="lceLomEdu" />
-        </xs:sequence>
-    </xs:group>
-    
     <xs:group name="lceEduData">
         <xs:sequence>
             <xs:element ref="lceEduData" />
@@ -28,44 +22,6 @@
     
     <!-- ============================================== -->   
     
-    
-    <xs:element name="lceLomEdu">
-        <xs:annotation>
-            <xs:documentation>Container element special for all elements based on the LOM education set.</xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base="lceLomEdu.class">
-                    <xs:attribute ref="class" default="+ topic/data lcedata-d/lceLomEdu "/>
-                </xs:extension>
-            </xs:complexContent>
-        </xs:complexType>
-    </xs:element>
-    <xs:complexType name="lceLomEdu.class">
-        <xs:sequence>
-            <xs:group ref="lceLomEdu.content"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="lceLomEdu.attributes"/>
-    </xs:complexType>
-    <xs:group name="lceLomEdu.content">
-        <xs:sequence>
-            <xs:sequence>
-                <xs:group ref="lomInteractivityType" minOccurs="0"/>
-                <xs:group ref="lomLearningResourceType" minOccurs="0"/>
-                <xs:group ref="lomInteractivityLevel" minOccurs="0"/>
-                <xs:group ref="lomSemanticDensity" minOccurs="0"/>
-                <xs:group ref="lomIntendedUserRole" minOccurs="0"/>
-                <xs:group ref="lomContext" minOccurs="0"/>
-                <xs:group ref="lomTypicalAgeRange" minOccurs="0"/>
-                <xs:group ref="lomDifficulty" minOccurs="0"/>
-                <xs:group ref="lomTypicalLearningTime" minOccurs="0"/>
-            </xs:sequence>
-        </xs:sequence>
-    </xs:group>
-    <xs:attributeGroup name="lceLomEdu.attributes">
-        <xs:attributeGroup ref="data-element-atts"/>
-        <xs:attributeGroup ref="global-atts"/>
-    </xs:attributeGroup>
     
     <xs:element name="lceEduData">
         <xs:annotation>
@@ -87,8 +43,17 @@
     </xs:complexType>
     <xs:group name="lceEduData.content">
         <xs:sequence>
-            <xs:group ref="lceScore" minOccurs="0" maxOccurs="1"/>
-            <xs:group ref="lceLomEdu" minOccurs="0" />
+            <xs:sequence>
+                <xs:group ref="lomInteractivityType" minOccurs="0"/>
+                <xs:group ref="lomLearningResourceType" minOccurs="0"/>
+                <xs:group ref="lomInteractivityLevel" minOccurs="0"/>
+                <xs:group ref="lomSemanticDensity" minOccurs="0"/>
+                <xs:group ref="lomIntendedUserRole" minOccurs="0"/>
+                <xs:group ref="lomContext" minOccurs="0"/>
+                <xs:group ref="lomTypicalAgeRange" minOccurs="0"/>
+                <xs:group ref="lomDifficulty" minOccurs="0"/>
+                <xs:group ref="lomTypicalLearningTime" minOccurs="0"/>
+            </xs:sequence>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceEduData.attributes">
