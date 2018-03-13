@@ -11,7 +11,7 @@
             <lceGraphicTextEntry>
                 <lcQuestion2>
                     <p>Some of the labels on the following diagram are missing: can you fill in the
-                        correct three-letter codes for the unlabelled airports?</p>
+                        correct three-letter codes for the unlabeled airports?</p>
                 </lcQuestion2>
                 <lceGTEMap id="lceGTEMap_b5h_pll_scb">
                     <image href="GB_airports.jpg" id="image_x4d_hml_scb"/>

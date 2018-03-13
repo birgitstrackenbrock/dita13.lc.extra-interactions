@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="x2">
-    <title></title>
+    <title>Animals</title>
     <learningAssessmentbody>
         <lcInteraction>
             <lceAcrosticPuzzle id="nn">
-                <lcQuestion2><p>Follow the picutes clues, fill in the grid, and the arrowed column
+                <lcQuestion2><p>Follow the pictures clues, fill in the grid, and the arrowed column
                     will reveal a key word related to this scene.</p></lcQuestion2>
                 <lcAsset2>
                     <image href="acrostic.jpg" id="image_t1p_dzp_1db"/>

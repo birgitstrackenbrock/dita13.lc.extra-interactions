@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="ggm1">
-    <title>Graphic Gap Match</title>
+    <title>Instruments</title>
     <learningAssessmentbody>
         <lcInteraction>
             <lceGraphicGapMatch>
@@ -38,7 +38,7 @@
                         <lceGapContent>drum</lceGapContent>
                     </lceGapOption>
                     <lceGapOption id="g4">
-                        <lceGapContent>viool</lceGapContent>
+                        <lceGapContent>violin</lceGapContent>
                     </lceGapOption>
                 </lceGapOptionGroup>
             </lceGraphicGapMatch>

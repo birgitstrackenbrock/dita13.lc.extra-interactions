@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="lc1">
-    <title>Inline Choice</title>
+    <title>Richard III</title>
     <learningAssessmentbody>
         <lcInteraction>
             <lceInlineChoice>
-                <lcQuestion2>Identify the missing word in this famous quote from Shakespeare's Richard III.</lcQuestion2>
+                <lcQuestion2>Choose the missing word in this famous quote from Shakespeare's Richard III.</lcQuestion2>
                 <lceInlineInteractionText>
                     <p>Now is the winter of our discontent</p>
                     <p>Made glorious summer by this sun of <lceInlineChoiceOptions>

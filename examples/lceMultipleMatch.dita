@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="mm1">
-    <title></title>
+    <title>Shakespeare</title>
     <learningAssessmentbody>
         <lcInteraction>
             <lceMultipleMatch>
-                <lcQuestion2>Match the following characters to the Shakespeare play they appeared in.</lcQuestion2>
+                <lcQuestion2>Match the following characters to the Shakespeare play they appeared in. Draw lines.
+                </lcQuestion2>
                 <lceMatchSet1>
                     <lceAssociableItem id="i1"><p>Capulet</p></lceAssociableItem>
                     <lceAssociableItem id="i2"><p>Demetrius</p></lceAssociableItem>

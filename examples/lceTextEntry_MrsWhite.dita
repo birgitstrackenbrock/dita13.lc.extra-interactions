@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="a001">
-    <title>Present Simple vs Present Continuous</title>
+    <title>Mrs White</title>
     <learningAssessmentbody>
+        <lcIntro><p>Present Simple vs Present Continuous</p></lcIntro>
         <lcInteraction>
             <lceTextEntry>
-                <lcQuestion2/>
+                <lcQuestion2><p>Fill in the right form of the verb.
+                </p></lcQuestion2>
                 <lceInlineInteractionText>
                     <p>This is Mrs White. She <lceTextEntryOptions>
                         <lceAnswerOptionInline>

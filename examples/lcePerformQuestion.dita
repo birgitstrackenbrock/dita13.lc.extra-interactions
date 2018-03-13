@@ -7,7 +7,8 @@
         <lcInteraction id="lcInteraction_qhm_ynl_scb">
             <lcePerformQuestion>
                 <lcQuestion2>
-                    <p>Write a manual about a task you choose. Write it in Word and upload it.</p>
+                    <p>Write a manual about a task you choose. Write it in MS Word and upload
+                        it.</p>
                 </lcQuestion2>
                 <lceUploadObject>
                     <desc>upload you work here</desc>
