@@ -17,7 +17,7 @@
                         </lceChoiceOptionInline>
                         <lceChoiceOptionInline>
                             <lceAnswerContentInline>York</lceAnswerContentInline>
-                            <lcCorrectResponse2></lcCorrectResponse2><lceFeedbackInline>Right</lceFeedbackInline>
+                            <lcCorrectResponse2/><lceFeedbackInline>Right</lceFeedbackInline>
                         </lceChoiceOptionInline>
                     </lceInlineChoiceOptions></p>
                     <p>And all the clouds that lour'd upon our house</p>
