@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.0" id="te2">
+  xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="te2">
     <title>Text Entry</title>
     <learningAssessmentbody>
         <lcInteraction>
@@ -13,37 +13,37 @@
                         <li>Well done! You did an <lceTextEntryOptions>
                             <lceAnswerOptionInline>
                                 <lceAnswerContentInline>excellent</lceAnswerContentInline>
-                                <lcCorrectResponse2></lcCorrectResponse2>
-                                <lcFeedback2>well done</lcFeedback2>
+                                <lcCorrectResponse2/>
+                                <lceFeedbackInlineCorrect>well done</lceFeedbackInlineCorrect>
                             </lceAnswerOptionInline>
                             <lceAnswerOptionInline>
-                                <lceAnswerContentInline>good</lceAnswerContentInline>
-                                <lcFeedback2>somehow right</lcFeedback2>
+                                <lceAnswerContentInline>good</lceAnswerContentInline> <lceAlternativeResponse/>
+                                <lceFeedbackInlineCorrect>somehow right</lceFeedbackInlineCorrect>
                             </lceAnswerOptionInline>
-                        </lceTextEntryOptions> job.<draft-comment author="Birgit">correct answer and alternative answer; alternative answer has no lcCorrectResponse2 element</draft-comment></li>
+                        </lceTextEntryOptions> job.</li>
                         <li>We had to go to four <lceTextEntryOptions>
                             <lceAnswerOptionInline>
-                                <lceAnswerContentInline>different</lceAnswerContentInline>
+                                <lceAnswerContentInline>different</lceAnswerContentInline><lcCorrectResponse2/>
                             </lceAnswerOptionInline>
                         </lceTextEntryOptions> shops before we found what we wanted.</li>
                         <li>Where’s the bathroom? – It’s <lceTextEntryOptions>
                             <lceAnswerOptionInline>
-                                <lceAnswerContentInline>upstairs</lceAnswerContentInline>
+                                <lceAnswerContentInline>upstairs</lceAnswerContentInline><lcCorrectResponse2/>
                             </lceAnswerOptionInline>
                         </lceTextEntryOptions>.</li>
                         <li>She is <lceTextEntryOptions>
                             <lceAnswerOptionInline>
-                                <lceAnswerContentInline>confident </lceAnswerContentInline>
+                                <lceAnswerContentInline>confident </lceAnswerContentInline><lcCorrectResponse2/>
                             </lceAnswerOptionInline>
                         </lceTextEntryOptions> that she will pass the test.</li>
                         <li>English is one of the most <lceTextEntryOptions>
                             <lceAnswerOptionInline>
-                                <lceAnswerContentInline>important</lceAnswerContentInline>
+                                <lceAnswerContentInline>important</lceAnswerContentInline><lcCorrectResponse2/>
                             </lceAnswerOptionInline>
                         </lceTextEntryOptions> world languages.</li>
                         <li>Do you want to <lceTextEntryOptions>
                             <lceAnswerOptionInline>
-                                <lceAnswerContentInline>join</lceAnswerContentInline>
+                                <lceAnswerContentInline>join</lceAnswerContentInline><lcCorrectResponse2/>
                             </lceAnswerOptionInline>
                         </lceTextEntryOptions> our reading club?</li>
                     </ol>

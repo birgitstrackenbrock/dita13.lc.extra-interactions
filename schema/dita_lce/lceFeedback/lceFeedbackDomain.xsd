@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcefeedback-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lceFeedbackInline">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceFeedbackInline"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceFeedbackInlineCorrect">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceFeedbackInlineCorrect"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceFeedbackInlineIncorrect">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceFeedbackInlineIncorrect"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    
+ 
+    <!-- ============================================================= -->
+
+    <xs:element name="lceFeedbackInline">
+        <xs:annotation>
+            <xs:documentation>Feedback element for single answers within inline interactions.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceFeedbackInline.class">
+                    <xs:attribute ref="class" default="+ topic/ph lcefeedback-d/lceFeedbackInline  "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceFeedbackInline.class" mixed="true">
+        <xs:sequence>
+            <xs:group ref="lceFeedbackInline.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceFeedbackInline.attributes"/>
+    </xs:complexType>
+    
+    <xs:attributeGroup name="lceFeedbackInline.attributes">
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceFeedbackInlineCorrect">
+        <xs:annotation>
+            <xs:documentation>Feedback element for single answers within inline interactions.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceFeedbackInlineCorrect.class">
+                    <xs:attribute ref="class" default="+ topic/ph lcefeedback-d/lceFeedbackInlineCorrect  "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceFeedbackInlineCorrect.class" mixed="true">
+        <xs:sequence>
+            <xs:group ref="lceFeedbackInline.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceFeedbackInlineCorrect.attributes"/>
+    </xs:complexType>
+    
+    <xs:attributeGroup name="lceFeedbackInlineCorrect.attributes">
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceFeedbackInlineIncorrect">
+        <xs:annotation>
+            <xs:documentation>Feedback element for single answers within inline interactions.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceFeedbackInlineIncorrect.class">
+                    <xs:attribute ref="class" default="+ topic/ph lcefeedback-d/lceFeedbackInlineIncorrect  "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceFeedbackInlineIncorrect.class" mixed="true">
+        <xs:sequence>
+            <xs:group ref="lceFeedbackInline.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceFeedbackInlineCorrect.attributes"/>
+    </xs:complexType>
+    
+    <xs:attributeGroup name="lceFeedbackInlineIncorrect.attributes">
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:group name="lceFeedbackInline.content">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="basic.ph"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+           
+</xs:schema>

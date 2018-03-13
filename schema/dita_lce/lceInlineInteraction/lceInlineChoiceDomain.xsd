@@ -22,6 +22,15 @@
         </xs:sequence>
     </xs:group>
     
+    <xs:group name="lceChoiceOptionInline">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceChoiceOptionInline"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    
     
 <!-- ============================================================= -->
     
@@ -90,7 +99,9 @@
     <xs:group name="lceInlineChoiceOptions.content">
         <xs:sequence>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:group ref="lceAnswerOptionInline" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="lceChoiceOptionInline" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="lceFeedbackInlineCorrect" minOccurs="0"/>
+            <xs:group ref="lceFeedbackInlineIncorrect" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
     <xs:attributeGroup name="lceInlineChoiceOptions.attributes">
@@ -98,4 +109,37 @@
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
+    
+    <xs:element name="lceChoiceOptionInline">
+        <xs:annotation>
+            <xs:documentation>The lceChoiceOption contains the answers for the gaps in an inlineChoice interaction</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceChoiceOptionInline.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/ph learningInteractionBase2-d/ph lceinlineinteraction-d/lceChoiceOptionInline "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceChoiceOptionInline.class">
+        <xs:sequence>
+            <xs:group ref="lceChoiceOptionInline.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceChoiceOptionInline.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceChoiceOptionInline.content">
+        <xs:sequence>
+            <xs:group ref="lceAnswerContentInline"/>
+            <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
+            <xs:group ref="lceFeedbackInline" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceChoiceOptionInline.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
 </xs:schema>

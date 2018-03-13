@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcelcegapmatch-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lceGapMatch">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceGapMatch"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+
+<!-- ============================================================= -->
+    
+    <xs:element name="lceGapMatch">
+        <xs:annotation>
+            <xs:documentation>
+                A lceGapMatch is an textual interaction where the sudent has to drag and drop a word (or phrase) to a gap in a text. 
+                To make it more difficult more drop text can be given than gaps appear in the text.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceGapMatch.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lcegapmatch-d/lceGapMatch "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceGapMatch.class">
+        <xs:sequence>
+            <xs:group ref="lceGapMatch.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceGapMatch.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceGapMatch.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceInlineInteractionText"/>
+            <xs:group ref="lceGapOptionGroup"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceGapMatch.attributes">
+        <xs:attribute name="id" type="xs:NMTOKEN"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+</xs:schema>

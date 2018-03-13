@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+
+<!-- ============================================================= -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  
+    <xs:annotation>
+      <xs:appinfo>
+        <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(base answertype)</dita:domainsModule>
+      </xs:appinfo>
+      <xs:documentation/>
+      
+    </xs:annotation>
+  
+  <xs:attributeGroup name="lceAnswerAtt-d-attribute">
+    <xs:attribute name="answertype" type="answertype-atts.class" use="optional">
+      <xs:annotation>
+        <xs:documentation>this attribute should only be uesd with answer elements.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:attributeGroup>
+  
+  <xs:simpleType name="answertype-atts.class">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="predefined"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+
+</xs:schema>

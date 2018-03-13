@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcedata-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    
+    <xs:group name="lcedata-d-data">
+        <xs:choice>
+            <xs:element ref="lceEduData"/>
+        </xs:choice>
+    </xs:group>
+    
+    <xs:group name="lceEduData">
+        <xs:sequence>
+            <xs:element ref="lceEduData" />
+        </xs:sequence>
+    </xs:group>
+    
+    
+    <!-- ============================================== -->   
+    
+    
+    <xs:element name="lceEduData">
+        <xs:annotation>
+            <xs:documentation>Container element for special, additional educational information. This element can be used within interaction elements.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceEduData.class">
+                    <xs:attribute ref="class" default="+ topic/data lcedata-d/lceEduData "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceEduData.class">
+        <xs:sequence>
+            <xs:group ref="lceEduData.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceEduData.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceEduData.content">
+        <xs:sequence>
+            <xs:sequence>
+                <xs:group ref="lomInteractivityType" minOccurs="0"/>
+                <xs:group ref="lomLearningResourceType" minOccurs="0"/>
+                <xs:group ref="lomInteractivityLevel" minOccurs="0"/>
+                <xs:group ref="lomSemanticDensity" minOccurs="0"/>
+                <xs:group ref="lomIntendedUserRole" minOccurs="0"/>
+                <xs:group ref="lomContext" minOccurs="0"/>
+                <xs:group ref="lomTypicalAgeRange" minOccurs="0"/>
+                <xs:group ref="lomDifficulty" minOccurs="0"/>
+                <xs:group ref="lomTypicalLearningTime" minOccurs="0"/>
+            </xs:sequence>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceEduData.attributes">
+        <xs:attributeGroup ref="data-element-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+</xs:schema>

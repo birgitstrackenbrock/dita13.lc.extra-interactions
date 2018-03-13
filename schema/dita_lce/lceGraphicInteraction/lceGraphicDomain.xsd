@@ -9,8 +9,8 @@
     <xs:group name="lcegraphicinteraction-d-div">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lceGraphicGapMatch"/>
                 <xs:element ref="lceDrawing"/>
+                <xs:element ref="lceGraphicTextEntry"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -18,8 +18,8 @@
     <xs:group name="lcegraphicinteraction-d-lcInteractionBase2">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lceGraphicGapMatch"/>
                 <xs:element ref="lceDrawing"/>
+                <xs:element ref="lceGraphicTextEntry"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>

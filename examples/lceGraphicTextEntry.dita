@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="gte">
+    <title>Airport tags</title>
+    <learningAssessmentbody>
+        <lcIntro id="lcIntro_yvw_ydl_scb">
+            <p>The International Air Transport Association assigns three-letter codes to identify
+                airports worldwide. For example, London Heathrow has code LHR.</p>
+        </lcIntro>
+        <lcInteraction id="lcInteraction_nlx_dll_scb">
+            <lceGraphicTextEntry>
+                <lcQuestion2>
+                    <p>Some of the labels on the following diagram are missing: can you fill in the
+                        correct three-letter codes for the unlabeled airports?</p>
+                </lcQuestion2>
+                <lceGTEMap id="lceGTEMap_b5h_pll_scb">
+                    <image href="GB_airports.jpg" id="image_x4d_hml_scb"/>
+                    <lceAreaGTE>
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>GLA</lceAnswerContentInline>
+                            <lcCorrectResponse2/>
+                        </lceAnswerOptionInline>
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>gla</lceAnswerContentInline><lceAlternativeResponse/>
+                        </lceAnswerOptionInline>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>12,108,39,121</lcAreaCoords2>
+                    </lceAreaGTE>
+                    <lceAreaGTE>
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>EDI</lceAnswerContentInline>
+                            <lcCorrectResponse2/>
+                        </lceAnswerOptionInline>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>128,103,155,126</lcAreaCoords2>
+                    </lceAreaGTE>
+                    <lceAreaGTE>
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>MAN</lceAnswerContentInline>
+                            <lcCorrectResponse2/>
+                        </lceAnswerOptionInline>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>66,165,93,178</lcAreaCoords2>
+                    </lceAreaGTE>
+                </lceGTEMap>
+            </lceGraphicTextEntry>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>
