@@ -18,9 +18,7 @@ See map "documentation"
 
 ## Schema roadmap
 
-- Some more interactions: upload, crossword, graphicGapTextEntry (combination of graphicGapMatch and textEntry)
-- Furthermore the gapMatch has to be changed so that the same answer in different gaps is possible.
-- Rework lceDrawing, lceDrawingImgage should be based on fig
+Some more interactions: upload, crossword, graphicGapTextEntry
 
 
 ## License

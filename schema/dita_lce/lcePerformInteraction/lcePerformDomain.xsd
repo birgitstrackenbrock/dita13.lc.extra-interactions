@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lceperform-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lceperforminteraction-d-div">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcePerformQuestion"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceperforminteraction-d-lcInteractionBase2">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcePerformQuestion"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcePerformQuestion">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lcePerformQuestion"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceUploadObject">
+        <xs:sequence>
+            <xs:element ref="lceUploadObject" />
+        </xs:sequence>
+    </xs:group>
+
+    <!-- ================================== -->
+    
+    <xs:element name="lceUploadObject">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceUploadObject.class">
+                    <xs:attribute ref="class" default="+ topic/object lceperform-d/lceUploadObject "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceUploadObject.class">
+        <xs:sequence>
+            <xs:group ref="lceUploadObject.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceUploadObject.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceUploadObject.content">
+        <xs:sequence>
+            <xs:group ref="desc" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceUploadObject.attributes">
+        <xs:attribute name="declare">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="declare"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="classid" type="xs:string"/>
+        <xs:attribute name="classidkeyref" type="xs:string"/>
+        <xs:attribute name="codebase" type="xs:string"/>
+        <xs:attribute name="codebasekeyref" type="xs:string"/>
+        <xs:attribute name="data" type="xs:string"/>
+        <xs:attribute name="datakeyref" type="xs:string"/>
+        <xs:attribute name="type" type="xs:string"/>
+        <xs:attribute name="codetype" type="xs:string"/>
+        <xs:attribute name="archive" type="xs:string"/>
+        <xs:attribute name="archivekeyrefs" type="xs:string"/>
+        <xs:attribute name="standby" type="xs:string"/>
+        <xs:attribute name="height" type="xs:NMTOKEN"/>
+        <xs:attribute name="width" type="xs:NMTOKEN"/>
+        <xs:attribute name="usemap" type="xs:string"/>
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="tabindex" type="xs:NMTOKEN"/>
+        <xs:attribute name="longdescref" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lcePerformQuestion">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lcePerformQuestion.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lceperform-d/lcePerformQuestion "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lcePerformQuestion.class">
+        <xs:sequence>
+            <xs:group ref="lcePerformQuestion.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lcePerformQuestion.attributes"/>
+    </xs:complexType>
+    <xs:group name="lcePerformQuestion.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceUploadObject" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lcePerformQuestion.attributes">
+        <xs:attribute name="id" type="xs:NMTOKEN"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    
+       
+</xs:schema>

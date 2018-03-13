@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+
+<!-- ============================================================= -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  
+    <xs:annotation>
+      <xs:appinfo>
+        <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(base eduatts)</dita:domainsModule>
+      </xs:appinfo>
+      <xs:documentation/>
+      
+    </xs:annotation>
+  
+  <xs:attributeGroup name="lceEduAtt-d-attribute">
+    <xs:attribute name="shuffle" type="shuffle-atts.class" use="optional">
+      <xs:annotation>
+        <xs:documentation>This attribute should only be used with interaction elements.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="case-sensitive" type="casesensitive-atts.class" use="optional">
+      <xs:annotation>
+        <xs:documentation>This attribute cn be used with crossword, acrostic puzzle and text entry.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="score" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>This attribute can be used to define for a whole interacttion or seperate answers the score when correct.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:attributeGroup>
+  
+  <xs:simpleType name="shuffle-atts.class">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="yes"/>
+      <xs:enumeration value="no"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+<xs:simpleType name="casesensitive-atts.class">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="yes"/>
+    <xs:enumeration value="no"/>
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

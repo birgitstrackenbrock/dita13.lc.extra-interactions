@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.0" id="te1">
+  xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="te1">
     <title>Text Entry</title>
     <learningAssessmentbody>
         <lcInteraction>
@@ -13,7 +13,7 @@
                             <lceAnswerContentInline>York</lceAnswerContentInline><lcCorrectResponse2></lcCorrectResponse2>
                         </lceAnswerOptionInline>
                         <lceAnswerOptionInline>
-                            <lceAnswerContentInline>york</lceAnswerContentInline><lceAlternativeResponse></lceAlternativeResponse>
+                            <lceAnswerContentInline>york</lceAnswerContentInline><lceAlternativeResponse></lceAlternativeResponse><lceFeedbackInlineCorrect>Be aware, a city is written with a first capital letter</lceFeedbackInlineCorrect>
                         </lceAnswerOptionInline>
                     </lceTextEntryOptions>;</p>
                     <p>And all the clouds that lour'd upon our house</p>
