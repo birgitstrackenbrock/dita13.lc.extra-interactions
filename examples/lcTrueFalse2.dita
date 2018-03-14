@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="x2">
+    <title>Quiz</title>
+    <learningAssessmentbody>
+        <lcIntro id="lcIntro_orp_3hy_ddb">
+            <p>Not everything you thought you knew might be true...</p>
+        </lcIntro>
+        <lcInteraction>
+            <lcTrueFalse2>
+                <lcQuestion2><p>Lightning never strikes in the same place twice.</p></lcQuestion2>
+                <lcAsset2>
+                    <image href="ligthning.jpg" id="image_g1y_1yx_ddb"/>
+                </lcAsset2>
+                <lcAnswerOptionGroup2>
+                    <lcAnswerOption2>
+                        <lcAnswerContent2><p>True</p></lcAnswerContent2>
+                    </lcAnswerOption2>
+                    <lcAnswerOption2>
+                        <lcAnswerContent2><p>False</p></lcAnswerContent2><lcCorrectResponse2/>
+                    </lcAnswerOption2>
+                </lcAnswerOptionGroup2>
+            </lcTrueFalse2>
+            <lcTrueFalse2>
+                <lcQuestion2><p>The top of the Eiffel Tower leans away from the sun.</p></lcQuestion2>
+                <lcAnswerOptionGroup2>
+                    <lcAnswerOption2>
+                        <lcAnswerContent2><p>True</p></lcAnswerContent2><lcCorrectResponse2/>
+                    </lcAnswerOption2>
+                    <lcAnswerOption2>
+                        <lcAnswerContent2><p>False</p></lcAnswerContent2>
+                    </lcAnswerOption2>
+                </lcAnswerOptionGroup2>
+            </lcTrueFalse2>
+            <lcTrueFalse2>
+                <lcQuestion2><p>Twinkies have an infinite shelf life.</p></lcQuestion2>
+                <lcAnswerOptionGroup2>
+                    <lcAnswerOption2>
+                        <lcAnswerContent2><p>True</p></lcAnswerContent2>
+                    </lcAnswerOption2>
+                    <lcAnswerOption2>
+                        <lcAnswerContent2><p>False</p></lcAnswerContent2><lcCorrectResponse2/>
+                    </lcAnswerOption2>
+                </lcAnswerOptionGroup2>
+            </lcTrueFalse2>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

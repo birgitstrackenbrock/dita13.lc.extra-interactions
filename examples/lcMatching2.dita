@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="x2">
+    <title>City and country</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lcMatching2>
+                <lcQuestion2><p>Match the city with the counry</p></lcQuestion2>
+                <lcMatchTable2>
+                    <lcMatchingPair2>
+                        <lcItem2><p>Paris</p></lcItem2>
+                        <lcMatchingItem2><p>France</p></lcMatchingItem2>
+                    </lcMatchingPair2>
+                    <lcMatchingPair2>
+                        <lcItem2><p>London</p></lcItem2>
+                        <lcMatchingItem2><p>Great Britian</p></lcMatchingItem2>
+                    </lcMatchingPair2>
+                    <lcMatchingPair2>
+                        <lcItem2><p>Berlin</p></lcItem2>
+                        <lcMatchingItem2><p>Germany</p></lcMatchingItem2>
+                    </lcMatchingPair2>
+                    <lcMatchingPair2>
+                        <lcItem2><p>Rome</p></lcItem2>
+                        <lcMatchingItem2><p>Italy</p></lcMatchingItem2>
+                    </lcMatchingPair2>
+                </lcMatchTable2>
+            </lcMatching2>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>
