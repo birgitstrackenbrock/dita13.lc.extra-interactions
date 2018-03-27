@@ -8,6 +8,8 @@
 <!-- version: 1.0.0  date:  author: Birgit -->
 <!-- base version -->
 
+<!-- version: 2.0.0  date: 14-03-2018  author: Birgit -->
+
 <!-- ============================================================= -->
 <xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
    xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"

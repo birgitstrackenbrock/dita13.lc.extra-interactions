@@ -8,7 +8,7 @@ Add new interactions
 Add new attributes
 - answertype value predefined
 - orientation value vertical/horizontal
-- shullfe value yes/no
+- shuffle value yes/no
 - case-sensitive value yes/no
 - score string field
 
