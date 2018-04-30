@@ -17,7 +17,7 @@
   <xs:attributeGroup name="lceOrientationAtt-d-attribute">
     <xs:attribute name="orientation" type="orientation-atts.class" use="optional">
       <xs:annotation>
-        <xs:documentation>This attribute should be used with sequence.
+        <xs:documentation>This attribute should be used with crossword or sequence.
         </xs:documentation>
       </xs:annotation>
     </xs:attribute>
