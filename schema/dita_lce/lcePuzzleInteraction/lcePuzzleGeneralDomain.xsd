@@ -281,9 +281,9 @@
         </xs:complexType>
     </xs:element>
     <xs:complexType name="lcePuzzleOptionGroup.class">
-        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:sequence>
             <xs:group ref="p" minOccurs="0"/>
-            <xs:group ref="lcePuzzleOption"/>
+            <xs:group ref="lcePuzzleOption" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
         <xs:attributeGroup ref="lcePuzzleOptionGroup.attributes"/>
     </xs:complexType>
