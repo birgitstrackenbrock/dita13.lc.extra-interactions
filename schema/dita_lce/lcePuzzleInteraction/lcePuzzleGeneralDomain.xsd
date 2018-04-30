@@ -332,17 +332,10 @@
     </xs:element>
     <xs:complexType name="lcePuzzleClue.class" mixed="true">
         <xs:sequence>
-            <xs:group ref="lcePuzzleClue.content"/>
+            <xs:group ref="p.content"/>
         </xs:sequence>
         <xs:attributeGroup ref="lcePuzzleClue.attributes"/>
     </xs:complexType>
-    <xs:group name="lcePuzzleClue.content">
-        <xs:sequence>
-            <xs:choice minOccurs="0" maxOccurs="unbounded">
-             <xs:group ref="para.cnt"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
     <xs:attributeGroup name="lcePuzzleClue.attributes">
         <xs:attribute name="keyref" type="xs:string"/>
         <xs:attributeGroup ref="univ-atts"/>
