@@ -187,7 +187,7 @@
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lcePuzzleSolution.class" mixed="true">
+    <xs:complexType name="lcePuzzleSolution.class">
         <xs:sequence>
             <xs:group ref="lcePuzzleSolution.content"/>
         </xs:sequence>
