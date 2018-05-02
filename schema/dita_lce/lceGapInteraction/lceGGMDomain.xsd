@@ -85,8 +85,8 @@
     <xs:group name="lceAreaGGM.content">
         <xs:sequence>
             <xs:group ref="lceGap"/>
-            <xs:group ref="lcAreaShape2" minOccurs="0"/>
-            <xs:group ref="lcAreaCoords2" minOccurs="0"/>
+            <xs:group ref="lcAreaShape2" minOccurs="1"/>
+            <xs:group ref="lcAreaCoords2" minOccurs="1"/>
             <xs:group ref="lcFeedback2" minOccurs="0"/>
         </xs:sequence>
     </xs:group>
