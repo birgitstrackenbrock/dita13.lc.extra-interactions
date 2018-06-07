@@ -1,0 +1,9 @@
+Suggestions for next release "dita13.lc.extra-interactions"
+
+
+- graphicGapMatch: 
+  lceGap child::lceFeedbackInlineCorrect|lceFeedbackInlineIncorrect and following-sibling::lcFeedback 2
+  Alle these feedbacks needed?
+
+- drawing:
+  Why lceDrawingImage and lceDrawingAnswer? Why not lcAsset2 and lcOpenAnswer?
