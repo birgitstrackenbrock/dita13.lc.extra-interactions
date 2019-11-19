@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.1" id="x2">
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.1" id="x2">
     <title>Bremer Stadtmusikanten</title>
     <learningAssessmentbody>
        <lcIntro><p>In the fairy tale "Die Bremer Stadtmusikanten" there are four animals which are get off and sing together.</p></lcIntro>
