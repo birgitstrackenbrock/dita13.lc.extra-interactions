@@ -1,25 +1,5 @@
 Release notes "dita13.lc.extra-interactions" version 2.0
 
 Add new interactions
-- lcePerfomQuestion - kind of open question where the student does not to have fill in something and/or upload a file
-- lceCrossWordPuzzle - cross word with horizontal and vertical words
-- lceGraphicTextEntry - image with gaps to be filled in
+- lceChainMathing - matching items from more than two bukkets
 
-Add new attributes
-- answertype value predefined
-- orientation value vertical/horizontal
-- shuffle value yes/no
-- case-sensitive value yes/no
-- score string field
-
-Add new general elements
-- lceEduData - container container for lc-elements for lom educative to be used in interactions
-- lceFeedbackInlineCorrect, lceFeedbackInlineIncorrect - feedback-elements for answers where an feedback-elements are needed which are based on ph
-
-Functional changes
-- lceGapMatch - now reference from the gap to the answer, thus one answer can be used in different gaps
-- lceGraphicGapMatch - using the same soort of content model as lceGapMatch, an answer can be used several times
-- lceMultipleMatch - an item-match-pair now is given bij two references to the right item resp. match
-- lceArosticPuzzle and lceCrossWordPuzzle using the same content model, the puzzle letters are given in a grid and from the answer the letters are linked 
-
-Include SVG 
