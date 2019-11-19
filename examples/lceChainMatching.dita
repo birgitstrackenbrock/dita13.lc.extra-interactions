@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2" id="x2">
+    <title>Shakespeare plays</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lceChainMatching>
+                <lcQuestion2><p>What belongs together?</p></lcQuestion2>
+                <lceChainTable>
+                    <lceChainThead>
+                        <lcItem2><p>Kind of play</p></lcItem2>
+                        <lcItem2><p>Name </p></lcItem2>
+                        <lcItem2><p>Person</p></lcItem2>
+                    </lceChainThead>
+                    <lceChainRow>
+                        <lcItem2><p>Comedy</p></lcItem2>
+                        <lcItem2><p>History</p></lcItem2>
+                        <lcItem2><p>Tragedy</p></lcItem2>
+                    </lceChainRow>
+                    <lceChainRow>
+                        <lcItem2><p>Midsummer Night's Dream</p></lcItem2>
+                        <lcItem2><p>King John</p></lcItem2>
+                        <lcItem2><p>Othello</p></lcItem2>
+                    </lceChainRow>
+                    <lceChainRow>
+                        <lcItem2><p>Titania</p></lcItem2>
+                        <lcItem2><p>Lady Faulconbridge</p></lcItem2>
+                        <lcItem2><p>Desdemona</p></lcItem2>
+                    </lceChainRow>
+                </lceChainTable>
+            </lceChainMatching>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>
