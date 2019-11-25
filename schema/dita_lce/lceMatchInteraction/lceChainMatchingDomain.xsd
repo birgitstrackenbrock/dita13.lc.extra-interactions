@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcechainmatching-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lcechainmatching-d-div">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceChainMatching"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcechainmatching-d-lcInteractionBase2">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceChainMatching"/> 
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    
+    <xs:group name="lceChainMatching">
+        <xs:sequence>
+            <xs:element ref="lceChainMatching" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceChainTable">
+        <xs:sequence>
+            <xs:element ref="lceChainTable" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceChainThead">
+        <xs:sequence>
+            <xs:element ref="lceChainThead" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceChainRow">
+        <xs:sequence>
+            <xs:element ref="lceChainRow" />
+        </xs:sequence>
+    </xs:group>
+    
+    
+    <!-- ============================================== -->   
+    
+    <xs:element name="lceChainTable">
+        <xs:annotation>
+            <xs:documentation>The ilChainTable provides a format for matching serveral items in a one-to-one relation. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceChainTable.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/simpletable learningInteractionBase2-d/simpletable lcechainmatching-d/lceChainTable "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceChainTable.class">
+        <xs:sequence>
+            <xs:group ref="lceChainTable.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceChainTable.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceChainTable.content">
+        <xs:sequence>
+            <xs:group ref="lceChainThead" minOccurs="0"/>
+            <xs:group ref="lceChainRow" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceChainTable.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceChainThead">
+        <xs:annotation>
+            <xs:documentation>Provides column headings for items to present in a chain table. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceChainThead.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/sthead learningInteractionBase2-d/sthead lcechainmatching-d/lceChainThead "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceChainThead.class">
+        <xs:sequence>
+            <xs:group ref="lceChainThead.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceChainThead.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceChainThead.content">
+        <xs:sequence>
+            <xs:group ref="lcItem2" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceChainThead.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceChainRow">
+        <xs:annotation>
+            <xs:documentation>Provides a table row with the items that comprise a correct match in a chain interaction. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceChainRow.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/strow learningInteractionBase2-d/strow lcechainmatching-d/lceChainRow "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceChainRow.class">
+        <xs:sequence>
+            <xs:group ref="lceChainRow.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceChainRow.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceChainRow.content">
+        <xs:sequence>
+            <xs:group ref="lcItem2" maxOccurs="unbounded"/>
+            <xs:group ref="lcMatchingItemFeedback2" minOccurs="0"/>
+            
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceChainRow.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    
+    <!-- =============================== -->
+    
+    <xs:element name="lceChainMatching">
+        <xs:annotation>
+            <xs:documentation>Interaction to combine several items in a one-to-one relation.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceChainMatching.class">
+                    <xs:attribute ref="class" default="+ topic/div lcechainmatching-d/lceChainMatching "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceChainMatching.class">
+        <xs:sequence>
+            <xs:group ref="lceChainMatching.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceChainMatching.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceChainMatching.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceChainTable"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceChainMatching.attributes">
+        <xs:attribute name="id" type="xs:NMTOKEN"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+</xs:schema>
