@@ -1,0 +1,5 @@
+Release notes "dita13.lc.extra-interactions" version 2.2
+
+Add new interactions
+- lceChainMathing - matching items from more than two bukkets
+
