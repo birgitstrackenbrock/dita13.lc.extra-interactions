@@ -137,7 +137,7 @@
     <xs:group name="lceAnswerOptionInline.content">
         <xs:sequence>
             <xs:group ref="lceAnswerContentInline"/>
-            <xs:choice minOccurs="1" maxOccurs="1">
+            <xs:choice minOccurs="0" maxOccurs="1">
                 <xs:group ref="lcCorrectResponse2"/>
                 <xs:group ref="lceAlternativeResponse"/>
             </xs:choice>
