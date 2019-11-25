@@ -117,7 +117,7 @@
             <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lceMatchSet1" minOccurs="1" maxOccurs="1"/>
             <xs:group ref="lceMatchSet2" minOccurs="1" maxOccurs="1"/>
-            <xs:group ref="lceMatchMap" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lceMatchMap" minOccurs="0" maxOccurs="1"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
