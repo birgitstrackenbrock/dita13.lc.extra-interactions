@@ -134,7 +134,7 @@
     </xs:complexType>
     <xs:group name="lceChainRow.content">
         <xs:sequence>
-            <xs:group ref="lcItem2"/>
+            <xs:group ref="lcItem2" maxOccurs="unbounded"/>
             <xs:group ref="lcMatchingItemFeedback2" minOccurs="0"/>
             
         </xs:sequence>
