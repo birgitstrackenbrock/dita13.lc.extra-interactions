@@ -60,7 +60,7 @@
             <xs:complexContent>
                 <xs:extension base="lceChainTable.class">
                     <xs:attribute ref="class"
-                        default="+ topic/simpletable learningInteractionBase2-d/simpletable lcechainmatching-d/lceChainTable "/>
+                        default="+ topic/simpletable learningInteractionBase2-d/simpletable learning2-d/lcMatchTable2 lcechainmatching-d/lceChainTable "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
@@ -155,7 +155,7 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="lceChainMatching.class">
-                    <xs:attribute ref="class" default="+ topic/div lcechainmatching-d/lceChainMatching "/>
+                    <xs:attribute ref="class" default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 learning2-d/lcMatching2 lcechainmatching-d/lceChainMatching "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
