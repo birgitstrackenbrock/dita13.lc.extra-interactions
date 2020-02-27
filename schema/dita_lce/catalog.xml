@@ -146,6 +146,12 @@
     <uri name="lceChainMatchingDomain.xsd" uri="lceChainMatchingDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceChainMatchingDomain.xsd" uri="lceChainMatchingDomain.xsd" />
     
+    <system systemId="lceMatchDomain.xsd" uri="lceMatchDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceMatchDomain.xsd" uri="lceMatchDomain.xsd" />
+    
+    <uri name="lceMatchDomain.xsd" uri="lceMatchDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceMatchDomain.xsd" uri="lceMatchDomain.xsd" />
+    
     <system systemId="lceMultipleMatchDomain.xsd" uri="lceMultipleMatchDomain.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceMultipleMatchDomain.xsd" uri="lceMultipleMatchDomain.xsd" />
     
