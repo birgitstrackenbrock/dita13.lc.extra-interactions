@@ -114,6 +114,12 @@
   </group>
  
   <group xml:base="lceInlineInteraction/">
+    <system systemId="lceEntryDomain.xsd" uri="lceEntryDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceEntryDomain.xsd" uri="lceEntryDomain.xsd" />
+    
+    <uri name="lceEntryDomain.xsd" uri="lceEntryDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceEntryDomain.xsd" uri="lceEntryDomain.xsd" />
+    
     <system systemId="lceTextEntryDomain.xsd" uri="lceTextEntryDomain.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceTextEntryDomain.xsd" uri="lceTextEntryDomain.xsd" />
     

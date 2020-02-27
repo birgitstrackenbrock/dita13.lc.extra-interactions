@@ -74,6 +74,7 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceChainMatchingDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGraphicAssociateDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMatchDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceEntryDomain.xsd"/>
    
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceOrientationAttsDomain.xsd"/>
@@ -281,6 +282,6 @@ It must be declared in topic-type shells.
                     default="topic svg-d) (topic concept) (topic hi-d) (topic indexing-d) (topic learningBase+learningInteractionBase-d) (topic learningBase+learningInteractionBase-d learningAssessment) (topic learningBase learningSummary) (topic learningBase+learningInteractionBase-d learningContent) (topic learningBase+learningInteractionBase-d+learningInteractionBase2) (topic learningInteractionBase-d learning-d) (topic learningInteractionBase-d) (topic learningInteractionBase2-d learning2-d) (topic learningInteractionBase2-d) (topic learningmeta-d) (topic reference) (topic relmgmt-d) (topic task) (topic ut-d) a(props deliveryTarget) 
                     (lce lcegraphic-d) (lce lcedraw-d) (lce lceggm-d) (lce lceinlinechoice-d) (lce lceinlineinteraction-d) (lce lcetextentry-d) (lce lcelcegapmatch-d) 
                     (lce lcehottext-d) (lce lcelcemultiplematch-c) (lce lcelcemultiplematch-d) (lce lcearosticinteraction-d) (lce lcepuzzle-d) (lce lcedata-d) (lce lcefeedback-d)
-                    (lce lcegraphictextentry-d) (lce lcecrosswordinteraction-d) (lce lcechainmatching-d) (lce lcematch-d) (lce lcega-d)"/>
+                    (lce lcegraphictextentry-d) (lce lcecrosswordinteraction-d) (lce lcechainmatching-d) (lce lcematch-d) (lce lcega-d) (lce lceentry-d)"/>
    </xs:attributeGroup>
 </xs:schema>
