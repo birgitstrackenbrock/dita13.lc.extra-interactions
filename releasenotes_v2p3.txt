@@ -1,0 +1,4 @@
+Release notes "dita13.lc.extra-interactions" version 2.3
+
+Add new interactions
+* lceGraphicAssociate - interaction where you can reate hotspots and set relation between hotspots (drawing lines)

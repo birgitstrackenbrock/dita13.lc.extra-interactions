@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcega-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lceGraphicAssociate">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceGraphicAssociate"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceGAMap">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceGAMap"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceAssociableHotspot">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceAssociableHotspot"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+<!-- ================================================================= -->
+      
+    <xs:element name="lceGAMap">
+        <xs:annotation>
+            <xs:documentation>Container for the hotspots</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceGAMap.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/fig learningInteractionBase2-d/fig lcega-d/lceGAMap "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceGAMap.class">
+        <xs:sequence>
+            <xs:group ref="lceGAMap.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceGAMap.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceGAMap.content">
+        <xs:sequence>
+            <xs:group ref="image"/>
+            <xs:group ref="lceAssociableHotspot" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceGAMap.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceAssociableHotspot">
+        <xs:annotation>
+            <xs:documentation> </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceAssociableHotspot.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/figgroup learningInteractionBase2-d/figgroup lcega-d/lceAssociableHotspot "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceAssociableHotspot.class">
+        <xs:sequence>
+            <xs:group ref="lceAssociableHotspot.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceAssociableHotspot.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceAssociableHotspot.content">
+        <xs:sequence>
+            <xs:group ref="lcAreaShape2"/>
+            <xs:group ref="lcAreaCoords2"/>
+            <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
+            <xs:group ref="lcFeedback2" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceAssociableHotspot.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+     
+    
+   <!-- ======================================================================== -->
+     
+    <xs:element name="lceGraphicAssociate">
+        <xs:annotation>
+            <xs:documentation>In a lceGraphicAssociate interaction, the learner matches hotspots on an image </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceGraphicAssociate.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lcega-d/lceGraphicAssociate "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceGraphicAssociate.class">
+        <xs:sequence>
+            <xs:group ref="lceGraphicAssociate.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceGraphicAssociate.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceGraphicAssociate.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lceGAMap"/>
+            <xs:group ref="lceMatchMap"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceGraphicAssociate.attributes">
+        <xs:attribute name="id" type="xs:NMTOKEN"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+</xs:schema>

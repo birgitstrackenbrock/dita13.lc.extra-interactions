@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2" id="cw1">
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.3" id="cw1">
     <title>Vegetables</title>
     <learningAssessmentbody>
         <lcInteraction id="lcInteraction_o3j_w15_qcb">
@@ -304,21 +304,21 @@
                         <lcePuzzleClue>Small cabbage-like heads or buds growing along a
                             stalk</lcePuzzleClue>
                         <lcePuzzleClueAnswer>
-                            <lcePuzzleEntryRef href="#w1"/>
-                            <lcePuzzleEntryRef href="#w2"/>
-                            <lcePuzzleEntryRef href="#w3"/>
-                            <lcePuzzleEntryRef href="#w4"/>
-                            <lcePuzzleEntryRef href="#w5"/>
-                            <lcePuzzleEntryRef href="#w6"/>
-                            <lcePuzzleEntryRef href="#w7"/>
-                            <lcePuzzleEntryRef href="#w8"/>
-                            <lcePuzzleEntryRef href="#w9"/>
-                            <lcePuzzleEntryRef href="#w10"/>
-                            <lcePuzzleEntryRef href="#w11"/>
-                            <lcePuzzleEntryRef href="#w12"/>
-                            <lcePuzzleEntryRef href="#w13"/>
-                            <lcePuzzleEntryRef href="#w14"/>
-                            <lcePuzzleEntryRef href="#w11"/>
+                            <lcePuzzleEntryRef href="#./w1"/>
+                            <lcePuzzleEntryRef href="#./w2"/>
+                            <lcePuzzleEntryRef href="#./w3"/>
+                            <lcePuzzleEntryRef href="#./w4"/>
+                            <lcePuzzleEntryRef href="#./w5"/>
+                            <lcePuzzleEntryRef href="#./w6"/>
+                            <lcePuzzleEntryRef href="#./w7"/>
+                            <lcePuzzleEntryRef href="#./w8"/>
+                            <lcePuzzleEntryRef href="#./w9"/>
+                            <lcePuzzleEntryRef href="#./w10"/>
+                            <lcePuzzleEntryRef href="#./w11"/>
+                            <lcePuzzleEntryRef href="#./w12"/>
+                            <lcePuzzleEntryRef href="#./w13"/>
+                            <lcePuzzleEntryRef href="#./w14"/>
+                            <lcePuzzleEntryRef href="#./w11"/>
                         </lcePuzzleClueAnswer>
                     </lcePuzzleOption>
                 </lcePuzzleOptionGroup>
@@ -328,13 +328,13 @@
                         <lcePuzzleClue>Long pinkish sour
                             leafstalks usually eaten cooked and sweetened</lcePuzzleClue>
                         <lcePuzzleClueAnswer>
-                            <lcePuzzleEntryRef href="#w11"/>
-                            <lcePuzzleEntryRef href="#w16"/>
-                            <lcePuzzleEntryRef href="#w17"/>
-                            <lcePuzzleEntryRef href="#w18"/>
-                            <lcePuzzleEntryRef href="#w19"/>
-                            <lcePuzzleEntryRef href="#w20"/>
-                            <lcePuzzleEntryRef href="#w21"/>
+                            <lcePuzzleEntryRef href="#./w11"/>
+                            <lcePuzzleEntryRef href="#./w16"/>
+                            <lcePuzzleEntryRef href="#./w17"/>
+                            <lcePuzzleEntryRef href="#./w18"/>
+                            <lcePuzzleEntryRef href="#./w19"/>
+                            <lcePuzzleEntryRef href="#./w20"/>
+                            <lcePuzzleEntryRef href="#./w21"/>
                         </lcePuzzleClueAnswer>
                     </lcePuzzleOption>
                     
