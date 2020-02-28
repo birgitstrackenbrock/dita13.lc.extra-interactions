@@ -7,8 +7,7 @@
             <lcSingleSelect2>
                 <lcQuestion2><p>What is the capital of The Netherlands?</p></lcQuestion2>
                 <lcAsset2>
-                    <image
-                        href="../../../../../Program%20Files/Oxygen%20XML%20Editor%2019/frameworks/dita/DITA-OT2.x/plugins/dita13.lc.extra-interactions/examples/netherlands.jpg"
+                    <image href="netherlands.jpg"
                         id="image_gs5_qrx_ddb"/>
                 </lcAsset2>
                 <lcAnswerOptionGroup2>

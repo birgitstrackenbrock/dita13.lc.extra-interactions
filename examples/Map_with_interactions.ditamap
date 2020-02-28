@@ -17,6 +17,9 @@
         <topicref href="lcePuzzle_acrostic.dita"/>
         <topicref href="lcePuzzle_crossword.dita"/>
         <topicref href="lceTextEntry_MrsWhite.dita"/>
+        <topicref href="lceChainMatching.dita"/>
+        <topicref href="lceGaphicAssociate.dita"/>
+        <topicref href="lceGraphicTextEntry_counting-pyramid.dita"/>
     </topicgroup>
     <topicgroup>
         <topicmeta>
