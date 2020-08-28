@@ -79,6 +79,7 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceOrientationAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceEduAttsDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceContentclassAttsDomain.xsd"/>
    
    <!--  -->
 
@@ -155,6 +156,7 @@
       <xs:attributeGroup name="props-attribute-extensions">
          <xs:attributeGroup ref="props-attribute-extensions"/>
          <xs:attributeGroup ref="deliveryTargetAtt-d-attribute"/>
+         <xs:attributeGroup ref="lceContentclassAtt-d-attribute"/>
       </xs:attributeGroup>
       <xs:attributeGroup name="base-attribute-extensions">
          <xs:attributeGroup ref="base-attribute-extensions"/>

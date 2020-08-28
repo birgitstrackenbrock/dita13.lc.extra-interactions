@@ -53,6 +53,12 @@
     
     <uri name="lceEduAttsDomain.xsd" uri="lceEduAttsDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceEduAttsDomain.xsd" uri="lceEduAttsDomain.xsd" />
+    
+    <system systemId="lceContentclassAttsDomain.xsd" uri="lceContentclassAttsDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceContentclassAttsDomain.xsd" uri="lceContentclassAttsDomain.xsd" />
+    
+    <uri name="lceContentclassAttsDomain.xsd" uri="lceContentclassAttsDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceContentclassAttsDomain.xsd" uri="lceContentclassAttsDomain.xsd" />
   </group>
   
   <group xml:base="lceData/">
