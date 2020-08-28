@@ -7,6 +7,7 @@
     <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.0" uri="lceLearningAssessment.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.1" uri="lceLearningAssessment.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2" uri="lceLearningAssessment.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2.1" uri="lceLearningAssessment.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.3" uri="lceLearningAssessment.xsd" />
     
     <uri name="lceLearningAssessment.xsd" uri="lceLearningAssessment.xsd" />
@@ -14,6 +15,7 @@
     <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.0" uri="lceLearningAssessment.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.1" uri="lceLearningAssessment.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2" uri="lceLearningAssessment.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2.1" uri="lceLearningAssessment.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.3" uri="lceLearningAssessment.xsd" />
     
     <system systemId="lceLearningContent.xsd" uri="lceLearningContent.xsd" />
@@ -21,6 +23,7 @@
     <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.0" uri="lceLearningContent.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.1" uri="lceLearningContent.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.2" uri="lceLearningContent.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.2.1" uri="lceLearningContent.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.3" uri="lceLearningContent.xsd" />
     
     <uri name="lceLearningContent.xsd" uri="lceLearningContent.xsd" />
@@ -28,6 +31,7 @@
     <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.0" uri="lceLearningContent.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.1" uri="lceLearningContent.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.2" uri="lceLearningContent.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.2.1" uri="lceLearningContent.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.3" uri="lceLearningContent.xsd" />
   </group>
   
