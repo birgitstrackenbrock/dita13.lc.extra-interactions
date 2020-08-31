@@ -8,42 +8,48 @@
                 <lcQuestion2></lcQuestion2>
                 <lceBasicWrittenCalculationTable>
                     <lceCalculationInputRow>
-                        <lceNumericCharacterEntry></lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>5</lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>5</lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
+                        <lceCalculationTableEntry>
+                            <lceNumericalCharacter>1</lceNumericalCharacter>
+                        </lceCalculationTableEntry>
+                        <lceCalculationTableEntry>
+                            <lceNumericalCharacter>2</lceNumericalCharacter>
+                        </lceCalculationTableEntry>
+                        <lceCalculationTableEntry>
+                            <lceNumericalCharacter>5</lceNumericalCharacter>
+                        </lceCalculationTableEntry>
+                        <lceCalculationTableEntry>
+                            <lceNumericalCharacter>0</lceNumericalCharacter>
+                        </lceCalculationTableEntry>
+                        <lceCalculationSignEntry>
+                            <lceCalculationSign value="addition"/>
+                        </lceCalculationSignEntry>
                     </lceCalculationInputRow>
                     <lceCalculationInputRow>
-                        <lceNumericCharacterEntry>1</lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>2</lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
+                        <lceCalculationTableEntry></lceCalculationTableEntry>
+                        <lceCalculationTableEntry>
+                            <lceNumericalCharacter>5</lceNumericalCharacter>
+                        </lceCalculationTableEntry>
+                        <lceCalculationTableEntry>
+                            <lceNumericalCharacter>0</lceNumericalCharacter>
+                        </lceCalculationTableEntry>
+                        <lceCalculationTableEntry>
+                            <lceNumericalCharacter>0</lceNumericalCharacter>
+                        </lceCalculationTableEntry>
                     </lceCalculationInputRow>
-                    <lceCalculationRow>
-                        <lceNumericCharacterEntry>1</lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
-                        
-                    </lceCalculationRow>
-                    <lceCalculationRow>
-                        <lceNumericCharacterEntry/>
-                        <lceNumericCharacterEntry>7</lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
-                    </lceCalculationRow>
-                    <lceCalculationRow>
-                        <lceNumericCharacterEntry/>
-                        <lceNumericCharacterEntry/>
-                        <lceNumericCharacterEntry>5</lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
-                    </lceCalculationRow>
-                    <lceCalculationRow>
-                        <lceNumericCharacterEntry>1</lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>7</lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>5</lceNumericCharacterEntry>
-                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
-                    </lceCalculationRow>
+                    <lceCalculationResultRow>
+                        <lceCalculationTableEntry>
+                            <lceNumericalCharacter>1</lceNumericalCharacter>
+                        </lceCalculationTableEntry>
+                        <lceCalculationTableEntry>
+                            <lceNumericalCharacter>7</lceNumericalCharacter>
+                        </lceCalculationTableEntry>
+                        <lceCalculationTableEntry>
+                            <lceNumericalCharacter>5</lceNumericalCharacter>
+                        </lceCalculationTableEntry>
+                        <lceCalculationTableEntry>
+                            <lceNumericalCharacter>0</lceNumericalCharacter>
+                        </lceCalculationTableEntry>
+                    </lceCalculationResultRow>
                 </lceBasicWrittenCalculationTable>
             </lceBasicWrittenCalculation>
         </lcInteraction>

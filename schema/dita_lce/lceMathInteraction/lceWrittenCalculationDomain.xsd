@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lceprimarymath-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lcewrittencalculation-d-div">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceBasicWrittenCalculation"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lcewrittencalculation-d-lcInteractionBase2">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceBasicWrittenCalculation"/> 
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    
+    <xs:group name="lceBasicWrittenCalculation">
+        <xs:sequence>
+            <xs:element ref="lceBasicWrittenCalculation" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceBasicWrittenCalculationTable">
+        <xs:sequence>
+            <xs:element ref="lceBasicWrittenCalculationTable" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceCalculationInputRow">
+        <xs:sequence>
+            <xs:element ref="lceCalculationInputRow" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceCalculationIntermediateRow">
+        <xs:sequence>
+            <xs:element ref="lceCalculationIntermediateRow" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceCalculationHelpRow">
+        <xs:sequence>
+            <xs:element ref="lceCalculationHelpRow" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceCalculationResultRow">
+        <xs:sequence>
+            <xs:element ref="lceCalculationResultRow" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceCalculationTableEntry">
+        <xs:sequence>
+            <xs:element ref="lceCalculationTableEntry" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceCalculationSignEntry">
+        <xs:sequence>
+            <xs:element ref="lceCalculationSignEntry" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceNumericalCharacter">
+        <xs:sequence>
+            <xs:element ref="lceNumericalCharacter" />
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceCalculationSign">
+        <xs:sequence>
+            <xs:element ref="lceCalculationSign" />
+        </xs:sequence>
+    </xs:group>
+    
+    <!-- ============================================== -->   
+    
+    <xs:element name="lceBasicWrittenCalculationTable">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceBasicWrittenCalculationTable.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/simpletable learningInteractionBase2-d/simpletable learning2-d/lcMatchTable2 lceprimarymath-d/lceBasicWrittenCalculationTable "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceBasicWrittenCalculationTable.class">
+        <xs:sequence>
+            <xs:group ref="lceBasicWrittenCalculationTable.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceBasicWrittenCalculationTable.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceBasicWrittenCalculationTable.content">
+        <xs:sequence>
+            <xs:group ref="lceCalculationInputRow" minOccurs="2" maxOccurs="unbounded"/>
+            <xs:group ref="lceCalculationIntermediateRow" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceCalculationResultRow"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceBasicWrittenCalculationTable.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceCalculationInputRow">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceCalculationInputRow.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/sthead learningInteractionBase2-d/sthead lceprimarymath-d/lceCalculationInputRow "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceCalculationInputRow.class">
+        <xs:sequence>
+            <xs:group ref="lceCalculationInputRow.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceCalculationInputRow.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceCalculationInputRow.content">
+        <xs:sequence>
+            <xs:group ref="lceCalculationTableEntry" maxOccurs="unbounded"/>
+            <xs:group ref="lceCalculationSignEntry" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceCalculationInputRow.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceCalculationIntermediateRow">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceCalculationIntermediateRow.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/strow learningInteractionBase2-d/strow lceprimarymath-d/lceCalculationIntermediateRow "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceCalculationIntermediateRow.class">
+        <xs:sequence>
+            <xs:group ref="lceCalculationIntermediateRow.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceCalculationIntermediateRow.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceCalculationIntermediateRow.content">
+        <xs:sequence>
+            <xs:group ref="lceCalculationTableEntry" maxOccurs="unbounded"/>
+            <xs:group ref="lcMatchingItemFeedback2" minOccurs="0"/>
+            
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceCalculationIntermediateRow.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceCalculationHelpRow">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceCalculationHelpRow.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/strow learningInteractionBase2-d/strow lceprimarymath-d/lceCalculationHelpRow "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceCalculationHelpRow.class">
+        <xs:sequence>
+            <xs:group ref="lceCalculationHelpRow.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceCalculationHelpRow.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceCalculationHelpRow.content">
+        <xs:sequence>
+            <xs:group ref="lceCalculationTableEntry" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceCalculationHelpRow.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceCalculationResultRow">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceCalculationResultRow.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/strow learningInteractionBase2-d/strow lceprimarymath-d/lceCalculationResultRow "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceCalculationResultRow.class">
+        <xs:sequence>
+            <xs:group ref="lceCalculationResultRow.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceCalculationResultRow.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceCalculationResultRow.content">
+        <xs:sequence>
+            <xs:group ref="lceCalculationTableEntry" maxOccurs="unbounded"/>
+            <xs:group ref="lcMatchingItemFeedback2" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceCalculationResultRow.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceCalculationTableEntry">
+        <xs:annotation>
+            <xs:documentation> </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceCalculationTableEntry.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/stentry learningInteractionBase2-d/stentry lceprimarymath-d/lceCalculationTableEntry "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceCalculationTableEntry.class"> 
+        <xs:sequence>
+            <xs:group ref="lceCalculationTableEntry.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceCalculationTableEntry.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceCalculationTableEntry.content">
+        <xs:sequence>
+            <xs:group ref="lceNumericalCharacter" minOccurs="0" maxOccurs="1"/>
+            <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceCalculationTableEntry.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceCalculationSignEntry">
+        <xs:annotation>
+            <xs:documentation> </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceCalculationSignEntry.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/stentry learningInteractionBase2-d/stentry lceprimarymath-d/lceCalculationSignEntry "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceCalculationSignEntry.class"> 
+        <xs:sequence>
+            <xs:group ref="lceCalculationSignEntry.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceCalculationSignEntry.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceCalculationSignEntry.content">
+        <xs:sequence>
+            <xs:group ref="lceCalculationSign" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceCalculationSignEntry.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceNumericalCharacter">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceNumericalCharacter.class">
+                    <xs:attribute ref="class" default="- topic/p  lceprimarymath-d/lceNumericalCharacter "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceNumericalCharacter.class" mixed="true">
+        <xs:attributeGroup ref="lceNumericalCharacter.attributes"/>
+    </xs:complexType>
+    <xs:attributeGroup name="lceNumericalCharacter.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+
+    <xs:element name="lceCalculationSign">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceCalculationSign.class">
+                    <xs:attribute ref="class" default="- topic/data lceprimarymath-d/lceCalculationSign "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceCalculationSign.class">
+        <xs:attributeGroup ref="lceCalculationSign.attributes"/>
+    </xs:complexType>
+    <xs:attributeGroup name="lceCalculationSign.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="datatype" type="xs:string"/>
+        <xs:attribute name="value">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="addition"/>
+                    <xs:enumeration value="subtraction"/>
+                    <xs:enumeration value="multiplication"/>
+                    <xs:enumeration value="division"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="href" type="xs:string"/>
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attribute name="format" type="xs:string"/>
+        <xs:attribute name="type" type="xs:string"/>
+        <xs:attribute name="scope">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="external"/>
+                    <xs:enumeration value="local"/>
+                    <xs:enumeration value="peer"/>
+                    <xs:enumeration value="-dita-use-conref-target"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <!-- =============================== -->
+    
+    <xs:element name="lceBasicWrittenCalculation">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceBasicWrittenCalculation.class">
+                    <xs:attribute ref="class" default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 learning2-d/lcMatching2 lceprimarymath-d/lceBasicWrittenCalculation "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceBasicWrittenCalculation.class">
+        <xs:sequence>
+            <xs:group ref="lceBasicWrittenCalculation.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceBasicWrittenCalculation.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceBasicWrittenCalculation.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceBasicWrittenCalculationTable"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceBasicWrittenCalculation.attributes">
+        <xs:attribute name="id" type="xs:NMTOKEN"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+</xs:schema>

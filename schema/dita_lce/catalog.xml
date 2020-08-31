@@ -176,11 +176,11 @@
   </group>
   
   <group xml:base="lceMathInteraction/">
-    <system systemId="lcePrimaryMathDomain.xsd" uri="lcePrimaryMathDomain.xsd" />
-    <system systemId="urn:dita13lce:names:xsd:lcePrimaryMathDomain.xsd" uri="lcePrimaryMathDomain.xsd" />
+    <system systemId="lceWrittenCalculationDomain.xsd" uri="lceWrittenCalculationDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceWrittenCalculationDomain.xsd" uri="lceWrittenCalculationDomain.xsd" />
     
-    <uri name="lcePrimaryMathDomain.xsd" uri="lcePrimaryMathDomain.xsd" />
-    <uri name="urn:dita13lce:names:xsd:lcePrimaryMathDomain.xsd" uri="lcePrimaryMathDomain.xsd" />
+    <uri name="lceWrittenCalculationDomain.xsd" uri="lceWrittenCalculationDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceWrittenCalculationDomain.xsd" uri="lceWrittenCalculationDomain.xsd" />
   </group>
   
   <group xml:base="lcePerformInteraction/">
