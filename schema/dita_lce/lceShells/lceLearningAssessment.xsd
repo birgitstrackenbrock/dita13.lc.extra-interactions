@@ -71,6 +71,7 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGraphicAssociateDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMatchDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceEntryDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lcePrimaryMathDomain.xsd"/>
    
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceOrientationAttsDomain.xsd"/>
@@ -198,6 +199,7 @@
             <xs:group ref="lceperforminteraction-d-lcInteractionBase2"/>
             <xs:group ref="lcegapinteraction-d-lcInteractionBase2"/>
             <xs:group ref="lcechainmatching-d-lcInteractionBase2"/>
+            <xs:group ref="lceprimarymath-d-lcInteractionBase2"/>
          </xs:choice>
       </xs:group>
    </xs:redefine>

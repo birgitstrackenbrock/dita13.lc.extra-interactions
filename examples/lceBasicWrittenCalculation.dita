@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.3" id="x01">
+    <title></title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lceBasicWrittenCalculation>
+                <lcQuestion2></lcQuestion2>
+                <lceBasicWrittenCalculationTable>
+                    <lceCalculationInputRow>
+                        <lceNumericCharacterEntry></lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>5</lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>5</lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
+                    </lceCalculationInputRow>
+                    <lceCalculationInputRow>
+                        <lceNumericCharacterEntry>1</lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>2</lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
+                    </lceCalculationInputRow>
+                    <lceCalculationRow>
+                        <lceNumericCharacterEntry>1</lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
+                        
+                    </lceCalculationRow>
+                    <lceCalculationRow>
+                        <lceNumericCharacterEntry/>
+                        <lceNumericCharacterEntry>7</lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
+                    </lceCalculationRow>
+                    <lceCalculationRow>
+                        <lceNumericCharacterEntry/>
+                        <lceNumericCharacterEntry/>
+                        <lceNumericCharacterEntry>5</lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
+                    </lceCalculationRow>
+                    <lceCalculationRow>
+                        <lceNumericCharacterEntry>1</lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>7</lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>5</lceNumericCharacterEntry>
+                        <lceNumericCharacterEntry>0</lceNumericCharacterEntry>
+                    </lceCalculationRow>
+                </lceBasicWrittenCalculationTable>
+            </lceBasicWrittenCalculation>
+        </lcInteraction>
+        
+    </learningAssessmentbody>
+</learningAssessment>
