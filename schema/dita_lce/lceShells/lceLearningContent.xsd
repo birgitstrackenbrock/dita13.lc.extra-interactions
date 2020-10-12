@@ -75,6 +75,7 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGraphicAssociateDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMatchDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceEntryDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceExplanationDomain.xsd"/>
    
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceOrientationAttsDomain.xsd"/>

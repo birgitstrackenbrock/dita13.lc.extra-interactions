@@ -69,6 +69,14 @@
     <uri name="urn:dita13lce:names:xsd:lceDataDomain.xsd" uri="lceDataDomain.xsd" />
   </group>
   
+  <group xml:base="lceExplanation/">
+    <system systemId="lceExplanationDomain.xsd" uri="lceExplanationDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceExplanationDomain.xsd" uri="lceExplanationDomain.xsd" />
+    
+    <uri name="lceExplanationDomain.xsd" uri="lceExplanationDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceExplanationDomain.xsd" uri="lceExplanationDomain.xsd" />
+  </group>
+  
   <group xml:base="lceFeedback/">
     <system systemId="lceFeedbackDomain.xsd" uri="lceFeedbackDomain.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceFeedbackDomain.xsd" uri="lceFeedbackDomain.xsd" />
@@ -173,14 +181,6 @@
     
     <uri name="lceMultipleMatchDomain.xsd" uri="lceMultipleMatchDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceMultipleMatchDomain.xsd" uri="lceMultipleMatchDomain.xsd" />
-  </group>
-  
-  <group xml:base="lceMathInteraction/">
-    <system systemId="lceWrittenCalculationDomain.xsd" uri="lceWrittenCalculationDomain.xsd" />
-    <system systemId="urn:dita13lce:names:xsd:lceWrittenCalculationDomain.xsd" uri="lceWrittenCalculationDomain.xsd" />
-    
-    <uri name="lceWrittenCalculationDomain.xsd" uri="lceWrittenCalculationDomain.xsd" />
-    <uri name="urn:dita13lce:names:xsd:lceWrittenCalculationDomain.xsd" uri="lceWrittenCalculationDomain.xsd" />
   </group>
   
   <group xml:base="lcePerformInteraction/">
