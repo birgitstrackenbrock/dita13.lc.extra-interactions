@@ -8,6 +8,7 @@
     <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.1" uri="lceLearningAssessment.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2" uri="lceLearningAssessment.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2.1" uri="lceLearningAssessment.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.3" uri="lceLearningAssessment.xsd" />
     
     <uri name="lceLearningAssessment.xsd" uri="lceLearningAssessment.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.0" uri="lceLearningAssessment.xsd" />
@@ -15,6 +16,7 @@
     <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.1" uri="lceLearningAssessment.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2" uri="lceLearningAssessment.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2.1" uri="lceLearningAssessment.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.3" uri="lceLearningAssessment.xsd" />
     
     <system systemId="lceLearningContent.xsd" uri="lceLearningContent.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:1.0" uri="lceLearningContent.xsd" />
@@ -22,6 +24,7 @@
     <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.1" uri="lceLearningContent.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.2" uri="lceLearningContent.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.2.1" uri="lceLearningContent.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.3" uri="lceLearningContent.xsd" />
     
     <uri name="lceLearningContent.xsd" uri="lceLearningContent.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:1.0" uri="lceLearningContent.xsd" />
@@ -29,6 +32,7 @@
     <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.1" uri="lceLearningContent.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.2" uri="lceLearningContent.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.2.1" uri="lceLearningContent.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.3" uri="lceLearningContent.xsd" />
   </group>
   
   <group xml:base="lceAtts/">
@@ -49,6 +53,12 @@
     
     <uri name="lceEduAttsDomain.xsd" uri="lceEduAttsDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceEduAttsDomain.xsd" uri="lceEduAttsDomain.xsd" />
+    
+    <system systemId="lceContentclassAttsDomain.xsd" uri="lceContentclassAttsDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceContentclassAttsDomain.xsd" uri="lceContentclassAttsDomain.xsd" />
+    
+    <uri name="lceContentclassAttsDomain.xsd" uri="lceContentclassAttsDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceContentclassAttsDomain.xsd" uri="lceContentclassAttsDomain.xsd" />
   </group>
   
   <group xml:base="lceData/">
@@ -57,6 +67,14 @@
     
     <uri name="lceDataDomain.xsd" uri="lceDataDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceDataDomain.xsd" uri="lceDataDomain.xsd" />
+  </group>
+  
+  <group xml:base="lceExplanation/">
+    <system systemId="lceExplanationDomain.xsd" uri="lceExplanationDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceExplanationDomain.xsd" uri="lceExplanationDomain.xsd" />
+    
+    <uri name="lceExplanationDomain.xsd" uri="lceExplanationDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceExplanationDomain.xsd" uri="lceExplanationDomain.xsd" />
   </group>
   
   <group xml:base="lceFeedback/">
@@ -94,6 +112,12 @@
     <uri name="lceDrawDomain.xsd" uri="lceDrawDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceDrawDomain.xsd" uri="lceDrawDomain.xsd" />
     
+    <system systemId="lceGraphicAssociateDomain.xsd" uri="lceGraphicAssociateDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceGraphicAssociateDomain.xsd" uri="lceGraphicAssociateDomain.xsd" />
+    
+    <uri name="lceGraphicAssociateDomain.xsd" uri="lceGraphicAssociateDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceGraphicAssociateDomain.xsd" uri="lceGraphicAssociateDomain.xsd" />
+    
     <system systemId="lceGraphicDomain.xsd" uri="lceGraphicDomain.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceGraphicDomain.xsd" uri="lceGraphicDomain.xsd" />
     
@@ -108,6 +132,12 @@
   </group>
  
   <group xml:base="lceInlineInteraction/">
+    <system systemId="lceEntryDomain.xsd" uri="lceEntryDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceEntryDomain.xsd" uri="lceEntryDomain.xsd" />
+    
+    <uri name="lceEntryDomain.xsd" uri="lceEntryDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceEntryDomain.xsd" uri="lceEntryDomain.xsd" />
+    
     <system systemId="lceTextEntryDomain.xsd" uri="lceTextEntryDomain.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceTextEntryDomain.xsd" uri="lceTextEntryDomain.xsd" />
     
@@ -139,6 +169,12 @@
     
     <uri name="lceChainMatchingDomain.xsd" uri="lceChainMatchingDomain.xsd" />
     <uri name="urn:dita13lce:names:xsd:lceChainMatchingDomain.xsd" uri="lceChainMatchingDomain.xsd" />
+    
+    <system systemId="lceMatchDomain.xsd" uri="lceMatchDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceMatchDomain.xsd" uri="lceMatchDomain.xsd" />
+    
+    <uri name="lceMatchDomain.xsd" uri="lceMatchDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceMatchDomain.xsd" uri="lceMatchDomain.xsd" />
     
     <system systemId="lceMultipleMatchDomain.xsd" uri="lceMultipleMatchDomain.xsd" />
     <system systemId="urn:dita13lce:names:xsd:lceMultipleMatchDomain.xsd" uri="lceMultipleMatchDomain.xsd" />

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.3" id="ga1">
+    <title>New routes</title>
+    <learningAssessmentbody>
+        <lcIntro>
+            <p>Frizz, a new low cost airline, already operates a service connecting Manchester and
+                Edinburgh but has recently opened two new routes: a service between London and Edinburgh
+                and one between London and Manchester.</p>
+        </lcIntro>
+        <lcInteraction>
+            <lceGraphicAssociate>
+                <lcQuestion2><p>Mark the airline's new routes on the airport map:</p></lcQuestion2>
+                <lceGAMap>
+                    <image href="GB_airports2.jpg"/>
+                    <lceAssociableHotspot id="ah1">
+                        <lcAreaShape2>circle</lcAreaShape2>
+                        <lcAreaCoords2>77,115,8</lcAreaCoords2>
+                    </lceAssociableHotspot>
+                    <lceAssociableHotspot id="ah2">
+                        <lcAreaShape2>circle</lcAreaShape2>
+                        <lcAreaCoords2>118,184,8</lcAreaCoords2>
+                    </lceAssociableHotspot>
+                    <lceAssociableHotspot id="ah3">
+                        <lcAreaShape2>circle</lcAreaShape2>
+                        <lcAreaCoords2>150,235,8</lcAreaCoords2>
+                    </lceAssociableHotspot>
+                    <lceAssociableHotspot id="ah4">
+                        <lcAreaShape2>circle</lcAreaShape2>
+                        <lcAreaCoords2>96,114,8</lcAreaCoords2>
+                    </lceAssociableHotspot>
+                </lceGAMap>
+                <lceMatchMap>
+                    <lceMatchPair>
+                        <lceAssociable href="#./ah3"/>
+                        <lceAssociable href="#./ah2"/>
+                    </lceMatchPair>
+                    <lceMatchPair>
+                        <lceAssociable href="#./ah3"/>
+                        <lceAssociable href="#./ah4"/>
+                    </lceMatchPair>
+                </lceMatchMap>
+            </lceGraphicAssociate>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>
