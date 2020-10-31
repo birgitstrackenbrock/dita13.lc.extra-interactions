@@ -20,6 +20,7 @@
         <topicref href="lceChainMatching.dita"/>
         <topicref href="lceGaphicAssociate.dita"/>
         <topicref href="lceGraphicTextEntry_counting-pyramid.dita"/>
+        <topicref href="lcSingleSelect2_with_explanation.dita"/>
     </topicgroup>
     <topicgroup>
         <topicmeta>
