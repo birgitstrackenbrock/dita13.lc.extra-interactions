@@ -9,6 +9,9 @@
 <!-- base version -->
 
 <!-- version: 2.0.0  date: 14-03-2018  author: Birgit -->
+<!-- version: 2.2.0  date: 26-11-2019  author: Birgit -->
+<!-- version: 2.2.1  date: 21-08-2020  author: Birgit -->
+<!-- version: 2.3.0  date:   author: Birgit -->
 
 <!-- version: 2.2.0  date: 26-11-2019  author: Birgit -->
 
@@ -73,10 +76,15 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGTEDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGapDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceChainMatchingDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGraphicAssociateDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMatchDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceEntryDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceExplanationDomain.xsd"/>
    
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceOrientationAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceEduAttsDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceContentclassAttsDomain.xsd"/>
    
    <!--  -->
 
@@ -153,6 +161,7 @@
       <xs:attributeGroup name="props-attribute-extensions">
          <xs:attributeGroup ref="props-attribute-extensions"/>
          <xs:attributeGroup ref="deliveryTargetAtt-d-attribute"/>
+         <xs:attributeGroup ref="lceContentclassAtt-d-attribute"/>
       </xs:attributeGroup>
       <xs:attributeGroup name="base-attribute-extensions">
          <xs:attributeGroup ref="base-attribute-extensions"/>
@@ -280,6 +289,6 @@ It must be declared in topic-type shells.
                     default="topic svg-d) (topic concept) (topic hi-d) (topic indexing-d) (topic learningBase+learningInteractionBase-d) (topic learningBase+learningInteractionBase-d learningAssessment) (topic learningBase learningSummary) (topic learningBase+learningInteractionBase-d learningContent) (topic learningBase+learningInteractionBase-d+learningInteractionBase2) (topic learningInteractionBase-d learning-d) (topic learningInteractionBase-d) (topic learningInteractionBase2-d learning2-d) (topic learningInteractionBase2-d) (topic learningmeta-d) (topic reference) (topic relmgmt-d) (topic task) (topic ut-d) a(props deliveryTarget) 
                     (lce lcegraphic-d) (lce lcedraw-d) (lce lceggm-d) (lce lceinlinechoice-d) (lce lceinlineinteraction-d) (lce lcetextentry-d) (lce lcelcegapmatch-d) 
                     (lce lcehottext-d) (lce lcelcemultiplematch-c) (lce lcelcemultiplematch-d) (lce lcearosticinteraction-d) (lce lcepuzzle-d) (lce lcedata-d) (lce lcefeedback-d)
-                    (lce lcegraphictextentry-d) (lce lcecrosswordinteraction-d) (lce lcechainmatching-d)"/>
+                    (lce lcegraphictextentry-d) (lce lcecrosswordinteraction-d) (lce lcechainmatching-d) (lce lcematch-d) (lce lcega-d) (lce lceentry-d)"/>
    </xs:attributeGroup>
 </xs:schema>

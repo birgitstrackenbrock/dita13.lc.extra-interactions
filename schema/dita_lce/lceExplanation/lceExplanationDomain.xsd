@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lceexplanation-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lceExplanation">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceExplanation"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+
+ 
+    <!-- ============================================================= -->
+
+    <xs:element name="lceExplanation">
+        <xs:annotation>
+            <xs:documentation>Special element within a question to give a student more information about a question resp. content/contet of the question</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceExplanation.class">
+                    <xs:attribute ref="class" default="- topic/div lceexplanation-d/lceExplanation "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceExplanation.class">
+        <xs:sequence>
+            <xs:group ref="lceExplanation.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceExplanation.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceExplanation.content">
+        <xs:sequence>
+            <xs:group ref="div.cnt" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceExplanation.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+           
+</xs:schema>
