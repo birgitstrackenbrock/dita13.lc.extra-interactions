@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" id="dita13lcextra">
+
+  <group xml:base="lceShells/">
+    <system systemId="lceLearningAssessment.xsd" uri="lceLearningAssessment.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.0" uri="lceLearningAssessment.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.0" uri="lceLearningAssessment.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.1" uri="lceLearningAssessment.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2" uri="lceLearningAssessment.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2.1" uri="lceLearningAssessment.xsd" />
+    
+    <uri name="lceLearningAssessment.xsd" uri="lceLearningAssessment.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:1.0" uri="lceLearningAssessment.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.0" uri="lceLearningAssessment.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.1" uri="lceLearningAssessment.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2" uri="lceLearningAssessment.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2.1" uri="lceLearningAssessment.xsd" />
+    
+    <system systemId="lceLearningContent.xsd" uri="lceLearningContent.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:1.0" uri="lceLearningContent.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.0" uri="lceLearningContent.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.1" uri="lceLearningContent.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.2" uri="lceLearningContent.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.2.1" uri="lceLearningContent.xsd" />
+    
+    <uri name="lceLearningContent.xsd" uri="lceLearningContent.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:1.0" uri="lceLearningContent.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.0" uri="lceLearningContent.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.1" uri="lceLearningContent.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.2" uri="lceLearningContent.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceLearningContent.xsd:2.2.1" uri="lceLearningContent.xsd" />
+  </group>
+  
+  <group xml:base="lceAtts/">
+    <system systemId="lceAnswerAttsDomain.xsd" uri="lceAnswerAttsDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd" uri="lceAnswerAttsDomain.xsd" />
+    
+    <uri name="lceAnswerAttsDomain.xsd" uri="lceAnswerAttsDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd" uri="lceAnswerAttsDomain.xsd" />
+    
+    <system systemId="lceOrientationAttsDomain.xsd" uri="lceOrientationAttsDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceOrientationAttsDomain.xsd" uri="lceOrientationAttsDomain.xsd" />
+    
+    <uri name="lceOrientationAttsDomain.xsd" uri="lceOrientationAttsDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceOrientationAttsDomain.xsd" uri="lceOrientationAttsDomain.xsd" />
+    
+    <system systemId="lceEduAttsDomain.xsd" uri="lceEduAttsDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceEduAttsDomain.xsd" uri="lceEduAttsDomain.xsd" />
+    
+    <uri name="lceEduAttsDomain.xsd" uri="lceEduAttsDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceEduAttsDomain.xsd" uri="lceEduAttsDomain.xsd" />
+  </group>
+  
+  <group xml:base="lceData/">
+    <system systemId="lceDataDomain.xsd" uri="lceDataDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceDataDomain.xsd" uri="lceDataDomain.xsd" />
+    
+    <uri name="lceDataDomain.xsd" uri="lceDataDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceDataDomain.xsd" uri="lceDataDomain.xsd" />
+  </group>
+  
+  <group xml:base="lceFeedback/">
+    <system systemId="lceFeedbackDomain.xsd" uri="lceFeedbackDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceFeedbackDomain.xsd" uri="lceFeedbackDomain.xsd" />
+    
+    <uri name="lceFeedbackDomain.xsd" uri="lceFeedbackDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceFeedbackDomain.xsd" uri="lceFeedbackDomain.xsd" />
+  </group>
+  
+  <group xml:base="lceGapInteraction/">
+    <system systemId="lceGapDomain.xsd" uri="lceGapDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceGapDomain.xsd" uri="lceGapDomain.xsd" />
+    
+    <uri name="lceGapDomain.xsd" uri="lceGapDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceGapDomain.xsd" uri="lceGapDomain.xsd" />
+    
+    <system systemId="lceGapMatchDomain.xsd" uri="lceGapMatchDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceGapMatchDomain.xsd" uri="lceGapMatchDomain.xsd" />
+    
+    <uri name="lceGapMatchDomain.xsd" uri="lceGapMatchDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceGapMatchDomain.xsd" uri="lceGapMatchDomain.xsd" />
+    
+    <system systemId="lceGGMDomain.xsd" uri="lceGGMDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceGGMDomain.xsd" uri="lceGGMDomain.xsd" />
+    
+    <uri name="lceGGMDomain.xsd" uri="lceGGMDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceGGMDomain.xsd" uri="lceGGMDomain.xsd" />
+  </group>
+   
+  <group xml:base="lceGraphicInteraction/">
+    <system systemId="lceDrawDomain.xsd" uri="lceDrawDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceDrawDomain.xsd" uri="lceDrawDomain.xsd" />
+    
+    <uri name="lceDrawDomain.xsd" uri="lceDrawDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceDrawDomain.xsd" uri="lceDrawDomain.xsd" />
+    
+    <system systemId="lceGraphicDomain.xsd" uri="lceGraphicDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceGraphicDomain.xsd" uri="lceGraphicDomain.xsd" />
+    
+    <uri name="lceGraphicDomain.xsd" uri="lceGraphicDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceGraphicDomain.xsd" uri="lceGraphicDomain.xsd" />
+    
+    <system systemId="lceGTEDomain.xsd" uri="lceGTEDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceGTEDomain.xsd" uri="lceGTEDomain.xsd" />
+    
+    <uri name="lceGTEDomain.xsd" uri="lceGTEDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceGTEDomain.xsd" uri="lceGTEDomain.xsd" />
+  </group>
+ 
+  <group xml:base="lceInlineInteraction/">
+    <system systemId="lceTextEntryDomain.xsd" uri="lceTextEntryDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceTextEntryDomain.xsd" uri="lceTextEntryDomain.xsd" />
+    
+    <uri name="lceTextEntryDomain.xsd" uri="lceTextEntryDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceTextEntryDomain.xsd" uri="lceTextEntryDomain.xsd" />
+    
+    <system systemId="lceHottextDomain.xsd" uri="lceHottextDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceHottextDomain.xsd" uri="lceHottextDomain.xsd" />
+    
+    <uri name="lceHottextDomain.xsd" uri="lceHottextDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceHottextDomain.xsd" uri="lceHottextDomain.xsd" />
+    
+    <system systemId="lceInlineChoiceDomain.xsd" uri="lceInlineChoiceDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceInlineChoiceDomain.xsd" uri="lceInlineChoiceDomain.xsd" />
+    
+    <uri name="lceInlineChoiceDomain.xsd" uri="lceInlineChoiceDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceInlineChoiceDomain.xsd" uri="lceInlineChoiceDomain.xsd" />
+    
+    <system systemId="lceInlineInteractionDomain.xsd" uri="lceInlineInteractionDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceInlineInteractionDomain.xsd" uri="lceInlineInteractionDomain.xsd" />
+    
+    <uri name="lceInlineInteractionDomain.xsd" uri="lceInlineInteractionDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceInlineInteractionDomain.xsd" uri="lceInlineInteractionDomain.xsd" />
+  </group>
+  
+  <group xml:base="lceMatchInteraction/">
+    <system systemId="lceChainMatchingDomain.xsd" uri="lceChainMatchingDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceChainMatchingDomain.xsd" uri="lceChainMatchingDomain.xsd" />
+    
+    <uri name="lceChainMatchingDomain.xsd" uri="lceChainMatchingDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceChainMatchingDomain.xsd" uri="lceChainMatchingDomain.xsd" />
+    
+    <system systemId="lceMultipleMatchDomain.xsd" uri="lceMultipleMatchDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceMultipleMatchDomain.xsd" uri="lceMultipleMatchDomain.xsd" />
+    
+    <uri name="lceMultipleMatchDomain.xsd" uri="lceMultipleMatchDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceMultipleMatchDomain.xsd" uri="lceMultipleMatchDomain.xsd" />
+  </group>
+  
+  <group xml:base="lcePerformInteraction/">
+    <system systemId="lcePerformDomain.xsd" uri="lcePerformDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lcePerformDomain.xsd" uri="lcePerformDomain.xsd" />
+    
+    <uri name="lcePerformDomain.xsd" uri="lcePerformDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lcePerformDomain.xsd" uri="lcePerformDomain.xsd" />
+  </group>
+  
+  <group xml:base="lcePuzzleInteraction/">
+    <system systemId="lcePuzzleGeneralDomain.xsd" uri="lcePuzzleGeneralDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lcePuzzleGeneralDomain.xsd" uri="lcePuzzleGeneralDomain.xsd" />
+    
+    <uri name="lcePuzzleGeneralDomain.xsd" uri="lcePuzzleGeneralDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lcePuzzleGeneralDomain.xsd" uri="lcePuzzleGeneralDomain.xsd" />
+    
+    <system systemId="lceAcrosticInteractionDomain.xsd" uri="lceAcrosticInteractionDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceAcrosticInteractionDomain.xsd" uri="lceAcrosticInteractionDomain.xsd" />
+    
+    <uri name="lceAcrosticInteractionDomain.xsd" uri="lceAcrosticInteractionDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceAcrosticInteractionDomain.xsd" uri="lceAcrosticInteractionDomain.xsd" />
+    
+    <system systemId="lceCrossWordInteractionDomain.xsd" uri="lceCrossWordInteractionDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceCrossWordInteractionDomain.xsd" uri="lceCrossWordInteractionDomain.xsd" />
+    
+    <uri name="lceCrossWordInteractionDomain.xsd" uri="lceCrossWordInteractionDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceCrossWordInteractionDomain.xsd" uri="lceCrossWordInteractionDomain.xsd" />
+  </group>
+  
+  
+</catalog>
