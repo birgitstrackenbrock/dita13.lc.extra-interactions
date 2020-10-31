@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2.1" id="x2">
+    <title>Planets</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lcHotspot2>
+                <lcQuestion2><p>Which of these plantes is Saturn?</p>
+                <p>Click on it.</p></lcQuestion2>
+                <lcHotspotMap2>
+                    <image href="planets.jpg" id="image_wmy_tsx_ddb"/>
+                    <lcArea2>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>49, 51, 50, 30</lcAreaCoords2><lcCorrectResponse2/>
+                    </lcArea2>
+                    <lcArea2>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>19, 69, 50, 30</lcAreaCoords2>
+                    </lcArea2>
+                    <lcArea2>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>65, 35, 30, 30</lcAreaCoords2>
+                    </lcArea2>
+                    <lcArea2>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>90, 30, 30, 30</lcAreaCoords2>
+                    </lcArea2>
+                </lcHotspotMap2>
+            </lcHotspot2>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

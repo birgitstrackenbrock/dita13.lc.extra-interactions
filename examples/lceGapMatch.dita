@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2.1" id="gm1">
+    <title>Richard III</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lceGapMatch>
+                <lcQuestion2><p>Identify the missing words in this famous quote from Shakespeare's Richard III.</p></lcQuestion2>
+                <lceInlineInteractionText>
+                    <p>Now is the <lceGap href="#./g1"></lceGap> of our discontent</p>
+                    <p>Made glorious <lceGap href="#./g2"></lceGap> by this sun of York;</p>
+                    <p>And all the clouds that lour'd upon our house</p>
+                    <p>In the deep bosom of the ocean buried.</p>
+                </lceInlineInteractionText>
+                <lceGapOptionGroup>
+                    <lceGapOption id="g1">
+                        <lceGapContent>winter</lceGapContent>
+                    </lceGapOption>
+                    <lceGapOption>
+                        <lceGapContent>spring</lceGapContent>
+                    </lceGapOption>
+                  <lceGapOption id="g2">
+                        <lceGapContent>summer</lceGapContent>
+                    </lceGapOption>
+                    <lceGapOption>
+                        <lceGapContent>autumn</lceGapContent>
+                    </lceGapOption>
+                </lceGapOptionGroup>
+            </lceGapMatch>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

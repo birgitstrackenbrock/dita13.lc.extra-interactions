@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:map.xsd">
+    <title>Map_with_interactions.ditamap</title>
+    <topicgroup>
+        <topicmeta>
+            <navtitle>LCE</navtitle>
+        </topicmeta>
+        <topicref href="lceDrawing.dita"/>
+        <topicref href="lceGapMatch.dita"/>
+        <topicref href="lceGraphicGapMatch.dita"/>
+        <topicref href="lceGraphicTextEntry.dita"/>
+        <topicref href="lceHottext.dita"/>
+        <topicref href="lceInlineChoice.dita"/>
+        <topicref href="lceMultipleMatch.dita"/>
+        <topicref href="lcePerformQuestion.dita"/>
+        <topicref href="lcePerformQuestion2.dita"/>
+        <topicref href="lcePuzzle_acrostic.dita"/>
+        <topicref href="lcePuzzle_crossword.dita"/>
+        <topicref href="lceTextEntry_MrsWhite.dita"/>
+    </topicgroup>
+    <topicgroup>
+        <topicmeta>
+            <navtitle>DITA L+T</navtitle>
+        </topicmeta>
+        <topicref href="lcHotspot.dita"/>
+        <topicref href="lcMatching2.dita"/>
+        <topicref href="lcMultipleSelect2.dita"/>
+        <topicref href="lcOpenQuestion2.dita"/>
+        <topicref href="lcSequencing2.dita"/>
+        <topicref href="lcSingleSelect2.dita"/>
+        <topicref href="lcTrueFalse2.dita"/>
+    </topicgroup>
+</map>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2.1" id="ht1">
+    <title>Olympic Games sponsors</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lceHottext>
+                <lcQuestion2>Select the error in the following passage of text (or <i>No Error</i> if there is none).</lcQuestion2>
+                <lceInlineInteractionText>
+                    <p>Sponsors of the Olympic Games <lceHottextOption>
+                        <lceAnswerContentInline>who bought</lceAnswerContentInline>
+                    </lceHottextOption> advertising time on United States television <lceHottextOption>
+                        <lceAnswerContentInline>includes</lceAnswerContentInline><lcCorrectResponse2></lcCorrectResponse2>
+                    </lceHottextOption> <lceHottextOption>
+                        <lceAnswerContentInline>at least</lceAnswerContentInline>
+                    </lceHottextOption> a dozen international firms <lceHottextOption>
+                        <lceAnswerContentInline>whose</lceAnswerContentInline>
+                    </lceHottextOption> names are familiar to American consumers. <lceHottextOption>
+                        <lceAnswerContentInline>No error.</lceAnswerContentInline>
+                    </lceHottextOption></p>
+                </lceInlineInteractionText>
+            </lceHottext>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

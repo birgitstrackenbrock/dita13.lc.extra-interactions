@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2.1" id="x2">
+    <title>Water</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lcMultipleSelect2>
+                <lcQuestion2><p>Which of the following elements are used to form water?</p></lcQuestion2>
+                <lcAnswerOptionGroup2>
+                    <lcAnswerOption2>
+                        <lcAnswerContent2><p>Hydrogen</p></lcAnswerContent2><lcCorrectResponse2/>
+                    </lcAnswerOption2>
+                    <lcAnswerOption2>
+                        <lcAnswerContent2><p>Helium</p></lcAnswerContent2>
+                    </lcAnswerOption2>
+                    <lcAnswerOption2>
+                        <lcAnswerContent2><p>Carbon</p></lcAnswerContent2>
+                    </lcAnswerOption2>
+                    <lcAnswerOption2>
+                        <lcAnswerContent2><p>Oxygen</p></lcAnswerContent2><lcCorrectResponse2/>
+                    </lcAnswerOption2>
+                    <lcAnswerOption2>
+                        <lcAnswerContent2><p>Nitrogen</p></lcAnswerContent2>
+                    </lcAnswerOption2>
+                    <lcAnswerOption2>
+                        <lcAnswerContent2><p>Chlorine</p></lcAnswerContent2>
+                    </lcAnswerOption2>
+                </lcAnswerOptionGroup2>
+            </lcMultipleSelect2>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

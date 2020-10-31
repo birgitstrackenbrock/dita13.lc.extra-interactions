@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2.1" id="x2">
+    <title>Points</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lceDrawing>
+                <lcQuestion2><p>Draw the points <i>A</i> (2,3) and <i>B</i> (-1, -2) on the given paper.</p></lcQuestion2>
+                <lceDrawingImage>
+                    <image href="mm-paper.jpg" id="image_ifx_nbj_1db"/>
+                </lceDrawingImage>
+                <lceDrawingAnswer>
+                    <p>Did you draw the x-axis and y-axis? </p>
+                    <p><i>A</i> (2,3) means the point with x=2 and y=3.</p>
+                </lceDrawingAnswer>
+            </lceDrawing>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

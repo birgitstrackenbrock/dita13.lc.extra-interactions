@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2.1" id="mm1">
+    <title>Shakespeare</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lceMultipleMatch>
+                <lcQuestion2>Match the following characters to the Shakespeare play they appeared in. Draw lines.
+                </lcQuestion2>
+                <lceMatchSet1>
+                    <lceAssociableItem id="i1"><p>Capulet</p></lceAssociableItem>
+                    <lceAssociableItem id="i2"><p>Demetrius</p></lceAssociableItem>
+                    <lceAssociableItem id="i3"><p>Lysander</p></lceAssociableItem>
+                    <lceAssociableItem id="i4"><p>Prospero</p></lceAssociableItem>
+                </lceMatchSet1>
+                <lceMatchSet2>
+                    <lceAssociableMatch id="m1"><p>A Midsummer-Night's Dream</p></lceAssociableMatch>
+                    <lceAssociableMatch id="m2"><p>Romeo and Juliet</p></lceAssociableMatch>
+                    <lceAssociableMatch id="m3"><p>The Tempest</p></lceAssociableMatch>
+                </lceMatchSet2>
+                <lceMatchMap>
+                    <lceMatchPair>
+                        <lceAssociable href="#./i1"/>
+                        <lceAssociable href="#./m2"/>
+                    </lceMatchPair>
+                    <lceMatchPair>
+                        <lceAssociable href="#./i2"/>
+                        <lceAssociable href="#./m1"/>
+                    </lceMatchPair>
+                    <lceMatchPair>
+                        <lceAssociable href="#./i3"/>
+                        <lceAssociable href="#./m1"/>
+                    </lceMatchPair>
+                    <lceMatchPair>
+                        <lceAssociable href="#./i4"/>
+                        <lceAssociable href="#./m3"/>
+                    </lceMatchPair>
+                </lceMatchMap>
+            </lceMultipleMatch>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

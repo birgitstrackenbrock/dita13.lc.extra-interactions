@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2.1" id="ggm1">
+    <title>Instruments</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lceGraphicGapMatch>
+                <lcQuestion2>
+                    <p>Do you know the following instrumnets?</p>
+                    <p>Drag and drop the right names to the instruments.</p>
+                </lcQuestion2>
+                <lceGGMMap>
+                    <image href="instrumenten.jpg" id="image_tzr_fwm_1v"/>
+                    <lceAreaGGM>
+                        <lceGap href="#./g1"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>59, 51, 80, 30</lcAreaCoords2>
+                    </lceAreaGGM>
+                    <lceAreaGGM>
+                        <lceGap href="#./g2"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>216, 224, 80, 30</lcAreaCoords2>
+                    </lceAreaGGM>
+                    <lceAreaGGM>
+                        <lceGap href="#./g3"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>430, 53, 80, 30</lcAreaCoords2>
+                    </lceAreaGGM>
+                </lceGGMMap>
+                <lceGapOptionGroup>
+                    <lceGapOption id="g1">
+                        <lceGapContent>trumpet</lceGapContent>
+                    </lceGapOption>
+                    <lceGapOption id="g2">
+                        <lceGapContent>xylophone</lceGapContent>
+                    </lceGapOption>
+                    <lceGapOption id="g3">
+                        <lceGapContent>drum</lceGapContent>
+                    </lceGapOption>
+                    <lceGapOption id="g4">
+                        <lceGapContent>violin</lceGapContent>
+                    </lceGapOption>
+                </lceGapOptionGroup>
+            </lceGraphicGapMatch>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

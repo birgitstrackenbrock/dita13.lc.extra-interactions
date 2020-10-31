@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.2.1" id="x2">
+    <title>Bremer Stadtmusikanten</title>
+    <learningAssessmentbody>
+       <lcIntro><p>In the fairy tale "Die Bremer Stadtmusikanten" there are four animals which are get off and sing together.</p></lcIntro>
+        <lcInteraction>
+            <lcSequencing2>
+                <lcQuestion2><p>In which order does they build their pyramid?</p>
+                    <p>Sort who is standing below and then up to the top.</p></lcQuestion2>
+                <lcSequenceOptionGroup2 shuffle="yes">
+                    <lcSequenceOption2>
+                        <lcAnswerContent2><p>donkey</p></lcAnswerContent2>
+                        <lcSequence2 value="1"></lcSequence2>
+                    </lcSequenceOption2>
+                    <lcSequenceOption2>
+                        <lcAnswerContent2><p>dog</p></lcAnswerContent2>
+                        <lcSequence2 value="2"></lcSequence2>
+                    </lcSequenceOption2>
+                    <lcSequenceOption2>
+                        <lcAnswerContent2><p>cat</p></lcAnswerContent2>
+                        <lcSequence2 value="3"></lcSequence2>
+                    </lcSequenceOption2>
+                    <lcSequenceOption2>
+                        <lcAnswerContent2><p>cock</p></lcAnswerContent2>
+                        <lcSequence2 value="4"></lcSequence2>
+                    </lcSequenceOption2>
+                </lcSequenceOptionGroup2>
+            </lcSequencing2>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>
