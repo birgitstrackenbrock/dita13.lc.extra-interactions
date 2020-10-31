@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+
+<!-- ============================================================= -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  
+    <xs:annotation>
+      <xs:appinfo>
+        <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(props contentclass)</dita:domainsModule>
+      </xs:appinfo>
+      <xs:documentation/>
+      
+    </xs:annotation>
+  
+  <xs:attributeGroup name="lceContentclassAtt-d-attribute">
+    <xs:attribute name="contentclass" type="xs:string"  use="optional">
+      <xs:annotation>
+        <xs:documentation>this attribute should be used to specify the semantic meaning of a generic element e.g. div
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+</xs:schema>

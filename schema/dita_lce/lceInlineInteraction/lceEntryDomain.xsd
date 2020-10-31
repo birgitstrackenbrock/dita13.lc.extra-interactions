@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lceentry-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    
+    <xs:group name="lceAnswerOptionInline">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceAnswerOptionInline"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceAlternativeResponse">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceAlternativeResponse"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceStartEntry">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceStartEntry"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+<!-- ============================================================= -->
+    <xs:element name="lceAnswerOptionInline">
+        <xs:annotation>
+            <xs:documentation>The lceAnswerOption contains the answers for a gap in an textEntry</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceAnswerOptionInline.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/ph learningInteractionBase2-d/ph lceentry-d/lceAnswerOptionInline "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceAnswerOptionInline.class">
+        <xs:sequence>
+            <xs:group ref="lceAnswerOptionInline.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceAnswerOptionInline.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceAnswerOptionInline.content">
+        <xs:sequence>
+            <xs:group ref="lceAnswerContentInline"/>
+            <xs:choice minOccurs="0" maxOccurs="1">
+                <xs:group ref="lcCorrectResponse2"/>
+                <xs:group ref="lceAlternativeResponse"/>
+                <xs:group ref="lceStartEntry"/>
+            </xs:choice>
+            <xs:group ref="lceFeedbackInlineCorrect" minOccurs="0"/>
+            <xs:group ref="lceFeedbackInlineIncorrect" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceAnswerOptionInline.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    
+    
+    
+    <xs:element name="lceAlternativeResponse">
+        <xs:annotation>
+            <xs:documentation>The lceAlternativeResponse element indicates an alternative correct response within a textEntry or graphicTextEntry, usually the alternative correct answer will score less. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceAlternativeResponse.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/data learningInteractionBase2-d/data lceentry-d/lceAlternativeResponse "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceAlternativeResponse.class">
+        <xs:sequence>
+            <xs:group ref="lceAlternativeResponse.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceAlternativeResponse.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceAlternativeResponse.content">
+        <xs:sequence/>
+    </xs:group>
+    <xs:attributeGroup name="lceAlternativeResponse.attributes">
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="value" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceStartEntry">
+        <xs:annotation>
+            <xs:documentation>The lceStartEntry element indicates an entry which is already filled to have a starting point</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceStartEntry.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/data learningInteractionBase2-d/data lceentry-d/lceStartEntry "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceStartEntry.class">
+        <xs:sequence>
+            <xs:group ref="lceStartEntry.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceStartEntry.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceStartEntry.content">
+        <xs:sequence/>
+    </xs:group>
+    <xs:attributeGroup name="lceStartEntry.attributes">
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="value" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+  
+</xs:schema>
