@@ -61,6 +61,14 @@
         <uri name="urn:dita13lce:names:xsd:lceContentclassAttsDomain.xsd" uri="lceContentclassAttsDomain.xsd" />
     </group>
     
+    <group xml:base="lceDitaConstraints/">
+        <system systemId="lceLearning2DomainConstraint.xsd" uri="lceLearning2DomainConstraint.xsd" />
+        <system systemId="urn:dita13lce:names:xsd:lceLearning2DomainConstraint.xsd" uri="lceLearning2DomainConstraint.xsd" />
+        
+        <uri name="lceLearning2DomainConstraint.xsd" uri="lceLearning2DomainConstraint.xsd" />
+        <uri name="urn:dita13lce:names:xsd:lceLearning2DomainConstraint.xsd" uri="lceLearning2DomainConstraint.xsd" />
+    </group>
+    
     <group xml:base="lceData/">
         <system systemId="lceDataDomain.xsd" uri="lceDataDomain.xsd" />
         <system systemId="urn:dita13lce:names:xsd:lceDataDomain.xsd" uri="lceDataDomain.xsd" />

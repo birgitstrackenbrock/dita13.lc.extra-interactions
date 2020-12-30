@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:oasis:names:tc:dita:xsd:ditaarch.xsd:1.3"/>
+	
+	<xs:annotation>
+		<xs:appinfo>
+			<dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lceLeraning2Domain-c)</dita:domainsModule>
+		</xs:appinfo>
+	</xs:annotation>
+
+	<xs:redefine schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learning2Domain.xsd:1.3">
+		<xs:group name="lcAsset2">       
+			<xs:choice>
+				<xs:group ref="lcAsset2"/>
+				<xs:group ref="lceExplanation"/>
+			</xs:choice>
+		</xs:group>
+		
+		<xs:group name="lcArea2">
+			<xs:sequence>
+				<xs:choice>
+					<xs:group ref="lcArea2"/>
+					<xs:group ref="lceExplanationTrunk"/>
+				</xs:choice>
+			</xs:sequence>
+		</xs:group>
+		
+		
+	</xs:redefine>
+
+</xs:schema>
