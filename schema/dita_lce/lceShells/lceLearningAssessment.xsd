@@ -117,7 +117,7 @@
             <xs:group ref="lcepuzzle-d-div"/>
             <xs:group ref="lceperforminteraction-d-div"/>
             <xs:group ref="lcegapinteraction-d-div"/>
-            
+            <xs:group ref="lceExplanation"/>
          </xs:choice>
       </xs:group>
       <xs:group name="ph">
@@ -175,14 +175,7 @@
       </xs:group>
    </xs:redefine>
    
-   <xs:redefine schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learning2Domain.xsd:1.3">
-      <xs:group name="lcAsset2">       
-            <xs:choice>
-               <xs:group ref="lcAsset2"/>
-               <xs:group ref="lceExplanation"/>
-            </xs:choice>
-      </xs:group>
-   </xs:redefine>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceLearning2DomainConstraint.xsd"/>
 
    <xs:redefine
       schemaLocation="urn:oasis:names:tc:dita:spec:learning:xsd:learningInteractionBaseDomain.xsd:1.3">
@@ -208,8 +201,11 @@
             <xs:group ref="lceperforminteraction-d-lcInteractionBase2"/>
             <xs:group ref="lcegapinteraction-d-lcInteractionBase2"/>
             <xs:group ref="lcechainmatching-d-lcInteractionBase2"/>
+            <xs:group ref="lceexplanation-d-lcInteractionBase2"/>
          </xs:choice>
       </xs:group>
+      
+      
    </xs:redefine>
 
 

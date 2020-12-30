@@ -123,6 +123,7 @@
         <xs:sequence>
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lceExplanation" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lceDrawingImage" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lceDrawingAnswer" minOccurs="0"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>

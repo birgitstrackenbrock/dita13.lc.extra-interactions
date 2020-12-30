@@ -119,6 +119,7 @@
         <xs:sequence>
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lceExplanation" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lceGGMMap"/>
             <xs:group ref="lceGapOptionGroup"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
