@@ -54,7 +54,6 @@
     <xs:group name="lceGGMMap.content">
         <xs:sequence>
             <xs:group ref="image"/>
-            <xs:group ref="lceExplanationTrunk"/>
             <xs:group ref="lceAreaGGM" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>

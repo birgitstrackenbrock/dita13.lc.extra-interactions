@@ -16,16 +16,6 @@
 			</xs:choice>
 		</xs:group>
 		
-		<xs:group name="lcArea2">
-			<xs:sequence>
-				<xs:choice>
-					<xs:group ref="lcArea2"/>
-					<xs:group ref="lceExplanationTrunk"/>
-				</xs:choice>
-			</xs:sequence>
-		</xs:group>
-		
-		
 	</xs:redefine>
 
 </xs:schema>

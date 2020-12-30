@@ -22,14 +22,6 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceExplanationTrunk">
-        <xs:sequence>
-            <xs:choice>
-                <xs:element ref="lceExplanationTrunk"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
-
  
     <!-- ============================================================= -->
 
@@ -62,28 +54,5 @@
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lceExplanationTrunk">
-        <xs:annotation>
-            <xs:documentation>The &lt;lceExplanationTrunk&gt; element is oly a container for the &lt;lceExplanation&gt; inside graphic interations</xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base="lceExplanationTrunk.class">
-                    <xs:attribute ref="class" default="- topic/figgroup lceexplanation-d/lceExplanationTrunk "/>
-                </xs:extension>
-            </xs:complexContent>
-        </xs:complexType>
-    </xs:element>
-    <xs:complexType name="lceExplanationTrunk.class">
-        <xs:sequence>
-            <xs:group ref="lceExplanation" minOccurs="1"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="lceExplanationTrunk.attributes"/>
-    </xs:complexType>
-    <xs:attributeGroup name="lceExplanationTrunk.attributes">
-        <xs:attributeGroup ref="univ-atts"/>
-        <xs:attribute name="outputclass" type="xs:string"/>
-        <xs:attributeGroup ref="global-atts"/>
-    </xs:attributeGroup>
            
 </xs:schema>
