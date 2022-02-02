@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:import namespace="http://dita.oasis-open.org/architecture/2005/" schemaLocation="urn:oasis:names:tc:dita:xsd:ditaarch.xsd:1.3"/>
+	
+	<xs:annotation>
+		<xs:appinfo>
+			<dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lceInlineInteractionDomain-c)</dita:domainsModule>
+		</xs:appinfo>
+	</xs:annotation>
+
+	<xs:redefine schemaLocation="urn:dita13lce:names:xsd:lceInlineInteractionDomain.xsd">
+		<!-- add math group -->
+		
+		<xs:group name="lceAnswerContentInline.content">       
+			<xs:choice>
+				<xs:group ref="lceAnswerContentInline.content"/>
+				<xs:group ref="basic.lcemath"/>
+			</xs:choice>
+		</xs:group>
+		
+		
+	</xs:redefine>
+
+</xs:schema>

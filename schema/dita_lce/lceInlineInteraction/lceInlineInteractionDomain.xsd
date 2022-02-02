@@ -33,6 +33,8 @@
                 <xs:element ref="lceTextEntryOptions"/>
                 <xs:element ref="lceInlineChoiceOptions"/>
                 <xs:element ref="lceHottextOption"/>
+                <xs:element ref="lceHottextMeaning"/>
+                <xs:element ref="lceCalculation"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>

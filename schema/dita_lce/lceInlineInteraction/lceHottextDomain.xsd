@@ -89,6 +89,7 @@
     <xs:group name="lceHottextOption.content">
         <xs:sequence>
             <xs:group ref="lceAnswerContentInline"/>
+            <xs:group ref="xref" minOccurs="0"/>
             <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
             <xs:group ref="lceFeedbackInlineCorrect" minOccurs="0"/>
             <xs:group ref="lceFeedbackInlineIncorrect" minOccurs="0"/>
@@ -96,6 +97,43 @@
     </xs:group>
     <xs:attributeGroup name="lceHottextOption.attributes">
         <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceHottextMeaning">
+        <xs:annotation>
+            <xs:documentation>
+                The lceHottextMeaning defines which meaning a hottext option can have. It must have an id attribute
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceHottextMeaning.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/ph lcehottext-d/lceHottextMeaning "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceHottextMeaning.class" mixed="true">
+        <xs:sequence>
+            <xs:group ref="lceHottextMeaning.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceHottextMeaning.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceHottextMeaning.content">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="basic.ph"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceHottextMeaning.attributes">
+        <xs:attribute name="id" type="xs:NMTOKEN" use="required"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>

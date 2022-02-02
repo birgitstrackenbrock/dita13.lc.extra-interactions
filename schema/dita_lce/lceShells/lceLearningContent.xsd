@@ -12,6 +12,8 @@
 <!-- version: 2.2.0  date: 26-11-2019  author: Birgit -->
 <!-- version: 2.2.1  date: 21-08-2020  author: Birgit -->
 <!-- version: 2.3.0  date:   author: Birgit -->
+<!-- version: 2.4.0  date:   author: Birgit -->
+<!-- version: 2.5.0  date: 02-02-2022  author: Birgit -->
 
 <!-- ============================================================= -->
 <xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"

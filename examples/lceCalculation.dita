@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.5" id="il2">
+    <title>Simple math examples with fractions</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lceTextEntry>
+                <lcQuestion2><p>Welk teken gebruik je voor opsommingen: </p></lcQuestion2>
+                <lceInlineInteractionText>
+                    <p><lceTextEntryOptions>
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline><lceMathSign mathtype="addition"/></lceAnswerContentInline>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions></p>
+                </lceInlineInteractionText>
+            </lceTextEntry>
+            <lceTextEntry>
+                <lcQuestion2><p>Bereken volgende som: </p></lcQuestion2>
+                <lceInlineInteractionText>
+                    <p><lceCalculation><lceFraction><lceNumerator><lceTextEntryOptions>
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>2</lceAnswerContentInline>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions></lceNumerator><lceDenominator>3</lceDenominator></lceFraction>
+                        <lceMathSign mathtype="addition"/><lceFraction>
+                            <lceNumerator>2</lceNumerator>
+                            <lceDenominator>3</lceDenominator>
+                        </lceFraction><lceMathSign mathtype="equals"/><lceFraction>
+                            <lceNumerator>4</lceNumerator>
+                            <lceDenominator>3</lceDenominator>
+                        </lceFraction></lceCalculation></p>
+                </lceInlineInteractionText>
+            </lceTextEntry>
+            <lceTextEntry>
+                <lcQuestion2><p></p></lcQuestion2>
+                <lceInlineInteractionText>
+                    <p>In een stripblad staan op elke bladzijde 6 plaatjes. Eén plaatje is <lceCalculation><lceFraction>
+                        <lceNumerator><lceTextEntryOptions>
+                            <lceAnswerOptionInline>
+                                <lceAnswerContentInline>1</lceAnswerContentInline>
+                            </lceAnswerOptionInline>
+                        </lceTextEntryOptions></lceNumerator>
+                        <lceDenominator><lceTextEntryOptions>
+                            <lceAnswerOptionInline>
+                                <lceAnswerContentInline>6</lceAnswerContentInline>
+                            </lceAnswerOptionInline>
+                        </lceTextEntryOptions></lceDenominator>
+                    </lceFraction></lceCalculation> deel van alle plaatjes op een pagina.</p>
+                </lceInlineInteractionText>
+            </lceTextEntry>
+            <lceGraphicTextEntry>
+                <lcQuestion2><p>Vul de getallenlijn aan.</p></lcQuestion2>
+                <lceGTEMap>
+                    <image></image>
+                    <lceAreaGTE>
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline><lceFraction>
+                                <lceNumerator>2</lceNumerator>
+                                <lceDenominator>3</lceDenominator>
+                            </lceFraction></lceAnswerContentInline>
+                        </lceAnswerOptionInline>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>10,10,10,10</lcAreaCoords2>
+                    </lceAreaGTE>
+                </lceGTEMap>
+            </lceGraphicTextEntry>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

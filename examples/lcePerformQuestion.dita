@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.3" id="pq">
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.5" id="pq">
     <title>Write a manual</title>
     <learningAssessmentbody>
         <lcIntro id="lcIntro_b3f_qnl_scb">Some people call an user guide "manual".</lcIntro>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:2.5" id="ht2">
+    <title>Hottext with meaning</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lceHottext>
+                <lcQuestion2><p>Read the text and mark the verbs (green) and nouns (blue)</p></lcQuestion2>
+                <lceInlineInteractionText>
+                    <!-- For the lceHottextMeaning you could create a learningAssessment with only meaning and use the conref mechanisme to insert them in the real questions  -->
+                    <p><lceHottextMeaning id="m01" outputclass="green">verb</lceHottextMeaning><lceHottextMeaning id="m02" outputclass="blue">noun</lceHottextMeaning></p>
+                    <p>Wer <lceHottextOption>
+                        <lceAnswerContentInline>reitet</lceAnswerContentInline><xref href="#./m01"/>
+                    </lceHottextOption> so spät durch <lceHottextOption>
+                        <lceAnswerContentInline>Nacht</lceAnswerContentInline><xref href="#./m02"/>
+                    </lceHottextOption> und <lceHottextOption>
+                        <lceAnswerContentInline>Wind</lceAnswerContentInline><xref href="#./m02"/>
+                    </lceHottextOption>?</p>
+                    <p>Es <lceHottextOption>
+                        <lceAnswerContentInline>ist</lceAnswerContentInline><xref href="#./m01"/>
+                    </lceHottextOption> der <lceHottextOption>
+                        <lceAnswerContentInline>Vater</lceAnswerContentInline><xref href="#./m02"/>
+                    </lceHottextOption> mit seinem <lceHottextOption>
+                        <lceAnswerContentInline>Kind</lceAnswerContentInline><xref href="#./m02"/>
+                    </lceHottextOption>;</p>
+                </lceInlineInteractionText>
+            </lceHottext>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

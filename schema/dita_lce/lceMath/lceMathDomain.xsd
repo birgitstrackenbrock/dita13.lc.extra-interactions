@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcemath-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="basic.lcemath">
+        <xs:sequence>
+            <xs:choice>
+                <xs:group ref="lceFraction"/>
+                <xs:group ref="lceMathSign"/>
+                <xs:group ref="lceMathPh"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceFraction">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceFraction"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="lceNumerator">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceNumerator"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="lceDenominator">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceDenominator"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="lceMathPh">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceMathPh"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="lceMathSign">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceMathSign"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="lceCalculation">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceCalculation"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    
+    
+ 
+    <!-- ============================================================= -->
+
+    <xs:element name="lceFraction">
+        <xs:annotation>
+            <xs:documentation>Element for a fraction so it is not needed to use mathML, especially declared to be use in lceTextTenty child lceCalculation</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceFraction.class">
+                    <xs:attribute ref="class" default="+ topic/ph lcemath-d/lceFraction  "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceFraction.class" mixed="true">
+        <xs:sequence>
+            
+                <xs:group ref="lceNumerator" minOccurs="1" maxOccurs="1"/>
+                <xs:group ref="lceDenominator" minOccurs="1" maxOccurs="1"/>
+            
+        </xs:sequence>
+        <xs:attributeGroup ref="lceFraction.attributes"/>
+    </xs:complexType>
+    
+    <xs:attributeGroup name="lceFraction.attributes">
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceNumerator">
+        <xs:annotation>
+            <xs:documentation>Part of a fraction</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceNumerator.class">
+                    <xs:attribute ref="class" default="+ topic/ph lcemath-d/lceNumerator  "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceNumerator.class" mixed="true">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="1">
+                <xs:group ref="lceTextEntryOptions"/>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceFraction.attributes"/>
+    </xs:complexType>
+    
+    <xs:element name="lceDenominator">
+        <xs:annotation>
+            <xs:documentation>Part of a fraction</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceDenominator.class">
+                    <xs:attribute ref="class" default="+ topic/ph lcemath-d/lceDenominator  "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceDenominator.class" mixed="true">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="1">
+                <xs:group ref="lceTextEntryOptions"/>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceFraction.attributes"/>
+    </xs:complexType>
+    
+    <xs:element name="lceMathPh">
+        <xs:annotation>
+            <xs:documentation>A mathematical phrase within a calculation, can be a number and/of letter.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceMathPh.class">
+                    <xs:attribute ref="class" default="+ topic/ph lcemath-d/lceMathPh  "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceMathPh.class" mixed="true">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="1">
+                <xs:group ref="lceTextEntryOptions"/>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceFraction.attributes"/>
+    </xs:complexType>
+    
+    <xs:element name="lceMathSign">
+        <xs:annotation>
+            <xs:documentation>Can be an operation or an comparison</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceMathSign.class">
+                    <xs:attribute ref="class" default="- topic/ph lcemath-d/lceMathSign "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceMathSign.class" >
+        <xs:attributeGroup ref="lceMathSign.attributes"/>
+    </xs:complexType>
+    <xs:attributeGroup name="lceMathSign.attributes">
+        <xs:attribute name="keyref" type="xs:string"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceCalculation">
+        <xs:annotation>
+            <xs:documentation>Element for simple calculations</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceCalculation.class">
+                    <xs:attribute ref="class" default="+ topic/ph lcemath-d/lceCalculation  "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceCalculation.class">
+        <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="basic.lcemath"/>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceFraction.attributes"/>
+    </xs:complexType>
+    
+</xs:schema>

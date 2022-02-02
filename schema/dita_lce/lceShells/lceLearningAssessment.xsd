@@ -12,6 +12,9 @@
 <!-- version: 2.2.0  date: 26-11-2019  author: Birgit -->
 <!-- version: 2.2.1  date: 21-08-2020  author: Birgit -->
 <!-- version: 2.3.0  date:   author: Birgit -->
+<!-- version: 2.4.0  date:   author: Birgit -->
+<!-- version: 2.5.0  date: 02-02-2022  author: Birgit -->
+
 
 <!-- ============================================================= -->
 <xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
@@ -51,7 +54,9 @@
    <!-- Add -->
    <!-- ======= lce specialization modules ======= -->
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGGMDomain.xsd"/>
-   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceInlineInteractionDomain.xsd"/>
+   <!--<xs:include schemaLocation="urn:dita13lce:names:xsd:lceInlineInteractionDomain.xsd"/>-->
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceInlineInteractionDomainConstraint.xsd"/>
+   <!--  -->
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceTextEntryDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGapMatchDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceInlineChoiceDomain.xsd"/>
@@ -72,11 +77,13 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMatchDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceEntryDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceExplanationDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMathDomain.xsd"/>
    
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceOrientationAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceEduAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceContentclassAttsDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMathAttsDomain.xsd"/>
    
 
    <!--  -->
@@ -160,6 +167,7 @@
          <xs:attributeGroup ref="lceAnswerAtt-d-attribute"/>
          <xs:attributeGroup ref="lceOrientationAtt-d-attribute"/>
          <xs:attributeGroup ref="lceEduAtt-d-attribute"/>
+         <xs:attributeGroup ref="lceMathAtt-d-attribute"/>
       </xs:attributeGroup>
       
    </xs:redefine>

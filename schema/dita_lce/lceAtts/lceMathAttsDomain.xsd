@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+
+<!-- ============================================================= -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  
+    <xs:annotation>
+      <xs:appinfo>
+        <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">a(base math)</dita:domainsModule>
+      </xs:appinfo>
+      <xs:documentation/>
+      
+    </xs:annotation>
+  
+  <xs:attributeGroup name="lceMathAtt-d-attribute">
+    <xs:attribute name="mathtype" type="mathtype-atts.class" use="optional">
+      <xs:annotation>
+        <xs:documentation>This attribute specifies which math sign is used.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:attributeGroup>
+  
+  <xs:simpleType name="mathtype-atts.class">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="addition"/>
+      <xs:enumeration value="subtraction"/>
+      <xs:enumeration value="multiplication"/>
+      <xs:enumeration value="division"/>
+      <xs:enumeration value="lessthan"/>
+      <xs:enumeration value="equals"/>
+      <xs:enumeration value="largerthan"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
