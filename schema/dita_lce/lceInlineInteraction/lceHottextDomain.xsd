@@ -21,6 +21,14 @@
             </xs:choice>
         </xs:sequence>
     </xs:group>
+    
+    <xs:group name="lceHottextMeaning">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceHottextMeaning"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
 
 <!-- ============================================================= -->
     

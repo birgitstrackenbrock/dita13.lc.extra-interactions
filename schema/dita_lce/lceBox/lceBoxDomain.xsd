@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcebox-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lcebox-d-fig">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceBox"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceBox">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceBox"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+
+ 
+    <!-- ============================================================= -->
+
+    <xs:element name="lceBox">
+        <xs:annotation>
+            <xs:documentation>Special element for extra information which isn't a note but also not part of the textflow.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceBox.class">
+                    <xs:attribute ref="class" default="- topic/fig lcebox-d/lceBox "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceBox.class">
+        <xs:sequence>
+            <xs:group ref="lceBox.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceBox.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceBox.content">
+        <xs:sequence>
+            <xs:group ref="title" minOccurs="0"/>
+            <xs:group ref="desc" minOccurs="0"/>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:group ref="fig.cnt"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceBox.attributes">
+        <xs:attributeGroup ref="display-atts"/>
+        <xs:attribute name="spectitle" type="xs:string"/>
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+           
+</xs:schema>

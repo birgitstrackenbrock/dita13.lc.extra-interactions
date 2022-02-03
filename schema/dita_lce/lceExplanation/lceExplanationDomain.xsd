@@ -6,14 +6,6 @@
         </xs:appinfo>
     </xs:annotation>
     
-    <xs:group name="lceexplanation-d-lcInteractionBase2">
-        <xs:sequence>
-            <xs:choice>
-                <xs:element ref="lceExplanation"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
-    
     <xs:group name="lceExplanation">
         <xs:sequence>
             <xs:choice>
@@ -21,7 +13,7 @@
             </xs:choice>
         </xs:sequence>
     </xs:group>
-    
+
  
     <!-- ============================================================= -->
 
@@ -53,6 +45,5 @@
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
-    
            
 </xs:schema>

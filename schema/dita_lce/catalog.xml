@@ -75,6 +75,14 @@
         <uri name="urn:dita13lce:names:xsd:lceContentclassAttsDomain.xsd" uri="lceContentclassAttsDomain.xsd" />
     </group>
     
+    <group xml:base="lceBox/">
+        <system systemId="lceBoxDomain.xsd" uri="lceBoxDomain.xsd" />
+        <system systemId="urn:dita13lce:names:xsd:lceBoxDomain.xsd" uri="lceBoxDomain.xsd" />
+        
+        <uri name="lceBoxDomain.xsd" uri="lceBoxDomain.xsd" />
+        <uri name="urn:dita13lce:names:xsd:lceBoxDomain.xsd" uri="lceBoxDomain.xsd" />
+    </group>
+    
     <group xml:base="lceDitaConstraints/">
         <system systemId="lceInlineInteractionDomainConstraint.xsd" uri="lceInlineInteractionDomainConstraint.xsd" />
         <system systemId="urn:dita13lce:names:xsd:lceInlineInteractionDomainConstraint.xsd" uri="lceInlineInteractionDomainConstraint.xsd" />
