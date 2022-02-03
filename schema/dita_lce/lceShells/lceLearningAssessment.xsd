@@ -78,6 +78,7 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceEntryDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceExplanationDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceMathDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceRefDomainMod.xsd"/>
    
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceOrientationAttsDomain.xsd"/>
@@ -153,7 +154,9 @@
       <xs:group name="xref">
             <xs:choice>
                <xs:group ref="xref"/>
+               <!-- add -->
                <xs:group ref="lcegapinteraction-d-xref"/>
+               <xs:group ref="lceref-d-xref"/>
             </xs:choice>
       </xs:group>
       
@@ -179,6 +182,7 @@
             <xs:group ref="metadata"/>
             <xs:group ref="relmgmt-d-metadata"/>
             <xs:group ref="learningmeta-d-metadata"/>
+            
          </xs:choice>
       </xs:group>
    </xs:redefine>

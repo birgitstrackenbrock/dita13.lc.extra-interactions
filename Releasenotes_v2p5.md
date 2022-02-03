@@ -6,6 +6,8 @@ we decided to also make a new version for "dita13.lc.extra-interactions" because
 The changes will also be transfered to a new version of "eu.xstructuring.dita.lce".
 
 Version 2.5
+- new elements: lceCalculation, lceFraction, with children lceNumerator and lceDenominator), lceMathSign and lceMathPh. The lceCalculation should only be used in the lceTextEntry.
+- new elements: lceHottextMeaning and lceRef. In the lceHottextMeaning should be used to define the meaning of a hottext. From the lceHottextOption you can use the lceRef element to link the right meaning.
 
 Version 2.3 / 2.4
 - new interaction: lceGraphicAssociate - interaction where you can reate hotspots and set relation between hotspots (drawing lines)

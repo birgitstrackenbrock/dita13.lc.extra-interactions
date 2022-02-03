@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+
+<!-- ============================================================= -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  
+    <xs:annotation>
+      <xs:appinfo>
+        <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic lce-refpoint-d)</dita:domainsModule>
+      </xs:appinfo>
+      <xs:documentation>
+      
+      </xs:documentation>
+    </xs:annotation>
+
+
+  <xs:group name="lce-refpoint-d-ph">
+    <xs:choice>
+      <xs:element ref="lceRefpoint" />
+    </xs:choice>
+  </xs:group>
+  
+  <xs:group name="lceRefpoint">
+      <xs:sequence>
+         <xs:choice>
+           <xs:element ref="lceRefpoint"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+
+   
+  <!-- Basic form: Single Effect Formatting Phrases -->
+  
+  <xs:element name="lceRefpoint">
+    <xs:annotation>
+      <xs:documentation>The lceRefpoint element is an empty element that can be used as an link-target for a point somewhere in the text.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="lceRefpoint.class">
+          <xs:attribute ref="class" default="- topic/ph lce-refpoint-d/lceRefpoint "/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="lceRefpoint.class">
+    <xs:sequence/>
+    <xs:attributeGroup ref="lceRefpoint.attributes"/>
+  </xs:complexType>
+  <xs:attributeGroup name="lceRefpoint.attributes">
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:attributeGroup>
+
+</xs:schema>

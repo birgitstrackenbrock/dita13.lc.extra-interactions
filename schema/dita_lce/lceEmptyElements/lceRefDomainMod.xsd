@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+
+<!-- ============================================================= -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  
+    <xs:annotation>
+      <xs:appinfo>
+        <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic lce-ref-d)</dita:domainsModule>
+      </xs:appinfo>
+      <xs:documentation>
+      
+      </xs:documentation>
+    </xs:annotation>
+
+
+  <xs:group name="lceref-d-xref">
+    <xs:choice>
+      <xs:element ref="lceRef" />
+    </xs:choice>
+  </xs:group>
+  
+  <xs:group name="lceRef">
+      <xs:sequence>
+         <xs:choice>
+           <xs:element ref="lceRef"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+
+   
+ <!-- ============================================== -->
+  
+  <xs:element name="lceRef">
+    <xs:annotation>
+      <xs:documentation>An empty reference element</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="lceRef.class">
+          <xs:attribute ref="class" default="- topic/xref lce-ref/lceRef "/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="lceRef.class">
+    <xs:sequence/>
+    <xs:attributeGroup ref="lceRef.attributes"/>
+  </xs:complexType>
+  
+  <xs:attributeGroup name="lceRef.attributes">
+    <xs:attribute name="href" type="xs:string"/>
+    <xs:attribute name="keyref" type="xs:string"/>
+    <xs:attribute name="type" type="xs:string"/>
+    <xs:attribute name="format" type="xs:string"/>
+    <xs:attribute name="scope">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="external"/>
+          <xs:enumeration value="local"/>
+          <xs:enumeration value="peer"/>
+          <xs:enumeration value="-dita-use-conref-target"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attributeGroup ref="univ-atts"/>
+    <xs:attribute name="outputclass" type="xs:string"/>
+    <xs:attributeGroup ref="global-atts"/>
+  </xs:attributeGroup>
+  
+</xs:schema>

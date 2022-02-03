@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+
+<!-- ============================================================= -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  
+    <xs:annotation>
+      <xs:appinfo>
+        <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic lce-br-d)</dita:domainsModule>
+      </xs:appinfo>
+      <xs:documentation>
+      
+      </xs:documentation>
+    </xs:annotation>
+
+
+  <xs:group name="lce-br-d-ph">
+    <xs:choice>
+      <xs:element ref="lceBR" />
+    </xs:choice>
+  </xs:group>
+  
+  <xs:group name="lceBR">
+      <xs:sequence>
+         <xs:choice>
+           <xs:element ref="lceBR"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+
+   
+  <!-- Basic form: Single Effect Formatting Phrases -->
+  
+  <xs:element name="lceBR">
+    <xs:annotation>
+      <xs:documentation>The lceBR element is similar to the html br element and defines a soft return.
+      It's an empty element</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="lceBR.class">
+          <xs:attribute ref="class" default="- topic/ph lce-br-d/lceBR "/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="lceBR.class">
+    <xs:sequence/> 
+  </xs:complexType>
+  
+</xs:schema>
